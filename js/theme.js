@@ -1,93 +1,52 @@
 /* ============================================
-   THEME.JS — Shared Utilities (All Pages)
-   ============================================
-   Purpose: Handles shared functionality used on EVERY page:
-   1. Dark/Light theme toggle with localStorage
-   2. Mobile hamburger menu toggle
-   
-   This file is loaded on ALL pages in the project.
+   THEME.JS — Theme Persistence & Contrast Management
    ============================================ */
+
+const ThemeManager = (function () {
+  const THEME_KEY = "quiz_app_theme";
+
+  function getTheme() {
+    return localStorage.getItem(THEME_KEY) || "dark";
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem(THEME_KEY, theme);
+
+    // Update meta theme-color for mobile browsers
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute("content", theme === "dark" ? "#090d16" : "#f8fafc");
+    }
+
+    // Trigger icon update in UI
+    if (typeof UI !== "undefined" && UI.updateHeaderActions) {
+      UI.updateHeaderActions();
+    }
+  }
+
+  function toggleTheme() {
+    const nextTheme = getTheme() === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    if (typeof SoundEngine !== "undefined") {
+      SoundEngine.click();
+    }
+    return nextTheme;
+  }
+
+  function init() {
+    const saved = getTheme();
+    setTheme(saved);
+  }
+
+  return {
+    getTheme,
+    setTheme,
+    toggleTheme,
+    init
+  };
+})();
 
 document.addEventListener("DOMContentLoaded", function () {
-  initTheme();
-  initHamburger();
+  ThemeManager.init();
 });
-
-/* ============================================
-   THEME TOGGLE
-   ============================================ */
-
-// initTheme() - Sets up the theme toggle functionality
-function initTheme() {
-  const themeToggleButton = document.getElementById("theme-toggle");
-  if (!themeToggleButton) return;
-
-  // Read the saved theme from localStorage (returns null if not set)
-  const savedTheme = localStorage.getItem("theme");
-
-  // Apply saved theme (or default to light)
-  if (savedTheme === "dark") {
-    document.documentElement.setAttribute("data-theme", "dark");
-    themeToggleButton.textContent = "Light";
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    themeToggleButton.textContent = "Dark";
-  }
-
-  // Listen for clicks on the theme toggle button
-  themeToggleButton.addEventListener("click", function () {
-    toggleTheme(themeToggleButton);
-  });
-}
-
-// toggleTheme() - Switches between light and dark theme
-function toggleTheme(themeToggleButton) {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-
-  if (currentTheme === "dark") {
-    document.documentElement.setAttribute("data-theme", "light");
-    themeToggleButton.textContent = "Dark";
-    localStorage.setItem("theme", "light");
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    themeToggleButton.textContent = "Light";
-    localStorage.setItem("theme", "dark");
-  }
-}
-
-/* ============================================
-   HAMBURGER MENU (Mobile Navigation)
-   ============================================
-   This handler works on ALL pages — portfolio AND sub-projects.
-   Previously only portfolio.js had this, so sub-project pages
-   had a broken hamburger menu on mobile.
-   ============================================ */
-
-// initHamburger() - Sets up the mobile hamburger menu toggle
-function initHamburger() {
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-
-  // Guard: exit if hamburger doesn't exist on this page
-  if (!hamburger || !navLinks) return;
-
-  hamburger.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-
-    // Update the hamburger icon
-    if (navLinks.classList.contains("active")) {
-      hamburger.textContent = "✕";
-    } else {
-      hamburger.textContent = "☰";
-    }
-  });
-
-  // Close menu when a link is clicked (for smooth scroll navigation)
-  const links = navLinks.querySelectorAll("a");
-  links.forEach(function (link) {
-    link.addEventListener("click", function () {
-      navLinks.classList.remove("active");
-      hamburger.textContent = "☰";
-    });
-  });
-}

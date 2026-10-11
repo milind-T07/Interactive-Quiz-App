@@ -1,183 +1,274 @@
 /* ============================================
-   STATE.JS — Quiz Application State
-   ============================================
-   Purpose: Contains the quiz data (questions) and manages
-            the quiz state (current question, score, etc.)
-   
-   This file is the "brain" of the quiz.
-   It stores data but does NOT touch the DOM.
+   STATE.JS — QuizePro State Management
    ============================================ */
 
-// quizQuestions - Array of quiz question objects
-// Each question has: question (text), options (array of 4), correctAnswer (index 0-3)
-const quizQuestions = [
-  {
-    question: "What does HTML stand for?",
-    options: [
-      "Hyper Text Markup Language",
-      "High Tech Modern Language",
-      "Hyper Transfer Markup Language",
-      "Home Tool Markup Language"
-    ],
-    correctAnswer: 0
-  },
-  {
-    question: "Which CSS property is used to change text color?",
-    options: [
-      "font-color",
-      "text-color",
-      "color",
-      "foreground-color"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What is the correct way to declare a JavaScript variable?",
-    options: [
-      "variable name = value;",
-      "var name = value;",
-      "v name = value;",
-      "declare name = value;"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which HTML tag is used to create a hyperlink?",
-    options: [
-      "<link>",
-      "<href>",
-      "<a>",
-      "<url>"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What does CSS stand for?",
-    options: [
-      "Computer Style Sheets",
-      "Cascading Style Sheets",
-      "Creative Style System",
-      "Colorful Style Sheets"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which JavaScript method is used to select an element by its ID?",
-    options: [
-      "getElement()",
-      "querySelector()",
-      "getElementById()",
-      "findElement()"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What is the correct CSS syntax to make text bold?",
-    options: [
-      "text-weight: bold;",
-      "font-weight: bold;",
-      "text-style: bold;",
-      "font-bold: true;"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which event fires when a user clicks on an HTML element?",
-    options: [
-      "onhover",
-      "onchange",
-      "onclick",
-      "onpress"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What is localStorage in JavaScript?",
-    options: [
-      "A server-side database",
-      "A way to store data in the browser that persists",
-      "A temporary variable storage",
-      "A type of cookie"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which array method creates a new array with filtered elements?",
-    options: [
-      "map()",
-      "forEach()",
-      "reduce()",
-      "filter()"
-    ],
-    correctAnswer: 3
-  }
-];
+const quizState = {
+  // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'custom' | 'bookmarks'
+  activeTab: "hub",
 
-// quizState - Object that tracks the current state of the quiz
-// currentQuestionIndex: which question we're on (starts at 0)
-// score: how many correct answers so far
-// selectedAnswer: which option the user clicked (null if none yet)
-// isAnswered: whether the current question has been answered
-// isFinished: whether the quiz is complete
-let quizState = {
+  // Quiz Hub Filters & Config
+  hubSearchQuery: "",
+  activeCategory: "all",
+  activeDifficulty: "all",
+  isTimedMode: true,
+  timeLimitPerQuestion: 20, // seconds
+
+  // Explore Page Independent Filters
+  exploreSearchQuery: "",
+  exploreCategory: "all",
+  exploreDifficulty: "all",
+  exploreSort: "count", // 'count' | 'name' | 'difficulty'
+
+  // Active Quiz Run State
+  quizMode: "standard", // 'standard' | 'daily' | 'practice_incorrect' | 'study_bank' | 'custom'
+  quizTitle: "Technical Assessment",
+  questions: [],
   currentQuestionIndex: 0,
   score: 0,
+  currentStreak: 0,
+  maxStreak: 0,
   selectedAnswer: null,
   isAnswered: false,
-  isFinished: false
+  isFinished: false,
+  startTime: null,
+  elapsedTimeSec: 0,
+  userAnswers: [], // Array of { question, selectedIndex, isCorrect, timedOut, skipped }
+
+  // Timer
+  timerSecondsRemaining: 20,
+  timerInterval: null,
+
+  // Lifelines
+  lifelines: {
+    fiftyFifty: true,
+    hint: true,
+    skip: true
+  },
+  disabledOptions: [],
+  hintVisible: false,
+
+  // Custom Quiz Builder State
+  editingCustomId: null
 };
 
-// resetQuizState() - Resets the quiz state to start over
-function resetQuizState() {
+// Shuffles array in-place (Fisher-Yates)
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Prepares questions for a new standard quiz run
+function initializeStandardQuiz(category = "all", difficulty = "all", count = 10) {
+  let pool = QuestionService.getAllQuestions();
+
+  if (category && category !== "all") {
+    pool = pool.filter((q) => q.category === category);
+  }
+
+  if (difficulty && difficulty !== "all") {
+    pool = pool.filter((q) => q.difficulty === difficulty);
+  }
+
+  if (pool.length === 0) {
+    pool = QuestionService.getAllQuestions();
+  }
+
+  quizState.quizMode = "standard";
+  quizState.quizTitle = category !== "all" && CATEGORIES[category] 
+    ? `${CATEGORIES[category].title} Quiz` 
+    : "Comprehensive Tech Quiz";
+  quizState.questions = shuffleArray(pool).slice(0, count);
+  resetQuizRunState();
+}
+
+// Prepares Daily Challenge
+function initializeDailyChallengeQuiz() {
+  const dailyQs = QuestionService.getDailyChallengeQuestions();
+  quizState.quizMode = "daily";
+  quizState.quizTitle = "Daily Code Challenge";
+  quizState.questions = dailyQs;
+  resetQuizRunState();
+}
+
+// Prepares Practice Incorrect Quiz from missed questions
+function initializePracticeIncorrectQuiz(missedQuestions) {
+  if (!missedQuestions || missedQuestions.length === 0) return false;
+  quizState.quizMode = "practice_incorrect";
+  quizState.quizTitle = "Mistake Revision Drill";
+  quizState.questions = shuffleArray(missedQuestions);
+  resetQuizRunState();
+  return true;
+}
+
+// Prepares Study Bank Quiz from bookmarked questions
+function initializeStudyBankQuiz() {
+  const bookmarks = Storage.getBookmarks();
+  if (bookmarks.length === 0) return false;
+  quizState.quizMode = "study_bank";
+  quizState.quizTitle = "Study Bank Revision";
+  quizState.questions = shuffleArray(bookmarks);
+  resetQuizRunState();
+  return true;
+}
+
+// Prepares Custom Quiz from user questions
+function initializeCustomQuiz() {
+  const customQs = Storage.getCustomQuestions();
+  if (customQs.length === 0) return false;
+  quizState.quizMode = "custom";
+  quizState.quizTitle = "Custom User Quiz";
+  quizState.questions = shuffleArray(customQs);
+  resetQuizRunState();
+  return true;
+}
+
+function resetQuizRunState() {
   quizState.currentQuestionIndex = 0;
   quizState.score = 0;
+  quizState.currentStreak = 0;
+  quizState.maxStreak = 0;
   quizState.selectedAnswer = null;
   quizState.isAnswered = false;
   quizState.isFinished = false;
+  quizState.startTime = Date.now();
+  quizState.elapsedTimeSec = 0;
+  quizState.userAnswers = [];
+
+  quizState.lifelines = {
+    fiftyFifty: true,
+    hint: true,
+    skip: true
+  };
+  quizState.disabledOptions = [];
+  quizState.hintVisible = false;
+
+  stopQuizTimer();
+  quizState.timerSecondsRemaining = quizState.timeLimitPerQuestion;
 }
 
-// getCurrentQuestion() - Gets the current question object
-function getCurrentQuestion() {
-  return quizQuestions[quizState.currentQuestionIndex];
+function startQuizTimer(onTick, onTimeOut) {
+  stopQuizTimer();
+  if (!quizState.isTimedMode) return;
+
+  quizState.timerSecondsRemaining = quizState.timeLimitPerQuestion;
+  if (onTick) onTick(quizState.timerSecondsRemaining);
+
+  quizState.timerInterval = setInterval(() => {
+    quizState.timerSecondsRemaining -= 1;
+    if (onTick) onTick(quizState.timerSecondsRemaining);
+
+    if (quizState.timerSecondsRemaining <= 0) {
+      stopQuizTimer();
+      if (onTimeOut) onTimeOut();
+    }
+  }, 1000);
 }
 
-// selectAnswer() - Records the user's answer and checks if it's correct
-function selectAnswer(selectedIndex) {
-  // Don't allow changing answer after already answered
-  if (quizState.isAnswered) {
-    return false;
+function stopQuizTimer() {
+  if (quizState.timerInterval) {
+    clearInterval(quizState.timerInterval);
+    quizState.timerInterval = null;
   }
+}
 
+function getCurrentQuestion() {
+  if (!quizState.questions || quizState.questions.length === 0) return null;
+  return quizState.questions[quizState.currentQuestionIndex] || null;
+}
+
+function selectAnswer(selectedIndex) {
+  if (quizState.isAnswered) return null;
+
+  stopQuizTimer();
   quizState.selectedAnswer = selectedIndex;
   quizState.isAnswered = true;
 
-  // Check if the selected answer matches the correct answer
-  const currentQuestion = getCurrentQuestion();
-  const isCorrect = selectedIndex === currentQuestion.correctAnswer;
+  const currentQ = getCurrentQuestion();
+  if (!currentQ) return false;
 
-  // If correct, add 1 to the score
+  const isCorrect = selectedIndex === currentQ.correctAnswer;
+
   if (isCorrect) {
-    quizState.score = quizState.score + 1;
+    quizState.score += 1;
+    quizState.currentStreak += 1;
+    if (quizState.currentStreak > quizState.maxStreak) {
+      quizState.maxStreak = quizState.currentStreak;
+    }
+  } else {
+    quizState.currentStreak = 0;
   }
+
+  // Record user answer
+  quizState.userAnswers.push({
+    question: currentQ,
+    selectedIndex: selectedIndex,
+    isCorrect: isCorrect,
+    timedOut: selectedIndex === -1
+  });
 
   return isCorrect;
 }
 
-// moveToNextQuestion() - Advances to the next question
+function useFiftyFiftyLifeline() {
+  if (!quizState.lifelines.fiftyFifty || quizState.isAnswered) return false;
+  const currentQ = getCurrentQuestion();
+  if (!currentQ || !currentQ.options || currentQ.options.length < 4) return false;
+
+  const wrongIndices = [];
+  for (let i = 0; i < currentQ.options.length; i++) {
+    if (i !== currentQ.correctAnswer) {
+      wrongIndices.push(i);
+    }
+  }
+
+  const shuffledWrong = shuffleArray(wrongIndices);
+  quizState.disabledOptions = shuffledWrong.slice(0, 2);
+  quizState.lifelines.fiftyFifty = false;
+  return true;
+}
+
+function useHintLifeline() {
+  if (!quizState.lifelines.hint || quizState.isAnswered) return false;
+  quizState.hintVisible = true;
+  quizState.lifelines.hint = false;
+  return true;
+}
+
+function useSkipLifeline() {
+  if (!quizState.lifelines.skip || quizState.isAnswered) return false;
+  quizState.lifelines.skip = false;
+  const currentQ = getCurrentQuestion();
+  if (currentQ) {
+    quizState.userAnswers.push({
+      question: currentQ,
+      selectedIndex: -1,
+      isCorrect: false,
+      skipped: true
+    });
+  }
+  moveToNextQuestion();
+  return true;
+}
+
 function moveToNextQuestion() {
-  quizState.currentQuestionIndex = quizState.currentQuestionIndex + 1;
+  stopQuizTimer();
+  quizState.currentQuestionIndex += 1;
   quizState.selectedAnswer = null;
   quizState.isAnswered = false;
+  quizState.disabledOptions = [];
+  quizState.hintVisible = false;
 
-  // Check if we've reached the end of the questions
-  if (quizState.currentQuestionIndex >= quizQuestions.length) {
+  if (quizState.currentQuestionIndex >= quizState.questions.length) {
     quizState.isFinished = true;
+    quizState.elapsedTimeSec = Math.round((Date.now() - quizState.startTime) / 1000);
   }
 }
 
-// calculatePercentage() - Calculates the final score as a percentage
 function calculatePercentage() {
-  const totalQuestions = quizQuestions.length;
-  const percentage = (quizState.score / totalQuestions) * 100;
-  return Math.round(percentage);
+  if (!quizState.questions || quizState.questions.length === 0) return 0;
+  return Math.round((quizState.score / quizState.questions.length) * 100);
 }

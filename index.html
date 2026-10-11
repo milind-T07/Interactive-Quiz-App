@@ -1,48 +1,139 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Interactive Quiz App — Test your HTML, CSS, and JavaScript knowledge with multiple-choice questions." />
-  <title>Quiz App — OJT Capstone</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%232a9d8f'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>DA</text></svg>" />
-  <!-- Load global styles first, then quiz-specific styles -->
+  <title>QuizePro — Developer Learning Platform</title>
+  <meta name="description" content="QuizePro is a modern interactive learning platform for developers to practice technical concepts, algorithms, frameworks, and track learning progress." />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='22' width='100' height='100' fill='%236366f1'/><path d='M30 35 L50 20 L70 35 L70 65 L50 80 L30 65 Z' fill='none' stroke='white' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='white'/></svg>" />
+
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="https://iamshkzahid.github.io/team-agency-portfolio/" class="navbar-brand">Dev Agency</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
-      <div class="nav-links" id="nav-links">
-        <a href="https://iamshkzahid.github.io/team-agency-portfolio/">← Back to Portfolio</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">Dark</button>
+  <!-- Top Navigation Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-inner container">
+      <!-- Logo & Wordmark -->
+      <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizePro Home">
+        <span class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 16 4-4-4-4"/>
+            <path d="m6 8-4 4 4 4"/>
+            <path d="m14.5 4-5 16"/>
+          </svg>
+        </span>
+        <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+      </a>
+
+      <!-- Desktop Nav Tabs -->
+      <nav class="nav-bar" id="desktop-nav" aria-label="Main Navigation">
+        <!-- Injected dynamically by UI.renderNavigation() -->
+      </nav>
+
+      <!-- Utility Actions -->
+      <div class="header-actions">
+        <!-- Sound FX Toggle -->
+        <button type="button" class="action-btn" id="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Toggle Sound FX">
+          <!-- Injected via UI -->
+        </button>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="action-btn" id="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <!-- Injected via UI -->
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="action-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/>
+            <line x1="4" x2="20" y1="6" y2="6"/>
+            <line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Main Content -->
-  <main class="section">
-    <div class="container">
-      <a href="https://iamshkzahid.github.io/team-agency-portfolio/" class="back-link">← Back to Portfolio</a>
-      <h1 class="section-title">Interactive Quiz App</h1>
-
-      <!-- Quiz content is rendered here by JavaScript -->
-      <div class="quiz-wrapper card" id="quiz-container">
-        <!-- Content will be dynamically inserted by ui.js -->
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="mobile-drawer-header">
+        <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        <button type="button" class="action-btn" id="mobile-close-btn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
       </div>
+      <nav class="mobile-nav-links" id="mobile-nav-links"></nav>
+      <div class="mobile-drawer-footer">
+        <p class="drawer-hint">Practice technical concepts & track skills</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="main-content">
+    <div class="container" id="app-root">
+      <!-- Active view rendered here by UI.renderActiveView() -->
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Dev Agency — Quiz App</p>
+  <!-- Confirmation Modal Dialog -->
+  <dialog class="app-dialog" id="confirm-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div class="dialog-icon-wrap" id="dialog-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="dialog-title" id="dialog-title">Confirm Action</h3>
+          <p class="dialog-desc" id="dialog-desc">Are you sure you want to proceed?</p>
+        </div>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-secondary" id="dialog-cancel-btn">Cancel</button>
+        <button type="button" class="btn btn-primary" id="dialog-confirm-btn">Confirm</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Application Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">QuizePro</span>
+        <span class="footer-tagline">Interactive Learning Platform for Developers</span>
+      </div>
+      <div class="footer-right">
+        <div class="footer-shortcuts">
+          <span class="kbd-hint"><kbd>1</kbd>-<kbd>4</kbd> Select</span>
+          <span class="kbd-hint"><kbd>Enter</kbd> Next</span>
+        </div>
+        <p class="footer-copy">© 2026 QuizePro Platform. Built for developers.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scripts: state first (data), then ui (rendering), then main (init) -->
+  <!-- Application Scripts -->
+  <script src="js/questions.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/storage.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/state.js"></script>
   <script src="js/ui.js"></script>

@@ -1,172 +1,148 @@
-# Interactive Quiz App
-An interactive and responsive quiz application built using **HTML, CSS, and JavaScript**. The application allows users to test their knowledge through multiple-choice questions, receive instant feedback, track their score, and switch between light and dark themes.
+# QuizePro — Interactive Tech Quiz Platform
+
+**QuizePro** is a modern, interactive learning platform designed for software engineers, computer science students, and technical learners to practice core concepts, sharpen problem-solving skills, and track learning progress over time.
+
+Built with a dark-first SaaS developer interface, high-contrast light theme, Web Audio sound synthesis, distraction-free quiz mode, and genuine analytics.
 
 ---
 
-## Features
+## ✨ Key Features
 
-- Interactive multiple-choice quiz
-- Real-time score tracking
-- Question progress indicator
-- Instant answer validation
-- Final results screen
-- Restart quiz functionality
-- Dark/Light theme toggle
-- Theme preference saved using Local Storage
-- Responsive design for desktop and mobile devices
-- Mobile navigation menu support
+### 1. 🎯 Quiz Hub Dashboard
+- **8 Technical Domains**:
+  - Web Development (HTML5 semantics, modern CSS, Grid/Flexbox, browser APIs)
+  - JavaScript & TypeScript (ES6+, closures, event loop, async microtasks, types)
+  - React & Frontend Frameworks (React 19, hooks, Virtual DOM, state architecture)
+  - Data Structures & Algorithms (trees, graphs, sorting, Big-O complexity)
+  - Python & Backend (patterns, generators, concurrency, RESTful APIs)
+  - Databases & SQL (relational design, indexing, ACID, joins, NoSQL)
+  - Computer Science Fundamentals (OS processes/threads, memory, networking)
+  - Security & DevOps (OWASP, HTTPS/CORS, Docker, CI/CD)
+- **Daily Challenge**: Fresh 5-question multi-discipline drill updated every 24 hours.
+- **Daily Learning Goal**: Real-time progress bar tracking daily answered questions towards a configurable goal (e.g. 10 questions/day).
+- **Continue Practicing**: Contextual resume card reflecting your latest attempted domain.
+- **Summary Metrics**: Real completed quiz counts, accuracy percentage, and active streak days.
+
+### 2. 🔍 Dedicated Explore Discovery
+- Keyword search across question text, options, and explanations.
+- Filter by topic domain and difficulty level (Easy, Medium, Hard).
+- Sort alphabetically or by difficulty.
+- Quick action to launch targeted quizzes directly from filtered results.
+- Independent filter state preserving your Quiz Hub selections.
+
+### 3. ⚡ Distraction-Free Quiz Experience
+- Clean, focused interface with timer countdown (20s per question) and progress bar.
+- Accessible multiple-choice options with keyboard shortcuts (`1`-`4` or `A`-`D`).
+- Strategic lifelines:
+  - **50:50**: Eliminates two incorrect options.
+  - **Hint**: Reveals contextual concept hints.
+  - **Skip**: Advances past difficult questions without penalty.
+- Instant feedback with color-coded answers, icons, and **in-depth concept explanations**.
+- One-click **Save to Study Bank** bookmarking.
+- Native confirmation modal preventing accidental quiz exits.
+
+### 4. 🏆 Polished Results & Mistake Revision
+- Overall performance grade (`S`, `A`, `B`, `C`) and percentage accuracy.
+- Breakdown of correct answers, time taken, and maximum streak.
+- **Practice Missed Questions**: One-click drill targeting only the questions you got wrong.
+- Filterable question-by-question review (`All`, `Correct`, `Incorrect`).
+- Lightweight confetti celebration for high scores (>= 70%).
+- Copy result summary to clipboard for sharing.
+
+### 5. 📊 Real Performance Analytics
+- Calculated entirely from real quiz attempts in LocalStorage:
+  - Total Quizzes Completed
+  - Average Accuracy (%)
+  - Best Score (%)
+  - Continuous Practice Streak (Days)
+- **7-Day Practice Activity Chart**: Visual bar visualization of questions completed each day over the past week.
+- **Accuracy by Topic**: Real breakdown bars showing mastery across each technical domain.
+- **Strongest & Weakest Topic Identification**: Highlights areas of strength and recommended revision.
+- **Achievements & Milestones**: Tracked badges (First Step, Perfectionist, Consistent Learner, Quiz Veteran, Speed Demon, Centurion).
+- **Attempt History Table**: Filterable by topic with timestamp, duration, score, and individual deletion.
+- Clean "Clear All Logs" action that updates all dependent metrics consistently.
+
+### 6. 🛠️ Structured Quiz Builder
+- Create custom multiple-choice questions with 4 answer choices.
+- Correct answer selection with topic and difficulty tags.
+- In-line validation messages preventing empty or malformed questions.
+- **Live Quiz Preview**: Real-time card updating as you type.
+- Edit and delete existing custom questions.
+- One-click **Start Custom Quiz** action.
+
+### 7. 📚 Study Bank Revision Workspace
+- Personal repository of bookmarked challenging questions.
+- Search and filter by topic or difficulty.
+- Toggle review status (**Mark Reviewed** / **Needs Review**).
+- One-click **Practice Saved Questions** drill.
+- Bookmark questions during a quiz or from Explore.
+
+### 8. 🎨 Design System & Accessibility
+- **Dark-First Theme**: Deep navy and charcoal palette with violet/purple primary accents.
+- **Refined Light Theme**: Crisp slate surfaces with high-contrast text.
+- Theme preference persisted in LocalStorage.
+- Web Audio API synthesizer for clean sound feedback (clicks, correct/incorrect tones, streaks, fanfare) with a mute toggle.
+- Keyboard shortcuts:
+  - `1`, `2`, `3`, `4` or `A`, `B`, `C`, `D` to pick answers.
+  - `Enter` or `Space` to advance to the next question.
+  - `Esc` to close modals and mobile drawers.
+- Semantic HTML5, accessible ARIA attributes, and native `<dialog>` modals.
+- Fully responsive across desktop, tablet, and mobile devices.
 
 ---
 
-## Technologies Used
+## 💻 Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Local Storage API
+- **HTML5**: Semantic tags, native `<dialog>`, and accessibility attributes.
+- **CSS3**: Custom properties (tokens), Flexbox, CSS Grid, animations, dark/light themes.
+- **JavaScript (ES6+)**: Modular architecture (`Storage`, `SoundEngine`, `Confetti`, `ThemeManager`, `QuestionService`, `UI`).
+- **Web Audio API**: Synthesized procedural sound effects without external audio assets.
+- **LocalStorage API**: Reliable client-side persistence for history, bookmarks, custom quizzes, and preferences.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 interactive-quiz-app-main/
 │
-├── index.html
+├── index.html          # Main HTML structure, navigation, and modal containers
 │
 ├── css/
-│   ├── global.css
-│   └── style.css
+│   ├── global.css      # Design tokens, color themes, buttons, cards, typography
+│   └── style.css       # View-specific components (Hub, Explore, Runner, Analytics, Builder)
 │
 ├── js/
-│   ├── main.js
-│   ├── state.js
-│   ├── theme.js
-│   └── ui.js
+│   ├── questions.js    # Comprehensive questions database across 8 domains
+│   ├── audio.js        # Web Audio API sound synthesizer
+│   ├── confetti.js     # Lightweight canvas confetti engine
+│   ├── storage.js      # LocalStorage persistence & real-time analytics calculations
+│   ├── theme.js        # Dark/Light theme manager & preference persistence
+│   ├── state.js        # Quiz state machine, lifelines, timers, and modes
+│   ├── ui.js           # Modular view renderer and interaction handlers
+│   └── main.js         # Application initialization and keyboard shortcut listeners
 │
 └── README.md
 ```
 
 ---
 
-## File Description
+## 🚀 Getting Started
 
-### index.html
-Main entry point of the application containing the page structure, navigation bar, and quiz container.
-
-### css/global.css
-Contains:
-- CSS reset
-- Global variables
-- Theme colors
-- Utility classes
-- Responsive styles
-
-### css/style.css
-Contains styling for:
-- Quiz interface
-- Question cards
-- Option buttons
-- Result screen
-- Progress indicators
-
-### js/state.js
-Manages:
-- Quiz questions
-- Current question index
-- User score
-- Quiz state
-
-### js/ui.js
-Handles:
-- Rendering quiz screens
-- Displaying questions
-- Updating UI components
-- Showing results
-
-### js/theme.js
-Provides:
-- Dark/Light mode functionality
-- Theme persistence using Local Storage
-- Mobile menu interactions
-
-### js/main.js
-Initializes the application when the page loads.
-
----
-
-## How to Run the Project
-
-### 1. Clone the Repository
+Simply open `index.html` in any modern web browser, or serve using any static web server:
 
 ```bash
-git clone https://github.com/your-username/interactive-quiz-app.git
+# Using Python
+python3 -m http.server 8080
+
+# Using Node.js npx
+npx serve .
 ```
 
-### 2. Navigate to the Project Directory
-
-```bash
-cd interactive-quiz-app
-```
-
-### 3. Open the Application
-
-Simply open:
-
-```text
-index.html
-```
-
-in any modern web browser.
-
-No additional installation or dependencies are required.
+Open `http://localhost:8080` in your browser.
 
 ---
 
-## Quiz Workflow
-
-1. User opens the application.
-2. Start screen is displayed.
-3. User clicks **Start Quiz**.
-4. Questions appear one by one.
-5. User selects an answer.
-6. The application validates the answer instantly.
-7. Score and progress are updated.
-8. Final results are shown after all questions are completed.
-9. User can restart the quiz and try again.
-
----
-
-## Key Concepts Demonstrated
-
-- DOM Manipulation
-- Event Handling
-- State Management
-- Modular JavaScript Architecture
-- Responsive Web Design
-- Local Storage Integration
-- Theme Switching
-
----
-
-## Future Enhancements
-
-- Timer for each question
-- Difficulty levels
-- Randomized questions
-- Category-based quizzes
-- Leaderboard system
-- User authentication
-- API-based question fetching
-
----
-
-## Author
-
-Zahid Shaikh
-
----
-
-## License
+## 📄 License
 
 This project is licensed under the MIT License.
