@@ -16,7 +16,7 @@ const ThemeManager = (function () {
     // Update meta theme-color for mobile browsers
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     if (metaTheme) {
-      metaTheme.setAttribute("content", theme === "dark" ? "#090d16" : "#f8fafc");
+      metaTheme.setAttribute("content", theme === "dark" ? "#070913" : "#f8fafc");
     }
 
     // Trigger icon update in UI

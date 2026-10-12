@@ -70,7 +70,7 @@ Built with a dark-first SaaS developer interface, high-contrast light theme, Web
 - Bookmark questions during a quiz or from Explore.
 
 ### 7. 🎨 Design System & Accessibility
-- **Dark-First Theme**: Deep navy and charcoal palette with violet/purple primary accents.
+- **Dark-First Theme**: Deep technical obsidian (`#070913`) and midnight palette with electric cyan (`#06b6d4`) and blue (`#3b82f6`) primary accents.
 - **Refined Light Theme**: Crisp slate surfaces with high-contrast text.
 - Theme preference persisted in LocalStorage.
 - Web Audio API synthesizer for clean sound feedback (clicks, correct/incorrect tones, streaks, fanfare) with a mute toggle.

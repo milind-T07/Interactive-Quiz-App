@@ -35,7 +35,7 @@ const Confetti = (function () {
   window.addEventListener("resize", resizeCanvas);
 
   function createParticle() {
-    const colors = ["#6366f1", "#a855f7", "#ec4899", "#3b82f6", "#10b981", "#f59e0b", "#ef4444"];
+    const colors = ["#06b6d4", "#38bdf8", "#3b82f6", "#10b981", "#f59e0b", "#ec4899", "#8b5cf6"];
     return {
       x: Math.random() * (canvas ? canvas.width : window.innerWidth),
       y: Math.random() * (canvas ? canvas.height : window.innerHeight) - (canvas ? canvas.height : window.innerHeight),
