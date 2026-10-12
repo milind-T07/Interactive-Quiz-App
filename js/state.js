@@ -3,7 +3,7 @@
    ============================================ */
 
 const quizState = {
-  // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'custom' | 'bookmarks'
+  // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'bookmarks'
   activeTab: "hub",
 
   // Quiz Hub Filters & Config
@@ -45,10 +45,7 @@ const quizState = {
     skip: true
   },
   disabledOptions: [],
-  hintVisible: false,
-
-  // Custom Quiz Builder State
-  editingCustomId: null
+  hintVisible: false
 };
 
 // Shuffles array in-place (Fisher-Yates)
@@ -115,16 +112,6 @@ function initializeStudyBankQuiz() {
   return true;
 }
 
-// Prepares Custom Quiz from user questions
-function initializeCustomQuiz() {
-  const customQs = Storage.getCustomQuestions();
-  if (customQs.length === 0) return false;
-  quizState.quizMode = "custom";
-  quizState.quizTitle = "Custom User Quiz";
-  quizState.questions = shuffleArray(customQs);
-  resetQuizRunState();
-  return true;
-}
 
 function resetQuizRunState() {
   quizState.currentQuestionIndex = 0;

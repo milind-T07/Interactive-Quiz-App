@@ -93,13 +93,11 @@ const UI = (function () {
     const desktopNav = document.getElementById("desktop-nav");
     const mobileLinks = document.getElementById("mobile-nav-links");
     const bookmarksCount = Storage.getBookmarks().length;
-    const customCount = Storage.getCustomQuestions().length;
 
     const navItems = [
       { id: "hub", label: "Quiz Hub", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>` },
       { id: "explore", label: "Explore", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>` },
       { id: "performance", label: "Performance", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>` },
-      { id: "custom", label: "Quiz Builder", badge: customCount, icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>` },
       { id: "bookmarks", label: "Study Bank", badge: bookmarksCount, icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>` }
     ];
 
@@ -209,8 +207,6 @@ const UI = (function () {
       renderExploreView(root);
     } else if (quizState.activeTab === "performance") {
       renderPerformanceView(root);
-    } else if (quizState.activeTab === "custom") {
-      renderCustomBuilderView(root);
     } else if (quizState.activeTab === "bookmarks") {
       renderStudyBankView(root);
     }
@@ -223,7 +219,6 @@ const UI = (function () {
     const analytics = Storage.getAnalytics();
     const categories = QuestionService.getCategories();
     const allQuestions = QuestionService.getAllQuestions();
-    const customQs = Storage.getCustomQuestions();
 
     // Goal progress calculation
     const dailyGoal = analytics.dailyGoal || 10;
@@ -277,29 +272,7 @@ const UI = (function () {
       `;
     }).join("");
 
-    // Custom Category Card
-    if (customQs.length > 0 && (quizState.activeCategory === "all" || quizState.activeCategory === "custom")) {
-      topicCardsHTML += `
-        <div class="card card-hover topic-card fade-in" style="--topic-color: var(--accent-purple);" data-cat-id="custom">
-          <div>
-            <div class="topic-card-header">
-              <div class="topic-icon-wrap" style="color: var(--accent-purple);">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-              </div>
-              <span class="badge badge-neutral">${customQs.length} Custom Qs</span>
-            </div>
-            <h3 class="topic-title" style="margin-top: 0.85rem;">Custom User Quiz</h3>
-            <p class="topic-desc">Questions created by you in the Quiz Builder editor.</p>
-          </div>
-          <div>
-            <div class="topic-meta-row">
-              <span>Personal Collection</span>
-              <span class="start-action-link">Start Custom Quiz →</span>
-            </div>
-          </div>
-        </div>
-      `;
-    }
+
 
     if (!topicCardsHTML) {
       topicCardsHTML = `
@@ -571,13 +544,7 @@ const UI = (function () {
     container.querySelectorAll(".topic-card").forEach((card) => {
       card.addEventListener("click", () => {
         const catId = card.getAttribute("data-cat-id");
-        if (catId === "custom") {
-          initializeCustomQuiz();
-          renderActiveView();
-          if (quizState.isTimedMode) startActiveQuestionTimer();
-        } else {
-          startStandardQuizRun(catId, quizState.activeDifficulty);
-        }
+        startStandardQuizRun(catId, quizState.activeDifficulty);
       });
     });
   }
@@ -1637,363 +1604,7 @@ const UI = (function () {
   }
 
   // ============================================
-  // 6. QUIZ BUILDER VIEW
-  // ============================================
-  function renderCustomBuilderView(container) {
-    const customQs = Storage.getCustomQuestions();
-    const categories = QuestionService.getCategories();
-
-    // Check if user is editing an existing question
-    let editQuestion = null;
-    if (quizState.editingCustomId) {
-      editQuestion = customQs.find((q) => q.id === quizState.editingCustomId) || null;
-    }
-
-    // Default form values
-    const formVals = editQuestion || {
-      question: "",
-      options: ["", "", "", ""],
-      correctAnswer: 0,
-      category: "web",
-      difficulty: "medium",
-      hint: "",
-      explanation: ""
-    };
-
-    let customListHTML = "";
-    if (customQs.length === 0) {
-      customListHTML = `<p style="color: var(--text-muted); font-size: 0.9rem; padding: 1rem 0;">No custom questions created yet. Use the editor to add your first question!</p>`;
-    } else {
-      customListHTML = customQs.map((q, idx) => `
-        <div class="card review-card fade-in" style="margin-bottom: 0.85rem; border-left-color: var(--accent-purple);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-            <div>
-              <div style="font-weight: 700; font-size: 0.95rem;">${idx + 1}. ${escapeHTML(q.question)}</div>
-              <div style="font-size: 0.825rem; color: var(--color-success); margin-top: 0.25rem;">
-                ✓ Correct: ${['A', 'B', 'C', 'D'][q.correctAnswer]}. ${escapeHTML(q.options[q.correctAnswer])}
-              </div>
-            </div>
-            <div style="display: flex; gap: 0.35rem;">
-              <button type="button" class="btn btn-ghost btn-sm edit-custom-q-btn" data-id="${q.id}">Edit</button>
-              <button type="button" class="btn btn-ghost btn-sm delete-custom-q-btn" data-id="${q.id}" style="color: var(--color-danger);">Delete</button>
-            </div>
-          </div>
-        </div>
-      `).join("");
-    }
-
-    container.innerHTML = `
-      <div class="fade-in">
-        <div style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-          <div>
-            <h1 style="margin-bottom: 0.35rem;">Custom Quiz Builder</h1>
-            <p>Create, edit, and practice your own technical questions.</p>
-          </div>
-          ${customQs.length > 0 ? `
-            <button type="button" class="btn btn-primary" id="launch-custom-quiz-btn">
-              ⚡ Start Custom Quiz (${customQs.length} Qs)
-            </button>
-          ` : ''}
-        </div>
-
-        <div class="builder-layout">
-          <!-- Form -->
-          <div class="card builder-form-card">
-            <h3 style="margin-bottom: 1.25rem;">
-              ${editQuestion ? '✏️ Edit Custom Question' : '➕ Add New Technical Question'}
-            </h3>
-
-            <form id="builder-form">
-              <div class="form-group">
-                <label class="form-label" for="b-q-text">Question Prompt *</label>
-                <input type="text" id="b-q-text" class="form-control" placeholder="e.g. What is the difference between null and undefined in JavaScript?" value="${escapeHTML(formVals.question)}" required />
-                <div class="field-error" id="err-q-text" style="display: none;">Question text cannot be empty</div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Answer Options (4 choices) *</label>
-                <div class="options-builder-grid">
-                  <div>
-                    <input type="text" id="b-opt-0" class="form-control" placeholder="Option A" value="${escapeHTML(formVals.options[0] || '')}" required />
-                    <div class="field-error" id="err-opt-0" style="display: none;">Option A is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-1" class="form-control" placeholder="Option B" value="${escapeHTML(formVals.options[1] || '')}" required />
-                    <div class="field-error" id="err-opt-1" style="display: none;">Option B is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-2" class="form-control" placeholder="Option C" value="${escapeHTML(formVals.options[2] || '')}" required />
-                    <div class="field-error" id="err-opt-2" style="display: none;">Option C is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-3" class="form-control" placeholder="Option D" value="${escapeHTML(formVals.options[3] || '')}" required />
-                    <div class="field-error" id="err-opt-3" style="display: none;">Option D is required</div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 1.25rem;">
-                <div>
-                  <label class="form-label" for="b-correct">Correct Answer</label>
-                  <select id="b-correct" class="form-select">
-                    <option value="0" ${formVals.correctAnswer === 0 ? 'selected' : ''}>Option A</option>
-                    <option value="1" ${formVals.correctAnswer === 1 ? 'selected' : ''}>Option B</option>
-                    <option value="2" ${formVals.correctAnswer === 2 ? 'selected' : ''}>Option C</option>
-                    <option value="3" ${formVals.correctAnswer === 3 ? 'selected' : ''}>Option D</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="form-label" for="b-category">Category</label>
-                  <select id="b-category" class="form-select">
-                    ${Object.values(categories).map((c) => `
-                      <option value="${c.id}" ${formVals.category === c.id ? 'selected' : ''}>${escapeHTML(c.title)}</option>
-                    `).join("")}
-                    <option value="custom" ${formVals.category === 'custom' ? 'selected' : ''}>Custom Topic</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="form-label" for="b-difficulty">Difficulty</label>
-                  <select id="b-difficulty" class="form-select">
-                    <option value="easy" ${formVals.difficulty === 'easy' ? 'selected' : ''}>Easy</option>
-                    <option value="medium" ${formVals.difficulty === 'medium' ? 'selected' : ''}>Medium</option>
-                    <option value="hard" ${formVals.difficulty === 'hard' ? 'selected' : ''}>Hard</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="b-hint">Helpful Hint (Optional)</label>
-                <input type="text" id="b-hint" class="form-control" placeholder="Hint to assist user without giving away the answer" value="${escapeHTML(formVals.hint || '')}" />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="b-explanation">Concept Explanation (Optional)</label>
-                <textarea id="b-explanation" class="form-control" rows="2" placeholder="Why is this answer correct? Key takeaway for learning.">${escapeHTML(formVals.explanation || '')}</textarea>
-              </div>
-
-              <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
-                ${editQuestion ? `
-                  <button type="button" class="btn btn-secondary" id="cancel-edit-btn">Cancel Edit</button>
-                ` : `
-                  <button type="button" class="btn btn-ghost" id="clear-form-btn">Reset</button>
-                `}
-                <button type="submit" class="btn btn-primary" id="save-q-btn">
-                  ${editQuestion ? '✓ Update Question' : '➕ Save Question'}
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <!-- Live Preview Side -->
-          <div>
-            <div class="card preview-card">
-              <div class="preview-header">
-                <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
-                  👁️ Live Quiz Preview
-                </span>
-                <span class="badge badge-medium" id="preview-diff-badge">Medium</span>
-              </div>
-
-              <h4 id="preview-q-title" style="margin-bottom: 1rem; line-height: 1.4;">
-                ${escapeHTML(formVals.question) || 'Your question prompt will appear here...'}
-              </h4>
-
-              <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-0">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">A</span>
-                  <span id="prev-opt-text-0">${escapeHTML(formVals.options[0]) || 'Option A'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-1">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">B</span>
-                  <span id="prev-opt-text-1">${escapeHTML(formVals.options[1]) || 'Option B'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-2">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">C</span>
-                  <span id="prev-opt-text-2">${escapeHTML(formVals.options[2]) || 'Option C'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-3">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">D</span>
-                  <span id="prev-opt-text-3">${escapeHTML(formVals.options[3]) || 'Option D'}</span>
-                </div>
-              </div>
-
-              <div id="preview-hint-wrap" style="font-size: 0.8rem; color: var(--color-warning); margin-bottom: 0.5rem;">
-                💡 <em>${formVals.hint ? `Hint: ${escapeHTML(formVals.hint)}` : 'No hint specified'}</em>
-              </div>
-
-              <div id="preview-exp-wrap" style="font-size: 0.8rem; color: var(--text-secondary);">
-                📖 <em>${formVals.explanation ? escapeHTML(formVals.explanation) : 'No explanation specified'}</em>
-              </div>
-            </div>
-
-            <!-- Saved Custom Questions Collection -->
-            <div class="card" style="padding: 1.5rem; margin-top: 1.5rem;">
-              <h3 style="margin-bottom: 1rem;">Saved Questions (${customQs.length})</h3>
-              <div>${customListHTML}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Live preview update handlers
-    const qTextInput = document.getElementById("b-q-text");
-    const opt0Input = document.getElementById("b-opt-0");
-    const opt1Input = document.getElementById("b-opt-1");
-    const opt2Input = document.getElementById("b-opt-2");
-    const opt3Input = document.getElementById("b-opt-3");
-    const correctInput = document.getElementById("b-correct");
-    const diffInput = document.getElementById("b-difficulty");
-    const hintInput = document.getElementById("b-hint");
-    const expInput = document.getElementById("b-explanation");
-
-    function updatePreview() {
-      const pTitle = document.getElementById("preview-q-title");
-      const p0 = document.getElementById("prev-opt-text-0");
-      const p1 = document.getElementById("prev-opt-text-1");
-      const p2 = document.getElementById("prev-opt-text-2");
-      const p3 = document.getElementById("prev-opt-text-3");
-      const diffB = document.getElementById("preview-diff-badge");
-      const hintW = document.getElementById("preview-hint-wrap");
-      const expW = document.getElementById("preview-exp-wrap");
-
-      if (pTitle) pTitle.textContent = qTextInput.value || "Your question prompt will appear here...";
-      if (p0) p0.textContent = opt0Input.value || "Option A";
-      if (p1) p1.textContent = opt1Input.value || "Option B";
-      if (p2) p2.textContent = opt2Input.value || "Option C";
-      if (p3) p3.textContent = opt3Input.value || "Option D";
-      if (diffB) {
-        diffB.textContent = diffInput.value;
-        diffB.className = `badge badge-${diffInput.value}`;
-      }
-      if (hintW) hintW.innerHTML = hintInput.value ? `💡 <em>Hint: ${escapeHTML(hintInput.value)}</em>` : '💡 <em>No hint specified</em>';
-      if (expW) expW.innerHTML = expInput.value ? `📖 <em>${escapeHTML(expInput.value)}</em>` : '📖 <em>No explanation specified</em>';
-
-      // Highlight correct choice in preview
-      const cIdx = parseInt(correctInput.value, 10);
-      for (let i = 0; i < 4; i++) {
-        const optCard = document.getElementById(`prev-opt-${i}`);
-        if (optCard) {
-          if (i === cIdx) {
-            optCard.style.borderColor = "var(--color-success)";
-          } else {
-            optCard.style.borderColor = "var(--border-subtle)";
-          }
-        }
-      }
-    }
-
-    [qTextInput, opt0Input, opt1Input, opt2Input, opt3Input, correctInput, diffInput, hintInput, expInput].forEach((el) => {
-      if (el) el.addEventListener("input", updatePreview);
-    });
-    updatePreview();
-
-    // Form submission
-    const form = document.getElementById("builder-form");
-    if (form) {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const qVal = qTextInput.value.trim();
-        const opts = [
-          opt0Input.value.trim(),
-          opt1Input.value.trim(),
-          opt2Input.value.trim(),
-          opt3Input.value.trim()
-        ];
-        const correctVal = correctInput.value;
-        const catVal = document.getElementById("b-category").value;
-        const diffVal = diffInput.value;
-        const hintVal = hintInput.value.trim();
-        const expVal = expInput.value.trim();
-
-        // In-line validations
-        let hasError = false;
-        if (!qVal) {
-          document.getElementById("err-q-text").style.display = "block";
-          hasError = true;
-        } else {
-          document.getElementById("err-q-text").style.display = "none";
-        }
-
-        opts.forEach((opt, idx) => {
-          const errEl = document.getElementById(`err-opt-${idx}`);
-          if (!opt) {
-            if (errEl) errEl.style.display = "block";
-            hasError = true;
-          } else {
-            if (errEl) errEl.style.display = "none";
-          }
-        });
-
-        if (hasError) return;
-
-        Storage.saveCustomQuestion({
-          question: qVal,
-          options: opts,
-          correctAnswer: correctVal,
-          category: catVal,
-          difficulty: diffVal,
-          hint: hintVal,
-          explanation: expVal
-        }, quizState.editingCustomId);
-
-        showToast(quizState.editingCustomId ? "Question updated!" : "Custom question saved!", "success");
-        quizState.editingCustomId = null;
-        renderNavigation();
-        renderCustomBuilderView(container);
-      });
-    }
-
-    const cancelEditBtn = document.getElementById("cancel-edit-btn");
-    if (cancelEditBtn) {
-      cancelEditBtn.addEventListener("click", () => {
-        quizState.editingCustomId = null;
-        renderCustomBuilderView(container);
-      });
-    }
-
-    const clearFormBtn = document.getElementById("clear-form-btn");
-    if (clearFormBtn) {
-      clearFormBtn.addEventListener("click", () => {
-        form.reset();
-        updatePreview();
-      });
-    }
-
-    const launchCustomBtn = document.getElementById("launch-custom-quiz-btn");
-    if (launchCustomBtn) {
-      launchCustomBtn.addEventListener("click", () => {
-        if (typeof SoundEngine !== "undefined") SoundEngine.click();
-        initializeCustomQuiz();
-        renderActiveView();
-        if (quizState.isTimedMode) startActiveQuestionTimer();
-      });
-    }
-
-    container.querySelectorAll(".edit-custom-q-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        quizState.editingCustomId = btn.getAttribute("data-id");
-        renderCustomBuilderView(container);
-      });
-    });
-
-    container.querySelectorAll(".delete-custom-q-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const id = btn.getAttribute("data-id");
-        Storage.deleteCustomQuestion(id);
-        showToast("Custom question deleted", "info");
-        if (quizState.editingCustomId === id) quizState.editingCustomId = null;
-        renderNavigation();
-        renderCustomBuilderView(container);
-      });
-    });
-  }
-
-  // ============================================
-  // 7. STUDY BANK VIEW (Personal Revision)
+  // 6. STUDY BANK VIEW (Personal Revision)
   // ============================================
   let studyBankSearchQuery = "";
   let studyBankCatFilter = "all";

@@ -62,22 +62,14 @@ Built with a dark-first SaaS developer interface, high-contrast light theme, Web
 - **Attempt History Table**: Filterable by topic with timestamp, duration, score, and individual deletion.
 - Clean "Clear All Logs" action that updates all dependent metrics consistently.
 
-### 6. 🛠️ Structured Quiz Builder
-- Create custom multiple-choice questions with 4 answer choices.
-- Correct answer selection with topic and difficulty tags.
-- In-line validation messages preventing empty or malformed questions.
-- **Live Quiz Preview**: Real-time card updating as you type.
-- Edit and delete existing custom questions.
-- One-click **Start Custom Quiz** action.
-
-### 7. 📚 Study Bank Revision Workspace
+### 6. 📚 Study Bank Revision Workspace
 - Personal repository of bookmarked challenging questions.
 - Search and filter by topic or difficulty.
 - Toggle review status (**Mark Reviewed** / **Needs Review**).
 - One-click **Practice Saved Questions** drill.
 - Bookmark questions during a quiz or from Explore.
 
-### 8. 🎨 Design System & Accessibility
+### 7. 🎨 Design System & Accessibility
 - **Dark-First Theme**: Deep navy and charcoal palette with violet/purple primary accents.
 - **Refined Light Theme**: Crisp slate surfaces with high-contrast text.
 - Theme preference persisted in LocalStorage.
@@ -110,7 +102,7 @@ interactive-quiz-app-main/
 │
 ├── css/
 │   ├── global.css      # Design tokens, color themes, buttons, cards, typography
-│   └── style.css       # View-specific components (Hub, Explore, Runner, Analytics, Builder)
+│   └── style.css       # View-specific components (Hub, Explore, Runner, Analytics, Study Bank)
 │
 ├── js/
 │   ├── questions.js    # Comprehensive questions database across 8 domains

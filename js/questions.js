@@ -592,10 +592,7 @@ const defaultQuizQuestions = [
 // Helper methods for questions
 const QuestionService = {
   getAllQuestions: function () {
-    const custom = (typeof Storage !== "undefined" && Storage.getCustomQuestions) 
-      ? Storage.getCustomQuestions() 
-      : [];
-    return [...defaultQuizQuestions, ...custom];
+    return [...defaultQuizQuestions];
   },
 
   getCategories: function () {
