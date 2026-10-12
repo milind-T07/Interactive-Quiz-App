@@ -11,14 +11,22 @@
 }
 
 :root {
-  /* Brand Accents */
-  --accent-primary: #6366f1;
-  --accent-primary-hover: #4f46e5;
-  --accent-purple: #8b5cf6;
-  --accent-violet: #7c3aed;
-  --accent-glow: rgba(99, 102, 241, 0.18);
-  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.05) 100%);
+  /* Brand Accents (Violet/Purple Primary Accent with Restrained Cyan Highlights) */
+  --accent-primary: #8b5cf6;
+  --accent-primary-hover: #7c3aed;
+  --accent-primary-active: #6d28d9;
+  --accent-violet: #8b5cf6;
+  --accent-purple: #a855f7;
+  --accent-indigo: #6366f1;
+  --accent-cyan: #06b6d4;
+  --accent-cyan-hover: #0891b2;
+  --accent-cyan-subtle: rgba(6, 182, 212, 0.12);
+  --accent-glow: rgba(139, 92, 246, 0.24);
+  --accent-subtle: rgba(139, 92, 246, 0.12);
+  --accent-border: rgba(139, 92, 246, 0.28);
+  --gradient-brand: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  --gradient-brand-subtle: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(99, 102, 241, 0.05) 100%);
+  --gradient-cyan: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 
   /* State Colors */
   --color-success: #10b981;
@@ -28,6 +36,7 @@
   --color-danger-hover: #dc2626;
   --color-danger-bg: rgba(239, 68, 68, 0.12);
   --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
   --color-warning-bg: rgba(245, 158, 11, 0.12);
   --color-info: #06b6d4;
   --color-info-bg: rgba(6, 182, 212, 0.12);
@@ -51,53 +60,61 @@
 }
 
 /* --------------------------------------------
-   DARK THEME (Default)
+   DARK THEME (Default — Near-Black / Obsidian Navy)
    -------------------------------------------- */
 [data-theme="dark"] {
   --bg-base: #090d16;
-  --bg-surface: #0f172a;
-  --bg-card: #131d33;
-  --bg-card-hover: #172440;
-  --bg-input: #0b1120;
-  --bg-subtle: rgba(255, 255, 255, 0.03);
+  --bg-main: #0d121f;
+  --bg-surface: #101626;
+  --bg-card: rgba(16, 22, 38, 0.82);
+  --bg-card-hover: rgba(24, 33, 56, 0.95);
+  --bg-card-solid: #101626;
+  --bg-input: #0d1322;
+  --bg-subtle: rgba(255, 255, 255, 0.04);
+  --bg-subtle-hover: rgba(255, 255, 255, 0.07);
 
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-subtle-hover: rgba(255, 255, 255, 0.16);
-  --border-focus: rgba(99, 102, 241, 0.55);
+  --border-subtle-hover: rgba(139, 92, 246, 0.38);
+  --border-focus: rgba(139, 92, 246, 0.65);
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
+  --text-highlight: #c4b5fd;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 12px 30px -4px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 24px -4px rgba(99, 102, 241, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-lg: 0 16px 36px -8px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --shadow-glow: 0 0 24px -4px rgba(139, 92, 246, 0.25);
 }
 
 /* --------------------------------------------
-   LIGHT THEME (Refined, High Contrast)
+   LIGHT THEME (Clean, Modern High Contrast)
    -------------------------------------------- */
 [data-theme="light"] {
   --bg-base: #f8fafc;
+  --bg-main: #f1f5f9;
   --bg-surface: #ffffff;
   --bg-card: #ffffff;
   --bg-card-hover: #f8fafc;
+  --bg-card-solid: #ffffff;
   --bg-input: #ffffff;
-  --bg-subtle: rgba(0, 0, 0, 0.02);
+  --bg-subtle: rgba(15, 23, 42, 0.04);
+  --bg-subtle-hover: rgba(15, 23, 42, 0.08);
 
-  --border-subtle: #e2e8f0;
-  --border-subtle-hover: #cbd5e1;
-  --border-focus: rgba(99, 102, 241, 0.45);
+  --border-subtle: rgba(15, 23, 42, 0.09);
+  --border-subtle-hover: rgba(139, 92, 246, 0.35);
+  --border-focus: rgba(139, 92, 246, 0.55);
 
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-muted: #64748b;
+  --text-highlight: #6d28d9;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
-  --shadow-glow: 0 0 20px -2px rgba(99, 102, 241, 0.12);
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 20px -4px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 16px 36px -8px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 20px -2px rgba(139, 92, 246, 0.18);
 }
 
 /* --------------------------------------------
@@ -125,14 +142,14 @@ body {
 /* Subtle background illumination */
 [data-theme="dark"] body {
   background-image: 
-    radial-gradient(ellipse at 20% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse at 50% -10%, rgba(139, 92, 246, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 100%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
   background-attachment: fixed;
 }
 
 [data-theme="light"] body {
   background-image: 
-    radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.04) 0%, transparent 70%);
+    radial-gradient(ellipse at 50% -10%, rgba(139, 92, 246, 0.06) 0%, transparent 60%);
   background-attachment: fixed;
 }
 
@@ -190,6 +207,8 @@ code, kbd, pre {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -229,11 +248,22 @@ code, kbd, pre {
 .btn-primary {
   background: var(--gradient-brand);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.35);
 }
 
 .btn-primary:hover:not(:disabled) {
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-cyan {
+  background: var(--gradient-cyan);
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(6, 182, 212, 0.3);
+}
+
+.btn-cyan:hover:not(:disabled) {
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.45);
   transform: translateY(-1px);
 }
 

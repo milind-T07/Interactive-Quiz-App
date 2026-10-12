@@ -66,7 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 6. Keyboard Shortcuts Handler
+  // 6. Footer Links Navigation & Year
+  const yearEl = document.getElementById("footer-year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  document.querySelectorAll(".footer-link[data-footer-tab]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const tab = link.getAttribute("data-footer-tab");
+      UI.switchTab(tab);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  // 7. Keyboard Shortcuts Handler
   document.addEventListener("keydown", function (e) {
     // Escape key closes mobile drawer or active modals if open
     if (e.key === "Escape") {
@@ -74,10 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileDrawerOverlay.classList.remove("open");
         return;
       }
-      const dialog = document.getElementById("confirm-dialog");
-      if (dialog && dialog.open) {
-        dialog.close();
-        return;
+      const dialogs = ["confirm-dialog", "quiz-config-dialog", "goal-dialog"];
+      for (const dId of dialogs) {
+        const d = document.getElementById(dId);
+        if (d && d.open) {
+          d.close();
+          return;
+        }
       }
     }
 

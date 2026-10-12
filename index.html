@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='22' width='100' height='100' fill='%236366f1'/><path d='M30 35 L50 20 L70 35 L70 65 L50 80 L30 65 Z' fill='none' stroke='white' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='white'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='24' width='100' height='100' fill='%238b5cf6'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23ffffff' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif' font-weight='800'>QP</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="alternate icon" href="./favicon.ico" />
 
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -24,13 +26,7 @@
     <div class="header-inner container">
       <!-- Logo & Wordmark -->
       <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizePro Home">
-        <span class="brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m18 16 4-4-4-4"/>
-            <path d="m6 8-4 4 4 4"/>
-            <path d="m14.5 4-5 16"/>
-          </svg>
-        </span>
+        <span class="brand-icon">QP</span>
         <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
       </a>
 
@@ -67,7 +63,10 @@
   <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true">
     <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <div class="mobile-drawer-header">
-        <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <span class="brand-icon" style="width: 32px; height: 32px; font-size: 0.85rem;">QP</span>
+          <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        </div>
         <button type="button" class="action-btn" id="mobile-close-btn" aria-label="Close menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
@@ -109,6 +108,114 @@
     </div>
   </dialog>
 
+  <!-- Quiz Configuration Modal Dialog -->
+  <dialog class="app-dialog" id="quiz-config-dialog" aria-labelledby="config-dialog-title" style="max-width: 520px;">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div class="dialog-icon-wrap" style="background: var(--accent-subtle); color: var(--accent-primary);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="dialog-title" id="config-dialog-title">Custom Quiz Configuration</h3>
+          <p class="dialog-desc">Tailor question count, difficulty, and timer to your learning goals.</p>
+        </div>
+      </div>
+
+      <form id="quiz-config-form" method="dialog">
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+          <!-- Topic Selector -->
+          <div>
+            <label for="config-topic-select" class="form-label">Domain / Topic</label>
+            <select id="config-topic-select" class="form-select">
+              <option value="all">All Domains (Comprehensive Drill)</option>
+              <!-- Injected dynamically -->
+            </select>
+          </div>
+
+          <!-- Difficulty Selector -->
+          <div>
+            <label for="config-diff-select" class="form-label">Difficulty Level</label>
+            <select id="config-diff-select" class="form-select">
+              <option value="all">All Difficulties (Adaptive Mix)</option>
+              <option value="easy">Easy (Fundamentals & Syntax)</option>
+              <option value="medium">Medium (Architecture & Patterns)</option>
+              <option value="hard">Hard (Advanced & Deep Dives)</option>
+            </select>
+          </div>
+
+          <!-- Question Count Selector -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <div>
+              <label for="config-count-select" class="form-label">Question Count</label>
+              <select id="config-count-select" class="form-select">
+                <option value="5">5 Questions (Quick)</option>
+                <option value="10" selected>10 Questions (Standard)</option>
+                <option value="15">15 Questions (Thorough)</option>
+                <option value="all">Max Available</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="config-timer-select" class="form-label">Timer Mode</label>
+              <select id="config-timer-select" class="form-select">
+                <option value="20" selected>Timed (20s per Q)</option>
+                <option value="30">Timed (30s per Q)</option>
+                <option value="15">Speed Run (15s per Q)</option>
+                <option value="0">Untimed (Self-Paced)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Questions available feedback pill -->
+          <div id="config-pool-feedback" style="font-size: 0.825rem; color: var(--text-muted); background: var(--bg-subtle); padding: 0.45rem 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+            <span>Available Questions:</span>
+            <strong id="config-pool-count" style="color: var(--accent-primary);">--</strong>
+          </div>
+        </div>
+
+        <div class="dialog-actions">
+          <button type="button" class="btn btn-secondary" id="config-cancel-btn">Cancel</button>
+          <button type="button" class="btn btn-primary" id="config-start-btn">Start Assessment</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Learning Goal Modal Dialog -->
+  <dialog class="app-dialog" id="goal-dialog" aria-labelledby="goal-dialog-title">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div class="dialog-icon-wrap" style="background: var(--accent-subtle); color: var(--accent-primary);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="dialog-title" id="goal-dialog-title">Set Daily Learning Target</h3>
+          <p class="dialog-desc">Set your daily question objective to build consistent practice habits.</p>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <label for="goal-input" class="form-label">Target Questions Per Day</label>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <input type="number" id="goal-input" class="form-control" min="3" max="100" value="10" style="font-size: 1.1rem; font-weight: 700; width: 110px;" />
+          <span style="color: var(--text-secondary); font-size: 0.9rem;">questions per day</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem;">
+          Recommended: 10 questions daily (approx. 5 minutes).
+        </p>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-secondary" id="goal-cancel-btn">Cancel</button>
+        <button type="button" class="btn btn-primary" id="goal-save-btn">Save Target</button>
+      </div>
+    </div>
+  </dialog>
+
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
@@ -116,15 +223,29 @@
   <footer class="app-footer">
     <div class="container footer-content">
       <div class="footer-left">
-        <span class="footer-brand">QuizePro</span>
-        <span class="footer-tagline">Interactive Learning Platform for Developers</span>
+        <div class="footer-brand-wrap">
+          <span class="brand-icon" style="width: 28px; height: 28px; font-size: 0.75rem; border-radius: 6px;">QP</span>
+          <span class="footer-brand">QuizePro</span>
+        </div>
+        <span class="footer-tagline">Interactive Developer Assessment & Concept Mastery Platform</span>
       </div>
+
+      <div class="footer-center">
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#" class="footer-link" data-footer-tab="hub">Dashboard</a>
+          <a href="#" class="footer-link" data-footer-tab="explore">Explore</a>
+          <a href="#" class="footer-link" data-footer-tab="performance">Performance</a>
+          <a href="#" class="footer-link" data-footer-tab="bookmarks">Study Bank</a>
+        </nav>
+      </div>
+
       <div class="footer-right">
         <div class="footer-shortcuts">
           <span class="kbd-hint"><kbd>1</kbd>-<kbd>4</kbd> Select</span>
           <span class="kbd-hint"><kbd>Enter</kbd> Next</span>
+          <span class="kbd-hint"><kbd>Esc</kbd> Close</span>
         </div>
-        <p class="footer-copy">© 2026 QuizePro Platform. Built for developers.</p>
+        <p class="footer-copy">© <span id="footer-year">2026</span> QuizePro. Built for developers.</p>
       </div>
     </div>
   </footer>

@@ -300,55 +300,96 @@ const Storage = (function () {
         });
       }
 
-      // Achievements list calculated dynamically
+      // Achievements list calculated dynamically with difficulty tiers
+      const distinctCatsCount = Object.keys(categoryMap).length;
       const achievements = [
         {
           id: "ach_first",
           title: "First Step",
           desc: "Complete your first quiz session",
+          tier: "bronze",
+          tierLabel: "Bronze",
+          iconType: "zap",
           unlocked: totalQuizzes >= 1,
           progress: Math.min(1, totalQuizzes / 1),
-          metric: `${totalQuizzes}/1`
+          metric: `${Math.min(1, totalQuizzes)}/1 Quiz`
         },
         {
-          id: "ach_perfect",
-          title: "Perfectionist",
-          desc: "Score a flawless 100% on any quiz",
-          unlocked: bestScore === 100,
-          progress: bestScore === 100 ? 1 : (bestScore / 100),
-          metric: `${bestScore}%/100%`
+          id: "ach_explorer",
+          title: "Code Explorer",
+          desc: "Attempt quizzes in at least 2 distinct technical topics",
+          tier: "bronze",
+          tierLabel: "Bronze",
+          iconType: "compass",
+          unlocked: distinctCatsCount >= 2,
+          progress: Math.min(1, distinctCatsCount / 2),
+          metric: `${Math.min(2, distinctCatsCount)}/2 Topics`
         },
         {
           id: "ach_streak_3",
           title: "Consistent Learner",
           desc: "Maintain a 3-day active practice streak",
+          tier: "silver",
+          tierLabel: "Silver",
+          iconType: "flame",
           unlocked: streak >= 3,
           progress: Math.min(1, streak / 3),
-          metric: `${streak}/3 days`
-        },
-        {
-          id: "ach_master_10",
-          title: "Quiz Veteran",
-          desc: "Complete 10 total quizzes",
-          unlocked: totalQuizzes >= 10,
-          progress: Math.min(1, totalQuizzes / 10),
-          metric: `${totalQuizzes}/10`
+          metric: `${Math.min(3, streak)}/3 Days`
         },
         {
           id: "ach_speed_demon",
           title: "Speed Demon",
           desc: "Complete a quiz in under 45 seconds with >= 80% accuracy",
+          tier: "silver",
+          tierLabel: "Silver",
+          iconType: "timer",
           unlocked: history.some((h) => h.timeTakenSec > 0 && h.timeTakenSec <= 45 && h.percentage >= 80),
           progress: history.some((h) => h.timeTakenSec > 0 && h.timeTakenSec <= 45 && h.percentage >= 80) ? 1 : 0,
-          metric: history.some((h) => h.timeTakenSec > 0 && h.timeTakenSec <= 45 && h.percentage >= 80) ? "Done" : "Pending"
+          metric: history.some((h) => h.timeTakenSec > 0 && h.timeTakenSec <= 45 && h.percentage >= 80) ? "Completed" : "In Progress"
+        },
+        {
+          id: "ach_master_10",
+          title: "Quiz Veteran",
+          desc: "Complete 10 total quizzes across any subjects",
+          tier: "gold",
+          tierLabel: "Gold",
+          iconType: "trophy",
+          unlocked: totalQuizzes >= 10,
+          progress: Math.min(1, totalQuizzes / 10),
+          metric: `${Math.min(10, totalQuizzes)}/10 Quizzes`
         },
         {
           id: "ach_centurion",
           title: "Centurion",
           desc: "Answer 50 questions across all technical topics",
+          tier: "gold",
+          tierLabel: "Gold",
+          iconType: "target",
           unlocked: totalQuestions >= 50,
           progress: Math.min(1, totalQuestions / 50),
-          metric: `${totalQuestions}/50`
+          metric: `${Math.min(50, totalQuestions)}/50 Questions`
+        },
+        {
+          id: "ach_perfect",
+          title: "Perfectionist",
+          desc: "Score a flawless 100% on any completed quiz",
+          tier: "diamond",
+          tierLabel: "Diamond",
+          iconType: "star",
+          unlocked: bestScore === 100,
+          progress: bestScore === 100 ? 1 : (bestScore / 100),
+          metric: `${bestScore}% / 100%`
+        },
+        {
+          id: "ach_grandmaster",
+          title: "Grandmaster",
+          desc: "Complete 5+ quizzes with >= 85% average accuracy",
+          tier: "diamond",
+          tierLabel: "Diamond",
+          iconType: "crown",
+          unlocked: totalQuizzes >= 5 && averageAccuracy >= 85,
+          progress: totalQuizzes >= 5 ? Math.min(1, averageAccuracy / 85) : Math.min(0.9, (totalQuizzes / 5) * 0.8),
+          metric: totalQuizzes >= 5 ? `${averageAccuracy}% / 85%` : `${totalQuizzes}/5 Quizzes`
         }
       ];
 
@@ -366,8 +407,16 @@ const Storage = (function () {
         weakestTopic,
         weeklyActivity,
         achievements,
-        lastAttempt: history[0] || null
+        lastAttempt: history[0] || null,
+        todayDailyChallenge: this.getTodayDailyChallengeAttempt()
       };
+    },
+
+    getTodayDailyChallengeAttempt: function () {
+      const history = this.getHistory();
+      const now = new Date();
+      const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+      return history.find((h) => h.mode === "daily" && h.timestamp >= startOfToday) || null;
     }
   };
 })();

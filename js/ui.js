@@ -93,13 +93,11 @@ const UI = (function () {
     const desktopNav = document.getElementById("desktop-nav");
     const mobileLinks = document.getElementById("mobile-nav-links");
     const bookmarksCount = Storage.getBookmarks().length;
-    const customCount = Storage.getCustomQuestions().length;
 
     const navItems = [
-      { id: "hub", label: "Quiz Hub", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>` },
+      { id: "hub", label: "Dashboard", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>` },
       { id: "explore", label: "Explore", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>` },
       { id: "performance", label: "Performance", icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>` },
-      { id: "custom", label: "Quiz Builder", badge: customCount, icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>` },
       { id: "bookmarks", label: "Study Bank", badge: bookmarksCount, icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>` }
     ];
 
@@ -209,39 +207,37 @@ const UI = (function () {
       renderExploreView(root);
     } else if (quizState.activeTab === "performance") {
       renderPerformanceView(root);
-    } else if (quizState.activeTab === "custom") {
-      renderCustomBuilderView(root);
     } else if (quizState.activeTab === "bookmarks") {
       renderStudyBankView(root);
     }
   }
 
   // ============================================
-  // 1. QUIZ HUB VIEW
+  // 1. DASHBOARD / HOMEPAGE VIEW
   // ============================================
   function renderHubView(container) {
     const analytics = Storage.getAnalytics();
     const categories = QuestionService.getCategories();
     const allQuestions = QuestionService.getAllQuestions();
-    const customQs = Storage.getCustomQuestions();
 
-    // Goal progress calculation
-    const dailyGoal = analytics.dailyGoal || 10;
-    const todayAnswered = analytics.todayQuestionsCount;
-    const goalPct = Math.min(100, Math.round((todayAnswered / dailyGoal) * 100));
-
-    // Filter categories based on hub filter/search query
+    // Filter categories based on search query and active difficulty
     let catEntries = Object.entries(categories);
 
-    if (quizState.activeCategory !== "all") {
-      catEntries = catEntries.filter(([id]) => id === quizState.activeCategory);
+    if (quizState.hubSearchQuery && quizState.hubSearchQuery.trim()) {
+      const q = quizState.hubSearchQuery.toLowerCase().trim();
+      catEntries = catEntries.filter(([id, cat]) => 
+        cat.title.toLowerCase().includes(q) || 
+        cat.description.toLowerCase().includes(q) ||
+        id.toLowerCase().includes(q)
+      );
     }
 
-    if (quizState.hubSearchQuery) {
-      const q = quizState.hubSearchQuery.toLowerCase();
-      catEntries = catEntries.filter(([id, cat]) => 
-        cat.title.toLowerCase().includes(q) || cat.description.toLowerCase().includes(q)
-      );
+    if (quizState.activeDifficulty !== "all") {
+      // Keep categories that have questions for this difficulty
+      catEntries = catEntries.filter(([id]) => {
+        const catQs = allQuestions.filter((item) => item.category === id && item.difficulty === quizState.activeDifficulty);
+        return catQs.length > 0;
+      });
     }
 
     // Build Topic Cards HTML
@@ -250,56 +246,32 @@ const UI = (function () {
       const stats = QuestionService.getCategoryStats(id);
 
       return `
-        <div class="card card-hover topic-card fade-in" style="--topic-color: ${cat.color};" data-cat-id="${id}">
-          <div>
-            <div class="topic-card-header">
-              <div class="topic-icon-wrap">${cat.icon}</div>
-              <span class="badge badge-neutral">${catQs.length} Questions</span>
-            </div>
-            <h3 class="topic-title" style="margin-top: 0.85rem;">${escapeHTML(cat.title)}</h3>
-            <p class="topic-desc">${escapeHTML(cat.description)}</p>
+        <div class="topic-card fade-in" style="--topic-accent: ${cat.color};" data-cat-id="${id}">
+          <div class="topic-card-top">
+            <div class="topic-icon-box">${cat.icon}</div>
+            <span class="badge badge-neutral">${catQs.length} Questions</span>
           </div>
 
-          <div>
-            <div class="topic-meta-row">
-              <div class="topic-difficulty-pills">
-                <span class="diff-badge badge-easy">${stats.easy} Easy</span>
-                <span class="diff-badge badge-medium">${stats.medium} Med</span>
-                <span class="diff-badge badge-hard">${stats.hard} Hard</span>
-              </div>
-              <span class="start-action-link">
-                Start Quiz
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </span>
-            </div>
+          <div class="topic-card-body">
+            <h3 class="topic-card-title">${escapeHTML(cat.title)}</h3>
+            <p class="topic-card-desc">${escapeHTML(cat.description)}</p>
+          </div>
+
+          <div class="topic-meta-row">
+            <span>${stats.easy} Easy • ${stats.medium} Med • ${stats.hard} Hard</span>
+          </div>
+
+          <div class="topic-card-actions">
+            <button type="button" class="btn btn-primary topic-start-btn" data-cat-id="${id}">
+              Start Quiz
+            </button>
+            <button type="button" class="btn btn-secondary topic-gear-btn" data-cat-id="${id}" title="Configure custom options" aria-label="Configure ${escapeHTML(cat.title)} quiz">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </button>
           </div>
         </div>
       `;
     }).join("");
-
-    // Custom Category Card
-    if (customQs.length > 0 && (quizState.activeCategory === "all" || quizState.activeCategory === "custom")) {
-      topicCardsHTML += `
-        <div class="card card-hover topic-card fade-in" style="--topic-color: var(--accent-purple);" data-cat-id="custom">
-          <div>
-            <div class="topic-card-header">
-              <div class="topic-icon-wrap" style="color: var(--accent-purple);">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-              </div>
-              <span class="badge badge-neutral">${customQs.length} Custom Qs</span>
-            </div>
-            <h3 class="topic-title" style="margin-top: 0.85rem;">Custom User Quiz</h3>
-            <p class="topic-desc">Questions created by you in the Quiz Builder editor.</p>
-          </div>
-          <div>
-            <div class="topic-meta-row">
-              <span>Personal Collection</span>
-              <span class="start-action-link">Start Custom Quiz →</span>
-            </div>
-          </div>
-        </div>
-      `;
-    }
 
     if (!topicCardsHTML) {
       topicCardsHTML = `
@@ -309,277 +281,337 @@ const UI = (function () {
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
             <h3 class="empty-state-title">No Topics Found</h3>
-            <p class="empty-state-desc">No quiz topics matched your search "${escapeHTML(quizState.hubSearchQuery)}".</p>
-            <button type="button" class="btn btn-secondary" id="clear-hub-search-btn">Reset Search</button>
+            <p class="empty-state-desc">No technical domains matched your search criteria. Reset filters to explore all available skills.</p>
+            <button type="button" class="btn btn-secondary" id="empty-reset-filters-btn">Reset All Filters</button>
           </div>
         </div>
       `;
     }
 
-    // Continue Practicing card content
-    let continueHTML = "";
-    if (analytics.lastAttempt) {
-      continueHTML = `
-        <div class="card highlight-card continue-card fade-in">
-          <div class="highlight-card-top">
-            <div>
-              <span class="highlight-badge highlight-badge-daily">Continue Practicing</span>
-              <h3 class="highlight-title">Previous: ${escapeHTML(analytics.lastAttempt.categoryTitle)}</h3>
-              <p class="highlight-desc">Last scored <strong>${analytics.lastAttempt.score}/${analytics.lastAttempt.total} (${analytics.lastAttempt.percentage}%)</strong> on ${escapeHTML(analytics.lastAttempt.date)}. Ready to beat your score?</p>
-            </div>
-          </div>
-          <div style="display: flex; gap: 0.75rem; align-items: center;">
-            <button type="button" class="btn btn-primary btn-sm" id="resume-last-btn" data-cat="${escapeHTML(analytics.lastAttempt.category)}">
-              ⚡ Practice ${escapeHTML(analytics.lastAttempt.categoryTitle)}
-            </button>
-          </div>
-        </div>
-      `;
-    } else {
-      continueHTML = `
-        <div class="card highlight-card continue-card fade-in">
-          <div class="highlight-card-top">
-            <div>
-              <span class="highlight-badge highlight-badge-daily">Quick Start</span>
-              <h3 class="highlight-title">JavaScript & TypeScript</h3>
-              <p class="highlight-desc">Test your understanding of closures, async microtasks, and TypeScript type systems.</p>
-            </div>
-          </div>
-          <div>
-            <button type="button" class="btn btn-primary btn-sm" id="quick-start-js-btn">
-              ⚡ Start JavaScript Quiz
-            </button>
-          </div>
-        </div>
-      `;
-    }
+    // Hero Streak Widget Configuration
+    const isStreakActive = (analytics.streak || 0) > 0;
+    const miniTrackHTML = (analytics.weeklyActivity || []).map((day) => `
+      <div class="streak-day-cell ${day.questionsCount > 0 ? 'active' : ''} ${day.isToday ? 'today' : ''}" title="${day.dayLabel}: ${day.questionsCount} questions">
+        <span class="streak-day-char">${day.dayLabel.charAt(0)}</span>
+        <span class="streak-dot-mark"></span>
+      </div>
+    `).join("");
 
-    container.innerHTML = `
-      <div class="fade-in">
-        <!-- Welcome Hero -->
-        <div class="hub-header">
-          <div class="welcome-row">
-            <div class="welcome-text">
-              <h1>Level Up Your Tech Mastery</h1>
-              <p>Practice web architecture, algorithms, and full-stack technical concepts with focused, timed developer quizzes.</p>
-            </div>
-
-            <!-- Stats Summary Strip -->
-            <div class="stats-summary-strip">
-              <div class="stat-pill">
-                <span class="stat-pill-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-                </span>
-                <div>
-                  <span class="stat-pill-val">${analytics.totalQuizzes}</span>
-                  <span class="stat-pill-label"> Quizzes</span>
-                </div>
-              </div>
-
-              <div class="stat-pill">
-                <span class="stat-pill-icon" style="color: var(--color-success);">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                </span>
-                <div>
-                  <span class="stat-pill-val">${analytics.averageAccuracy}%</span>
-                  <span class="stat-pill-label"> Accuracy</span>
-                </div>
-              </div>
-
-              <div class="stat-pill">
-                <span class="stat-pill-icon" style="color: var(--color-warning);">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
-                </span>
-                <div>
-                  <span class="stat-pill-val">${analytics.streak}</span>
-                  <span class="stat-pill-label"> Day Streak</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight Widgets: Daily Challenge & Daily Goal -->
-          <div class="highlight-grid">
-            <!-- Daily Challenge -->
-            <div class="card highlight-card fade-in">
-              <div class="highlight-card-top">
-                <div>
-                  <span class="highlight-badge highlight-badge-daily">Daily Challenge</span>
-                  <h3 class="highlight-title">Today's 5-Question Drill</h3>
-                  <p class="highlight-desc">Curated multi-discipline questions updated every 24 hours. Test your breadth of knowledge.</p>
-                </div>
-              </div>
-              <div>
-                <button type="button" class="btn btn-primary btn-sm" id="start-daily-challenge-btn">
-                  ⚡ Launch Daily Challenge
-                </button>
-              </div>
-            </div>
-
-            <!-- Daily Goal Tracker -->
-            <div class="card highlight-card fade-in">
-              <div class="highlight-card-top">
-                <div>
-                  <span class="highlight-badge highlight-badge-goal">Daily Learning Goal</span>
-                  <h3 class="highlight-title">${todayAnswered} / ${dailyGoal} Questions</h3>
-                  <p class="highlight-desc">Progress towards your daily learning objective.</p>
-                </div>
-                <button type="button" class="btn btn-ghost btn-sm" id="edit-goal-btn" title="Adjust daily goal">
-                  Edit Goal
-                </button>
-              </div>
-              <div class="goal-progress-wrap">
-                <div class="goal-progress-header">
-                  <span>${goalPct}% Achieved</span>
-                  <span>${Math.max(0, dailyGoal - todayAnswered)} remaining</span>
-                </div>
-                <div class="goal-progress-bar">
-                  <div class="goal-progress-fill" style="width: ${goalPct}%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Continue Practicing -->
-            ${continueHTML}
-          </div>
+    const heroStreakHTML = `
+      <div class="hero-streak-card fade-in" aria-label="Learning Streak Tracker">
+        <div class="streak-flame-box ${isStreakActive ? 'burning' : 'idle'}">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="streak-flame-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="streakFlameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444" />
+                <stop offset="55%" stop-color="#f59e0b" />
+                <stop offset="100%" stop-color="#fef08a" />
+              </linearGradient>
+            </defs>
+            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" fill="url(#streakFlameGrad)" />
+          </svg>
         </div>
 
-        <!-- Catalog Toolbar -->
-        <div class="section-toolbar">
-          <div class="section-title-wrap">
-            <h2>Technical Domains</h2>
-            <p>Select a topic to start an assessment or configure custom options below.</p>
+        <div class="streak-details">
+          <div class="streak-badge-row">
+            <span class="streak-active-pill ${isStreakActive ? 'on-fire' : 'standby'}">
+              <span class="streak-pulse-dot"></span>
+              ${isStreakActive ? 'Active Streak' : 'Daily Streak'}
+            </span>
+            <span class="streak-status-text">
+              ${isStreakActive ? 'Consistency on track' : 'Start streak today'}
+            </span>
           </div>
 
-          <div class="hub-filter-controls">
-            <!-- Search -->
-            <div class="search-box">
-              <span class="search-icon">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              </span>
-              <input type="text" id="hub-search-input" class="form-control search-input" placeholder="Search topics..." value="${escapeHTML(quizState.hubSearchQuery)}" />
-            </div>
-
-            <!-- Difficulty Filter -->
-            <select id="hub-difficulty-select" class="filter-select">
-              <option value="all" ${quizState.activeDifficulty === 'all' ? 'selected' : ''}>All Difficulties</option>
-              <option value="easy" ${quizState.activeDifficulty === 'easy' ? 'selected' : ''}>Easy Only</option>
-              <option value="medium" ${quizState.activeDifficulty === 'medium' ? 'selected' : ''}>Medium Only</option>
-              <option value="hard" ${quizState.activeDifficulty === 'hard' ? 'selected' : ''}>Hard Only</option>
-            </select>
-
-            <!-- Timed Switch -->
-            <label class="timed-toggle-label" title="20s countdown per question">
-              <input type="checkbox" id="hub-timed-toggle" class="timed-checkbox" ${quizState.isTimedMode ? 'checked' : ''} />
-              <span class="timed-slider"></span>
-              <span>Timed (20s)</span>
-            </label>
-
-            <!-- Quick Start -->
-            <button type="button" class="btn btn-primary btn-sm" id="hub-start-now-btn">
-              ⚡ Start Quiz
-            </button>
+          <div class="streak-val-row">
+            <span class="streak-number">${analytics.streak}</span>
+            <span class="streak-unit">${analytics.streak === 1 ? 'Day Streak' : 'Days Streak'}</span>
           </div>
-        </div>
 
-        <!-- Topic Cards Grid -->
-        <div class="topic-grid">
-          ${topicCardsHTML}
+          <div class="streak-week-track" aria-label="Past 7 days activity">
+            ${miniTrackHTML}
+          </div>
         </div>
       </div>
     `;
 
-    // Attach Event Listeners
+    const isFiltersActive = quizState.hubSearchQuery.trim() !== "" || quizState.activeDifficulty !== "all";
+
+    container.innerHTML = `
+      <div class="fade-in">
+        <!-- 1. Refined Compact Hero -->
+        <section class="hero-banner" aria-label="Welcome Overview">
+          <div class="hero-content">
+            <h1 class="hero-heading">Master Your Next Concept.</h1>
+            <p class="hero-subtitle">Practice technical concepts and algorithm drills through focused interactive quizzes with instant explanations.</p>
+          </div>
+
+          <div class="hero-streak-container">
+            ${heroStreakHTML}
+          </div>
+        </section>
+
+        <!-- 2. Technical Domains Section -->
+        <section class="topics-section" id="topics-catalog" aria-label="Explore Technical Topics">
+          <div class="topics-header-wrap">
+            <div class="topics-title-group">
+              <h2>Explore Technical Topics</h2>
+              <p>Choose a skill and start practicing.</p>
+            </div>
+          </div>
+
+          <!-- Toolbar -->
+          <div class="topics-toolbar">
+            <div class="toolbar-left">
+              <!-- Search Input -->
+              <div class="search-box">
+                <span class="search-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </span>
+                <input type="text" id="hub-search-input" class="form-control search-input" placeholder="Search topics or skills..." value="${escapeHTML(quizState.hubSearchQuery)}" aria-label="Search technical topics" />
+              </div>
+
+              <!-- Difficulty Segmented Control -->
+              <div class="segmented-control" role="group" aria-label="Filter topics by difficulty">
+                <button type="button" class="segment-btn ${quizState.activeDifficulty === 'all' ? 'active' : ''}" data-diff="all">All</button>
+                <button type="button" class="segment-btn ${quizState.activeDifficulty === 'easy' ? 'active' : ''}" data-diff="easy">Easy</button>
+                <button type="button" class="segment-btn ${quizState.activeDifficulty === 'medium' ? 'active' : ''}" data-diff="medium">Medium</button>
+                <button type="button" class="segment-btn ${quizState.activeDifficulty === 'hard' ? 'active' : ''}" data-diff="hard">Hard</button>
+              </div>
+            </div>
+
+            <div class="toolbar-right">
+              ${isFiltersActive ? `
+                <button type="button" class="btn btn-ghost btn-sm" id="hub-reset-btn" style="color: var(--text-muted);">
+                  Reset Filters
+                </button>
+              ` : ''}
+
+              <button type="button" class="btn btn-secondary btn-sm" id="hub-open-config-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <span>Customize Quiz</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Topics Grid -->
+          <div class="topics-grid" id="topics-grid-container">
+            ${topicCardsHTML}
+          </div>
+        </section>
+      </div>
+    `;
+
+    // --- Wire Event Listeners ---
+    // Search and Filters
     const searchInput = document.getElementById("hub-search-input");
     if (searchInput) {
       searchInput.addEventListener("input", (e) => {
         quizState.hubSearchQuery = e.target.value;
         renderHubView(container);
+        // Maintain focus on search input after re-render
+        const reSearch = document.getElementById("hub-search-input");
+        if (reSearch) {
+          reSearch.focus();
+          reSearch.setSelectionRange(reSearch.value.length, reSearch.value.length);
+        }
       });
     }
 
-    const clearSearchBtn = document.getElementById("clear-hub-search-btn");
-    if (clearSearchBtn) {
-      clearSearchBtn.addEventListener("click", () => {
+    const resetBtn = document.getElementById("hub-reset-btn");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
         quizState.hubSearchQuery = "";
+        quizState.activeDifficulty = "all";
         renderHubView(container);
       });
     }
 
-    const diffSelect = document.getElementById("hub-difficulty-select");
-    if (diffSelect) {
-      diffSelect.addEventListener("change", (e) => {
-        quizState.activeDifficulty = e.target.value;
+    const emptyResetBtn = document.getElementById("empty-reset-filters-btn");
+    if (emptyResetBtn) {
+      emptyResetBtn.addEventListener("click", () => {
+        quizState.hubSearchQuery = "";
+        quizState.activeDifficulty = "all";
         renderHubView(container);
       });
     }
 
-    const timedToggle = document.getElementById("hub-timed-toggle");
-    if (timedToggle) {
-      timedToggle.addEventListener("change", (e) => {
-        quizState.isTimedMode = e.target.checked;
-      });
-    }
-
-    const startDailyBtn = document.getElementById("start-daily-challenge-btn");
-    if (startDailyBtn) {
-      startDailyBtn.addEventListener("click", () => {
-        if (typeof SoundEngine !== "undefined") SoundEngine.click();
-        initializeDailyChallengeQuiz();
-        renderActiveView();
-        if (quizState.isTimedMode) startActiveQuestionTimer();
-      });
-    }
-
-    const resumeBtn = document.getElementById("resume-last-btn");
-    if (resumeBtn) {
-      resumeBtn.addEventListener("click", () => {
-        const cat = resumeBtn.getAttribute("data-cat") || "all";
-        startStandardQuizRun(cat, quizState.activeDifficulty);
-      });
-    }
-
-    const quickStartJsBtn = document.getElementById("quick-start-js-btn");
-    if (quickStartJsBtn) {
-      quickStartJsBtn.addEventListener("click", () => {
-        startStandardQuizRun("javascript", "all");
-      });
-    }
-
-    const startNowBtn = document.getElementById("hub-start-now-btn");
-    if (startNowBtn) {
-      startNowBtn.addEventListener("click", () => {
-        startStandardQuizRun(quizState.activeCategory, quizState.activeDifficulty);
-      });
-    }
-
-    const editGoalBtn = document.getElementById("edit-goal-btn");
-    if (editGoalBtn) {
-      editGoalBtn.addEventListener("click", () => {
-        const input = prompt("Set your daily learning goal (number of questions):", dailyGoal);
-        if (input !== null) {
-          const num = parseInt(input, 10);
-          if (!isNaN(num) && num > 0) {
-            Storage.setDailyGoal(num);
-            showToast(`Daily goal updated to ${num} questions`, "success");
-            renderHubView(container);
-          }
-        }
-      });
-    }
-
-    container.querySelectorAll(".topic-card").forEach((card) => {
-      card.addEventListener("click", () => {
-        const catId = card.getAttribute("data-cat-id");
-        if (catId === "custom") {
-          initializeCustomQuiz();
-          renderActiveView();
-          if (quizState.isTimedMode) startActiveQuestionTimer();
-        } else {
-          startStandardQuizRun(catId, quizState.activeDifficulty);
-        }
+    container.querySelectorAll(".segment-btn[data-diff]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        quizState.activeDifficulty = btn.getAttribute("data-diff");
+        renderHubView(container);
       });
     });
+
+    // Customize Quiz Modal
+    const customizeBtn = document.getElementById("hub-open-config-btn");
+    if (customizeBtn) {
+      customizeBtn.addEventListener("click", () => {
+        showQuizConfigModal("all");
+      });
+    }
+
+    // Topic Cards Actions
+    container.querySelectorAll(".topic-start-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const catId = btn.getAttribute("data-cat-id");
+        startStandardQuizRun(catId, quizState.activeDifficulty);
+      });
+    });
+
+    container.querySelectorAll(".topic-gear-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const catId = btn.getAttribute("data-cat-id");
+        showQuizConfigModal(catId);
+      });
+    });
+
+    container.querySelectorAll(".topic-card").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        // If clicking a button inside, let button handler execute
+        if (e.target.closest("button")) return;
+        const catId = card.getAttribute("data-cat-id");
+        startStandardQuizRun(catId, quizState.activeDifficulty);
+      });
+    });
+  }
+
+  // --- Modal Helpers ---
+  function showGoalModal() {
+    const dialog = document.getElementById("goal-dialog");
+    const input = document.getElementById("goal-input");
+    const saveBtn = document.getElementById("goal-save-btn");
+    const cancelBtn = document.getElementById("goal-cancel-btn");
+
+    if (!dialog || !input || !saveBtn || !cancelBtn) {
+      const cur = Storage.getDailyGoal();
+      const val = prompt("Set daily question target:", cur);
+      if (val !== null) {
+        const num = parseInt(val, 10);
+        if (!isNaN(num) && num > 0) {
+          Storage.setDailyGoal(num);
+          showToast(`Daily target set to ${num} questions`, "success");
+          renderActiveView();
+        }
+      }
+      return;
+    }
+
+    input.value = Storage.getDailyGoal();
+
+    const handleSave = () => {
+      const num = parseInt(input.value, 10);
+      if (!isNaN(num) && num >= 1 && num <= 100) {
+        Storage.setDailyGoal(num);
+        cleanup();
+        dialog.close();
+        showToast(`Daily target updated to ${num} questions`, "success");
+        renderActiveView();
+      } else {
+        showToast("Please enter a valid target between 1 and 100", "danger");
+      }
+    };
+
+    const handleCancel = () => {
+      cleanup();
+      dialog.close();
+    };
+
+    function cleanup() {
+      saveBtn.removeEventListener("click", handleSave);
+      cancelBtn.removeEventListener("click", handleCancel);
+    }
+
+    saveBtn.addEventListener("click", handleSave);
+    cancelBtn.addEventListener("click", handleCancel);
+
+    dialog.showModal();
+  }
+
+  function showQuizConfigModal(preselectedCategory = "all") {
+    const dialog = document.getElementById("quiz-config-dialog");
+    const topicSelect = document.getElementById("config-topic-select");
+    const diffSelect = document.getElementById("config-diff-select");
+    const countSelect = document.getElementById("config-count-select");
+    const timerSelect = document.getElementById("config-timer-select");
+    const poolCount = document.getElementById("config-pool-count");
+    const startBtn = document.getElementById("config-start-btn");
+    const cancelBtn = document.getElementById("config-cancel-btn");
+
+    if (!dialog || !topicSelect || !startBtn) return;
+
+    // Populate topic dropdown
+    const categories = QuestionService.getCategories();
+    topicSelect.innerHTML = `
+      <option value="all">All Domains (Comprehensive Drill)</option>
+      ${Object.values(categories).map((c) => `
+        <option value="${c.id}" ${preselectedCategory === c.id ? 'selected' : ''}>${escapeHTML(c.title)}</option>
+      `).join("")}
+    `;
+
+    diffSelect.value = quizState.activeDifficulty;
+
+    // Update pool count feedback
+    function updatePoolCount() {
+      const cat = topicSelect.value;
+      const diff = diffSelect.value;
+      let pool = QuestionService.getAllQuestions();
+      if (cat !== "all") pool = pool.filter((q) => q.category === cat);
+      if (diff !== "all") pool = pool.filter((q) => q.difficulty === diff);
+      if (poolCount) poolCount.textContent = `${pool.length} Questions in pool`;
+    }
+
+    updatePoolCount();
+    topicSelect.addEventListener("change", updatePoolCount);
+    diffSelect.addEventListener("change", updatePoolCount);
+
+    const handleStart = (e) => {
+      e.preventDefault();
+      const cat = topicSelect.value;
+      const diff = diffSelect.value;
+      const countVal = countSelect.value;
+      const timerVal = parseInt(timerSelect.value, 10);
+      const isTimed = timerVal > 0;
+
+      const loaded = initializeConfiguredQuiz({
+        category: cat,
+        difficulty: diff,
+        count: countVal,
+        isTimed: isTimed,
+        timeLimit: isTimed ? timerVal : 20,
+        shuffle: true
+      });
+
+      cleanup();
+      dialog.close();
+
+      if (loaded > 0) {
+        if (typeof SoundEngine !== "undefined") SoundEngine.click();
+        renderActiveView();
+        if (quizState.isTimedMode) startActiveQuestionTimer();
+      } else {
+        showToast("No questions available for this configuration.", "danger");
+      }
+    };
+
+    const handleCancel = () => {
+      cleanup();
+      dialog.close();
+    };
+
+    function cleanup() {
+      startBtn.removeEventListener("click", handleStart);
+      cancelBtn.removeEventListener("click", handleCancel);
+      topicSelect.removeEventListener("change", updatePoolCount);
+      diffSelect.removeEventListener("change", updatePoolCount);
+    }
+
+    startBtn.addEventListener("click", handleStart);
+    cancelBtn.addEventListener("click", handleCancel);
+
+    dialog.showModal();
   }
 
   function startStandardQuizRun(category = "all", difficulty = "all") {
@@ -1385,59 +1417,241 @@ const UI = (function () {
     let history = Storage.getHistory();
     const categories = QuestionService.getCategories();
 
-    // Weekly activity chart
-    const maxDayQuestions = Math.max(1, ...analytics.weeklyActivity.map((w) => w.questionsCount));
-    const weeklyBarsHTML = analytics.weeklyActivity.map((d) => {
-      const heightPct = Math.max(8, Math.round((d.questionsCount / maxDayQuestions) * 100));
+    // 1. Last 5 Exam Telemetry Calculation (Fit in single row)
+    const recent5 = history.slice(0, 5); // Index 0 is newest
+    const recentAvgAcc = recent5.length > 0 
+      ? Math.round(recent5.reduce((sum, h) => sum + (h.percentage || 0), 0) / recent5.length)
+      : 0;
+
+    const examCardsHTML = Array.from({ length: 5 }, (_, i) => {
+      const exam = recent5[i];
+      if (exam) {
+        const radius = 18;
+        const circ = 2 * Math.PI * radius; // ~113.1
+        const pct = Math.min(100, Math.max(0, Math.round(exam.percentage || 0)));
+        const offset = (circ * (1 - pct / 100)).toFixed(2);
+        
+        let strokeColor = "#10b981"; // emerald
+        if (pct < 60) strokeColor = "#f43f5e"; // rose
+        else if (pct < 80) strokeColor = "#f59e0b"; // amber
+
+        const isLatest = i === 0;
+        const examNum = history.length - i;
+        const catObj = categories[exam.category] || null;
+        const diffBadgeClass = `badge-${exam.difficulty || 'medium'}`;
+
+        return `
+          <div class="card exam-stat-card ${isLatest ? 'is-latest' : ''} fade-in">
+            <div class="exam-card-head">
+              <span class="exam-number-tag">Exam #${examNum}</span>
+              <div style="display:flex; align-items:center; gap: 4px;">
+                ${isLatest ? `<span class="badge badge-sm badge-latest">Latest</span>` : ''}
+                <span class="badge badge-sm ${diffBadgeClass}">${escapeHTML(exam.difficulty || 'med')}</span>
+              </div>
+            </div>
+
+            <!-- SVG Gauge Meter -->
+            <div class="exam-gauge-wrap">
+              <svg class="exam-gauge-svg" viewBox="0 0 48 48">
+                <circle class="exam-gauge-track" cx="24" cy="24" r="${radius}" />
+                <circle class="exam-gauge-bar" cx="24" cy="24" r="${radius}" 
+                  stroke="${strokeColor}" 
+                  stroke-dasharray="${circ.toFixed(2)}" 
+                  stroke-dashoffset="${offset}" />
+              </svg>
+              <div class="exam-gauge-center-text">
+                <span class="exam-gauge-pct">${pct}%</span>
+                <span class="exam-gauge-sub">ACC</span>
+              </div>
+            </div>
+
+            <div class="exam-topic-tag" title="${escapeHTML(exam.categoryTitle || 'General')}">
+              <span class="exam-topic-dot" style="background: ${catObj ? catObj.color : 'var(--accent-primary)'};"></span>
+              <span class="exam-topic-name">${escapeHTML(exam.categoryTitle || 'General')}</span>
+            </div>
+
+            <div class="exam-stats-strip">
+              <div class="exam-strip-stat">
+                <span class="exam-stat-value">${exam.score}/${exam.total}</span>
+                <span class="exam-stat-label">Score</span>
+              </div>
+              <div class="exam-strip-div"></div>
+              <div class="exam-strip-stat">
+                <span class="exam-stat-value">${exam.timeTakenSec}s</span>
+                <span class="exam-stat-label">Time</span>
+              </div>
+              <div class="exam-strip-div"></div>
+              <div class="exam-strip-stat">
+                <span class="exam-stat-value">${escapeHTML(exam.date.split(',')[0] || exam.date)}</span>
+                <span class="exam-stat-label">Date</span>
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        const slotNum = i + 1;
+        return `
+          <div class="card exam-stat-card is-empty fade-in">
+            <div class="exam-card-head">
+              <span class="exam-number-tag muted">Slot #${slotNum}</span>
+              <span class="badge badge-sm badge-slot-pending">Awaiting</span>
+            </div>
+
+            <div class="exam-gauge-wrap is-empty">
+              <svg class="exam-gauge-svg" viewBox="0 0 48 48">
+                <circle class="exam-gauge-track-empty" cx="24" cy="24" r="18" />
+              </svg>
+              <div class="exam-gauge-center-text">
+                <span class="exam-gauge-empty-dash">—</span>
+              </div>
+            </div>
+
+            <div class="exam-topic-tag muted">
+              <span class="exam-topic-dot muted"></span>
+              <span class="exam-topic-name">Unattempted Slot</span>
+            </div>
+
+            <div class="exam-empty-cta">
+              <span>Complete quiz to log</span>
+            </div>
+          </div>
+        `;
+      }
+    }).join("");
+
+    // 2. GitHub Contribution Calendar Calculation (BASED ON TESTS / QUIZZES COMPLETED)
+    const monthsArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const today = new Date();
+    const todayDayOfWeek = today.getDay(); // 0 = Sun, 6 = Sat
+    const numWeeks = 52;
+    const startDate = new Date(today);
+    startDate.setDate(today.getDate() - todayDayOfWeek - ((numWeeks - 1) * 7));
+    startDate.setHours(0, 0, 0, 0);
+
+    const historyByDate = {};
+    history.forEach((h) => {
+      if (!h.timestamp) return;
+      const d = new Date(h.timestamp);
+      const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+      historyByDate[key] = (historyByDate[key] || 0) + 1; // 1 test / quiz completed
+    });
+
+    let totalYearTests = 0;
+    let activeDaysCount = 0;
+    let lastMonth = -1;
+    const monthHeaderCols = {};
+
+    let scanDate = new Date(startDate);
+    for (let w = 0; w < numWeeks; w++) {
+      const m = scanDate.getMonth();
+      if (m !== lastMonth && scanDate.getDate() <= 14) {
+        monthHeaderCols[w] = monthsArr[m];
+        lastMonth = m;
+      }
+      scanDate.setDate(scanDate.getDate() + 7);
+    }
+
+    const monthsHeaderHTML = Array.from({ length: numWeeks }, (_, w) => `
+      <div class="contrib-month-cell">
+        ${monthHeaderCols[w] ? `<span class="contrib-month-text">${monthHeaderCols[w]}</span>` : ''}
+      </div>
+    `).join("");
+
+    let currDate = new Date(startDate);
+    const weeksColumnsHTML = Array.from({ length: numWeeks }, () => {
+      const daysHTML = Array.from({ length: 7 }, () => {
+        const key = `${currDate.getFullYear()}-${String(currDate.getMonth() + 1).padStart(2, "0")}-${String(currDate.getDate()).padStart(2, "0")}`;
+        const count = historyByDate[key] || 0;
+        const isFuture = currDate > today;
+        const isToday = currDate.toDateString() === today.toDateString();
+        const formattedDate = currDate.toLocaleDateString(undefined, {
+          weekday: 'short',
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric'
+        });
+
+        if (!isFuture && count > 0) {
+          totalYearTests += count;
+          activeDaysCount++;
+        }
+
+        let level = 0;
+        if (count > 0) {
+          if (count === 1) level = 1;
+          else if (count === 2) level = 2;
+          else if (count <= 4) level = 3;
+          else level = 4;
+        }
+
+        const tooltip = isFuture 
+          ? '' 
+          : (count > 0 
+              ? `${count} ${count === 1 ? 'test' : 'tests'} completed on ${formattedDate}` 
+              : `No tests on ${formattedDate}`);
+
+        const cellHTML = isFuture
+          ? `<div class="contrib-cell is-future"></div>`
+          : `<div class="contrib-cell level-${level} ${isToday ? 'is-today' : ''}" data-tooltip="${escapeHTML(tooltip)}"></div>`;
+
+        currDate.setDate(currDate.getDate() + 1);
+        return cellHTML;
+      }).join("");
+
+      return `<div class="contrib-week-col">${daysHTML}</div>`;
+    }).join("");
+
+    // 3. Achievements with Difficulty Tiers
+    const ACH_ICONS = {
+      zap: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+      compass: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
+      flame: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
+      timer: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+      trophy: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>`,
+      target: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
+      star: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
+      crown: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>`
+    };
+
+    const unlockedCount = analytics.achievements.filter((a) => a.unlocked).length;
+    const bronzeCount = analytics.achievements.filter((a) => a.tier === "bronze").length;
+    const silverCount = analytics.achievements.filter((a) => a.tier === "silver").length;
+    const goldCount = analytics.achievements.filter((a) => a.tier === "gold").length;
+    const diamondCount = analytics.achievements.filter((a) => a.tier === "diamond").length;
+
+    const achievementsHTML = analytics.achievements.map((ach) => {
+      const iconSvg = ACH_ICONS[ach.iconType] || ACH_ICONS.zap;
+      const pct = Math.round(ach.progress * 100);
       return `
-        <div class="bar-col" title="${d.dayLabel} (${d.dateLabel}): ${d.questionsCount} questions, ${d.quizzesCount} quizzes">
-          <span class="bar-val-hint">${d.questionsCount > 0 ? d.questionsCount : ''}</span>
-          <div class="bar-pill ${d.questionsCount > 0 ? 'has-activity' : ''} ${d.isToday ? 'today' : ''}" style="height: ${heightPct}%;"></div>
-          <span class="bar-label">${d.dayLabel}</span>
+        <div class="card achievement-card tier-${ach.tier} ${ach.unlocked ? 'unlocked' : 'locked'} fade-in" data-tier="${ach.tier}">
+          <div class="ach-card-top">
+            <div class="ach-icon-container ${ach.unlocked ? 'unlocked' : ''}">
+              ${iconSvg}
+              ${ach.unlocked ? `<span class="ach-badge-check" title="Unlocked">✓</span>` : `<span class="ach-badge-lock" title="Locked"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>`}
+            </div>
+            <div class="ach-badges-stack">
+              <span class="ach-tier-pill tier-${ach.tier}">${ach.tierLabel}</span>
+              ${ach.unlocked 
+                ? `<span class="badge badge-sm badge-success" style="font-size: 0.65rem; padding: 0.15rem 0.45rem;">Unlocked</span>` 
+                : `<span class="badge badge-sm badge-muted" style="font-size: 0.65rem; padding: 0.15rem 0.45rem;">In Progress</span>`}
+            </div>
+          </div>
+          <div class="ach-body">
+            <h4 class="ach-title">${escapeHTML(ach.title)}</h4>
+            <p class="ach-desc">${escapeHTML(ach.desc)}</p>
+          </div>
+          <div class="ach-progress-section">
+            <div class="ach-metric-labels">
+              <span class="ach-metric-val">${escapeHTML(ach.metric)}</span>
+              <span class="ach-metric-pct">${pct}%</span>
+            </div>
+            <div class="ach-prog-bar">
+              <div class="ach-prog-fill tier-${ach.tier}" style="width: ${pct}%;"></div>
+            </div>
+          </div>
         </div>
       `;
     }).join("");
-
-    // Category breakdown bars
-    let categoryBarsHTML = "";
-    if (analytics.categoryBreakdown.length === 0) {
-      categoryBarsHTML = `<p style="color: var(--text-muted); font-size: 0.9rem; padding: 1.5rem 0;">No category attempts recorded yet. Take a quiz to populate topic mastery analytics!</p>`;
-    } else {
-      categoryBarsHTML = analytics.categoryBreakdown.map((c) => `
-        <div>
-          <div class="breakdown-row-header">
-            <span>${escapeHTML(c.title)}</span>
-            <span><strong>${c.accuracy}%</strong> (${c.attempts} ${c.attempts === 1 ? 'quiz' : 'quizzes'})</span>
-          </div>
-          <div class="topic-prog-track">
-            <div class="topic-prog-fill" style="width: ${c.accuracy}%;"></div>
-          </div>
-        </div>
-      `).join("");
-    }
-
-    // Achievements cards
-    const achievementsHTML = analytics.achievements.map((ach) => `
-      <div class="card achievement-card ${ach.unlocked ? 'unlocked' : ''} fade-in">
-        <div class="achievement-icon">
-          ${ach.unlocked ? `
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z"/></svg>
-          ` : `
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
-          `}
-        </div>
-        <div class="achievement-info" style="flex:1;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <h4>${escapeHTML(ach.title)}</h4>
-            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted);">${escapeHTML(ach.metric)}</span>
-          </div>
-          <p>${escapeHTML(ach.desc)}</p>
-          <div class="topic-prog-track" style="height: 4px;">
-            <div class="topic-prog-fill" style="width: ${Math.round(ach.progress * 100)}%;"></div>
-          </div>
-        </div>
-      </div>
-    `).join("");
 
     // History Table Rows
     let historyRowsHTML = "";
@@ -1510,48 +1724,146 @@ const UI = (function () {
           </div>
         </div>
 
-        <!-- Strongest / Weakest Topics Callout -->
-        ${analytics.strongestTopic ? `
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
-            <div class="card" style="padding: 1.25rem; border-left: 3px solid var(--color-success);">
-              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-success);">Strongest Domain</span>
-              <h4 style="margin: 0.25rem 0;">${escapeHTML(analytics.strongestTopic.title)}</h4>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">${analytics.strongestTopic.accuracy}% accuracy over ${analytics.strongestTopic.totalQuestions} questions</p>
+        <!-- Recent Exam Performance (Last 5 Sessions in Single Row) -->
+        <div class="last-exams-section fade-in" style="margin-bottom: 2rem;">
+          <div class="last-exams-header">
+            <div>
+              <div class="last-exams-title-row">
+                <span class="last-exams-header-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </span>
+                <h3 style="margin: 0; font-size: 1.15rem;">Recent Exam Performance (Last 5 Quizzes)</h3>
+              </div>
+              <p style="font-size: 0.83rem; color: var(--text-muted); margin: 0.2rem 0 0 0;">
+                Direct telemetry and accuracy metrics across your latest 5 exam attempts.
+              </p>
             </div>
-
-            ${analytics.weakestTopic ? `
-              <div class="card" style="padding: 1.25rem; border-left: 3px solid var(--color-warning);">
-                <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-warning);">Recommended Revision</span>
-                <h4 style="margin: 0.25rem 0;">${escapeHTML(analytics.weakestTopic.title)}</h4>
-                <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">${analytics.weakestTopic.accuracy}% accuracy — practice this topic to strengthen your baseline</p>
+            ${recent5.length > 0 ? `
+              <div class="last-exams-avg-badge">
+                <span class="exam-avg-label">Recent Average:</span>
+                <span class="exam-avg-val">${recentAvgAcc}%</span>
               </div>
             ` : ''}
           </div>
-        ` : ''}
 
-        <!-- Charts: 7-Day Activity & Category Accuracy -->
-        <div class="charts-grid">
-          <div class="card chart-card">
-            <div class="chart-header">
-              <h3>7-Day Practice Activity</h3>
-              <span style="font-size: 0.78rem; color: var(--text-muted);">Questions Answered</span>
-            </div>
-            <div class="weekly-bars">${weeklyBarsHTML}</div>
-          </div>
-
-          <div class="card chart-card">
-            <div class="chart-header">
-              <h3>Accuracy by Topic</h3>
-              <span style="font-size: 0.78rem; color: var(--text-muted);">${analytics.categoryBreakdown.length} Domains Tested</span>
-            </div>
-            <div class="topic-breakdown-list">${categoryBarsHTML}</div>
+          <div class="last-exams-grid">
+            ${examCardsHTML}
           </div>
         </div>
 
-        <!-- Achievements Grid -->
-        <div style="margin-bottom: 2.5rem;">
-          <h3 style="margin-bottom: 1rem;">Achievements & Milestones</h3>
-          <div class="achievements-grid">${achievementsHTML}</div>
+        <!-- GitHub-Style Contribution Calendar (Based on Tests Completed) -->
+        <div class="card contribution-chart-card fade-in" style="margin-bottom: 2rem; position: relative;">
+          <!-- Floating Interactive Tooltip Bubble -->
+          <div class="contrib-floating-tooltip" id="contrib-floating-tooltip"></div>
+
+          <div class="contribution-chart-header">
+            <div>
+              <div class="contribution-title-row">
+                <span class="contrib-github-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </span>
+                <h3 style="margin: 0; font-size: 1.15rem;">Practice Activity Calendar</h3>
+              </div>
+              <p class="contribution-subtitle">${totalYearTests} ${totalYearTests === 1 ? 'test' : 'tests'} completed in the last year</p>
+            </div>
+
+            <div class="contribution-header-stats">
+              <span class="contrib-stat-badge">
+                <span class="contrib-stat-num">${activeDaysCount}</span> active days
+              </span>
+              <span class="contrib-stat-badge">
+                <span class="contrib-stat-num">${analytics.streak}</span> day streak
+              </span>
+            </div>
+          </div>
+
+          <div class="contribution-graph-scroll">
+            <div class="contribution-graph-wrap">
+              <!-- Months header row -->
+              <div class="contrib-months-track">
+                <div class="contrib-axis-spacer"></div>
+                <div class="contrib-months-row">
+                  ${monthsHeaderHTML}
+                </div>
+              </div>
+
+              <!-- Main grid: weekday labels + 52 week columns -->
+              <div class="contrib-grid-body">
+                <div class="contrib-weekdays-col">
+                  <span></span>
+                  <span>Mon</span>
+                  <span></span>
+                  <span>Wed</span>
+                  <span></span>
+                  <span>Fri</span>
+                  <span></span>
+                </div>
+
+                <div class="contrib-weeks-container">
+                  ${weeksColumnsHTML}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contribution-chart-footer">
+            <div class="contribution-footnote">
+              ${analytics.streak > 0 
+                ? `🔥 <strong>${analytics.streak} day streak</strong> active. Keep up the daily practice!` 
+                : 'Complete quiz tests daily to build your contribution graph.'}
+            </div>
+
+            <div class="contribution-legend">
+              <span class="legend-label">Less</span>
+              <span class="contrib-cell level-0" data-tooltip="0 tests"></span>
+              <span class="contrib-cell level-1" data-tooltip="1 test"></span>
+              <span class="contrib-cell level-2" data-tooltip="2 tests"></span>
+              <span class="contrib-cell level-3" data-tooltip="3-4 tests"></span>
+              <span class="contrib-cell level-4" data-tooltip="5+ tests"></span>
+              <span class="legend-label">More</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Milestones (Categorized by Difficulty Tiers) -->
+        <div class="achievements-section fade-in" style="margin-bottom: 2.5rem;">
+          <div class="achievements-header-bar">
+            <div>
+              <div class="achievements-title-row">
+                <span class="achievements-header-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                </span>
+                <h3 style="margin: 0; font-size: 1.15rem;">Achievements & Milestones</h3>
+              </div>
+              <p style="font-size: 0.83rem; color: var(--text-muted); margin: 0.2rem 0 0 0;">
+                Unlock milestone badges across 4 difficulty tiers as you progress in technical mastery.
+              </p>
+            </div>
+
+            <!-- Stats Summary Pill -->
+            <div class="achievements-stats-pill">
+              <div class="ach-summary-text">
+                <strong>${unlockedCount} of ${analytics.achievements.length}</strong> Unlocked
+              </div>
+              <div class="ach-summary-track">
+                <div class="ach-summary-fill" style="width: ${Math.round((unlockedCount / analytics.achievements.length) * 100)}%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Difficulty Tier Filter Tabs -->
+          <div class="ach-tier-tabs" id="ach-tier-tabs">
+            <button type="button" class="ach-tab-btn active" data-filter="all">All Tiers <span class="tab-count">${analytics.achievements.length}</span></button>
+            <button type="button" class="ach-tab-btn" data-filter="bronze"><span class="tier-dot bronze"></span> Bronze <span class="tab-count">${bronzeCount}</span></button>
+            <button type="button" class="ach-tab-btn" data-filter="silver"><span class="tier-dot silver"></span> Silver <span class="tab-count">${silverCount}</span></button>
+            <button type="button" class="ach-tab-btn" data-filter="gold"><span class="tier-dot gold"></span> Gold <span class="tab-count">${goldCount}</span></button>
+            <button type="button" class="ach-tab-btn" data-filter="diamond"><span class="tier-dot diamond"></span> Diamond <span class="tab-count">${diamondCount}</span></button>
+          </div>
+
+          <!-- Achievements Grid -->
+          <div class="achievements-grid" id="achievements-grid">
+            ${achievementsHTML}
+          </div>
         </div>
 
         <!-- Quiz History Table -->
@@ -1596,7 +1908,53 @@ const UI = (function () {
       </div>
     `;
 
-    // Event listeners for Performance
+    // 4. Interactive Listeners for Performance View
+    // Setup interactive floating tooltip for Contribution Heatmap
+    const tooltipBubble = container.querySelector("#contrib-floating-tooltip");
+    const chartCard = container.querySelector(".contribution-chart-card");
+    if (tooltipBubble && chartCard) {
+      container.querySelectorAll(".contrib-cell[data-tooltip]").forEach((cell) => {
+        cell.addEventListener("mouseenter", () => {
+          const text = cell.getAttribute("data-tooltip");
+          if (!text) return;
+          tooltipBubble.textContent = text;
+          tooltipBubble.classList.add("visible");
+          const cellRect = cell.getBoundingClientRect();
+          const cardRect = chartCard.getBoundingClientRect();
+          tooltipBubble.style.left = Math.round(cellRect.left - cardRect.left + cellRect.width / 2) + "px";
+          tooltipBubble.style.top = Math.round(cellRect.top - cardRect.top - 34) + "px";
+        });
+        cell.addEventListener("mouseleave", () => {
+          tooltipBubble.classList.remove("visible");
+        });
+      });
+      chartCard.addEventListener("mouseleave", () => {
+        tooltipBubble.classList.remove("visible");
+      });
+      window.addEventListener("resize", () => {
+        tooltipBubble.classList.remove("visible");
+      }, { passive: true });
+    }
+
+    // Setup difficulty tier filter tabs for Achievements
+    const achGrid = container.querySelector("#achievements-grid");
+    const achTabs = container.querySelectorAll(".ach-tab-btn");
+    achTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        achTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        const filter = tab.getAttribute("data-filter");
+        if (achGrid) {
+          const cards = achGrid.querySelectorAll(".achievement-card");
+          cards.forEach((card) => {
+            const cardTier = card.getAttribute("data-tier");
+            card.style.display = (filter === "all" || cardTier === filter) ? "" : "none";
+          });
+        }
+      });
+    });
+
+    // History table filters
     const filterCatSelect = document.getElementById("history-filter-cat");
     if (filterCatSelect) {
       filterCatSelect.addEventListener("change", (e) => {
@@ -1637,363 +1995,7 @@ const UI = (function () {
   }
 
   // ============================================
-  // 6. QUIZ BUILDER VIEW
-  // ============================================
-  function renderCustomBuilderView(container) {
-    const customQs = Storage.getCustomQuestions();
-    const categories = QuestionService.getCategories();
-
-    // Check if user is editing an existing question
-    let editQuestion = null;
-    if (quizState.editingCustomId) {
-      editQuestion = customQs.find((q) => q.id === quizState.editingCustomId) || null;
-    }
-
-    // Default form values
-    const formVals = editQuestion || {
-      question: "",
-      options: ["", "", "", ""],
-      correctAnswer: 0,
-      category: "web",
-      difficulty: "medium",
-      hint: "",
-      explanation: ""
-    };
-
-    let customListHTML = "";
-    if (customQs.length === 0) {
-      customListHTML = `<p style="color: var(--text-muted); font-size: 0.9rem; padding: 1rem 0;">No custom questions created yet. Use the editor to add your first question!</p>`;
-    } else {
-      customListHTML = customQs.map((q, idx) => `
-        <div class="card review-card fade-in" style="margin-bottom: 0.85rem; border-left-color: var(--accent-purple);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-            <div>
-              <div style="font-weight: 700; font-size: 0.95rem;">${idx + 1}. ${escapeHTML(q.question)}</div>
-              <div style="font-size: 0.825rem; color: var(--color-success); margin-top: 0.25rem;">
-                ✓ Correct: ${['A', 'B', 'C', 'D'][q.correctAnswer]}. ${escapeHTML(q.options[q.correctAnswer])}
-              </div>
-            </div>
-            <div style="display: flex; gap: 0.35rem;">
-              <button type="button" class="btn btn-ghost btn-sm edit-custom-q-btn" data-id="${q.id}">Edit</button>
-              <button type="button" class="btn btn-ghost btn-sm delete-custom-q-btn" data-id="${q.id}" style="color: var(--color-danger);">Delete</button>
-            </div>
-          </div>
-        </div>
-      `).join("");
-    }
-
-    container.innerHTML = `
-      <div class="fade-in">
-        <div style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-          <div>
-            <h1 style="margin-bottom: 0.35rem;">Custom Quiz Builder</h1>
-            <p>Create, edit, and practice your own technical questions.</p>
-          </div>
-          ${customQs.length > 0 ? `
-            <button type="button" class="btn btn-primary" id="launch-custom-quiz-btn">
-              ⚡ Start Custom Quiz (${customQs.length} Qs)
-            </button>
-          ` : ''}
-        </div>
-
-        <div class="builder-layout">
-          <!-- Form -->
-          <div class="card builder-form-card">
-            <h3 style="margin-bottom: 1.25rem;">
-              ${editQuestion ? '✏️ Edit Custom Question' : '➕ Add New Technical Question'}
-            </h3>
-
-            <form id="builder-form">
-              <div class="form-group">
-                <label class="form-label" for="b-q-text">Question Prompt *</label>
-                <input type="text" id="b-q-text" class="form-control" placeholder="e.g. What is the difference between null and undefined in JavaScript?" value="${escapeHTML(formVals.question)}" required />
-                <div class="field-error" id="err-q-text" style="display: none;">Question text cannot be empty</div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Answer Options (4 choices) *</label>
-                <div class="options-builder-grid">
-                  <div>
-                    <input type="text" id="b-opt-0" class="form-control" placeholder="Option A" value="${escapeHTML(formVals.options[0] || '')}" required />
-                    <div class="field-error" id="err-opt-0" style="display: none;">Option A is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-1" class="form-control" placeholder="Option B" value="${escapeHTML(formVals.options[1] || '')}" required />
-                    <div class="field-error" id="err-opt-1" style="display: none;">Option B is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-2" class="form-control" placeholder="Option C" value="${escapeHTML(formVals.options[2] || '')}" required />
-                    <div class="field-error" id="err-opt-2" style="display: none;">Option C is required</div>
-                  </div>
-                  <div>
-                    <input type="text" id="b-opt-3" class="form-control" placeholder="Option D" value="${escapeHTML(formVals.options[3] || '')}" required />
-                    <div class="field-error" id="err-opt-3" style="display: none;">Option D is required</div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; margin-bottom: 1.25rem;">
-                <div>
-                  <label class="form-label" for="b-correct">Correct Answer</label>
-                  <select id="b-correct" class="form-select">
-                    <option value="0" ${formVals.correctAnswer === 0 ? 'selected' : ''}>Option A</option>
-                    <option value="1" ${formVals.correctAnswer === 1 ? 'selected' : ''}>Option B</option>
-                    <option value="2" ${formVals.correctAnswer === 2 ? 'selected' : ''}>Option C</option>
-                    <option value="3" ${formVals.correctAnswer === 3 ? 'selected' : ''}>Option D</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="form-label" for="b-category">Category</label>
-                  <select id="b-category" class="form-select">
-                    ${Object.values(categories).map((c) => `
-                      <option value="${c.id}" ${formVals.category === c.id ? 'selected' : ''}>${escapeHTML(c.title)}</option>
-                    `).join("")}
-                    <option value="custom" ${formVals.category === 'custom' ? 'selected' : ''}>Custom Topic</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="form-label" for="b-difficulty">Difficulty</label>
-                  <select id="b-difficulty" class="form-select">
-                    <option value="easy" ${formVals.difficulty === 'easy' ? 'selected' : ''}>Easy</option>
-                    <option value="medium" ${formVals.difficulty === 'medium' ? 'selected' : ''}>Medium</option>
-                    <option value="hard" ${formVals.difficulty === 'hard' ? 'selected' : ''}>Hard</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="b-hint">Helpful Hint (Optional)</label>
-                <input type="text" id="b-hint" class="form-control" placeholder="Hint to assist user without giving away the answer" value="${escapeHTML(formVals.hint || '')}" />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="b-explanation">Concept Explanation (Optional)</label>
-                <textarea id="b-explanation" class="form-control" rows="2" placeholder="Why is this answer correct? Key takeaway for learning.">${escapeHTML(formVals.explanation || '')}</textarea>
-              </div>
-
-              <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
-                ${editQuestion ? `
-                  <button type="button" class="btn btn-secondary" id="cancel-edit-btn">Cancel Edit</button>
-                ` : `
-                  <button type="button" class="btn btn-ghost" id="clear-form-btn">Reset</button>
-                `}
-                <button type="submit" class="btn btn-primary" id="save-q-btn">
-                  ${editQuestion ? '✓ Update Question' : '➕ Save Question'}
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <!-- Live Preview Side -->
-          <div>
-            <div class="card preview-card">
-              <div class="preview-header">
-                <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
-                  👁️ Live Quiz Preview
-                </span>
-                <span class="badge badge-medium" id="preview-diff-badge">Medium</span>
-              </div>
-
-              <h4 id="preview-q-title" style="margin-bottom: 1rem; line-height: 1.4;">
-                ${escapeHTML(formVals.question) || 'Your question prompt will appear here...'}
-              </h4>
-
-              <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-0">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">A</span>
-                  <span id="prev-opt-text-0">${escapeHTML(formVals.options[0]) || 'Option A'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-1">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">B</span>
-                  <span id="prev-opt-text-1">${escapeHTML(formVals.options[1]) || 'Option B'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-2">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">C</span>
-                  <span id="prev-opt-text-2">${escapeHTML(formVals.options[2]) || 'Option C'}</span>
-                </div>
-                <div class="option-btn" style="padding: 0.65rem 0.85rem; font-size: 0.85rem;" id="prev-opt-3">
-                  <span class="option-letter-badge" style="width: 24px; height: 24px; font-size: 0.75rem;">D</span>
-                  <span id="prev-opt-text-3">${escapeHTML(formVals.options[3]) || 'Option D'}</span>
-                </div>
-              </div>
-
-              <div id="preview-hint-wrap" style="font-size: 0.8rem; color: var(--color-warning); margin-bottom: 0.5rem;">
-                💡 <em>${formVals.hint ? `Hint: ${escapeHTML(formVals.hint)}` : 'No hint specified'}</em>
-              </div>
-
-              <div id="preview-exp-wrap" style="font-size: 0.8rem; color: var(--text-secondary);">
-                📖 <em>${formVals.explanation ? escapeHTML(formVals.explanation) : 'No explanation specified'}</em>
-              </div>
-            </div>
-
-            <!-- Saved Custom Questions Collection -->
-            <div class="card" style="padding: 1.5rem; margin-top: 1.5rem;">
-              <h3 style="margin-bottom: 1rem;">Saved Questions (${customQs.length})</h3>
-              <div>${customListHTML}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Live preview update handlers
-    const qTextInput = document.getElementById("b-q-text");
-    const opt0Input = document.getElementById("b-opt-0");
-    const opt1Input = document.getElementById("b-opt-1");
-    const opt2Input = document.getElementById("b-opt-2");
-    const opt3Input = document.getElementById("b-opt-3");
-    const correctInput = document.getElementById("b-correct");
-    const diffInput = document.getElementById("b-difficulty");
-    const hintInput = document.getElementById("b-hint");
-    const expInput = document.getElementById("b-explanation");
-
-    function updatePreview() {
-      const pTitle = document.getElementById("preview-q-title");
-      const p0 = document.getElementById("prev-opt-text-0");
-      const p1 = document.getElementById("prev-opt-text-1");
-      const p2 = document.getElementById("prev-opt-text-2");
-      const p3 = document.getElementById("prev-opt-text-3");
-      const diffB = document.getElementById("preview-diff-badge");
-      const hintW = document.getElementById("preview-hint-wrap");
-      const expW = document.getElementById("preview-exp-wrap");
-
-      if (pTitle) pTitle.textContent = qTextInput.value || "Your question prompt will appear here...";
-      if (p0) p0.textContent = opt0Input.value || "Option A";
-      if (p1) p1.textContent = opt1Input.value || "Option B";
-      if (p2) p2.textContent = opt2Input.value || "Option C";
-      if (p3) p3.textContent = opt3Input.value || "Option D";
-      if (diffB) {
-        diffB.textContent = diffInput.value;
-        diffB.className = `badge badge-${diffInput.value}`;
-      }
-      if (hintW) hintW.innerHTML = hintInput.value ? `💡 <em>Hint: ${escapeHTML(hintInput.value)}</em>` : '💡 <em>No hint specified</em>';
-      if (expW) expW.innerHTML = expInput.value ? `📖 <em>${escapeHTML(expInput.value)}</em>` : '📖 <em>No explanation specified</em>';
-
-      // Highlight correct choice in preview
-      const cIdx = parseInt(correctInput.value, 10);
-      for (let i = 0; i < 4; i++) {
-        const optCard = document.getElementById(`prev-opt-${i}`);
-        if (optCard) {
-          if (i === cIdx) {
-            optCard.style.borderColor = "var(--color-success)";
-          } else {
-            optCard.style.borderColor = "var(--border-subtle)";
-          }
-        }
-      }
-    }
-
-    [qTextInput, opt0Input, opt1Input, opt2Input, opt3Input, correctInput, diffInput, hintInput, expInput].forEach((el) => {
-      if (el) el.addEventListener("input", updatePreview);
-    });
-    updatePreview();
-
-    // Form submission
-    const form = document.getElementById("builder-form");
-    if (form) {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const qVal = qTextInput.value.trim();
-        const opts = [
-          opt0Input.value.trim(),
-          opt1Input.value.trim(),
-          opt2Input.value.trim(),
-          opt3Input.value.trim()
-        ];
-        const correctVal = correctInput.value;
-        const catVal = document.getElementById("b-category").value;
-        const diffVal = diffInput.value;
-        const hintVal = hintInput.value.trim();
-        const expVal = expInput.value.trim();
-
-        // In-line validations
-        let hasError = false;
-        if (!qVal) {
-          document.getElementById("err-q-text").style.display = "block";
-          hasError = true;
-        } else {
-          document.getElementById("err-q-text").style.display = "none";
-        }
-
-        opts.forEach((opt, idx) => {
-          const errEl = document.getElementById(`err-opt-${idx}`);
-          if (!opt) {
-            if (errEl) errEl.style.display = "block";
-            hasError = true;
-          } else {
-            if (errEl) errEl.style.display = "none";
-          }
-        });
-
-        if (hasError) return;
-
-        Storage.saveCustomQuestion({
-          question: qVal,
-          options: opts,
-          correctAnswer: correctVal,
-          category: catVal,
-          difficulty: diffVal,
-          hint: hintVal,
-          explanation: expVal
-        }, quizState.editingCustomId);
-
-        showToast(quizState.editingCustomId ? "Question updated!" : "Custom question saved!", "success");
-        quizState.editingCustomId = null;
-        renderNavigation();
-        renderCustomBuilderView(container);
-      });
-    }
-
-    const cancelEditBtn = document.getElementById("cancel-edit-btn");
-    if (cancelEditBtn) {
-      cancelEditBtn.addEventListener("click", () => {
-        quizState.editingCustomId = null;
-        renderCustomBuilderView(container);
-      });
-    }
-
-    const clearFormBtn = document.getElementById("clear-form-btn");
-    if (clearFormBtn) {
-      clearFormBtn.addEventListener("click", () => {
-        form.reset();
-        updatePreview();
-      });
-    }
-
-    const launchCustomBtn = document.getElementById("launch-custom-quiz-btn");
-    if (launchCustomBtn) {
-      launchCustomBtn.addEventListener("click", () => {
-        if (typeof SoundEngine !== "undefined") SoundEngine.click();
-        initializeCustomQuiz();
-        renderActiveView();
-        if (quizState.isTimedMode) startActiveQuestionTimer();
-      });
-    }
-
-    container.querySelectorAll(".edit-custom-q-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        quizState.editingCustomId = btn.getAttribute("data-id");
-        renderCustomBuilderView(container);
-      });
-    });
-
-    container.querySelectorAll(".delete-custom-q-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const id = btn.getAttribute("data-id");
-        Storage.deleteCustomQuestion(id);
-        showToast("Custom question deleted", "info");
-        if (quizState.editingCustomId === id) quizState.editingCustomId = null;
-        renderNavigation();
-        renderCustomBuilderView(container);
-      });
-    });
-  }
-
-  // ============================================
-  // 7. STUDY BANK VIEW (Personal Revision)
+  // 6. STUDY BANK VIEW (Personal Revision)
   // ============================================
   let studyBankSearchQuery = "";
   let studyBankCatFilter = "all";

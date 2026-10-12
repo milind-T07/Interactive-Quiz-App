@@ -3,7 +3,7 @@
    ============================================ */
 
 const quizState = {
-  // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'custom' | 'bookmarks'
+  // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'bookmarks'
   activeTab: "hub",
 
   // Quiz Hub Filters & Config
@@ -45,10 +45,7 @@ const quizState = {
     skip: true
   },
   disabledOptions: [],
-  hintVisible: false,
-
-  // Custom Quiz Builder State
-  editingCustomId: null
+  hintVisible: false
 };
 
 // Shuffles array in-place (Fisher-Yates)
@@ -78,11 +75,49 @@ function initializeStandardQuiz(category = "all", difficulty = "all", count = 10
   }
 
   quizState.quizMode = "standard";
+  quizState.activeCategory = category;
+  quizState.activeDifficulty = difficulty;
   quizState.quizTitle = category !== "all" && CATEGORIES[category] 
-    ? `${CATEGORIES[category].title} Quiz` 
-    : "Comprehensive Tech Quiz";
+    ? `${CATEGORIES[category].title} Assessment` 
+    : "Comprehensive Tech Drill";
   quizState.questions = shuffleArray(pool).slice(0, count);
   resetQuizRunState();
+}
+
+// Prepares custom configured quiz run
+function initializeConfiguredQuiz({ category = "all", difficulty = "all", count = 10, isTimed = true, timeLimit = 20, shuffle = true } = {}) {
+  let pool = QuestionService.getAllQuestions();
+
+  if (category && category !== "all") {
+    pool = pool.filter((q) => q.category === category);
+  }
+
+  if (difficulty && difficulty !== "all") {
+    pool = pool.filter((q) => q.difficulty === difficulty);
+  }
+
+  if (pool.length === 0) {
+    pool = QuestionService.getAllQuestions();
+  }
+
+  quizState.quizMode = "custom";
+  quizState.activeCategory = category;
+  quizState.activeDifficulty = difficulty;
+  quizState.isTimedMode = isTimed !== false && isTimed !== 0 && isTimed !== "0";
+  if (quizState.isTimedMode) {
+    quizState.timeLimitPerQuestion = Math.max(5, parseInt(timeLimit, 10) || 20);
+  }
+
+  const selectedQuestions = shuffle ? shuffleArray(pool) : [...pool];
+  const qCount = count === "all" ? selectedQuestions.length : Math.min(selectedQuestions.length, Math.max(1, parseInt(count, 10) || 10));
+
+  quizState.quizTitle = category !== "all" && CATEGORIES[category] 
+    ? `${CATEGORIES[category].title} (${qCount} Qs)` 
+    : `Custom Tech Assessment (${qCount} Qs)`;
+
+  quizState.questions = selectedQuestions.slice(0, qCount);
+  resetQuizRunState();
+  return quizState.questions.length;
 }
 
 // Prepares Daily Challenge
@@ -115,16 +150,6 @@ function initializeStudyBankQuiz() {
   return true;
 }
 
-// Prepares Custom Quiz from user questions
-function initializeCustomQuiz() {
-  const customQs = Storage.getCustomQuestions();
-  if (customQs.length === 0) return false;
-  quizState.quizMode = "custom";
-  quizState.quizTitle = "Custom User Quiz";
-  quizState.questions = shuffleArray(customQs);
-  resetQuizRunState();
-  return true;
-}
 
 function resetQuizRunState() {
   quizState.currentQuestionIndex = 0;
