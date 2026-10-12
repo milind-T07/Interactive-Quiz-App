@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='22' width='100' height='100' fill='%2306b6d4'/><path d='M30 35 L50 20 L70 35 L70 65 L50 80 L30 65 Z' fill='none' stroke='white' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='white'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='24' width='100' height='100' fill='%2306b6d4'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23ffffff' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif' font-weight='800'>QP</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="alternate icon" href="./favicon.ico" />
 
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -24,13 +26,7 @@
     <div class="header-inner container">
       <!-- Logo & Wordmark -->
       <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizePro Home">
-        <span class="brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m18 16 4-4-4-4"/>
-            <path d="m6 8-4 4 4 4"/>
-            <path d="m14.5 4-5 16"/>
-          </svg>
-        </span>
+        <span class="brand-icon">QP</span>
         <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
       </a>
 
@@ -67,7 +63,10 @@
   <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true">
     <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <div class="mobile-drawer-header">
-        <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <span class="brand-icon" style="width: 32px; height: 32px; font-size: 0.85rem;">QP</span>
+          <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        </div>
         <button type="button" class="action-btn" id="mobile-close-btn" aria-label="Close menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
@@ -116,7 +115,10 @@
   <footer class="app-footer">
     <div class="container footer-content">
       <div class="footer-left">
-        <span class="footer-brand">QuizePro</span>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem;">
+          <span class="brand-icon" style="width: 28px; height: 28px; font-size: 0.75rem; border-radius: 6px;">QP</span>
+          <span class="footer-brand">QuizePro</span>
+        </div>
         <span class="footer-tagline">Interactive Learning Platform for Developers</span>
       </div>
       <div class="footer-right">
