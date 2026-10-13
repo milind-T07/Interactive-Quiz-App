@@ -8,7 +8,8 @@ const STORAGE_KEYS = {
   CUSTOM_QUIZZES: "quiz_app_custom_quizzes",
   THEME: "quiz_app_theme",
   SOUND_MUTED: "quiz_sound_muted",
-  DAILY_GOAL: "quiz_app_daily_goal"
+  DAILY_GOAL: "quiz_app_daily_goal",
+  GEMINI_API_KEY: "quiz_gemini_api_key"
 };
 
 const Storage = (function () {
@@ -417,6 +418,24 @@ const Storage = (function () {
       const now = new Date();
       const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
       return history.find((h) => h.mode === "daily" && h.timestamp >= startOfToday) || null;
+    },
+
+    // --- Gemini AI API Key Storage ---
+    getApiKey: function () {
+      return localStorage.getItem(STORAGE_KEYS.GEMINI_API_KEY) || "";
+    },
+
+    saveApiKey: function (key) {
+      if (!key || typeof key !== "string" || !key.trim()) {
+        localStorage.removeItem(STORAGE_KEYS.GEMINI_API_KEY);
+      } else {
+        localStorage.setItem(STORAGE_KEYS.GEMINI_API_KEY, key.trim());
+      }
+    },
+
+    hasApiKey: function () {
+      const k = localStorage.getItem(STORAGE_KEYS.GEMINI_API_KEY);
+      return Boolean(k && k.trim().length > 6);
     }
   };
 })();
