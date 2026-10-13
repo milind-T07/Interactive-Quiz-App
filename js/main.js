@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 1. Initialize Navigation and View
   UI.renderNavigation();
   UI.renderActiveView();
+  UI.initAiSettings();
 
   // 2. Brand Link Home Navigation
   const brandLink = document.getElementById("brand-home-link");
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileDrawerOverlay.classList.remove("open");
         return;
       }
-      const dialogs = ["confirm-dialog", "quiz-config-dialog", "goal-dialog"];
+      const dialogs = ["confirm-dialog", "quiz-config-dialog", "goal-dialog", "ai-config-dialog"];
       for (const dId of dialogs) {
         const d = document.getElementById(dId);
         if (d && d.open) {
