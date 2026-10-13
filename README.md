@@ -69,10 +69,17 @@ Built with a dark-first SaaS developer interface, high-contrast light theme, Web
 - One-click **Practice Saved Questions** drill.
 - Bookmark questions during a quiz or from Explore.
 
-### 7. 🎨 Design System & Accessibility
+### 7. ✨ Gemini AI Real-Time Question Generation
+- **Infinite Real-Time Questions**: Powered by Google's Gemini API (`gemini-2.5-flash` / `gemini-1.5-flash`) for live question generation across any tech stack (React 19, Rust, Docker, Kubernetes, System Design, GraphQL, etc.).
+- **Privacy-First Client Storage**: API keys are stored exclusively in the browser's `localStorage` and never transmitted to intermediary servers.
+- **In-App API Key Manager**: Modal dialog to configure, ping/test key connectivity in real time, view/hide, or remove keys.
+- **Dual-Mode Quiz Launcher**: Seamless toggle between offline **Question Bank** and live **Gemini AI Generator** with quick topic chips and difficulty selection.
+- **Structured Schema Generation**: Ensures every AI-generated question includes relevant code snippets, 4 balanced options, contextual hints, and in-depth concept explanations.
+
+### 8. 🎨 Design System & Accessibility
 - **Dark-First Theme**: Sophisticated near-black/obsidian navy (`#090d16`) surfaces with violet/purple (`#8b5cf6`) primary accents and restrained cyan (`#06b6d4`) highlights.
 - **Refined Light Theme**: Crisp slate surfaces with high-contrast text.
-- Theme preference persisted in LocalStorage.
+- **Theme preference persisted in LocalStorage**.
 - Web Audio API synthesizer for clean sound feedback (clicks, correct/incorrect tones, streaks, fanfare) with a mute toggle.
 - Keyboard shortcuts:
   - `1`, `2`, `3`, `4` or `A`, `B`, `C`, `D` to pick answers.
@@ -87,7 +94,8 @@ Built with a dark-first SaaS developer interface, high-contrast light theme, Web
 
 - **HTML5**: Semantic tags, native `<dialog>`, and accessibility attributes.
 - **CSS3**: Custom properties (tokens), Flexbox, CSS Grid, animations, dark/light themes.
-- **JavaScript (ES6+)**: Modular architecture (`Storage`, `SoundEngine`, `Confetti`, `ThemeManager`, `QuestionService`, `UI`).
+- **JavaScript (ES6+)**: Modular architecture (`Storage`, `SoundEngine`, `Confetti`, `ThemeManager`, `QuestionService`, `AIService`, `UI`).
+- **Google Gemini API**: REST integration (`gemini-2.5-flash` / `gemini-1.5-flash`) for dynamic structured question generation.
 - **Web Audio API**: Synthesized procedural sound effects without external audio assets.
 - **LocalStorage API**: Reliable client-side persistence for history, bookmarks, custom quizzes, and preferences.
 
@@ -102,9 +110,10 @@ interactive-quiz-app-main/
 │
 ├── css/
 │   ├── global.css      # Design tokens, color themes, buttons, cards, typography
-│   └── style.css       # View-specific components (Hub, Explore, Runner, Analytics, Study Bank)
+│   └── style.css       # View-specific components (Hub, Explore, Runner, Analytics, Study Bank, AI Banner)
 │
 ├── js/
+│   ├── ai-service.js   # Google Gemini API client, schema validation & live generation
 │   ├── questions.js    # Comprehensive questions database across 8 domains
 │   ├── audio.js        # Web Audio API sound synthesizer
 │   ├── confetti.js     # Lightweight canvas confetti engine
