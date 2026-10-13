@@ -150,6 +150,21 @@ function initializeStudyBankQuiz() {
   return true;
 }
 
+// Prepares real-time Gemini AI Generated Quiz
+function initializeAiQuiz({ questions, topic = "AI Real-Time Drill", difficulty = "medium", isTimed = true, timeLimit = 20 } = {}) {
+  if (!questions || questions.length === 0) return false;
+  quizState.quizMode = "ai_drill";
+  quizState.activeCategory = "ai_drill";
+  quizState.activeDifficulty = difficulty;
+  quizState.isTimedMode = isTimed !== false && isTimed !== 0 && isTimed !== "0";
+  if (quizState.isTimedMode) {
+    quizState.timeLimitPerQuestion = Math.max(5, parseInt(timeLimit, 10) || 20);
+  }
+  quizState.quizTitle = `✨ AI Drill: ${topic}`;
+  quizState.questions = [...questions];
+  resetQuizRunState();
+  return true;
+}
 
 function resetQuizRunState() {
   quizState.currentQuestionIndex = 0;
