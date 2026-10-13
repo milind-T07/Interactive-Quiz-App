@@ -351,6 +351,37 @@ const UI = (function () {
           </div>
         </section>
 
+        <!-- Real-Time AI Generation Hero Banner -->
+        <div class="hub-ai-banner fade-in">
+          <div class="hub-ai-left">
+            <div class="hub-ai-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="hub-ai-title">
+                <span>Gemini AI Real-Time Questions</span>
+                <span class="badge badge-sm ${Storage.hasApiKey() ? 'badge-success' : 'badge-warning'}" style="font-size:0.7rem;">
+                  ${Storage.hasApiKey() ? '● Live API Active' : '⚡ Key Required'}
+                </span>
+              </h3>
+              <p class="hub-ai-desc">
+                Generate custom live interview questions, coding scenarios, and algorithmic drills on any language or framework in real time using Gemini AI.
+              </p>
+            </div>
+          </div>
+          <div class="hub-ai-actions">
+            <button type="button" class="btn btn-primary btn-glow" id="hub-start-ai-drill-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Generate AI Drill</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="hub-config-ai-key-btn">
+              <span>API Key Settings</span>
+            </button>
+          </div>
+        </div>
+
         <!-- 2. Technical Domains Section -->
         <section class="topics-section" id="topics-catalog" aria-label="Explore Technical Topics">
           <div class="topics-header-wrap">
@@ -451,6 +482,21 @@ const UI = (function () {
       });
     }
 
+    // Hub AI Banner Action Buttons
+    const aiDrillBtn = document.getElementById("hub-start-ai-drill-btn");
+    if (aiDrillBtn) {
+      aiDrillBtn.addEventListener("click", () => {
+        showQuizConfigModal("all", "ai");
+      });
+    }
+
+    const aiKeyBtn = document.getElementById("hub-config-ai-key-btn");
+    if (aiKeyBtn) {
+      aiKeyBtn.addEventListener("click", () => {
+        showAiConfigModal();
+      });
+    }
+
     // Topic Cards Actions
     container.querySelectorAll(".topic-start-btn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -530,19 +576,190 @@ const UI = (function () {
     dialog.showModal();
   }
 
-  function showQuizConfigModal(preselectedCategory = "all") {
+  // ============================================
+  // GEMINI AI SETTINGS MODAL & LOGIC
+  // ============================================
+  function updateAiHeaderStatus() {
+    const dot = document.getElementById("header-ai-status-dot");
+    if (!dot) return;
+    if (Storage.hasApiKey()) {
+      dot.classList.add("active");
+      dot.setAttribute("title", "Gemini API Key Active");
+    } else {
+      dot.classList.remove("active");
+      dot.setAttribute("title", "No API Key Set (Click to Configure)");
+    }
+  }
+
+  function initAiSettings() {
+    const btn = document.getElementById("ai-settings-toggle-btn");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        showAiConfigModal();
+      });
+    }
+    updateAiHeaderStatus();
+  }
+
+  function showAiConfigModal() {
+    const dialog = document.getElementById("ai-config-dialog");
+    const input = document.getElementById("ai-api-key-input");
+    const toggleVisBtn = document.getElementById("toggle-key-visibility-btn");
+    const testBtn = document.getElementById("test-api-key-btn");
+    const saveBtn = document.getElementById("ai-save-btn");
+    const removeBtn = document.getElementById("remove-api-key-btn");
+    const cancelBtn = document.getElementById("ai-cancel-btn");
+    const statusPill = document.getElementById("ai-modal-status-pill");
+    const feedback = document.getElementById("ai-test-feedback");
+
+    if (!dialog || !input) return;
+
+    // Reset fields
+    const currentKey = Storage.getApiKey();
+    input.value = currentKey;
+    input.type = "password";
+    if (feedback) {
+      feedback.style.display = "none";
+      feedback.textContent = "";
+    }
+
+    function updatePill() {
+      if (!statusPill) return;
+      if (Storage.hasApiKey()) {
+        statusPill.textContent = "● Key Connected";
+        statusPill.className = "badge badge-sm badge-success";
+      } else {
+        statusPill.textContent = "No Key Set";
+        statusPill.className = "badge badge-sm badge-secondary";
+      }
+    }
+
+    updatePill();
+
+    // Toggle password visibility
+    const handleToggleVis = () => {
+      input.type = input.type === "password" ? "text" : "password";
+    };
+
+    // Ping & Test Key
+    const handleTestKey = async () => {
+      const keyVal = input.value.trim();
+      if (!keyVal) {
+        showToast("Please enter an API key to test.", "warning");
+        return;
+      }
+      testBtn.disabled = true;
+      testBtn.textContent = "Testing...";
+      if (feedback) {
+        feedback.style.display = "block";
+        feedback.style.background = "var(--bg-subtle)";
+        feedback.style.color = "var(--text-secondary)";
+        feedback.textContent = "Connecting to Google Gemini API endpoint...";
+      }
+
+      try {
+        const result = await AIService.testApiKey(keyVal);
+        if (result.ok) {
+          if (feedback) {
+            feedback.style.background = "rgba(16, 185, 129, 0.15)";
+            feedback.style.color = "#34d399";
+            feedback.innerHTML = "✅ <strong>Success!</strong> Gemini API key verified and operational.";
+          }
+          showToast("Gemini API key verified successfully!", "success");
+        } else {
+          if (feedback) {
+            feedback.style.background = "rgba(239, 68, 68, 0.15)";
+            feedback.style.color = "#f87171";
+            feedback.innerHTML = `❌ <strong>Verification Failed:</strong> ${escapeHTML(result.error)}`;
+          }
+          showToast(result.error || "API Key verification failed.", "danger");
+        }
+      } catch (err) {
+        if (feedback) {
+          feedback.style.background = "rgba(239, 68, 68, 0.15)";
+          feedback.style.color = "#f87171";
+          feedback.innerHTML = `❌ <strong>Error:</strong> ${escapeHTML(err.message)}`;
+        }
+      } finally {
+        testBtn.disabled = false;
+        testBtn.textContent = "⚡ Ping & Test Key";
+      }
+    };
+
+    // Save key
+    const handleSave = () => {
+      const val = input.value.trim();
+      if (!val) {
+        showToast("Please enter an API key or click Remove Key", "warning");
+        return;
+      }
+      Storage.saveApiKey(val);
+      updateAiHeaderStatus();
+      updatePill();
+      showToast("Gemini API key saved to local storage!", "success");
+      renderActiveView();
+      cleanup();
+      dialog.close();
+    };
+
+    // Remove key
+    const handleRemove = () => {
+      Storage.saveApiKey("");
+      input.value = "";
+      updateAiHeaderStatus();
+      updatePill();
+      if (feedback) feedback.style.display = "none";
+      showToast("Gemini API key removed", "info");
+      renderActiveView();
+      cleanup();
+      dialog.close();
+    };
+
+    const handleCancel = () => {
+      cleanup();
+      dialog.close();
+    };
+
+    function cleanup() {
+      if (toggleVisBtn) toggleVisBtn.removeEventListener("click", handleToggleVis);
+      if (testBtn) testBtn.removeEventListener("click", handleTestKey);
+      if (saveBtn) saveBtn.removeEventListener("click", handleSave);
+      if (removeBtn) removeBtn.removeEventListener("click", handleRemove);
+      if (cancelBtn) cancelBtn.removeEventListener("click", handleCancel);
+    }
+
+    if (toggleVisBtn) toggleVisBtn.addEventListener("click", handleToggleVis);
+    if (testBtn) testBtn.addEventListener("click", handleTestKey);
+    if (saveBtn) saveBtn.addEventListener("click", handleSave);
+    if (removeBtn) removeBtn.removeEventListener("click", handleRemove);
+    if (cancelBtn) cancelBtn.addEventListener("click", handleCancel);
+
+    dialog.showModal();
+  }
+
+  function showQuizConfigModal(preselectedCategory = "all", initialMode = "bank") {
     const dialog = document.getElementById("quiz-config-dialog");
+    const tabBankBtn = document.getElementById("config-mode-tab-bank");
+    const tabAiBtn = document.getElementById("config-mode-tab-ai");
+    const standardGroup = document.getElementById("config-standard-topic-group");
+    const aiGroup = document.getElementById("config-ai-topic-group");
     const topicSelect = document.getElementById("config-topic-select");
+    const aiTopicInput = document.getElementById("config-ai-topic-input");
+    const aiKeyBadge = document.getElementById("config-ai-key-badge");
     const diffSelect = document.getElementById("config-diff-select");
     const countSelect = document.getElementById("config-count-select");
     const timerSelect = document.getElementById("config-timer-select");
+    const poolLabel = document.getElementById("config-pool-label");
     const poolCount = document.getElementById("config-pool-count");
+    const countOptAll = document.getElementById("config-count-opt-all");
     const startBtn = document.getElementById("config-start-btn");
     const cancelBtn = document.getElementById("config-cancel-btn");
 
     if (!dialog || !topicSelect || !startBtn) return;
 
-    // Populate topic dropdown
+    let activeConfigMode = initialMode === "ai" ? "ai" : "bank";
+
+    // Populate standard topic dropdown
     const categories = QuestionService.getCategories();
     topicSelect.innerHTML = `
       <option value="all">All Domains (Comprehensive Drill)</option>
@@ -553,8 +770,46 @@ const UI = (function () {
 
     diffSelect.value = quizState.activeDifficulty;
 
-    // Update pool count feedback
+    function updateAiKeyBadge() {
+      if (!aiKeyBadge) return;
+      if (Storage.hasApiKey()) {
+        aiKeyBadge.textContent = "● API Key Connected";
+        aiKeyBadge.className = "badge badge-sm badge-success";
+      } else {
+        aiKeyBadge.textContent = "⚠️ Key Needed (Setup)";
+        aiKeyBadge.className = "badge badge-sm badge-warning";
+      }
+    }
+
+    function setConfigMode(mode) {
+      activeConfigMode = mode;
+      if (mode === "ai") {
+        if (tabAiBtn) tabAiBtn.classList.add("active");
+        if (tabBankBtn) tabBankBtn.classList.remove("active");
+        if (aiGroup) aiGroup.style.display = "block";
+        if (standardGroup) standardGroup.style.display = "none";
+        if (poolLabel) poolLabel.textContent = "Generation Engine:";
+        if (poolCount) poolCount.innerHTML = `<span style="color:#c084fc;">Gemini AI Real-Time Questions</span>`;
+        if (countOptAll) countOptAll.disabled = true;
+        if (countSelect.value === "all") countSelect.value = "5";
+        updateAiKeyBadge();
+        if (aiTopicInput && !aiTopicInput.value && preselectedCategory !== "all" && categories[preselectedCategory]) {
+          aiTopicInput.value = categories[preselectedCategory].title;
+        }
+      } else {
+        if (tabBankBtn) tabBankBtn.classList.add("active");
+        if (tabAiBtn) tabAiBtn.classList.remove("active");
+        if (standardGroup) standardGroup.style.display = "block";
+        if (aiGroup) aiGroup.style.display = "none";
+        if (poolLabel) poolLabel.textContent = "Available Questions:";
+        if (countOptAll) countOptAll.disabled = false;
+        updatePoolCount();
+      }
+    }
+
+    // Update pool count feedback for static bank
     function updatePoolCount() {
+      if (activeConfigMode === "ai") return;
       const cat = topicSelect.value;
       const diff = diffSelect.value;
       let pool = QuestionService.getAllQuestions();
@@ -563,36 +818,117 @@ const UI = (function () {
       if (poolCount) poolCount.textContent = `${pool.length} Questions in pool`;
     }
 
-    updatePoolCount();
+    setConfigMode(activeConfigMode);
+
+    const onTabBank = () => setConfigMode("bank");
+    const onTabAi = () => setConfigMode("ai");
+    const onKeyBadgeClick = () => {
+      cleanup();
+      dialog.close();
+      showAiConfigModal();
+    };
+
+    if (tabBankBtn) tabBankBtn.addEventListener("click", onTabBank);
+    if (tabAiBtn) tabAiBtn.addEventListener("click", onTabAi);
+    if (aiKeyBadge) aiKeyBadge.addEventListener("click", onKeyBadgeClick);
     topicSelect.addEventListener("change", updatePoolCount);
     diffSelect.addEventListener("change", updatePoolCount);
 
-    const handleStart = (e) => {
+    // Quick chips
+    const chipBtns = dialog.querySelectorAll(".ai-quick-topic-chip");
+    const onChipClick = (e) => {
+      const topicVal = e.target.getAttribute("data-topic");
+      if (aiTopicInput && topicVal) {
+        aiTopicInput.value = topicVal;
+      }
+    };
+    chipBtns.forEach((b) => b.addEventListener("click", onChipClick));
+
+    const handleStart = async (e) => {
       e.preventDefault();
-      const cat = topicSelect.value;
       const diff = diffSelect.value;
       const countVal = countSelect.value;
       const timerVal = parseInt(timerSelect.value, 10);
       const isTimed = timerVal > 0;
 
-      const loaded = initializeConfiguredQuiz({
-        category: cat,
-        difficulty: diff,
-        count: countVal,
-        isTimed: isTimed,
-        timeLimit: isTimed ? timerVal : 20,
-        shuffle: true
-      });
+      if (activeConfigMode === "ai") {
+        // Real-time AI Generation Mode
+        if (!Storage.hasApiKey()) {
+          showToast("Please enter your Gemini API Key to generate real-time questions", "warning");
+          cleanup();
+          dialog.close();
+          showAiConfigModal();
+          return;
+        }
 
-      cleanup();
-      dialog.close();
+        const topicText = (aiTopicInput && aiTopicInput.value.trim()) 
+          ? aiTopicInput.value.trim() 
+          : (topicSelect.value !== "all" && categories[topicSelect.value] ? categories[topicSelect.value].title : "Full-Stack Web Development & Modern Algorithms");
 
-      if (loaded > 0) {
-        if (typeof SoundEngine !== "undefined") SoundEngine.click();
-        renderActiveView();
-        if (quizState.isTimedMode) startActiveQuestionTimer();
+        const qCount = parseInt(countVal, 10) || 5;
+
+        cleanup();
+        dialog.close();
+
+        // Show AI Loading Modal
+        const loadingDialog = document.getElementById("ai-loading-dialog");
+        const topicPill = document.getElementById("ai-loading-topic-pill");
+        if (topicPill) topicPill.textContent = `Topic: ${topicText}`;
+        if (loadingDialog) loadingDialog.showModal();
+
+        try {
+          const aiQuestions = await AIService.generateQuestions({
+            topic: topicText,
+            categoryId: "ai_drill",
+            categoryTitle: topicText,
+            difficulty: diff === "all" ? "medium" : diff,
+            count: qCount
+          });
+
+          if (loadingDialog) loadingDialog.close();
+
+          if (aiQuestions && aiQuestions.length > 0) {
+            initializeAiQuiz({
+              questions: aiQuestions,
+              topic: topicText,
+              difficulty: diff === "all" ? "medium" : diff,
+              isTimed,
+              timeLimit: isTimed ? timerVal : 20
+            });
+            if (typeof SoundEngine !== "undefined") SoundEngine.click();
+            renderActiveView();
+            if (quizState.isTimedMode) startActiveQuestionTimer();
+            showToast(`✨ Generated ${aiQuestions.length} real-time questions via Gemini AI!`, "success");
+          } else {
+            showToast("Gemini did not return any valid questions. Please try a different topic.", "danger");
+          }
+        } catch (genError) {
+          if (loadingDialog) loadingDialog.close();
+          console.error("AI Generation failed:", genError);
+          showToast(genError.message || "Failed to generate AI questions.", "danger");
+        }
       } else {
-        showToast("No questions available for this configuration.", "danger");
+        // Standard Bank Mode
+        const cat = topicSelect.value;
+        const loaded = initializeConfiguredQuiz({
+          category: cat,
+          difficulty: diff,
+          count: countVal,
+          isTimed: isTimed,
+          timeLimit: isTimed ? timerVal : 20,
+          shuffle: true
+        });
+
+        cleanup();
+        dialog.close();
+
+        if (loaded > 0) {
+          if (typeof SoundEngine !== "undefined") SoundEngine.click();
+          renderActiveView();
+          if (quizState.isTimedMode) startActiveQuestionTimer();
+        } else {
+          showToast("No questions available for this configuration.", "danger");
+        }
       }
     };
 
@@ -604,8 +940,12 @@ const UI = (function () {
     function cleanup() {
       startBtn.removeEventListener("click", handleStart);
       cancelBtn.removeEventListener("click", handleCancel);
+      if (tabBankBtn) tabBankBtn.removeEventListener("click", onTabBank);
+      if (tabAiBtn) tabAiBtn.removeEventListener("click", onTabAi);
+      if (aiKeyBadge) aiKeyBadge.removeEventListener("click", onKeyBadgeClick);
       topicSelect.removeEventListener("change", updatePoolCount);
       diffSelect.removeEventListener("change", updatePoolCount);
+      chipBtns.forEach((b) => b.removeEventListener("click", onChipClick));
     }
 
     startBtn.addEventListener("click", handleStart);
@@ -1512,7 +1852,10 @@ const UI = (function () {
             </div>
 
             <div class="exam-empty-cta">
-              <span>Complete quiz to log</span>
+              <button type="button" class="btn-slot-practice launch-exam-slot-btn" data-slot="${slotNum}">
+                <span>Practice Drill</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
             </div>
           </div>
         `;
@@ -1656,75 +1999,161 @@ const UI = (function () {
     // History Table Rows
     let historyRowsHTML = "";
     if (history.length === 0) {
-      historyRowsHTML = `<tr><td colspan="6" style="text-align:center; padding: 2.5rem; color: var(--text-muted);">No quiz logs recorded yet. Start practicing from Quiz Hub!</td></tr>`;
+      historyRowsHTML = "";
     } else {
-      historyRowsHTML = history.map((h) => `
+      historyRowsHTML = history.map((h) => {
+        const catObj = categories[h.category] || null;
+        const catColor = catObj ? catObj.color : 'var(--accent-primary)';
+        let scoreBadgeClass = "badge-success";
+        if (h.percentage < 60) scoreBadgeClass = "badge-danger";
+        else if (h.percentage < 80) scoreBadgeClass = "badge-warning";
+        return `
         <tr data-history-cat="${h.category}">
-          <td><strong>${escapeHTML(h.categoryTitle)}</strong></td>
+          <td>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:${catColor}; flex-shrink:0;"></span>
+              <strong>${escapeHTML(h.categoryTitle)}</strong>
+            </div>
+          </td>
           <td><span class="badge badge-${h.difficulty}">${h.difficulty}</span></td>
-          <td><strong>${h.score} / ${h.total}</strong> (${h.percentage}%)</td>
-          <td>${h.timeTakenSec}s</td>
-          <td>${escapeHTML(h.date)} ${escapeHTML(h.time || '')}</td>
+          <td>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <strong>${h.score}/${h.total}</strong>
+              <span class="badge badge-sm ${scoreBadgeClass}" style="font-size:0.7rem; padding:0.15rem 0.45rem;">${h.percentage}%</span>
+            </div>
+          </td>
+          <td>
+            <span style="display:inline-flex; align-items:center; gap:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-secondary);">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              ${h.timeTakenSec}s
+            </span>
+          </td>
+          <td><span style="font-size:0.82rem; color:var(--text-secondary);">${escapeHTML(h.date)} ${escapeHTML(h.time || '')}</span></td>
           <td>
             <button type="button" class="btn btn-ghost btn-sm delete-history-entry-btn" data-id="${h.id}" title="Delete entry" style="color: var(--color-danger); padding: 0.2rem 0.5rem;">
               ✕
             </button>
           </td>
         </tr>
-      `).join("");
+      `;
+      }).join("");
     }
 
     container.innerHTML = `
-      <div class="fade-in">
-        <div style="margin-bottom: 2rem;">
-          <h1 style="margin-bottom: 0.4rem;">Performance & Analytics</h1>
-          <p>Real-time metrics and historical breakdown calculated directly from your quiz attempts.</p>
+      <div class="fade-in perf-view-wrapper">
+        <!-- 1. Hero Header Banner with Atmospheric Glow & Quick Actions -->
+        <div class="perf-hero-header fade-in">
+          <div class="perf-hero-header-text">
+            <div class="perf-status-badge">
+              <span class="perf-pulse-dot"></span>
+              <span>LIVE TELEMETRY & DRILL STATS</span>
+            </div>
+            <h1 class="perf-page-heading">Performance & <span class="text-gradient-brand">Analytics</span></h1>
+            <p class="perf-page-lead">Real-time metrics, comprehensive question telemetry, and historical mastery logs calculated directly from your practice sessions.</p>
+          </div>
+          <div class="perf-hero-actions">
+            <button type="button" class="btn btn-primary btn-glow" id="perf-start-quiz-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Start Practice Drill</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="perf-config-quiz-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <span>Custom Drill</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Overview Metric Cards -->
+        <!-- 2. Overview Metric Cards (Total Questions Solved, Completed Quizzes, Average Accuracy) -->
         <div class="analytics-overview-grid">
-          <div class="card stat-widget">
-            <div class="stat-widget-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          <!-- Card 1: Total Questions Solved -->
+          <div class="card stat-widget perf-stat-widget perf-stat-cyan">
+            <div class="perf-stat-bg-glow"></div>
+            <div class="stat-widget-top">
+              <div class="stat-widget-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <path d="m9 15 2 2 4-4"/>
+                </svg>
+              </div>
+              <span class="perf-stat-badge-chip cyan">
+                <span class="perf-chip-dot"></span>
+                <span>Drill Volume</span>
+              </span>
             </div>
-            <div>
+            <div class="stat-widget-body">
+              <div class="stat-widget-val">${analytics.totalQuestions}</div>
+              <div class="stat-widget-lbl">Total Questions Solved</div>
+            </div>
+            <div class="stat-widget-footer">
+              <div class="stat-sub-text">
+                <span class="sub-correct-count"><strong>${analytics.totalCorrect}</strong> correct</span>
+                <span class="sub-sep">•</span>
+                <span class="sub-acc-count">${analytics.averageAccuracy}% accuracy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Completed Quizzes -->
+          <div class="card stat-widget perf-stat-widget perf-stat-purple">
+            <div class="perf-stat-bg-glow"></div>
+            <div class="stat-widget-top">
+              <div class="stat-widget-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                  <path d="M4 22h16"/>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                </svg>
+              </div>
+              <span class="perf-stat-badge-chip purple">
+                <span>Quiz Sessions</span>
+              </span>
+            </div>
+            <div class="stat-widget-body">
               <div class="stat-widget-val">${analytics.totalQuizzes}</div>
               <div class="stat-widget-lbl">Completed Quizzes</div>
             </div>
+            <div class="stat-widget-footer">
+              <div class="stat-sub-text">
+                <span>${analytics.totalQuizzes === 1 ? '1 full test completed' : `${analytics.totalQuizzes} full tests completed`}</span>
+              </div>
+            </div>
           </div>
 
-          <div class="card stat-widget">
-            <div class="stat-widget-icon" style="color: var(--color-success);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          <!-- Card 3: Average Accuracy -->
+          <div class="card stat-widget perf-stat-widget perf-stat-emerald">
+            <div class="perf-stat-bg-glow"></div>
+            <div class="stat-widget-top">
+              <div class="stat-widget-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+              <span class="perf-stat-badge-chip emerald">
+                <span>Precision</span>
+              </span>
             </div>
-            <div>
+            <div class="stat-widget-body">
               <div class="stat-widget-val">${analytics.averageAccuracy}%</div>
               <div class="stat-widget-lbl">Average Accuracy</div>
             </div>
-          </div>
-
-          <div class="card stat-widget">
-            <div class="stat-widget-icon" style="color: var(--accent-purple);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <div>
-              <div class="stat-widget-val">${analytics.bestScore}%</div>
-              <div class="stat-widget-lbl">Best Score</div>
-            </div>
-          </div>
-
-          <div class="card stat-widget">
-            <div class="stat-widget-icon" style="color: var(--color-warning);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
-            </div>
-            <div>
-              <div class="stat-widget-val">${analytics.streak} Days</div>
-              <div class="stat-widget-lbl">Learning Streak</div>
+            <div class="stat-widget-footer">
+              <div class="accuracy-mini-track">
+                <div class="accuracy-mini-fill" style="width: ${analytics.averageAccuracy}%;"></div>
+              </div>
+              <div class="stat-sub-text">
+                <span>${analytics.averageAccuracy >= 80 ? '🌟 Mastery Level' : analytics.averageAccuracy >= 60 ? '⚡ Good Progress' : '🌱 Foundational'}</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Recent Exam Performance (Last 5 Sessions in Single Row) -->
+        <!-- 3. Recent Exam Performance (Last 5 Sessions in Single Row) -->
         <div class="last-exams-section fade-in" style="margin-bottom: 2rem;">
           <div class="last-exams-header">
             <div>
@@ -1751,7 +2180,7 @@ const UI = (function () {
           </div>
         </div>
 
-        <!-- GitHub-Style Contribution Calendar (Based on Tests Completed) -->
+        <!-- 4. GitHub-Style Practice Activity Calendar -->
         <div class="card contribution-chart-card fade-in" style="margin-bottom: 2rem; position: relative;">
           <!-- Floating Interactive Tooltip Bubble -->
           <div class="contrib-floating-tooltip" id="contrib-floating-tooltip"></div>
@@ -1772,7 +2201,7 @@ const UI = (function () {
                 <span class="contrib-stat-num">${activeDaysCount}</span> active days
               </span>
               <span class="contrib-stat-badge">
-                <span class="contrib-stat-num">${analytics.streak}</span> day streak
+                <span class="contrib-stat-num">${analytics.totalQuestions}</span> questions solved
               </span>
             </div>
           </div>
@@ -1808,9 +2237,9 @@ const UI = (function () {
 
           <div class="contribution-chart-footer">
             <div class="contribution-footnote">
-              ${analytics.streak > 0 
-                ? `🔥 <strong>${analytics.streak} day streak</strong> active. Keep up the daily practice!` 
-                : 'Complete quiz tests daily to build your contribution graph.'}
+              ${analytics.totalQuestions > 0 
+                ? `🎯 <strong>${analytics.totalQuestions} questions solved</strong> across completed practice sessions. Keep drilling daily!` 
+                : 'Complete quiz tests daily to build your practice activity calendar.'}
             </div>
 
             <div class="contribution-legend">
@@ -1825,7 +2254,7 @@ const UI = (function () {
           </div>
         </div>
 
-        <!-- Achievements & Milestones (Categorized by Difficulty Tiers) -->
+        <!-- 5. Achievements & Milestones (Categorized by Difficulty Tiers) -->
         <div class="achievements-section fade-in" style="margin-bottom: 2.5rem;">
           <div class="achievements-header-bar">
             <div>
@@ -1866,12 +2295,17 @@ const UI = (function () {
           </div>
         </div>
 
-        <!-- Quiz History Table -->
-        <div class="card" style="padding: 1.5rem;">
+        <!-- 6. Quiz History Table & Showcase -->
+        <div class="card perf-history-card" style="padding: 1.6rem;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
             <div>
-              <h3>Attempt History</h3>
-              <p style="font-size: 0.85rem; color: var(--text-muted);">Complete record of your completed quizzes</p>
+              <div style="display:flex; align-items:center; gap:0.6rem;">
+                <span style="color:var(--accent-primary); display:flex;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                </span>
+                <h3 style="margin: 0; font-size: 1.15rem;">Attempt History Logs</h3>
+              </div>
+              <p style="font-size: 0.83rem; color: var(--text-muted); margin: 0.2rem 0 0 0;">Complete record of your completed quiz sessions and telemetry.</p>
             </div>
             <div style="display: flex; gap: 0.75rem; align-items: center;">
               <select id="history-filter-cat" class="filter-select">
@@ -1887,28 +2321,77 @@ const UI = (function () {
             </div>
           </div>
 
-          <div class="table-responsive">
-            <table class="app-table">
-              <thead>
-                <tr>
-                  <th>Topic</th>
-                  <th>Difficulty</th>
-                  <th>Score</th>
-                  <th>Duration</th>
-                  <th>Timestamp</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody id="history-table-body">
-                ${historyRowsHTML}
-              </tbody>
-            </table>
-          </div>
+          ${history.length === 0 ? `
+            <div class="empty-history-showcase fade-in">
+              <div class="empty-history-icon-box">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <h4 class="empty-history-title">No Quiz Attempts Recorded Yet</h4>
+              <p class="empty-history-desc">Start answering interactive question drills across technical domains to build your personal telemetry.</p>
+              <button type="button" class="btn btn-primary btn-sm" id="empty-history-start-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Take Your First Quiz</span>
+              </button>
+            </div>
+          ` : `
+            <div class="table-responsive">
+              <table class="app-table">
+                <thead>
+                  <tr>
+                    <th>Topic</th>
+                    <th>Difficulty</th>
+                    <th>Score</th>
+                    <th>Duration</th>
+                    <th>Timestamp</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="history-table-body">
+                  ${historyRowsHTML}
+                </tbody>
+              </table>
+            </div>
+          `}
         </div>
       </div>
     `;
 
     // 4. Interactive Listeners for Performance View
+    // Performance Header Quick Action Buttons
+    const startDrillBtn = container.querySelector("#perf-start-quiz-btn");
+    if (startDrillBtn) {
+      startDrillBtn.addEventListener("click", () => {
+        showQuizConfigModal("all");
+      });
+    }
+
+    const configDrillBtn = container.querySelector("#perf-config-quiz-btn");
+    if (configDrillBtn) {
+      configDrillBtn.addEventListener("click", () => {
+        showQuizConfigModal("all");
+      });
+    }
+
+    const emptyHistoryBtn = container.querySelector("#empty-history-start-btn");
+    if (emptyHistoryBtn) {
+      emptyHistoryBtn.addEventListener("click", () => {
+        showQuizConfigModal("all");
+      });
+    }
+
+    // Exam slot empty buttons
+    container.querySelectorAll(".launch-exam-slot-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        showQuizConfigModal("all");
+      });
+    });
+
     // Setup interactive floating tooltip for Contribution Heatmap
     const tooltipBubble = container.querySelector("#contrib-floating-tooltip");
     const chartCard = container.querySelector(".contribution-chart-card");
@@ -2193,6 +2676,10 @@ const UI = (function () {
     updateHeaderActions,
     switchTab,
     showToast,
-    showConfirmModal
+    showConfirmModal,
+    showQuizConfigModal,
+    showAiConfigModal,
+    initAiSettings,
+    updateAiHeaderStatus
   };
 })();
