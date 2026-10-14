@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "css_0001",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "What does the CSS selector \"div > p\" select?",
+    "options": [
+      "Direct child <p> elements of <div>",
+      "All <p> elements inside <div>",
+      "Adjacent sibling <p> after <div>",
+      "All descendants of <div>"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The \">\" combinator selects only direct children, not all descendants.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0002",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the CSS :nth-child(2n+1) selector match?",
+    "options": [
+      "Odd-numbered child elements",
+      "Even-numbered child elements",
+      "Every second child element",
+      "The first child only"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": ":nth-child(2n+1) matches elements at positions 1, 3, 5, etc. (odd positions). It is equivalent to :nth-child(odd).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0003",
+    "topic": "CSS",
+    "subtopic": "Specificity",
+    "difficulty": "medium",
+    "question": "What is CSS specificity and how is it calculated?",
+    "options": [
+      "A weight system determining which CSS rules apply: inline > ID > class > element",
+      "The order in which CSS files are loaded",
+      "The number of properties in a rule",
+      "How specific a CSS property name is"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Specificity determines which CSS rule wins when multiple rules target the same element. It is calculated as: inline styles (1000) > IDs (100) > classes/attributes/pseudo-classes (10) > elements/pseudo-elements (1).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0004",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "medium",
+    "question": "What is the CSS \"cascade\" in Cascading Style Sheets?",
+    "options": [
+      "The algorithm that resolves conflicts when multiple CSS rules apply to the same element",
+      "A waterfall animation effect",
+      "The order of CSS file imports",
+      "How styles flow from parent to child elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The cascade is the algorithm that determines which styles to apply when multiple rules could apply to an element. It considers importance, specificity, and source order.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0005",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What does \"box-sizing: border-box\" do?",
+    "options": [
+      "Makes width and height include padding and border",
+      "Creates a border around all elements",
+      "Changes the box model to use margins",
+      "Sets the element to block display"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "border-box makes the width and height properties include content, padding, and border, making layout calculations more intuitive.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0006",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What is the difference between margin and padding?",
+    "options": [
+      "Margin is space outside the border; padding is space inside the border",
+      "Margin is for inline elements; padding is for block elements",
+      "They are identical but with different names",
+      "Padding is outside; margin is inside"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Margin creates space between elements (outside the border). Padding creates space between content and the border (inside).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0007",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "medium",
+    "question": "How does \"position: sticky\" work?",
+    "options": [
+      "The element scrolls normally until reaching a threshold, then becomes fixed",
+      "The element is always fixed at the top",
+      "The element sticks to its parent container",
+      "The element cannot be scrolled past"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "position: sticky toggles between relative and fixed positioning. The element is relative until it crosses a specified threshold (top, bottom, etc.), then becomes fixed.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0008",
+    "topic": "CSS",
+    "subtopic": "Custom Properties",
+    "difficulty": "easy",
+    "question": "What is a CSS custom property (variable)?",
+    "options": [
+      "A property defined with -- prefix that can store reusable values",
+      "A property that changes automatically based on viewport",
+      "A JavaScript variable that controls CSS",
+      "A built-in browser property"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "CSS custom properties (--my-color: blue) store values that can be referenced with var(--my-color) throughout stylesheets, enabling maintainable theming.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0009",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "What does \"justify-content: space-between\" do in Flexbox?",
+    "options": [
+      "Distributes items evenly with the first item at the start and last item at the end",
+      "Centers all items with equal space",
+      "Pushes all items to the left",
+      "Adds space only between the first and last items"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "space-between distributes flex items evenly along the main axis, with no space before the first item or after the last item.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0010",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What is the difference between \"align-items\" and \"align-content\" in Flexbox?",
+    "options": [
+      "align-items aligns items within a single line; align-content aligns wrapped lines within the container",
+      "They are identical properties",
+      "align-content works on individual items; align-items works on the container",
+      "align-items is for horizontal; align-content is for vertical"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "align-items aligns flex items along the cross axis within each flex line. align-content aligns the flex lines themselves when there are multiple lines (flex-wrap).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0011",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What does \"flex: 1 1 auto\" mean?",
+    "options": [
+      "flex-grow: 1, flex-shrink: 1, flex-basis: auto",
+      "flex-direction: row with auto margins",
+      "Create 1 column with auto width",
+      "Set flex order to 1"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The flex shorthand sets flex-grow (1 = grow to fill), flex-shrink (1 = can shrink), and flex-basis (auto = use content/width as initial size).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0012",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "What does the \"order\" property do in Flexbox?",
+    "options": [
+      "Changes the visual rendering order of flex items without modifying the DOM",
+      "Sets the stacking order (z-index)",
+      "Orders items alphabetically",
+      "Defines the sort order of a list"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The order property controls the visual order of flex items. Lower values appear first. Default is 0. This is purely visual and does not affect DOM order or tab navigation.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0013",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "What does \"flex-wrap: wrap\" do?",
+    "options": [
+      "Allows flex items to wrap onto multiple lines when they exceed the container width",
+      "Wraps text within flex items",
+      "Creates a border around flex items",
+      "Wraps the container in a parent element"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "flex-wrap: wrap allows flex items to flow onto additional lines rather than shrinking to fit in one line when the container runs out of space.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0014",
+    "topic": "CSS",
+    "subtopic": "Grid",
+    "difficulty": "medium",
+    "question": "What does \"grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))\" create?",
+    "options": [
+      "A responsive grid that auto-fills as many 200px+ columns as fit",
+      "A grid with exactly 200 columns",
+      "A grid that fills the viewport with 1fr columns",
+      "A fixed 200px grid"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "This creates a responsive grid where columns are at least 200px wide and expand to fill available space. auto-fill creates as many tracks as fit in the container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0015",
+    "topic": "CSS",
+    "subtopic": "Grid",
+    "difficulty": "hard",
+    "question": "What is the difference between \"auto-fill\" and \"auto-fit\" in CSS Grid?",
+    "options": [
+      "auto-fill keeps empty tracks; auto-fit collapses empty tracks to 0",
+      "auto-fit creates more columns than auto-fill",
+      "They are identical in behavior",
+      "auto-fill only works with fixed sizes"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "auto-fill creates as many tracks as fit and keeps empty ones. auto-fit collapses empty tracks to 0, causing remaining items to stretch and fill the space.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0016",
+    "topic": "CSS",
+    "subtopic": "Grid",
+    "difficulty": "medium",
+    "question": "What does \"grid-area\" shorthand set?",
+    "options": [
+      "grid-row-start / grid-column-start / grid-row-end / grid-column-end",
+      "The grid template areas",
+      "The area of each grid cell in pixels",
+      "The grid gap between areas"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "grid-area is shorthand for grid-row-start / grid-column-start / grid-row-end / grid-column-end, or it can reference a named grid area.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0017",
+    "topic": "CSS",
+    "subtopic": "Grid",
+    "difficulty": "medium",
+    "question": "How do you create a grid layout with named template areas?",
+    "options": [
+      "Using grid-template-areas with quoted strings defining area names",
+      "Using grid-area with numerical coordinates",
+      "Using named grid lines only",
+      "Named areas are not supported in CSS Grid"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "grid-template-areas uses quoted strings where each string represents a row and each word a cell. Repeating a name spans that area across cells.",
+    "codeSnippet": "grid-template-areas:\n  \"header header\"\n  \"sidebar main\"\n  \"footer footer\";",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0018",
+    "topic": "CSS",
+    "subtopic": "Grid",
+    "difficulty": "hard",
+    "question": "What is the \"subgrid\" value in CSS Grid?",
+    "options": [
+      "Allows a nested grid to inherit track sizing from its parent grid",
+      "Creates a smaller version of the parent grid",
+      "Defines a secondary grid overlay",
+      "Splits each grid cell into sub-cells"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "subgrid allows a nested grid item to adopt the track sizing of its parent grid, enabling aligned layouts across nested components.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0019",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What is the difference between CSS transitions and animations?",
+    "options": [
+      "Transitions animate between two states on trigger; animations can have multiple keyframes and run independently",
+      "Transitions are faster than animations",
+      "Animations require JavaScript; transitions do not",
+      "They are identical but with different syntax"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "CSS transitions animate property changes between two states (triggered by :hover, class changes, etc.). CSS animations use @keyframes for complex, multi-step animations that can run automatically.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0020",
+    "topic": "CSS",
+    "subtopic": "Performance",
+    "difficulty": "hard",
+    "question": "What does \"transform: translate3d(0, 0, 0)\" achieve?",
+    "options": [
+      "Promotes the element to its own GPU compositing layer for better performance",
+      "Moves the element to position (0,0,0)",
+      "Resets all transforms on the element",
+      "Creates a 3D perspective effect"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "translate3d(0,0,0) is a common hack to force GPU acceleration by promoting the element to its own compositing layer, improving animation performance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0021",
+    "topic": "CSS",
+    "subtopic": "Performance",
+    "difficulty": "hard",
+    "question": "Which CSS properties can be animated performantly (without triggering layout)?",
+    "options": [
+      "transform and opacity",
+      "width and height",
+      "top and left",
+      "margin and padding"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "transform and opacity can be handled by the compositor thread without triggering layout or paint, making them the most performant properties to animate.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0022",
+    "topic": "CSS",
+    "subtopic": "Performance",
+    "difficulty": "hard",
+    "question": "What is the \"will-change\" CSS property used for?",
+    "options": [
+      "Hints to the browser about which properties will change, allowing optimization",
+      "Changes the element automatically based on viewport",
+      "Defines what properties will change on hover",
+      "Creates a smooth transition effect"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "will-change hints to the browser that specific properties will change soon, allowing it to set up optimizations like creating a compositing layer ahead of time.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0023",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "hard",
+    "question": "What are CSS Container Queries?",
+    "options": [
+      "Allow styling based on the size of a parent container rather than the viewport",
+      "Queries about the browser container",
+      "Select containers in the DOM",
+      "Filter containers from search results"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Container queries (@container) allow component-level responsive design, styling elements based on their container size instead of the viewport.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0024",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "hard",
+    "question": "What does the CSS \":has()\" selector do?",
+    "options": [
+      "Selects a parent element based on its children or descendants",
+      "Checks if an element has a specific attribute",
+      "Selects elements that have been visited",
+      "Tests if an element has any content"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": ":has() is often called the \"parent selector\" - it selects elements based on what they contain. For example, div:has(> img) selects divs with a direct img child.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0025",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What is CSS nesting?",
+    "options": [
+      "Writing CSS rules inside other rules to reflect HTML structure, reducing repetition",
+      "Nesting HTML elements inside each other",
+      "Creating nested media queries",
+      "Importing CSS files inside other CSS files"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Native CSS nesting allows writing child selectors inside parent rules (like Sass), reducing repetition: .card { .title { color: red; } }",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0026",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "hard",
+    "question": "What does the \"@layer\" CSS rule do?",
+    "options": [
+      "Creates cascade layers to control the order and priority of style rules",
+      "Adds a visual layer effect to elements",
+      "Creates z-index layers",
+      "Imports styles from another layer"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "@layer creates cascade layers that let authors control the cascade order of their styles, useful for managing specificity in large codebases and design systems.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0027",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What is the \"clamp()\" CSS function?",
+    "options": [
+      "Sets a value that is clamped between a minimum and maximum: clamp(min, preferred, max)",
+      "Restricts an element to a fixed size",
+      "Clamps text to a specific number of lines",
+      "Limits the number of child elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "clamp(min, preferred, max) returns the preferred value if it falls between min and max, otherwise returns the boundary value. Great for responsive typography.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0028",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "easy",
+    "question": "What is the CSS \"aspect-ratio\" property?",
+    "options": [
+      "Sets a preferred aspect ratio for an element (e.g., 16/9)",
+      "Calculates the ratio of width to height automatically",
+      "Forces an image to a specific aspect ratio",
+      "Creates responsive video embeds"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The aspect-ratio property sets a preferred width-to-height ratio for an element. Combined with width or height, the other dimension is calculated automatically.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0029",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "easy",
+    "question": "What does \"accent-color\" do in CSS?",
+    "options": [
+      "Sets the accent color for form controls like checkboxes, radio buttons, and range inputs",
+      "Changes the text color accent",
+      "Sets the highlight color for selected text",
+      "Defines the link hover color"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "accent-color allows customizing the color of built-in form controls (checkboxes, radio buttons, progress bars, range inputs) without complex custom styling.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0030",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "hard",
+    "question": "What is a \"stacking context\" in CSS?",
+    "options": [
+      "A three-dimensional conceptualization of HTML elements along the z-axis that determines overlap order",
+      "The order in which CSS files are stacked",
+      "A container for stacked layout",
+      "The nesting depth of HTML elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "A stacking context is formed by elements with certain properties (position + z-index, opacity < 1, transform, etc.) and determines how overlapping elements are rendered.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0031",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "hard",
+    "question": "What is the difference between \"overflow: hidden\" and \"overflow: clip\"?",
+    "options": [
+      "\"clip\" does not create a scroll container or stacking context; \"hidden\" does",
+      "They are identical in behavior",
+      "\"clip\" only works on text; \"hidden\" works on all content",
+      "\"hidden\" removes content; \"clip\" just hides it"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "overflow: clip clips content without creating a scroll container. overflow: hidden also clips but creates a new block formatting context and scroll container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0032",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "medium",
+    "question": "What are CSS logical properties?",
+    "options": [
+      "Properties that adapt to writing direction (e.g., margin-inline-start instead of margin-left)",
+      "Properties that use logical operators (AND, OR)",
+      "Properties that only apply when conditions are met",
+      "Properties that improve rendering logic"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Logical properties (margin-inline, padding-block, etc.) adapt to the writing mode and direction, making layouts work correctly for RTL languages and vertical writing modes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0033",
+    "topic": "CSS",
+    "subtopic": "Responsive",
+    "difficulty": "easy",
+    "question": "What is a CSS media query used for?",
+    "options": [
+      "Applying different styles based on device characteristics like viewport width",
+      "Querying a database for style data",
+      "Selecting media elements like video and audio",
+      "Loading different HTML based on device"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Media queries (@media) apply CSS rules conditionally based on device characteristics such as viewport width, height, orientation, color scheme, and more.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0034",
+    "topic": "CSS",
+    "subtopic": "Responsive",
+    "difficulty": "easy",
+    "question": "What does \"prefers-color-scheme\" media query detect?",
+    "options": [
+      "Whether the user has requested a light or dark color theme at the OS level",
+      "The browser's default color scheme",
+      "The CSS color scheme of the current page",
+      "Whether colors are supported by the display"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "prefers-color-scheme detects the user's OS-level preference for light or dark mode, allowing websites to match the system theme.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0035",
+    "topic": "CSS",
+    "subtopic": "Responsive",
+    "difficulty": "medium",
+    "question": "What does \"prefers-reduced-motion\" media query detect?",
+    "options": [
+      "Whether the user has requested reduced motion in their OS accessibility settings",
+      "The speed of the user's internet connection",
+      "Whether CSS animations are supported",
+      "The refresh rate of the display"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "prefers-reduced-motion detects if the user has enabled reduced motion in their OS settings, allowing developers to minimize or remove animations for accessibility.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0036",
+    "topic": "CSS",
+    "subtopic": "Responsive",
+    "difficulty": "easy",
+    "question": "What are CSS viewport units (vw, vh, vmin, vmax)?",
+    "options": [
+      "Units relative to the viewport: vw = 1% width, vh = 1% height, vmin/vmax = smaller/larger dimension",
+      "Fixed pixel values for different viewports",
+      "Units for virtual reality viewports",
+      "Units that only work in mobile browsers"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "Viewport units are relative to the browser viewport: 1vw = 1% of viewport width, 1vh = 1% of viewport height. vmin and vmax use the smaller/larger of the two.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0037",
+    "topic": "CSS",
+    "subtopic": "Responsive",
+    "difficulty": "hard",
+    "question": "What is the \"dvh\" unit in CSS?",
+    "options": [
+      "Dynamic viewport height that accounts for mobile browser UI changes (address bar showing/hiding)",
+      "Default viewport height",
+      "Device viewport height",
+      "Desktop viewport height"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "dvh (dynamic viewport height) changes as the browser UI appears/disappears on mobile, unlike vh which is based on the largest possible viewport.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0038",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does \"font-display: swap\" do in a @font-face rule?",
+    "options": [
+      "Shows fallback text immediately, then swaps to the custom font when loaded",
+      "Swaps between two font families",
+      "Displays text only after the font loads",
+      "Prevents custom font from loading"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "font-display: swap shows text immediately using a fallback font, then \"swaps\" to the custom font once it downloads, preventing invisible text (FOIT).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0039",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What is the \"text-wrap: balance\" CSS property?",
+    "options": [
+      "Distributes text more evenly across lines in headings for a visually balanced appearance",
+      "Centers text horizontally",
+      "Wraps text around floating elements",
+      "Balances text between columns"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "text-wrap: balance adjusts line breaks so text lines are more even in length, creating more visually appealing headings and short text blocks.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0040",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What is \"ch\" unit in CSS?",
+    "options": [
+      "Width of the \"0\" (zero) character in the current font",
+      "Character height",
+      "Channel width",
+      "Chrome-specific unit"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "The \"ch\" unit represents the advance measure (width) of the \"0\" glyph in the element's current font. Useful for setting optimal reading line lengths.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0041",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "hard",
+    "question": "What is the difference between rgb(), hsl(), and oklch() in CSS?",
+    "options": [
+      "rgb uses red-green-blue, hsl uses hue-saturation-lightness, oklch uses lightness-chroma-hue in a perceptually uniform space",
+      "They produce identical results",
+      "oklch is deprecated in favor of rgb",
+      "hsl only works in dark mode"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "rgb() uses additive color mixing, hsl() uses a more intuitive color model, and oklch() provides perceptually uniform colors where equal numeric changes produce equal visual changes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0042",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "medium",
+    "question": "What does \"color-scheme: light dark\" do?",
+    "options": [
+      "Tells the browser the page supports both light and dark color schemes, adjusting built-in UI accordingly",
+      "Automatically generates a dark theme",
+      "Changes the page colors based on time of day",
+      "Creates a color scheme selector"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "color-scheme: light dark informs the browser that both schemes are supported. The browser then adjusts form controls, scrollbars, and system colors accordingly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0043",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "medium",
+    "question": "What are CSS conic-gradient() functions used for?",
+    "options": [
+      "Creating gradients that rotate around a center point (like pie charts)",
+      "Creating conical 3D effects",
+      "Generating cone-shaped containers",
+      "Creating radial blur effects"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "conic-gradient() creates gradients with color transitions rotated around a center point, useful for pie charts, color wheels, and decorative effects.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0044",
+    "topic": "CSS",
+    "subtopic": "Pseudo-elements",
+    "difficulty": "easy",
+    "question": "What is the difference between ::before and :before in CSS?",
+    "options": [
+      ":: is the correct CSS3 syntax for pseudo-elements; : is the CSS2 legacy syntax (both work)",
+      "They select different elements",
+      ":: is for pseudo-classes; : is for pseudo-elements",
+      ":: only works in modern browsers"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "CSS3 introduced :: for pseudo-elements to distinguish them from pseudo-classes (:). Both ::before and :before work, but :: is the correct modern syntax.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0045",
+    "topic": "CSS",
+    "subtopic": "Pseudo-elements",
+    "difficulty": "easy",
+    "question": "What does the ::placeholder pseudo-element style?",
+    "options": [
+      "The placeholder text shown in form inputs before user types",
+      "The placeholder for lazy-loaded images",
+      "Empty content areas",
+      "Default select option text"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": "::placeholder styles the placeholder text in <input> and <textarea> elements. It has limited styleable properties (color, font, text-decoration, etc.).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0046",
+    "topic": "CSS",
+    "subtopic": "Pseudo-classes",
+    "difficulty": "medium",
+    "question": "What does the :focus-visible pseudo-class do?",
+    "options": [
+      "Applies styles only when focus is visible to the user (keyboard navigation), not on mouse clicks",
+      "Makes focused elements visible on screen",
+      "Shows a visible indicator on all focused elements",
+      "Toggles visibility of focused elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": ":focus-visible matches elements that receive focus via keyboard navigation but not via mouse click, allowing you to show focus rings only when they are helpful.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0047",
+    "topic": "CSS",
+    "subtopic": "Pseudo-classes",
+    "difficulty": "hard",
+    "question": "What is the :where() pseudo-class function used for?",
+    "options": [
+      "Creates a selector list with zero specificity, useful for easily overridable defaults",
+      "Locates elements on the page",
+      "Adds location-based styling",
+      "Queries element positions"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": ":where() works like :is() for grouping selectors, but has zero specificity, making it ideal for creating low-priority default styles in libraries.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0048",
+    "topic": "CSS",
+    "subtopic": "Pseudo-classes",
+    "difficulty": "medium",
+    "question": "What is the :is() pseudo-class function?",
+    "options": [
+      "Groups selectors and takes on the highest specificity of its arguments",
+      "Checks if an element exists",
+      "Tests if a value is valid",
+      "Performs type checking on elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CSS fundamentals.",
+    "explanation": ":is() takes a selector list and matches elements matching any selector in the list. Its specificity equals the most specific argument.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0049",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "easy",
+    "question": "What does the CSS \"gap\" property do?",
+    "options": [
+      "It sets the spacing between grid/flex items without affecting outer edges",
+      "It creates a new HTML element dynamically",
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"gap\" suggests in CSS context.",
+    "explanation": "The CSS \"gap\" property sets the spacing between grid/flex items without affecting outer edges. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0050",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "medium",
+    "question": "What does the CSS \"place-items\" property do?",
+    "options": [
+      "It shorthand for align-items and justify-items in grid/flex layouts",
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"place-items\" suggests in CSS context.",
+    "explanation": "The CSS \"place-items\" property shorthand for align-items and justify-items in grid/flex layouts. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0051",
+    "topic": "CSS",
+    "subtopic": "Layout",
+    "difficulty": "hard",
+    "question": "What does the CSS \"isolation\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It creates a new HTML element dynamically",
+      "It creates a new stacking context, useful with mix-blend-mode",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"isolation\" suggests in CSS context.",
+    "explanation": "The CSS \"isolation\" property creates a new stacking context, useful with mix-blend-mode. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0052",
+    "topic": "CSS",
+    "subtopic": "Media",
+    "difficulty": "easy",
+    "question": "What does the CSS \"object-fit\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings",
+      "It specifies how an <img> or <video> fits within its container",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"object-fit\" suggests in CSS context.",
+    "explanation": "The CSS \"object-fit\" property specifies how an <img> or <video> fits within its container. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0053",
+    "topic": "CSS",
+    "subtopic": "Media",
+    "difficulty": "medium",
+    "question": "What does the CSS \"object-position\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It specifies the alignment of the replaced element within its box",
+      "It creates a new HTML element dynamically",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"object-position\" suggests in CSS context.",
+    "explanation": "The CSS \"object-position\" property specifies the alignment of the replaced element within its box. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0054",
+    "topic": "CSS",
+    "subtopic": "Filters",
+    "difficulty": "medium",
+    "question": "What does the CSS \"backdrop-filter\" property do?",
+    "options": [
+      "It creates a new HTML element dynamically",
+      "It defines server-side rendering behavior for the element",
+      "It applies filter effects (blur, grayscale) to the area behind an element",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"backdrop-filter\" suggests in CSS context.",
+    "explanation": "The CSS \"backdrop-filter\" property applies filter effects (blur, grayscale) to the area behind an element. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0055",
+    "topic": "CSS",
+    "subtopic": "Filters",
+    "difficulty": "hard",
+    "question": "What does the CSS \"mix-blend-mode\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It creates a new HTML element dynamically",
+      "It defines how an element's content should blend with its background",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"mix-blend-mode\" suggests in CSS context.",
+    "explanation": "The CSS \"mix-blend-mode\" property defines how an element's content should blend with its background. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0056",
+    "topic": "CSS",
+    "subtopic": "Scroll",
+    "difficulty": "easy",
+    "question": "What does the CSS \"scroll-behavior\" property do?",
+    "options": [
+      "It creates a new HTML element dynamically",
+      "It defines whether scroll should be instant or smooth",
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"scroll-behavior\" suggests in CSS context.",
+    "explanation": "The CSS \"scroll-behavior\" property defines whether scroll should be instant or smooth. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0057",
+    "topic": "CSS",
+    "subtopic": "Scroll",
+    "difficulty": "medium",
+    "question": "What does the CSS \"scroll-snap-type\" property do?",
+    "options": [
+      "It defines how strictly scroll positions snap to snap points",
+      "It creates a new HTML element dynamically",
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"scroll-snap-type\" suggests in CSS context.",
+    "explanation": "The CSS \"scroll-snap-type\" property defines how strictly scroll positions snap to snap points. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0058",
+    "topic": "CSS",
+    "subtopic": "Scroll",
+    "difficulty": "medium",
+    "question": "What does the CSS \"overscroll-behavior\" property do?",
+    "options": [
+      "It controls what happens when scrolling past the boundary of a scroll area",
+      "It modifies the browser's rendering engine settings",
+      "It creates a new HTML element dynamically",
+      "It defines server-side rendering behavior for the element"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"overscroll-behavior\" suggests in CSS context.",
+    "explanation": "The CSS \"overscroll-behavior\" property controls what happens when scrolling past the boundary of a scroll area. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0059",
+    "topic": "CSS",
+    "subtopic": "Text",
+    "difficulty": "medium",
+    "question": "What does the CSS \"writing-mode\" property do?",
+    "options": [
+      "It sets whether text is laid out horizontally or vertically",
+      "It modifies the browser's rendering engine settings",
+      "It defines server-side rendering behavior for the element",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"writing-mode\" suggests in CSS context.",
+    "explanation": "The CSS \"writing-mode\" property sets whether text is laid out horizontally or vertically. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0060",
+    "topic": "CSS",
+    "subtopic": "Text",
+    "difficulty": "easy",
+    "question": "What does the CSS \"text-decoration-thickness\" property do?",
+    "options": [
+      "It modifies the browser's rendering engine settings",
+      "It creates a new HTML element dynamically",
+      "It sets the thickness of the decorative line (underline, overline, etc.)",
+      "It defines server-side rendering behavior for the element"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"text-decoration-thickness\" suggests in CSS context.",
+    "explanation": "The CSS \"text-decoration-thickness\" property sets the thickness of the decorative line (underline, overline, etc.). Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0061",
+    "topic": "CSS",
+    "subtopic": "Interaction",
+    "difficulty": "medium",
+    "question": "What does the CSS \"pointer-events\" property do?",
+    "options": [
+      "It creates a new HTML element dynamically",
+      "It controls whether an element can be the target of pointer events",
+      "It modifies the browser's rendering engine settings",
+      "It defines server-side rendering behavior for the element"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"pointer-events\" suggests in CSS context.",
+    "explanation": "The CSS \"pointer-events\" property controls whether an element can be the target of pointer events. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0062",
+    "topic": "CSS",
+    "subtopic": "Interaction",
+    "difficulty": "medium",
+    "question": "What does the CSS \"touch-action\" property do?",
+    "options": [
+      "It creates a new HTML element dynamically",
+      "It modifies the browser's rendering engine settings",
+      "It controls how an element handles touch/pen input gestures",
+      "It defines server-side rendering behavior for the element"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"touch-action\" suggests in CSS context.",
+    "explanation": "The CSS \"touch-action\" property controls how an element handles touch/pen input gestures. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0063",
+    "topic": "CSS",
+    "subtopic": "Interaction",
+    "difficulty": "easy",
+    "question": "What does the CSS \"user-select\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It modifies the browser's rendering engine settings",
+      "It controls whether the user can select text within an element",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"user-select\" suggests in CSS context.",
+    "explanation": "The CSS \"user-select\" property controls whether the user can select text within an element. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0064",
+    "topic": "CSS",
+    "subtopic": "Interaction",
+    "difficulty": "easy",
+    "question": "What does the CSS \"resize\" property do?",
+    "options": [
+      "It modifies the browser's rendering engine settings",
+      "It creates a new HTML element dynamically",
+      "It controls whether an element is resizable by the user",
+      "It defines server-side rendering behavior for the element"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"resize\" suggests in CSS context.",
+    "explanation": "The CSS \"resize\" property controls whether an element is resizable by the user. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0065",
+    "topic": "CSS",
+    "subtopic": "Performance",
+    "difficulty": "hard",
+    "question": "What does the CSS \"content-visibility\" property do?",
+    "options": [
+      "It creates a new HTML element dynamically",
+      "It modifies the browser's rendering engine settings",
+      "It defines server-side rendering behavior for the element",
+      "It controls whether an element renders its contents, enabling lazy rendering"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"content-visibility\" suggests in CSS context.",
+    "explanation": "The CSS \"content-visibility\" property controls whether an element renders its contents, enabling lazy rendering. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0066",
+    "topic": "CSS",
+    "subtopic": "Performance",
+    "difficulty": "hard",
+    "question": "What does the CSS \"contain\" property do?",
+    "options": [
+      "It modifies the browser's rendering engine settings",
+      "It defines server-side rendering behavior for the element",
+      "It creates a new HTML element dynamically",
+      "It indicates that an element and its contents are independent of the rest of the page"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"contain\" suggests in CSS context.",
+    "explanation": "The CSS \"contain\" property indicates that an element and its contents are independent of the rest of the page. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0067",
+    "topic": "CSS",
+    "subtopic": "Forms",
+    "difficulty": "medium",
+    "question": "What does the CSS \"appearance\" property do?",
+    "options": [
+      "It defines server-side rendering behavior for the element",
+      "It controls whether an element uses the platform's native styling",
+      "It modifies the browser's rendering engine settings",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"appearance\" suggests in CSS context.",
+    "explanation": "The CSS \"appearance\" property controls whether an element uses the platform's native styling. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0068",
+    "topic": "CSS",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What does the CSS \"caret-color\" property do?",
+    "options": [
+      "It modifies the browser's rendering engine settings",
+      "It defines server-side rendering behavior for the element",
+      "It sets the color of the text cursor (caret) in editable fields",
+      "It creates a new HTML element dynamically"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"caret-color\" suggests in CSS context.",
+    "explanation": "The CSS \"caret-color\" property sets the color of the text cursor (caret) in editable fields. Understanding this property helps build better, more interactive user interfaces.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0069",
+    "topic": "CSS",
+    "subtopic": "Code Analysis",
+    "difficulty": "medium",
+    "question": "What color will the paragraph text be?",
+    "options": [
+      "red",
+      "green",
+      "blue",
+      "black"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the CSS rules and selectors.",
+    "explanation": "The selector \".container p\" has higher specificity (class + element) than just \"p\" (element only), so the text will be red.",
+    "codeSnippet": ".container { color: blue; }\n.container p { color: red; }\np { color: green; }",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0070",
+    "topic": "CSS",
+    "subtopic": "Code Analysis",
+    "difficulty": "easy",
+    "question": "What does this CSS create?",
+    "options": [
+      "A full-viewport card with content centered both horizontally and vertically",
+      "A card with items aligned to the top-left",
+      "A card that fills half the viewport",
+      "A card with scrollable content"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the CSS rules and selectors.",
+    "explanation": "place-items: center is shorthand for align-items: center and justify-items: center, centering content in both axes. min-height: 100vh ensures full viewport height.",
+    "codeSnippet": ".card {\n  display: grid;\n  place-items: center;\n  min-height: 100vh;\n}",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0071",
+    "topic": "CSS",
+    "subtopic": "Code Analysis",
+    "difficulty": "easy",
+    "question": "What layout does this produce?",
+    "options": [
+      "A three-column grid with equal-width columns and 1rem gaps",
+      "A three-row grid with equal heights",
+      "Three floating elements side by side",
+      "A single column with three sections"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the CSS rules and selectors.",
+    "explanation": "This creates a three-column grid where each column takes an equal fraction (1fr) of the available space, with 1rem gaps between items.",
+    "codeSnippet": ".grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n}",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0072",
+    "topic": "CSS",
+    "subtopic": "Code Analysis",
+    "difficulty": "easy",
+    "question": "What does this animation do?",
+    "options": [
+      "Fades in an element while sliding it up from 20px below",
+      "Fades out an element while sliding it down",
+      "Rotates an element 20 degrees",
+      "Scales an element from 0 to full size"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the CSS rules and selectors.",
+    "explanation": "The animation goes from transparent (opacity: 0) and shifted down (translateY: 20px) to fully visible (opacity: 1) at its original position.",
+    "codeSnippet": "@keyframes fadeIn {\n  from { opacity: 0; transform: translateY(20px); }\n  to { opacity: 1; transform: translateY(0); }\n}",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0073",
+    "topic": "CSS",
+    "subtopic": "Code Analysis",
+    "difficulty": "easy",
+    "question": "What does this media query target?",
+    "options": [
+      "Viewports between 768px and 1024px wide (tablet range)",
+      "All screens wider than 768px",
+      "Only exactly 768px wide screens",
+      "Mobile screens under 768px"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the CSS rules and selectors.",
+    "explanation": "This media query targets viewports that are at least 768px wide AND at most 1024px wide, commonly referred to as the tablet breakpoint range.",
+    "codeSnippet": "@media (min-width: 768px) and (max-width: 1024px) {\n  .container { padding: 2rem; }\n}",
+    "type": "mcq"
+  },
+  {
+    "id": "css_0074",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "Which CSS property specifies whether an element's padding and border are included in its total width and height?",
+    "options": [
+      "border-collapse",
+      "display",
+      "overflow",
+      "box-sizing"
+    ],
+    "correctAnswer": 3,
+    "hint": "Defaults to content-box in standard CSS.",
+    "explanation": "The box-sizing property determines how the width and height of an element are calculated.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0075",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "In the CSS box model, what is the default value of the box-sizing property?",
+    "options": [
+      "content-box",
+      "border-box",
+      "padding-box",
+      "margin-box"
+    ],
+    "correctAnswer": 0,
+    "hint": "Padding and borders expand the box size.",
+    "explanation": "content-box is the standard default where width and height apply only to the content area.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0076",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What occurs during CSS margin collapsing?",
+    "options": [
+      "Horizontal margins between inline-block elements overlap",
+      "Adjacent vertical margins of block-level elements combine into a single margin",
+      "Padding and borders merge into the margin area",
+      "Negative margins are ignored by the browser rendering engine"
+    ],
+    "correctAnswer": 1,
+    "hint": "This only happens vertically, not horizontally.",
+    "explanation": "Vertical margins of adjacent block elements collapse into the larger of the two margins.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0077",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "Which condition prevents vertical margin collapsing between parent and child elements?",
+    "options": [
+      "Setting box-sizing: content-box on the child element",
+      "Setting display: inline on the parent element",
+      "Adding a 1px border or padding to the parent element",
+      "Applying font-size: 0 to the parent container"
+    ],
+    "correctAnswer": 2,
+    "hint": "A physical barrier stops margin collapsing.",
+    "explanation": "Padding or borders on the parent separate the margins, preventing them from collapsing.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0078",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What is the key difference between outline and border in CSS?",
+    "options": [
+      "Borders do not support rounded corners with border-radius",
+      "Borders cannot be styled with dashed or dotted lines",
+      "Outlines can only be rendered with solid black color",
+      "Outlines do not take up space in the document layout"
+    ],
+    "correctAnswer": 3,
+    "hint": "Outlines don't trigger reflow.",
+    "explanation": "An outline is drawn outside the element's border and does not affect page layout or element dimensions.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0079",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What is the purpose of the CSS property 'aspect-ratio: 16 / 9'?",
+    "options": [
+      "It maintains a consistent width-to-height ratio for the element",
+      "It forces the viewport to render in 16:9 widescreen format",
+      "It scales the font-size proportionately to 16px and 9px",
+      "It crops background images to standard 16:9 video boundaries"
+    ],
+    "correctAnswer": 0,
+    "hint": "Useful for responsive videos and cards.",
+    "explanation": "The aspect-ratio property sets a preferred aspect ratio for the box, which is used in auto sizes calculations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0080",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "hard",
+    "question": "How do negative margins behave in CSS when applied as 'margin-left: -20px'?",
+    "options": [
+      "The element is pulled 20 pixels to the left of its normal position",
+      "The element creates a 20px gap to its right sibling",
+      "The browser ignores the negative value and applies 0px",
+      "The element shrinks its width by 20 pixels"
+    ],
+    "correctAnswer": 0,
+    "hint": "Negative values shift positions.",
+    "explanation": "Negative margins pull the element in that direction or pull subsequent siblings closer.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0081",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "Which CSS selector has the highest specificity?",
+    "options": [
+      "ID selector (#header)",
+      "Inline styles via the style attribute",
+      "Class selector (.nav-item)",
+      "Universal selector (*)"
+    ],
+    "correctAnswer": 1,
+    "hint": "Look at style attribute specificity.",
+    "explanation": "Inline styles have a specificity weight of (1, 0, 0, 0), beating IDs (0, 1, 0, 0).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0082",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What is the specificity value of the selector 'div.container ul li.active a'?",
+    "options": [
+      "0, 0, 3, 2",
+      "0, 1, 2, 0",
+      "0, 0, 2, 3 (0 IDs, 2 classes, 3 element tags)",
+      "1, 0, 2, 2"
+    ],
+    "correctAnswer": 2,
+    "hint": "Count IDs, classes/pseudo-classes, and elements.",
+    "explanation": "2 classes (.container, .active) and 3 elements (div, ul, li, a has 4 elements total: div, ul, li, a).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0083",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "How does the specificity of the CSS ':where()' pseudo-class compare to ':is()'?",
+    "options": [
+      ":is() has 0 specificity while :where() matches parent specificity",
+      ":where() and :is() both have 0 specificity",
+      ":where() has an ID-level specificity of (0, 1, 0, 0)",
+      ":where() always has 0 specificity, whereas :is() takes the specificity of its most specific argument"
+    ],
+    "correctAnswer": 3,
+    "hint": "Zero specificity helper.",
+    "explanation": ":where() resets specificity to zero, making it ideal for resets and CSS libraries.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0084",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the ':has()' relational pseudo-class selector match?",
+    "options": [
+      "A parent or preceding element based on its descendant or sibling elements",
+      "Elements that have non-empty text content",
+      "Elements currently possessing focus or active states",
+      "Elements with at least one custom data-attribute"
+    ],
+    "correctAnswer": 0,
+    "hint": "Often referred to as the parent selector.",
+    "explanation": ":has() allows styling a parent element conditionally based on what children or following elements it contains.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0085",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "Which pseudo-class selector targets an input element when its value passes HTML validation?",
+    "options": [
+      ":correct",
+      ":valid",
+      ":success",
+      ":approved"
+    ],
+    "correctAnswer": 1,
+    "hint": "Standard HTML5 constraint validation.",
+    "explanation": "The :valid pseudo-class represents any form element whose content validates successfully.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0086",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the selector 'a[href^=\"https\"]' target in CSS?",
+    "options": [
+      "Anchor elements whose href ends with 'https'",
+      "Anchor elements whose href contains 'https' anywhere in the URL",
+      "Anchor elements whose href attribute value begins with 'https'",
+      "Anchor elements with an external target attribute"
+    ],
+    "correctAnswer": 2,
+    "hint": "^ matches start of string.",
+    "explanation": "The '^=' attribute selector matches attributes whose values start with the specified string.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0087",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the selector 'div > p' target in CSS?",
+    "options": [
+      "Div elements that contain at least one paragraph tag",
+      "All paragraph descendants inside a div at any nesting level",
+      "Paragraph elements immediately following a div sibling",
+      "Direct paragraph children of a div element"
+    ],
+    "correctAnswer": 3,
+    "hint": "Direct child combinator.",
+    "explanation": "The child combinator (>) selects elements that are immediate direct children of the specified parent.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0088",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "What is the difference between ':nth-child(2)' and ':nth-of-type(2)'?",
+    "options": [
+      ":nth-of-type(2) only counts siblings that share the same tag name",
+      ":nth-child(2) ignores hidden elements",
+      ":nth-of-type(2) only matches input elements",
+      "They are identical aliases in CSS3"
+    ],
+    "correctAnswer": 0,
+    "hint": "Type-specific vs child index.",
+    "explanation": ":nth-of-type filters by element type first before counting, while :nth-child counts all siblings regardless of type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0089",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "Which property sets the main axis direction in a Flexbox container?",
+    "options": [
+      "justify-content",
+      "flex-direction",
+      "align-items",
+      "flex-wrap"
+    ],
+    "correctAnswer": 1,
+    "hint": "Controls row vs column.",
+    "explanation": "flex-direction sets the direction of the flex container's main axis (row, column, row-reverse, column-reverse).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0090",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "What is the default value of 'flex-direction' on a flex container?",
+    "options": [
+      "column",
+      "row",
+      "row-reverse",
+      "initial"
+    ],
+    "correctAnswer": 1,
+    "hint": "Horizontal standard.",
+    "explanation": "The initial default flex-direction is 'row', laying items out horizontally from left to right in LTR.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0091",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "Which CSS Flexbox property aligns items along the cross axis?",
+    "options": [
+      "align-content",
+      "justify-content",
+      "align-items",
+      "flex-direction"
+    ],
+    "correctAnswer": 2,
+    "hint": "Cross axis alignment.",
+    "explanation": "align-items specifies the default alignment for items along the cross axis inside a flex line.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0092",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What is the difference between 'align-items' and 'align-content' in Flexbox?",
+    "options": [
+      "'align-items' requires flex-wrap: wrap to function",
+      "'align-items' only works on flex-direction: column",
+      "'align-content' aligns text inside individual flex items",
+      "'align-content' aligns multi-line flex tracks when extra cross-axis space exists"
+    ],
+    "correctAnswer": 3,
+    "hint": "Multi-line track distribution.",
+    "explanation": "align-content only takes effect when there is extra space on the cross axis and flex-wrap is set to wrap/wrap-reverse.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0093",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What does the shorthand 'flex: 1' expand to in standard CSS?",
+    "options": [
+      "flex-grow: 1, flex-shrink: 1, flex-basis: 0%",
+      "flex-grow: 1, flex-shrink: 0, flex-basis: auto",
+      "flex-grow: 1, flex-shrink: 1, flex-basis: auto",
+      "flex-grow: 0, flex-shrink: 1, flex-basis: 100%"
+    ],
+    "correctAnswer": 0,
+    "hint": "Shorthand expansion with 0% basis.",
+    "explanation": "The flex: 1 shorthand sets flex-grow to 1, flex-shrink to 1, and flex-basis to 0%.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0094",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What does 'justify-content: space-between' do in a flex container?",
+    "options": [
+      "Distributes items with equal space around each item including ends",
+      "Distributes items evenly; first item is flush at start, last item flush at end",
+      "Centers all flex items with equal margins on both sides",
+      "Packs items tightly toward the end of the main axis"
+    ],
+    "correctAnswer": 1,
+    "hint": "Edge-to-edge with gaps.",
+    "explanation": "space-between puts the first item at the start edge, last item at the end edge, and equal spacing in between.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0095",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What is the default value of 'flex-shrink' on a flex item?",
+    "options": [
+      "auto",
+      "0",
+      "1",
+      "none"
+    ],
+    "correctAnswer": 2,
+    "hint": "Items shrink by default.",
+    "explanation": "By default, flex items have flex-shrink: 1, allowing them to shrink to prevent overflowing the container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0096",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "Which property on a flex item overrides the container's 'align-items' setting?",
+    "options": [
+      "align-override",
+      "justify-self",
+      "flex-self",
+      "align-self"
+    ],
+    "correctAnswer": 3,
+    "hint": "Individual item alignment.",
+    "explanation": "align-self allows individual flex items to override the container's align-items property.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0097",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "hard",
+    "question": "Why does 'justify-self' have no effect on items in a Flexbox container?",
+    "options": [
+      "The main axis is controlled as a collective group by the container via justify-content",
+      "Flexbox does not support self-alignment on any axis",
+      "justify-self is deprecated in CSS3 in favor of margin-inline",
+      "Flex items always span 100% width of the container"
+    ],
+    "correctAnswer": 0,
+    "hint": "Auto margins achieve self-alignment on main axis.",
+    "explanation": "In Flexbox, items share space on the main axis together; auto margins can be used instead of justify-self.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0098",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "easy",
+    "question": "Which CSS display value defines a grid container?",
+    "options": [
+      "display: table-grid",
+      "display: grid",
+      "display: flex-grid",
+      "display: block-grid"
+    ],
+    "correctAnswer": 1,
+    "hint": "Standard grid container declaration.",
+    "explanation": "Setting display: grid or display: inline-grid establishes a new grid formatting context.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0099",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What does the 'fr' unit represent in CSS Grid?",
+    "options": [
+      "A frame rate unit for CSS animations",
+      "A fixed ratio calculated from screen dpi",
+      "A fraction of the available space inside the grid container",
+      "A font-relative scaling factor matching em"
+    ],
+    "correctAnswer": 2,
+    "hint": "Fractional unit of remaining space.",
+    "explanation": "The fr unit represents a fraction of the leftover space in the grid container after non-flexible items are sized.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0100",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What is the difference between 'auto-fill' and 'auto-fit' in 'repeat()'?",
+    "options": [
+      "'auto-fill' collapses empty tracks while 'auto-fit' preserves them",
+      "'auto-fit' collapses empty tracks to 0px, allowing filled tracks to stretch",
+      "'auto-fit' only works with fixed pixel widths",
+      "'auto-fill' prevents items from wrapping onto new rows"
+    ],
+    "correctAnswer": 1,
+    "hint": "Fit collapses empty columns.",
+    "explanation": "auto-fit expands active tracks to take up the space of any empty phantom tracks, while auto-fill keeps empty tracks reserved.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0101",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "easy",
+    "question": "Which CSS property defines column sizes in a Grid layout?",
+    "options": [
+      "grid-columns-size",
+      "grid-column-template",
+      "grid-template-columns",
+      "columns-template"
+    ],
+    "correctAnswer": 2,
+    "hint": "Template definition property.",
+    "explanation": "grid-template-columns defines the line names and track sizing functions of the grid columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0102",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What does 'grid-column: 1 / -1' achieve on a grid item?",
+    "options": [
+      "The item takes the full height of the first row",
+      "The item is placed on the second-to-last column",
+      "The item is hidden from the grid rendering tree",
+      "The item spans across all columns from the first line to the last line"
+    ],
+    "correctAnswer": 3,
+    "hint": "Span from line 1 to line -1.",
+    "explanation": "-1 refers to the last grid line, so 1 / -1 makes the item span the entire width of explicit grid columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0103",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'minmax(200px, 1fr)' in CSS Grid?",
+    "options": [
+      "The track will be at least 200px wide, and expand up to 1 fraction of free space",
+      "The track toggles between 200px on mobile and 1fr on desktop",
+      "The track cannot exceed 200px under any screen size",
+      "The track reserves 200px padding before assigning 1fr"
+    ],
+    "correctAnswer": 0,
+    "hint": "Flexible range constraints.",
+    "explanation": "minmax() defines a size range greater than or equal to min and less than or equal to max.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0104",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "Which property sets the spacing between both rows and columns in CSS Grid?",
+    "options": [
+      "grid-margin",
+      "gap",
+      "track-spacing",
+      "cell-padding"
+    ],
+    "correctAnswer": 1,
+    "hint": "Standard modern gutter property.",
+    "explanation": "The gap shorthand (formerly grid-gap) sets the gutters between grid rows and columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0105",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "hard",
+    "question": "What does 'subgrid' allow a nested grid element to do?",
+    "options": [
+      "Automatically convert Flexbox children into grid cells",
+      "Create a separate 3D rendering context for children",
+      "Inherit its track sizing and grid lines from the parent grid",
+      "Duplicate the HTML markup of the parent container"
+    ],
+    "correctAnswer": 2,
+    "hint": "Track sharing with parent.",
+    "explanation": "display: grid; grid-template-columns: subgrid allows the child grid to align its own children directly to the parent's tracks.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0106",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "easy",
+    "question": "Which CSS position value positions an element relative to the viewport?",
+    "options": [
+      "static",
+      "absolute",
+      "relative",
+      "fixed"
+    ],
+    "correctAnswer": 3,
+    "hint": "Viewport-relative positioning.",
+    "explanation": "position: fixed places the element relative to the initial viewport, remaining in place during scrolling.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0107",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "easy",
+    "question": "What is the default value of the CSS 'position' property?",
+    "options": [
+      "static",
+      "relative",
+      "absolute",
+      "initial-block"
+    ],
+    "correctAnswer": 0,
+    "hint": "Normal document flow default.",
+    "explanation": "position: static is the default; elements render in the normal document flow and ignore top, right, bottom, left.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0108",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "medium",
+    "question": "An element has 'position: absolute'. What is it positioned relative to?",
+    "options": [
+      "The root <html> element always",
+      "Its closest ancestor that has a position other than static",
+      "Its direct parent element regardless of positioning",
+      "The center of the active browser viewport"
+    ],
+    "correctAnswer": 1,
+    "hint": "Nearest non-static ancestor.",
+    "explanation": "position: absolute positions relative to the nearest positioned ancestor (position relative, absolute, fixed, or sticky).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0109",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "medium",
+    "question": "What is required for 'position: sticky' to stick during scrolling?",
+    "options": [
+      "The element must have display: flex declared",
+      "The parent container must have overflow: hidden",
+      "At least one threshold property like 'top', 'bottom', 'left', or 'right' must be set",
+      "z-index must be set to 9999 or higher"
+    ],
+    "correctAnswer": 2,
+    "hint": "Requires an anchor threshold.",
+    "explanation": "Sticky positioning requires a directional offset (e.g., top: 0) to know where to anchor.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0110",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "hard",
+    "question": "Which of the following creates a new stacking context in CSS?",
+    "options": [
+      "Adding 'margin: 0 auto'",
+      "Setting 'background-color: blue'",
+      "Applying 'transform: translateZ(0)' or 'opacity: 0.99'",
+      "Declaring 'box-sizing: border-box'"
+    ],
+    "correctAnswer": 2,
+    "hint": "Stacking context triggers.",
+    "explanation": "Opacity < 1, transforms, filters, and will-change create a new stacking context independent of z-index.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0111",
+    "topic": "CSS",
+    "subtopic": "Positioning",
+    "difficulty": "medium",
+    "question": "Why might 'z-index: 9999' fail to place an element above another element?",
+    "options": [
+      "The browser disables z-index on desktop screens",
+      "z-index only accepts values between 0 and 100",
+      "z-index requires display: table to function",
+      "The element is inside a lower stacking context than the competing element"
+    ],
+    "correctAnswer": 3,
+    "hint": "Stacking context hierarchy.",
+    "explanation": "z-index only applies within its own stacking context; a child cannot escape a parent's lower stacking level.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0112",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "easy",
+    "question": "What does '1rem' represent in CSS?",
+    "options": [
+      "The font size of the root (<html>) element",
+      "The font size of the immediate parent element",
+      "1% of the viewport width",
+      "A fixed size equal to 12 points"
+    ],
+    "correctAnswer": 0,
+    "hint": "Root em unit.",
+    "explanation": "rem stands for 'root em', which is relative to the font-size of the root element (usually 16px by default).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0113",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What is the difference between unitless line-height (e.g. 1.5) and percentage line-height (150%)?",
+    "options": [
+      "Percentage line-height adapts to viewport changes while unitless does not",
+      "Unitless line-height allows child elements to inherit the ratio and compute based on their own font-size",
+      "Unitless line-height is deprecated in CSS3",
+      "There is no difference in rendering or inheritance"
+    ],
+    "correctAnswer": 1,
+    "hint": "Ratio inheritance vs computed value.",
+    "explanation": "With unitless line-height, children inherit the multiplier; with percentages, the computed pixel value is inherited.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0114",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does 'font-display: swap' do in a @font-face declaration?",
+    "options": [
+      "Swaps between serif and sans-serif depending on system theme",
+      "Hides the text completely until the custom font downloads",
+      "Displays a fallback font immediately until the custom web font finishes loading",
+      "Forces the browser to block page rendering until font loads"
+    ],
+    "correctAnswer": 2,
+    "hint": "Prevents Flash of Invisible Text.",
+    "explanation": "swap gives the font face an extremely small block period and an infinite swap period, preventing invisible text (FOIT).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0115",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "easy",
+    "question": "Which CSS property controls letter spacing between characters?",
+    "options": [
+      "font-kerning",
+      "word-spacing",
+      "text-indent",
+      "letter-spacing"
+    ],
+    "correctAnswer": 3,
+    "hint": "Character spacing property.",
+    "explanation": "letter-spacing sets the horizontal spacing behavior between text characters.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0116",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does the CSS property 'text-overflow: ellipsis' require to display '...'?",
+    "options": [
+      "overflow: hidden, white-space: nowrap, and a bounded width",
+      "display: flex and justify-content: space-between",
+      "font-style: italic and margin: 0",
+      "text-wrap: balance"
+    ],
+    "correctAnswer": 0,
+    "hint": "Three required properties for truncation.",
+    "explanation": "Ellipsis requires overflow: hidden and white-space: nowrap so that text overflows a constrained container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0117",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "easy",
+    "question": "How do you define a global CSS Custom Property (variable)?",
+    "options": [
+      "Using '$variable-name' in the body tag",
+      "In the ':root' selector using '--variable-name'",
+      "Inside '@variable { name: val; }'",
+      "Using '!var variable-name: val'"
+    ],
+    "correctAnswer": 1,
+    "hint": "Double dash prefix in :root.",
+    "explanation": "CSS variables are declared with a double hyphen prefix (--) and commonly scoped to :root for global access.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0118",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "easy",
+    "question": "How do you access a CSS custom property named '--brand-color'?",
+    "options": [
+      "$(--brand-color)",
+      "get(--brand-color)",
+      "var(--brand-color)",
+      "use(--brand-color)"
+    ],
+    "correctAnswer": 2,
+    "hint": "var() function syntax.",
+    "explanation": "The var() function retrieves the value of a custom property.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0119",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What is the purpose of the second argument in 'var(--accent, #3b82f6)'?",
+    "options": [
+      "It sets the dark-mode color override",
+      "It sets the hover state color",
+      "It defines a CSS transition duration",
+      "It provides a fallback value if the custom property is not defined"
+    ],
+    "correctAnswer": 3,
+    "hint": "Fallback parameter.",
+    "explanation": "The second parameter in var() is a fallback value used if the variable is invalid or undefined.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0120",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'clamp(1rem, 2.5vw, 2rem)' evaluate to?",
+    "options": [
+      "A random value clamped to browser DPI",
+      "An average of the three values",
+      "1rem on mobile and 2rem on desktop only",
+      "A value that scales with viewport width between a minimum of 1rem and a maximum of 2rem"
+    ],
+    "correctAnswer": 3,
+    "hint": "Fluid responsive scaling.",
+    "explanation": "clamp(MIN, VAL, MAX) clamps a value between an upper and lower bound.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0121",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does the '@container' rule enable in modern CSS?",
+    "options": [
+      "Styles based on the size of an ancestor container rather than the viewport",
+      "Styles applied only inside iframe containers",
+      "Hardware-accelerated rendering containers for canvas",
+      "Docker container detection in server-side CSS"
+    ],
+    "correctAnswer": 0,
+    "hint": "Component-level responsive design.",
+    "explanation": "Container queries allow styling components based on the dimensions of their parent container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0122",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What is the purpose of 'color-scheme: dark light' in CSS?",
+    "options": [
+      "Forces the screen to invert all image colors",
+      "Informs the browser that the element supports both dark and light system themes",
+      "Applies a CSS filter to simulate night vision",
+      "Disables all user stylesheets"
+    ],
+    "correctAnswer": 1,
+    "hint": "Native UI theme awareness.",
+    "explanation": "color-scheme allows an element to indicate which color schemes it can comfortably render with system form controls.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0123",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "easy",
+    "question": "Which CSS property specifies how long an animation takes to complete one cycle?",
+    "options": [
+      "animation-delay",
+      "animation-iteration-count",
+      "animation-duration",
+      "animation-pace"
+    ],
+    "correctAnswer": 2,
+    "hint": "Cycle duration.",
+    "explanation": "animation-duration sets the length of time that an animation takes to complete one cycle.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0124",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-fill-mode: forwards' do?",
+    "options": [
+      "The animation starts immediately without respecting animation-delay",
+      "The animation repeats continuously forever",
+      "The animation plays backward upon reaching the end",
+      "The element retains the styles computed by the last keyframe after the animation finishes"
+    ],
+    "correctAnswer": 3,
+    "hint": "Retains end state.",
+    "explanation": "forwards ensures the element retains the style values calculated in the final keyframe.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0125",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'will-change' property in CSS?",
+    "options": [
+      "Hints to the browser what properties will animate so it can optimize rendering upfront",
+      "Forces the browser to reload stylesheets every 5 seconds",
+      "Cancels ongoing CSS animations gracefully",
+      "Enables CSS variables in older legacy browsers"
+    ],
+    "correctAnswer": 0,
+    "hint": "GPU optimization hint.",
+    "explanation": "will-change informs the browser about planned changes so it can set up ahead-of-time GPU optimizations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0126",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "easy",
+    "question": "Which CSS rule defines the intermediate steps in an animation sequence?",
+    "options": [
+      "@animation-steps",
+      "@keyframes",
+      "@transitions",
+      "@frames"
+    ],
+    "correctAnswer": 1,
+    "hint": "Keyframe definition at-rule.",
+    "explanation": "The @keyframes at-rule defines keyframes that control intermediate steps in a CSS animation sequence.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0127",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "Which transition-timing-function produces an animation with constant speed?",
+    "options": [
+      "ease-in-out",
+      "ease",
+      "linear",
+      "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    ],
+    "correctAnswer": 2,
+    "hint": "Constant velocity.",
+    "explanation": "linear maintains the exact same speed from beginning to end without acceleration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0128",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "hard",
+    "question": "Which CSS properties are most performant to animate without triggering layout or paint?",
+    "options": [
+      "padding and border-width",
+      "width and height",
+      "margin-top and left",
+      "transform and opacity"
+    ],
+    "correctAnswer": 3,
+    "hint": "Compositor-only properties.",
+    "explanation": "transform and opacity can be composited directly on the GPU without triggering reflow (layout) or repaint.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0129",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "easy",
+    "question": "What is a 'mobile-first' approach in CSS development?",
+    "options": [
+      "Writing base styles for small screens and using 'min-width' media queries for larger displays",
+      "Developing native mobile apps using React Native before web",
+      "Disabling desktop layouts completely on mobile devices",
+      "Writing styles using max-width queries starting from 4K displays"
+    ],
+    "correctAnswer": 0,
+    "hint": "min-width progressive enhancement.",
+    "explanation": "Mobile-first styles default to mobile layouts and add progressive enhancements using min-width.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0130",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "easy",
+    "question": "Which media query targets devices whose users prefer reduced motion?",
+    "options": [
+      "@media (prefers-reduced-motion: reduce)",
+      "@media (motion: none)",
+      "@media (animation-state: paused)",
+      "@media (device-motion: false)"
+    ],
+    "correctAnswer": 0,
+    "hint": "Accessibility media feature.",
+    "explanation": "prefers-reduced-motion detects if the user has requested the system minimize animations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0131",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "What does the viewport unit 'dvh' represent in CSS?",
+    "options": [
+      "Display Viewport Height for desktop monitors",
+      "Dynamic Viewport Height, which adapts to mobile browser interface bars showing or hiding",
+      "Double Viewport Height equal to 200vh",
+      "Device Virtual Height calculated before CSS loads"
+    ],
+    "correctAnswer": 1,
+    "hint": "Dynamic mobile viewport height.",
+    "explanation": "dvh dynamically adjusts as mobile URL bars and toolbars expand and collapse during scrolling.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0132",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "easy",
+    "question": "What do the values in 'hsl(210, 50%, 60%)' represent?",
+    "options": [
+      "Hue, Shade, Level",
+      "Height, Size, Luminance",
+      "Hue (degrees), Saturation (percentage), Lightness (percentage)",
+      "Highlight, Saturation, Lightness"
+    ],
+    "correctAnswer": 2,
+    "hint": "Color wheel coordinates.",
+    "explanation": "HSL stands for Hue (0-360 on the color wheel), Saturation (0-100%), and Lightness (0-100%).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0133",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "medium",
+    "question": "Why is the 'oklch' color space increasingly preferred in modern CSS?",
+    "options": [
+      "It is the only color format supported in web workers",
+      "It can only display monochromatic shades of gray",
+      "It uses hexadecimal notation for faster parsing",
+      "It is perceptually uniform, meaning equal adjustments produce visually consistent brightness changes"
+    ],
+    "correctAnswer": 3,
+    "hint": "Perceptual uniformity.",
+    "explanation": "OKLCH matches human eye perception uniformly across different hues.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0134",
+    "topic": "CSS",
+    "subtopic": "Pseudo Elements",
+    "difficulty": "easy",
+    "question": "Which pseudo-element is used to insert generated content before an element's content?",
+    "options": [
+      "::before",
+      "::first-letter",
+      "::after",
+      "::prepend"
+    ],
+    "correctAnswer": 0,
+    "hint": "Requires the content property.",
+    "explanation": "The ::before pseudo-element creates a pseudo-element that is the first child of the selected element, styled using the content property.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0135",
+    "topic": "CSS",
+    "subtopic": "Pseudo Elements",
+    "difficulty": "easy",
+    "question": "What CSS property is mandatory for '::before' and '::after' pseudo-elements to render?",
+    "options": [
+      "display",
+      "content",
+      "position",
+      "visibility"
+    ],
+    "correctAnswer": 1,
+    "hint": "Mandatory generation property.",
+    "explanation": "Without the content property (even content: ''), pseudo-elements will not be generated.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0136",
+    "topic": "CSS",
+    "subtopic": "Pseudo Elements",
+    "difficulty": "medium",
+    "question": "What is the difference between single colon (:hover) and double colon (::after) in modern CSS?",
+    "options": [
+      "Single colon only applies to links",
+      "Double colon is deprecated in CSS3",
+      "Single colon denotes a pseudo-class (state), while double colon denotes a pseudo-element (part of DOM)",
+      "Double colon indicates high-specificity rules"
+    ],
+    "correctAnswer": 2,
+    "hint": "State vs DOM fragment distinction.",
+    "explanation": "CSS3 introduced the double-colon syntax to distinguish pseudo-elements from pseudo-classes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0137",
+    "topic": "CSS",
+    "subtopic": "Pseudo Elements",
+    "difficulty": "medium",
+    "question": "Which pseudo-element styles the portion of a document selected and highlighted by the user?",
+    "options": [
+      "::active-text",
+      "::highlight",
+      "::cursor",
+      "::selection"
+    ],
+    "correctAnswer": 3,
+    "hint": "Styling user text selection.",
+    "explanation": "The ::selection pseudo-element applies styles to the part of a document that has been highlighted by the user.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0138",
+    "topic": "CSS",
+    "subtopic": "Pseudo Elements",
+    "difficulty": "medium",
+    "question": "Which pseudo-element styles the placeholder text inside an input field?",
+    "options": [
+      "::placeholder",
+      "::hint",
+      "::value-preview",
+      "::input-ghost"
+    ],
+    "correctAnswer": 0,
+    "hint": "Form input placeholder styling.",
+    "explanation": "The ::placeholder pseudo-element represents the placeholder text in an <input> or <textarea> element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0139",
+    "topic": "CSS",
+    "subtopic": "Display & Flow",
+    "difficulty": "easy",
+    "question": "What happens to width and height properties when applied to a purely 'inline' element like <span>?",
+    "options": [
+      "They are applied normally",
+      "They are ignored by the browser",
+      "They cause the element to convert to display: block",
+      "They produce a CSS syntax error"
+    ],
+    "correctAnswer": 1,
+    "hint": "Inline elements ignore width/height.",
+    "explanation": "Width and height do not apply to non-replaced inline elements.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0140",
+    "topic": "CSS",
+    "subtopic": "Display & Flow",
+    "difficulty": "easy",
+    "question": "How does 'display: inline-block' differ from 'display: inline'?",
+    "options": [
+      "inline-block forces a line break before and after the element",
+      "inline-block respects width and height while flowing inline with surrounding text",
+      "inline-block cannot have padding or margins",
+      "inline-block is not supported in modern browsers"
+    ],
+    "correctAnswer": 1,
+    "hint": "Inline flow with block sizing.",
+    "explanation": "inline-block allows setting explicit dimensions while maintaining horizontal flow.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0141",
+    "topic": "CSS",
+    "subtopic": "Display & Flow",
+    "difficulty": "medium",
+    "question": "What does 'display: contents' do to an element?",
+    "options": [
+      "Converts the element into a shadow DOM container",
+      "Hides the element and all its children completely from view",
+      "The element itself does not generate boxes, but its children render as direct children of the parent",
+      "Forces all text inside the element to wrap"
+    ],
+    "correctAnswer": 2,
+    "hint": "Unwraps the container in layout.",
+    "explanation": "display: contents removes the wrapper box from the layout tree while keeping its children intact.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0142",
+    "topic": "CSS",
+    "subtopic": "Display & Flow",
+    "difficulty": "easy",
+    "question": "What is the key visual difference between 'display: none' and 'visibility: hidden'?",
+    "options": [
+      "There is no difference between them",
+      "'visibility: hidden' removes the element from DOM tree entirely",
+      "'display: none' can still be clicked by the user",
+      "'display: none' removes the element from document flow, while 'visibility: hidden' leaves empty space"
+    ],
+    "correctAnswer": 3,
+    "hint": "Collapsing space vs retaining footprint.",
+    "explanation": "display: none collapses space; visibility: hidden hides pixels while retaining layout footprint.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0143",
+    "topic": "CSS",
+    "subtopic": "Backgrounds",
+    "difficulty": "easy",
+    "question": "Which CSS property prevents a background image from repeating across a container?",
+    "options": [
+      "background-repeat: no-repeat",
+      "background-loop: false",
+      "background-tile: none",
+      "background-fill: single"
+    ],
+    "correctAnswer": 0,
+    "hint": "No-repeat keyword.",
+    "explanation": "background-repeat: no-repeat ensures the image renders only once.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0144",
+    "topic": "CSS",
+    "subtopic": "Backgrounds",
+    "difficulty": "medium",
+    "question": "What does 'background-size: cover' do?",
+    "options": [
+      "Stretches the image to fit without maintaining aspect ratio",
+      "Scales the image to completely cover the container, potentially clipping edges",
+      "Scales the image so the entire image is visible without clipping",
+      "Tiles the image until the background is filled"
+    ],
+    "correctAnswer": 1,
+    "hint": "Full coverage with aspect ratio.",
+    "explanation": "cover scales proportionately so no background area is left uncovered, cropping if ratios differ.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0145",
+    "topic": "CSS",
+    "subtopic": "Backgrounds",
+    "difficulty": "medium",
+    "question": "What does 'background-size: contain' do?",
+    "options": [
+      "Expands the container to match original image dimensions",
+      "Stretches the image to fill 100% width and 100% height",
+      "Scales the image as large as possible without cropping any part of the image",
+      "Blurs the background image edges"
+    ],
+    "correctAnswer": 2,
+    "hint": "Complete visibility without cropping.",
+    "explanation": "contain ensures the entire image fits inside the box, potentially leaving empty background margins.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0146",
+    "topic": "CSS",
+    "subtopic": "Filters",
+    "difficulty": "medium",
+    "question": "What is the difference between 'filter: blur()' and 'backdrop-filter: blur()'?",
+    "options": [
+      "'filter' requires a WebGL canvas context",
+      "'filter' only works on SVG images",
+      "'backdrop-filter' blurs the text inside the element",
+      "'backdrop-filter' blurs what is visible behind the element through transparency"
+    ],
+    "correctAnswer": 3,
+    "hint": "Glassmorphism background effect.",
+    "explanation": "backdrop-filter applies graphical effects to the area behind an element with partial opacity.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0147",
+    "topic": "CSS",
+    "subtopic": "Text & Fonts",
+    "difficulty": "easy",
+    "question": "Which CSS property transforms text to all uppercase characters?",
+    "options": [
+      "text-transform: uppercase",
+      "font-case: upper",
+      "text-case: capitalized",
+      "font-style: uppercase"
+    ],
+    "correctAnswer": 0,
+    "hint": "Visual capitalization.",
+    "explanation": "text-transform controls capitalization of text without changing source HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0148",
+    "topic": "CSS",
+    "subtopic": "Text & Fonts",
+    "difficulty": "medium",
+    "question": "What is the function of 'white-space: nowrap' in CSS?",
+    "options": [
+      "Collapses all spaces into a single hyphen",
+      "Prevents text from automatically wrapping onto a new line",
+      "Forces every word onto its own line",
+      "Converts all spaces into non-breaking spaces in HTML"
+    ],
+    "correctAnswer": 1,
+    "hint": "Disables automatic wrapping.",
+    "explanation": "white-space: nowrap suppresses line breaks within the element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0149",
+    "topic": "CSS",
+    "subtopic": "Text & Fonts",
+    "difficulty": "medium",
+    "question": "What does 'overflow-wrap: break-word' (or 'word-break: break-word') accomplish?",
+    "options": [
+      "Hides long words that overflow the container",
+      "Hyphenates every word automatically using a dictionary",
+      "Allows long, unbreakable words to break and wrap onto a new line if necessary",
+      "Scales down font size for long words"
+    ],
+    "correctAnswer": 2,
+    "hint": "Prevents container overflow.",
+    "explanation": "overflow-wrap: break-word breaks words at arbitrary points to prevent layout overflow.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0150",
+    "topic": "CSS",
+    "subtopic": "CSS Math",
+    "difficulty": "easy",
+    "question": "Which CSS function performs mathematical calculations like addition and multiplication?",
+    "options": [
+      "compute()",
+      "math()",
+      "calc()",
+      "eval()"
+    ],
+    "correctAnswer": 2,
+    "hint": "Standard CSS calculation function.",
+    "explanation": "calc() allows mathematical calculations for CSS property values mixing different units.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0151",
+    "topic": "CSS",
+    "subtopic": "CSS Math",
+    "difficulty": "medium",
+    "question": "Can you mix different units like percentages and pixels inside 'calc()'?",
+    "options": [
+      "Only when calculating opacity values",
+      "No, all units must match exactly",
+      "Only if both units are relative units",
+      "Yes, for example 'calc(100% - 30px)'"
+    ],
+    "correctAnswer": 3,
+    "hint": "Combining relative and absolute units.",
+    "explanation": "calc() dynamically evaluates mixed units at layout time.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0152",
+    "topic": "CSS",
+    "subtopic": "CSS Math",
+    "difficulty": "medium",
+    "question": "What does the 'min()' CSS function return?",
+    "options": [
+      "The smallest value among the provided arguments",
+      "The average of the supplied values",
+      "The minimum font size supported by browser",
+      "The initial value before stylesheets loaded"
+    ],
+    "correctAnswer": 0,
+    "hint": "Smallest argument selection.",
+    "explanation": "min() selects the smallest value from a comma-separated list of expressions.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0153",
+    "topic": "CSS",
+    "subtopic": "CSS Math",
+    "difficulty": "medium",
+    "question": "What does the 'max()' CSS function return?",
+    "options": [
+      "The maximum screen resolution supported",
+      "The largest value among the provided arguments",
+      "The largest font size possible in CSS",
+      "The absolute value of negative numbers"
+    ],
+    "correctAnswer": 1,
+    "hint": "Largest argument selection.",
+    "explanation": "max() selects the largest value from a comma-separated list of expressions.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0154",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the sibling combinator '~' (e.g. 'h2 ~ p') select?",
+    "options": [
+      "All p elements nested inside h2",
+      "Only the immediately adjacent p element after h2",
+      "All p elements that follow an h2 element as siblings",
+      "The h2 element itself"
+    ],
+    "correctAnswer": 2,
+    "hint": "General subsequent sibling combinator.",
+    "explanation": "The general sibling combinator (~) selects all subsequent siblings matching the right operand.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0155",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the adjacent sibling combinator '+' (e.g. 'h2 + p') select?",
+    "options": [
+      "The preceding sibling element before h2",
+      "All sibling paragraphs in the entire document",
+      "The first paragraph inside the h2 tag",
+      "The immediately following p sibling after an h2 element"
+    ],
+    "correctAnswer": 3,
+    "hint": "Directly next sibling.",
+    "explanation": "The adjacent sibling combinator (+) selects the element directly following the first element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0156",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "Which pseudo-class targets an element when the user hovers over it with a pointing device?",
+    "options": [
+      ":hover",
+      ":focus",
+      ":active",
+      ":visited"
+    ],
+    "correctAnswer": 0,
+    "hint": "Mouse hover state.",
+    "explanation": "The :hover pseudo-class matches when the user interacts with an element with a pointer device.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0157",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "Which pseudo-class targets an element when it receives keyboard or mouse focus?",
+    "options": [
+      ":active",
+      ":focus",
+      ":hover",
+      ":target"
+    ],
+    "correctAnswer": 1,
+    "hint": "Interactive focus state.",
+    "explanation": "The :focus pseudo-class represents an element that has received focus, such as via Tab key.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0158",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What is the difference between ':focus' and ':focus-visible'?",
+    "options": [
+      "':focus-visible' is applied to every element simultaneously",
+      "':focus' is only triggered on touch devices",
+      "':focus-visible' only shows focus indicators when keyboard navigation is used",
+      "':focus' cannot be styled with custom outlines"
+    ],
+    "correctAnswer": 2,
+    "hint": "Accessible keyboard focus rings.",
+    "explanation": ":focus-visible avoids jarring focus rings for mouse clicks while keeping them for keyboard users.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0159",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "Which pseudo-class selects an element that is the target of the URL's fragment identifier?",
+    "options": [
+      ":fragment",
+      ":hash",
+      ":anchor",
+      ":target"
+    ],
+    "correctAnswer": 3,
+    "hint": "URL hash target.",
+    "explanation": "The :target pseudo-class represents a unique element with an id matching the URL fragment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0160",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "easy",
+    "question": "Which pseudo-class matches an empty element with no children or text nodes?",
+    "options": [
+      ":null",
+      ":blank",
+      ":void",
+      ":empty"
+    ],
+    "correctAnswer": 3,
+    "hint": "Zero child nodes.",
+    "explanation": "The :empty pseudo-class represents any element that has no children at all (including text).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0161",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':not(.active)' do in CSS?",
+    "options": [
+      "Selects all elements that do not have the 'active' class",
+      "Removes the active class from DOM elements",
+      "Styles inactive browser tabs only",
+      "Sets opacity to zero for inactive items"
+    ],
+    "correctAnswer": 0,
+    "hint": "Negation filter.",
+    "explanation": "The negation pseudo-class :not() represents elements that do not match a list of selectors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0162",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "easy",
+    "question": "Which CSS property delays the start of an animation or transition?",
+    "options": [
+      "animation-hold",
+      "animation-delay (or transition-delay)",
+      "animation-pause",
+      "animation-wait"
+    ],
+    "correctAnswer": 1,
+    "hint": "Pre-animation delay.",
+    "explanation": "animation-delay defines the duration to wait before starting execution.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0163",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-iteration-count: infinite' do?",
+    "options": [
+      "Freezes the animation on its first frame",
+      "Loops the animation 1,000 times then stops",
+      "Makes the animation repeat indefinitely without stopping",
+      "Reverses the animation playback speed"
+    ],
+    "correctAnswer": 2,
+    "hint": "Endless loop.",
+    "explanation": "infinite makes the keyframe sequence loop continuously.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0164",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-direction: alternate' do?",
+    "options": [
+      "Skips even-numbered keyframes",
+      "Randomizes the keyframe sequence order",
+      "Rotates the element 180 degrees on each loop",
+      "Plays the animation forward on odd cycles and backward on even cycles"
+    ],
+    "correctAnswer": 3,
+    "hint": "Ping-pong playback direction.",
+    "explanation": "alternate causes the animation to reverse direction every cycle.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0165",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-play-state: paused' accomplish?",
+    "options": [
+      "Temporarily halts an active CSS animation at its current frame",
+      "Resets the animation back to frame 0%",
+      "Slows animation speed by half",
+      "Hides the animating element from layout"
+    ],
+    "correctAnswer": 0,
+    "hint": "Pauses keyframe playback.",
+    "explanation": "animation-play-state allows pausing and resuming animations dynamically.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0166",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'scroll-snap-type: y mandatory' on a scroll container do?",
+    "options": [
+      "Disables vertical scrolling entirely",
+      "Forces the scroll position to snap to snap points along the vertical axis",
+      "Smoothly auto-scrolls to the bottom of the page",
+      "Inverts touch scrolling direction"
+    ],
+    "correctAnswer": 1,
+    "hint": "Snap carousel & feed behavior.",
+    "explanation": "scroll-snap-type enforces snap points when scrolling ends.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0167",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What property is applied to child items inside a scroll-snap container?",
+    "options": [
+      "snap-point: active",
+      "scroll-dock: true",
+      "scroll-snap-align: start (or center / end)",
+      "scroll-anchor: lock"
+    ],
+    "correctAnswer": 2,
+    "hint": "Alignment target for snapping.",
+    "explanation": "scroll-snap-align defines where child items snap within the viewport.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0168",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'overscroll-behavior: contain' prevent?",
+    "options": [
+      "Locks zoom levels on touch devices",
+      "Prevents images from loading outside the viewport",
+      "Stops text selection during scrolling",
+      "Prevents scroll chaining (rubber-banding) to parent containers when scroll boundary is reached"
+    ],
+    "correctAnswer": 3,
+    "hint": "Stops scroll bubbling to page.",
+    "explanation": "overscroll-behavior sets what a browser does when reaching the boundary of a scrolling area.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0169",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'user-select: none' do in CSS?",
+    "options": [
+      "Prevents users from selecting and highlighting text within the element",
+      "Disables form input fields",
+      "Hides the cursor arrow on hover",
+      "Prevents click events from firing"
+    ],
+    "correctAnswer": 0,
+    "hint": "Disables text highlighting.",
+    "explanation": "user-select: none prevents text selection for UI elements like buttons and chips.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0170",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "easy",
+    "question": "Which CSS property changes the mouse pointer appearance when hovering over an element?",
+    "options": [
+      "cursor",
+      "pointer",
+      "mouse-icon",
+      "pointer-style"
+    ],
+    "correctAnswer": 0,
+    "hint": "Mouse cursor appearance.",
+    "explanation": "cursor defines the mouse cursor to be displayed when pointing over an element (e.g. pointer, not-allowed).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0171",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'pointer-events: none' do on an HTML element?",
+    "options": [
+      "Hides the mouse cursor while hovering",
+      "Makes the element completely transparent to click, hover, and touch events",
+      "Prevents keyboard navigation using Tab",
+      "Cancels form submit actions"
+    ],
+    "correctAnswer": 1,
+    "hint": "Clicks pass through element.",
+    "explanation": "pointer-events: none makes the element ignore pointer interactions, passing them to elements underneath.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0172",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "medium",
+    "question": "What does the CSS keyword 'inherit' do when assigned to a property?",
+    "options": [
+      "Deletes the property from the stylesheet",
+      "Resets the property to browser user-agent default",
+      "Forces the property to take the computed value of its parent element",
+      "Copies the style from the root <html> element"
+    ],
+    "correctAnswer": 2,
+    "hint": "Parent value inheritance.",
+    "explanation": "inherit causes the element to take the computed value of the property from its parent.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0173",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "medium",
+    "question": "What does the CSS keyword 'initial' do?",
+    "options": [
+      "Reverts to the author stylesheet value",
+      "Inherits the value from its parent element",
+      "Uses the browser default stylesheet style",
+      "Sets the property to its initial value as defined in the official CSS specification"
+    ],
+    "correctAnswer": 3,
+    "hint": "Spec default value.",
+    "explanation": "initial resets a property to its default value according to the W3C spec (not user agent default).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0174",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "medium",
+    "question": "What does the CSS keyword 'unset' do?",
+    "options": [
+      "Inherits the value if property naturally inherits, otherwise acts like initial",
+      "Deletes the element from the DOM",
+      "Turns off hardware acceleration",
+      "Applies display: none"
+    ],
+    "correctAnswer": 0,
+    "hint": "Context-aware reset.",
+    "explanation": "unset acts like inherit for inherited properties and initial for non-inherited properties.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0175",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "hard",
+    "question": "What does the CSS keyword 'revert' do?",
+    "options": [
+      "Sets the property to initial specification value",
+      "Reverts the property value to the browser's default user-agent stylesheet style",
+      "Deletes all inline styles from HTML",
+      "Inherits from sibling elements"
+    ],
+    "correctAnswer": 1,
+    "hint": "User-agent fallback reset.",
+    "explanation": "revert resets cascade to the user-agent or user stylesheet layer.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0176",
+    "topic": "CSS",
+    "subtopic": "Cascade",
+    "difficulty": "medium",
+    "question": "How does '!important' affect CSS specificity?",
+    "options": [
+      "Converts the rule into an inline style attribute",
+      "Multiplies the selector specificity score by 10",
+      "Overrides normal cascade and specificity rules for that declaration",
+      "Makes the property permanently read-only"
+    ],
+    "correctAnswer": 2,
+    "hint": "Overrides specificity order.",
+    "explanation": "!important causes a declaration to override standard cascade order and selector specificity.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0177",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "Why does an image inside a flex container sometimes stretch unexpectedly along the cross axis?",
+    "options": [
+      "flex-grow is set to 1 by default on images",
+      "Flex containers always upscale raster images",
+      "Images ignore aspect-ratio in Flexbox",
+      "The default value of 'align-items' is 'stretch'"
+    ],
+    "correctAnswer": 3,
+    "hint": "Default stretch behavior.",
+    "explanation": "align-items: stretch causes items without explicit cross-axis sizes to fill the container height.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0178",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "How can you horizontally and vertically center a child in Flexbox with 2 lines of CSS?",
+    "options": [
+      "display: flex; justify-content: center; align-items: center;",
+      "display: flex; float: center; margin: auto;",
+      "display: flex; vertical-align: middle;",
+      "display: flex; text-align: center;"
+    ],
+    "correctAnswer": 0,
+    "hint": "Classic centering pattern.",
+    "explanation": "justify-content centers along the main axis and align-items centers along the cross axis.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0179",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "What happens if a flex item has 'margin: auto' applied in a flex container?",
+    "options": [
+      "It collapses margins to 0px",
+      "It absorbs all remaining free space in that direction, centering or pushing the item",
+      "It disables flex-grow on all items",
+      "It aligns the item to the start edge"
+    ],
+    "correctAnswer": 1,
+    "hint": "Auto margin absorption.",
+    "explanation": "In Flexbox, auto margins consume all available extra space along that axis.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0180",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What is the difference between an explicit grid and an implicit grid?",
+    "options": [
+      "The explicit grid is created by JavaScript, implicit by CSS",
+      "The implicit grid is created automatically when items are positioned outside explicit tracks",
+      "The implicit grid cannot use the gap property",
+      "Explicit grids only support pixel sizing"
+    ],
+    "correctAnswer": 1,
+    "hint": "Explicit template vs auto-created tracks.",
+    "explanation": "Tracks defined by grid-template-* are explicit; items placed beyond create implicit tracks sized by grid-auto-*.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0181",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "Which property controls the size of automatically created rows in an implicit grid?",
+    "options": [
+      "grid-implicit-rows",
+      "grid-template-rows",
+      "grid-auto-rows",
+      "grid-row-default"
+    ],
+    "correctAnswer": 2,
+    "hint": "Implicit row sizing.",
+    "explanation": "grid-auto-rows specifies the size of an implicitly-created grid row track.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0182",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What does 'grid-auto-flow: dense' do?",
+    "options": [
+      "Prevents grid items from wrapping",
+      "Compresses images inside grid cells",
+      "Forces all grid items to have identical height",
+      "Fills in earlier holes in the grid if smaller items appear later in the source order"
+    ],
+    "correctAnswer": 3,
+    "hint": "Backfills layout holes.",
+    "explanation": "dense attempts to pack items tightly into empty gaps earlier in the grid layout.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0183",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "easy",
+    "question": "How do you place an item in grid column 2, row 3?",
+    "options": [
+      "grid-column: 2; grid-row: 3;",
+      "grid-cell: 2, 3;",
+      "grid-position: col-2 row-3;",
+      "grid-area: 2 / 3;"
+    ],
+    "correctAnswer": 0,
+    "hint": "Grid track positioning.",
+    "explanation": "grid-column and grid-row specify placement line or span.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0184",
+    "topic": "CSS",
+    "subtopic": "Transforms",
+    "difficulty": "easy",
+    "question": "Which CSS transform function moves an element horizontally and vertically?",
+    "options": [
+      "shift(x, y)",
+      "translate(x, y)",
+      "move(x, y)",
+      "offset(x, y)"
+    ],
+    "correctAnswer": 1,
+    "hint": "Translational coordinate shift.",
+    "explanation": "translate(x, y) moves an element along the X and Y axes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0185",
+    "topic": "CSS",
+    "subtopic": "Transforms",
+    "difficulty": "easy",
+    "question": "Which CSS transform function rotates an element around a fixed point?",
+    "options": [
+      "spin(45deg)",
+      "turn-element(45)",
+      "rotate(45deg)",
+      "angle(45)"
+    ],
+    "correctAnswer": 2,
+    "hint": "Rotational angle transform.",
+    "explanation": "rotate() rotates an element around its transform-origin by a specified angle.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0186",
+    "topic": "CSS",
+    "subtopic": "Transforms",
+    "difficulty": "medium",
+    "question": "What does 'transform-origin: center center' define?",
+    "options": [
+      "The center of the browser viewport",
+      "The alignment of text inside the transformed box",
+      "The position of background images",
+      "The pivot point around which transforms like rotate and scale are applied"
+    ],
+    "correctAnswer": 3,
+    "hint": "Pivot point coordinate.",
+    "explanation": "transform-origin sets the origin point for an element's transformations (defaults to 50% 50%).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0187",
+    "topic": "CSS",
+    "subtopic": "Transforms",
+    "difficulty": "medium",
+    "question": "What is required to render genuine 3D transformed child elements inside a parent?",
+    "options": [
+      "transform-style: preserve-3d on the parent element",
+      "3d-engine: enabled",
+      "perspective: none",
+      "overflow: hidden on the parent"
+    ],
+    "correctAnswer": 0,
+    "hint": "3D nesting preservation.",
+    "explanation": "transform-style: preserve-3d ensures children exist in shared 3D space rather than being flattened.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0188",
+    "topic": "CSS",
+    "subtopic": "Transforms",
+    "difficulty": "medium",
+    "question": "What does the 'perspective' property in CSS do?",
+    "options": [
+      "Scales 2D images proportionately",
+      "Determines the distance between the z=0 plane and the viewer for 3D transforms",
+      "Sets the opacity gradient for depth",
+      "Rotates the entire camera angle"
+    ],
+    "correctAnswer": 1,
+    "hint": "3D depth distance.",
+    "explanation": "perspective gives depth to 3D-positioned elements by simulating perspective foreshortening.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0189",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "easy",
+    "question": "How do you make flex items wrap onto multiple lines when container space is exceeded?",
+    "options": [
+      "flex-break: true",
+      "flex-flow: multi",
+      "flex-wrap: wrap",
+      "overflow: wrap"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Flexbox.",
+    "explanation": "flex-wrap: wrap allows flex items to wrap onto multiple lines as needed.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0190",
+    "topic": "CSS",
+    "subtopic": "Flexbox",
+    "difficulty": "medium",
+    "question": "Which shorthand property combines 'flex-direction' and 'flex-wrap' in CSS?",
+    "options": [
+      "flex-layout",
+      "flex-axis",
+      "flex-flow",
+      "flex-group"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Flexbox.",
+    "explanation": "flex-flow is a shorthand for flex-direction and flex-wrap.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0191",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "easy",
+    "question": "How do you center an item both horizontally and vertically inside a grid container?",
+    "options": [
+      "center-content: true",
+      "align-grid: center",
+      "grid-align: both",
+      "place-items: center"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider CSS Grid.",
+    "explanation": "place-items: center is a shorthand for align-items: center and justify-items: center.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0192",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "Which property sets alignment of items along the inline axis within their grid areas?",
+    "options": [
+      "justify-items",
+      "align-items",
+      "justify-content",
+      "grid-auto-align"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CSS Grid.",
+    "explanation": "justify-items aligns grid items along the inline (row) axis inside their grid areas.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0193",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "Which property sets alignment of items along the block axis within their grid areas?",
+    "options": [
+      "justify-items",
+      "align-items",
+      "align-content",
+      "place-content"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider CSS Grid.",
+    "explanation": "align-items aligns grid items along the block (column) axis inside their grid areas.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0194",
+    "topic": "CSS",
+    "subtopic": "CSS Grid",
+    "difficulty": "medium",
+    "question": "What does 'grid-template-areas' allow you to do in CSS Grid?",
+    "options": [
+      "Set automatic background colors for rows",
+      "Define SVG clipping paths for grid cells",
+      "Name visual rectangular areas in the grid using strings of identifiers",
+      "Export the layout to JSON"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider CSS Grid.",
+    "explanation": "grid-template-areas assigns named template areas to layout sections visually.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0195",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What CSS property creates rounded corners on an element's border?",
+    "options": [
+      "edge-radius",
+      "corner-curve",
+      "border-round",
+      "border-radius"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Box Model.",
+    "explanation": "border-radius rounds the corners of an element's outer border edge.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0196",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What property adds drop shadows to box elements in CSS?",
+    "options": [
+      "box-shadow",
+      "text-shadow",
+      "element-shadow",
+      "drop-filter"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Box Model.",
+    "explanation": "box-shadow adds shadow effects around an element's frame.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0197",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What does the 'inset' keyword do in a 'box-shadow' declaration?",
+    "options": [
+      "Removes the shadow blur radius",
+      "Draws the shadow inside the frame of the element",
+      "Centers the shadow evenly on all sides",
+      "Creates an inverted grayscale shadow"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Box Model.",
+    "explanation": "inset places the shadow inside the border of the box.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0198",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What CSS property clips an element's content to a basic shape like circle or polygon?",
+    "options": [
+      "overflow-mask",
+      "crop-shape",
+      "clip-path",
+      "mask-clip"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Box Model.",
+    "explanation": "clip-path creates a clipping region that sets what part of an element is visible.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0199",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "easy",
+    "question": "Which property styles text in italics?",
+    "options": [
+      "font-slant: true",
+      "text-decoration: italic",
+      "font-weight: italic",
+      "font-style: italic"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Typography.",
+    "explanation": "font-style specifies whether text is rendered in normal, italic, or oblique face.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0200",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "easy",
+    "question": "Which CSS property specifies the boldness or weight of a font?",
+    "options": [
+      "text-weight",
+      "font-thickness",
+      "font-weight",
+      "font-heavy"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Typography.",
+    "explanation": "font-weight sets how thick or thin characters in text should be displayed.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0201",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "easy",
+    "question": "Which CSS property adds an underline, overline, or line-through to text?",
+    "options": [
+      "underline-style",
+      "font-decoration",
+      "text-line",
+      "text-decoration"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Typography.",
+    "explanation": "text-decoration sets text decoration lines and styles.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0202",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does 'text-align: justify' do?",
+    "options": [
+      "Spaces text so that both left and right edges align with the container margins",
+      "Centers all lines of text",
+      "Aligns text strictly to the right margin",
+      "Scales the font to fill the container height"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Typography.",
+    "explanation": "justify adjusts letter and word spacing so lines align on both margins.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0203",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "easy",
+    "question": "What is the alpha channel in an 'rgba(255, 0, 0, 0.5)' color declaration?",
+    "options": [
+      "The red saturation intensity",
+      "The opacity / transparency level from 0 (transparent) to 1 (opaque)",
+      "The brightness level",
+      "The blend mode setting"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Colors.",
+    "explanation": "Alpha specifies the opacity level of the color.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0204",
+    "topic": "CSS",
+    "subtopic": "Colors",
+    "difficulty": "medium",
+    "question": "Which CSS property sets the transparency level of an entire element including its children?",
+    "options": [
+      "alpha",
+      "transparency",
+      "opacity",
+      "visibility"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Colors.",
+    "explanation": "opacity applies to the whole element and all its children uniformly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0205",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "easy",
+    "question": "What CSS at-rule is used to apply styles conditionally based on media features?",
+    "options": [
+      "@device",
+      "@responsive",
+      "@screen",
+      "@media"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Responsive Design.",
+    "explanation": "@media specifies rules conditional on media type and features.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0206",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "Which media query feature checks if the screen orientation is taller than it is wide?",
+    "options": [
+      "orientation: portrait",
+      "screen: vertical",
+      "aspect: tall",
+      "orientation: vertical"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Responsive Design.",
+    "explanation": "orientation: portrait tests whether height is greater than or equal to width.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0207",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "What does '100vw' represent in CSS?",
+    "options": [
+      "100% of the parent container's width",
+      "100% of the viewport width including the scrollbar",
+      "100 virtual pixels",
+      "The maximum screen resolution width"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Responsive Design.",
+    "explanation": "vw represents 1% of the viewport width.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0208",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "What does '100vh' represent in CSS?",
+    "options": [
+      "100 vector height points",
+      "100% of the document body height",
+      "100% of the viewport height",
+      "The maximum vertical scroll distance"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Responsive Design.",
+    "explanation": "vh represents 1% of the viewport height.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0209",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'accent-color' in CSS style?",
+    "options": [
+      "The primary brand color of CSS variables",
+      "The color of anchor links on hover",
+      "The title bar color in the browser",
+      "The accent color for native form elements like checkboxes, radios, and progress bars"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Modern CSS.",
+    "explanation": "accent-color specifies the accent color for user-interface controls generated by the browser.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0210",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'caret-color' specify in CSS?",
+    "options": [
+      "The color of text selection highlights",
+      "The color of breadcrumb arrow icons",
+      "The color of drop-down menu arrows",
+      "The color of the insertion cursor in text inputs and editable areas"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Modern CSS.",
+    "explanation": "caret-color sets the color of the text insertion cursor (caret).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0211",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'image-rendering: pixelated' do?",
+    "options": [
+      "Uses nearest-neighbor scaling so pixel art remains crisp when upscaled",
+      "Blurs the image using bicubic filtering",
+      "Converts the image to black-and-white",
+      "Compresses image file size in memory"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Modern CSS.",
+    "explanation": "pixelated preserves sharp edges on pixel graphics when scaled up.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0212",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'writing-mode: vertical-rl' do in CSS?",
+    "options": [
+      "Flips the page upside down",
+      "Flows text vertically from top to bottom, with lines progressing from right to left",
+      "Rotates only images 90 degrees",
+      "Mirrors the text horizontally"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Modern CSS.",
+    "explanation": "writing-mode sets whether lines of text are laid out horizontally or vertically.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0213",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'mix-blend-mode: multiply' do in CSS?",
+    "options": [
+      "Combines two CSS classes together",
+      "Duplicates the element across the grid",
+      "Blends an element's content with the content of the elements behind it",
+      "Multiplies CSS variable values"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Modern CSS.",
+    "explanation": "mix-blend-mode sets how an element's content blends with its background.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0214",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the ':only-child' pseudo-class select?",
+    "options": [
+      "Elements with an only-child attribute",
+      "The first child element only",
+      "An element with only one child of its own",
+      "An element that has no siblings at all inside its parent"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Selectors.",
+    "explanation": "The :only-child pseudo-class represents an element that has no siblings.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0215",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the ':root' pseudo-class select in an HTML document?",
+    "options": [
+      "The <html> element",
+      "The <body> element",
+      "The document <head>",
+      "The window object"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Selectors.",
+    "explanation": "In HTML, :root represents the <html> element and has higher specificity than the html type selector.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0216",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':checked' pseudo-class match in forms?",
+    "options": [
+      "Text fields containing non-empty text",
+      "Radio buttons, checkboxes, and option elements that are checked or selected",
+      "Submit buttons that have been clicked",
+      "Valid email input fields"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Selectors.",
+    "explanation": ":checked matches radio buttons and checkboxes that are toggled on, or selected options in a select.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0217",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':disabled' pseudo-class match?",
+    "options": [
+      "Elements with opacity: 0",
+      "Elements with display: none",
+      "Form elements that have the 'disabled' attribute applied",
+      "Links that have broken URLs"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Selectors.",
+    "explanation": ":disabled matches elements that cannot be activated or accept focus.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0218",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':read-only' pseudo-class match?",
+    "options": [
+      "Cached browser stylesheets",
+      "Elements with unrendered HTML comments",
+      "Static paragraphs without links",
+      "Form elements that are not editable by the user"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Selectors.",
+    "explanation": ":read-only represents an element that is not editable by the user.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0219",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':first-of-type' select?",
+    "options": [
+      "The first sibling of its element type in a parent container",
+      "The very first child of any type",
+      "The first class listed in the class attribute",
+      "The element with the lowest z-index"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Selectors.",
+    "explanation": ":first-of-type represents the first element of its type among its group of sibling elements.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0220",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does ':last-of-type' select?",
+    "options": [
+      "The last sibling of its element type in a parent container",
+      "The last child element of any type",
+      "The element with the highest DOM index",
+      "The most recently clicked element"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Selectors.",
+    "explanation": ":last-of-type represents the last element of its type among its group of siblings.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0221",
+    "topic": "CSS",
+    "subtopic": "Selectors",
+    "difficulty": "medium",
+    "question": "What does the selector '[disabled]' match?",
+    "options": [
+      "Only elements where disabled='true'",
+      "Any element with a 'disabled' attribute regardless of its value",
+      "Disabled submit buttons only",
+      "Elements with class='disabled'"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Selectors.",
+    "explanation": "An attribute presence selector [attr] matches elements that have that attribute.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0222",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "Which property sets the minimum width an element can shrink to?",
+    "options": [
+      "shrink-width",
+      "max-width",
+      "min-width",
+      "limit-width"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Box Model.",
+    "explanation": "min-width prevents the used value of the width property from becoming smaller than specified.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0223",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "Which property sets the maximum width an element can expand to?",
+    "options": [
+      "width-cap",
+      "min-width",
+      "peak-width",
+      "max-width"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Box Model.",
+    "explanation": "max-width prevents the used value of width from becoming larger than specified.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0224",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "Which property sets the minimum height an element can shrink to?",
+    "options": [
+      "min-height",
+      "max-height",
+      "height-floor",
+      "base-height"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Box Model.",
+    "explanation": "min-height prevents the height property from becoming smaller than specified.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0225",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "Which property sets the maximum height an element can reach?",
+    "options": [
+      "min-height",
+      "max-height",
+      "height-ceiling",
+      "bound-height"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Box Model.",
+    "explanation": "max-height prevents the used value of height from becoming larger than specified.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0226",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What does 'overflow: auto' do when an element's content exceeds its box?",
+    "options": [
+      "Hides the overflowing content permanently",
+      "Always displays permanent scrollbars even if empty",
+      "Displays scrollbars only when the content actually overflows",
+      "Expands the parent container automatically"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Box Model.",
+    "explanation": "auto tells the browser to provide scroll mechanisms only if content overflows.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0227",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "medium",
+    "question": "What does 'overflow: scroll' do?",
+    "options": [
+      "Smoothly auto-scrolls down the page",
+      "Only scrolls when triggered by JavaScript",
+      "Hides scrollbars on desktop",
+      "Always displays scrollbars regardless of whether content overflows"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Box Model.",
+    "explanation": "overflow: scroll always shows scrollbars on platforms that support them, preventing layout shifts.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0228",
+    "topic": "CSS",
+    "subtopic": "Box Model",
+    "difficulty": "easy",
+    "question": "What does 'overflow: hidden' do?",
+    "options": [
+      "Clips content that extends beyond the element's padding box",
+      "Expands the element to fit all content",
+      "Shows a modal popup for clipped content",
+      "Deletes overflowing HTML elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Box Model.",
+    "explanation": "overflow: hidden clips any content that overflows the element's boundaries.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0229",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does 'font-variant-numeric: tabular-nums' do?",
+    "options": [
+      "Converts numbers to Roman numerals",
+      "Renders numbers with equal character widths so columns of figures align cleanly",
+      "Displays numbers as subscript fractions",
+      "Rounds decimals to the nearest whole integer"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Typography.",
+    "explanation": "tabular-nums enables monospaced figures in proportional fonts, perfect for timers and tables.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0230",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does 'text-transform: capitalize' do?",
+    "options": [
+      "Converts the entire string to all caps",
+      "Capitalizes the first character of each word in the text",
+      "Only capitalizes the very first letter of the paragraph",
+      "Underlines capitalized letters"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Typography.",
+    "explanation": "capitalize transforms the first letter of each word to uppercase.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0231",
+    "topic": "CSS",
+    "subtopic": "Typography",
+    "difficulty": "medium",
+    "question": "What does 'text-shadow: 2px 2px 4px rgba(0,0,0,0.5)' do?",
+    "options": [
+      "Adds an inner box shadow behind the paragraph",
+      "Creates a 4px border around every text character",
+      "Adds a shadow to text with 2px horizontal offset, 2px vertical offset, and 4px blur radius",
+      "Scales the font by 2 pixels"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Typography.",
+    "explanation": "text-shadow applies one or more shadows to text content.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0232",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-fill-mode: backwards' do?",
+    "options": [
+      "Retains styles after the animation finishes",
+      "Plays the animation from end to start",
+      "Disables animation on back button navigation",
+      "Applies the styles defined in the first keyframe (0%) during the animation-delay period"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Animations.",
+    "explanation": "backwards applies the style from the initial keyframe during the delay period before playback starts.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0233",
+    "topic": "CSS",
+    "subtopic": "Animations",
+    "difficulty": "medium",
+    "question": "What does 'animation-fill-mode: both' do?",
+    "options": [
+      "Applies the animation styles both during the delay (0%) and after completion (100%)",
+      "Plays the animation simultaneously forward and backward",
+      "Applies the animation to both parent and child elements",
+      "Runs two keyframe rules in parallel"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Animations.",
+    "explanation": "both applies both backwards and forwards rules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0234",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "What does '@media (hover: hover)' detect?",
+    "options": [
+      "Whether the user is currently hovering over an element",
+      "Whether the primary input mechanism can hover over elements (e.g. mouse pointer)",
+      "Whether hover animations are supported by the GPU",
+      "Whether touch screens support 3D touch"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Responsive Design.",
+    "explanation": "hover: hover tests if the primary pointing device can hover over page elements.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0235",
+    "topic": "CSS",
+    "subtopic": "Responsive Design",
+    "difficulty": "medium",
+    "question": "What does '@media (pointer: coarse)' detect?",
+    "options": [
+      "Whether the screen resolution is low quality",
+      "Whether the user is using a precision high-DPI gaming mouse",
+      "Whether the primary input device is of limited accuracy (such as a touch screen finger)",
+      "Whether the device has a physical trackpad"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Responsive Design.",
+    "explanation": "pointer: coarse indicates touch devices with less precision than mice.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0236",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does the ':user-valid' pseudo-class represent in modern form styling?",
+    "options": [
+      "An input that passed validation before page load",
+      "An input validated by a remote server API",
+      "A password input with biometric authentication",
+      "An input whose value is valid, but only after the user has interacted with it"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Modern CSS.",
+    "explanation": ":user-valid matches valid inputs only after user interaction, preventing premature error states.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0237",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does the ':user-invalid' pseudo-class represent?",
+    "options": [
+      "An input whose value is invalid, but only after the user has attempted interaction",
+      "An input containing offensive language",
+      "An input disabled by the server",
+      "An input with an invalid type attribute"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Modern CSS.",
+    "explanation": ":user-invalid prevents showing aggressive validation errors before the user finishes typing.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0238",
+    "topic": "CSS",
+    "subtopic": "Modern CSS",
+    "difficulty": "medium",
+    "question": "What does 'isolation: isolate' do in CSS?",
+    "options": [
+      "Isolates the element in an iframe sandbox",
+      "Creates a new stacking context without requiring z-index or opacity hacks",
+      "Prevents JavaScript events from bubbling",
+      "Disables CSS inheritance from parents"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Modern CSS.",
+    "explanation": "isolation: isolate defines whether an element must create a new stacking context.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0239",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets whether an element displays as a block or inline box?",
+    "options": [
+      "box-type",
+      "flow",
+      "display",
+      "render-mode"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "display specifies the box's inner and outer display types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0240",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the distance between borders of adjacent cells in a table?",
+    "options": [
+      "table-gap",
+      "cell-padding",
+      "border-spacing",
+      "cell-margin"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "border-spacing sets the distance between borders of adjacent table cells.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0241",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property collapses table borders into a single border?",
+    "options": [
+      "border-mode: thin",
+      "table-border: single",
+      "border-merge: true",
+      "border-collapse: collapse"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "border-collapse determines whether table cells have shared or separate borders.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0242",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property controls the visibility of an element without removing its layout space?",
+    "options": [
+      "visibility",
+      "display",
+      "opacity",
+      "clip"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "visibility: hidden hides an element without removing it from the document layout.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0243",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the foreground color of text in an element?",
+    "options": [
+      "text-color",
+      "color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "color sets the color of text and text decorations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0244",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the style of an element's top border?",
+    "options": [
+      "top-border-mode",
+      "border-style-top",
+      "border-top-style",
+      "border-top-type"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "border-top-style sets the line style for the top border.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0245",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the width of an element's right border?",
+    "options": [
+      "border-right-px",
+      "border-width-right",
+      "right-border-size",
+      "border-right-width"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "border-right-width sets the thickness of the right border.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0246",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the color of an element's bottom border?",
+    "options": [
+      "border-bottom-color",
+      "border-color-bottom",
+      "bottom-border-tint",
+      "border-bottom-hex"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "border-bottom-color sets the color of the bottom border.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0247",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the style of an element's left border?",
+    "options": [
+      "border-style-left",
+      "border-left-style",
+      "left-border-style",
+      "border-left-mode"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "border-left-style sets the style of the left border.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0248",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies the alignment of flexible items on the cross-axis?",
+    "options": [
+      "cross-align",
+      "flex-align",
+      "align-items",
+      "justify-items"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "align-items aligns items along the cross axis.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0249",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies whether flexible items should wrap or not?",
+    "options": [
+      "flex-line",
+      "flex-flow",
+      "flex-break",
+      "flex-wrap"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "flex-wrap specifies whether items wrap onto multiple lines.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0250",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies the initial main size of a flex item?",
+    "options": [
+      "flex-size",
+      "flex-width",
+      "flex-start-size",
+      "flex-basis"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "flex-basis sets the initial main size of a flex item.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0251",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies how much a flex item will grow relative to others?",
+    "options": [
+      "flex-grow",
+      "flex-expand",
+      "flex-scale",
+      "flex-size"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "flex-grow sets the flex grow factor of a flex item.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0252",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies how much a flex item will shrink relative to others?",
+    "options": [
+      "flex-contract",
+      "flex-shrink",
+      "flex-reduce",
+      "flex-minimize"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "flex-shrink sets the flex shrink factor of a flex item.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0253",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property specifies the order of a flexible item relative to its siblings?",
+    "options": [
+      "flex-index",
+      "z-index",
+      "order",
+      "item-order"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "order specifies the order to lay out an item in a flex or grid container.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0254",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the row gutter in grid or flex layouts?",
+    "options": [
+      "gutter-row",
+      "grid-row-spacing",
+      "line-gap",
+      "row-gap"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "row-gap sets the gap between an element's rows.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0255",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the column gutter in grid or flex layouts?",
+    "options": [
+      "column-gap",
+      "grid-col-spacing",
+      "col-gap",
+      "gutter-column"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "column-gap sets the gap between an element's columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0256",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the grid item's column start and end lines simultaneously?",
+    "options": [
+      "grid-col-span",
+      "grid-column",
+      "grid-column-bounds",
+      "column-lines"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "grid-column is a shorthand for grid-column-start and grid-column-end.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0257",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the grid item's row start and end lines simultaneously?",
+    "options": [
+      "grid-row-bounds",
+      "grid-row-span",
+      "grid-row",
+      "row-lines"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "grid-row is a shorthand for grid-row-start and grid-row-end.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0258",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property specifies named grid areas an item spans across?",
+    "options": [
+      "area-span",
+      "grid-name",
+      "grid-zone",
+      "grid-area"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "grid-area specifies a grid item's size and location within a grid.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0259",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls automatic row placement algorithm in CSS Grid?",
+    "options": [
+      "grid-auto-flow",
+      "grid-flow-algorithm",
+      "grid-packing",
+      "grid-auto-pack"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "grid-auto-flow controls how the auto-placement algorithm places items.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0260",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the vertical alignment of an inline or table-cell element?",
+    "options": [
+      "vertical-align",
+      "align-vertical",
+      "valign",
+      "vertical-position"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "vertical-align sets the vertical alignment of an inline, inline-block or table-cell box.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0261",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property controls whether text should break inside words?",
+    "options": [
+      "word-wrap",
+      "word-break",
+      "text-break",
+      "overflow-wrap"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "word-break specifies soft wrap opportunities between characters.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0262",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls hyphenation of words when text wraps across lines?",
+    "options": [
+      "word-hyphenation",
+      "text-hyphen",
+      "hyphens",
+      "auto-hyphen"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "hyphens specifies how words should be hyphenated when text wraps across multiple lines.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0263",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls how font size is adjusted across different typefaces?",
+    "options": [
+      "type-adjust",
+      "font-scale",
+      "font-metric-ratio",
+      "font-size-adjust"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "font-size-adjust preserves font readability when fallback fonts are used.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0264",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls the rendering of kerning pairs in OpenType fonts?",
+    "options": [
+      "font-kerning",
+      "letter-kerning",
+      "font-spacing",
+      "type-kerning"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "font-kerning sets the use of the kerning information stored in a font.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0265",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls low-level OpenType font feature tags?",
+    "options": [
+      "font-opentype",
+      "font-feature-settings",
+      "font-features",
+      "type-features"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "font-feature-settings allows advanced typographic features of OpenType fonts to be toggled.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0266",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the style of an outline around an element?",
+    "options": [
+      "border-outline-style",
+      "outline-type",
+      "outline-style",
+      "outline-mode"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "outline-style sets the style of an element's outline.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0267",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the width of an outline around an element?",
+    "options": [
+      "outline-stroke",
+      "outline-thickness",
+      "outline-size",
+      "outline-width"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "outline-width sets the thickness of an element's outline.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0268",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the color of an outline around an element?",
+    "options": [
+      "outline-color",
+      "outline-tint",
+      "outline-hex",
+      "outline-shade"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "outline-color sets the color of an element's outline.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0269",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the space between an outline and the edge or border of an element?",
+    "options": [
+      "outline-margin",
+      "outline-offset",
+      "outline-gap",
+      "outline-spacing"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "outline-offset adds space between an outline and an element's edge.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0270",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets whether an element reacts to pointer events?",
+    "options": [
+      "mouse-events",
+      "pointer-events",
+      "click-events",
+      "touch-actions"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "pointer-events sets whether an element can become the target of pointer events.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0271",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls how touch screen gestures like pinch-to-zoom are handled?",
+    "options": [
+      "touch-gesture",
+      "gesture-action",
+      "touch-action",
+      "pointer-action"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "touch-action sets how an element's region can be manipulated by a touchscreen user.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0272",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property creates a multi-column text layout in CSS?",
+    "options": [
+      "layout-columns",
+      "multi-col",
+      "text-columns",
+      "column-count (or columns)"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "column-count breaks an element's content into the specified number of columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0273",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the width of columns in a multi-column layout?",
+    "options": [
+      "column-width",
+      "col-size",
+      "column-size",
+      "columns-min-width"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "column-width sets the ideal column width in a multi-column layout.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0274",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the vertical rule line drawn between columns in multi-column layout?",
+    "options": [
+      "column-divider",
+      "column-rule",
+      "column-border",
+      "col-separator"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "column-rule draws a vertical dividing line between columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0275",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property allows an element to span across all columns in a multi-column layout?",
+    "options": [
+      "column-break",
+      "col-span",
+      "column-span",
+      "columns-wide"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "column-span: all makes an element span across all columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0276",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the space between columns in multi-column text?",
+    "options": [
+      "column-margin",
+      "column-spacing",
+      "col-gutter",
+      "column-gap"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "column-gap sets the horizontal gap between columns.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0277",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property sets the list item marker style for an ordered or unordered list?",
+    "options": [
+      "list-style-type",
+      "list-marker",
+      "bullet-style",
+      "marker-type"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "list-style-type sets the marker (such as a disc, character, or counter number) for a list item.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0278",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "easy",
+    "question": "Which property specifies an image to use as the list item marker?",
+    "options": [
+      "marker-image",
+      "list-style-image",
+      "bullet-image",
+      "list-icon"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "list-style-image specifies an image that will be used as the list item marker.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0279",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property specifies whether list item markers appear inside or outside the content flow?",
+    "options": [
+      "list-alignment",
+      "marker-placement",
+      "list-style-position",
+      "bullet-position"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "list-style-position sets whether the ::marker appears inside or outside the list element box.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0280",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which CSS pseudo-element targets the marker box of a list item?",
+    "options": [
+      "::list-bullet",
+      "::bullet",
+      "::marker",
+      "::counter"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "The ::marker pseudo-element selects the marker box of a list item, which typically contains a bullet or number.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0281",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property defines how an element resizes its content to fit its box (similar to background-size)?",
+    "options": [
+      "element-fit",
+      "content-fit",
+      "image-fit",
+      "object-fit"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "object-fit sets how the content of a replaced element like <img> or <video> should be resized.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0282",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the alignment of replaced content within its box when using object-fit?",
+    "options": [
+      "object-position",
+      "content-position",
+      "image-alignment",
+      "element-position"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "object-position determines the alignment of the replaced element inside its box.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0283",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls whether an element will be painted when it is not in the viewport?",
+    "options": [
+      "render-visibility",
+      "content-visibility",
+      "viewport-render",
+      "lazy-paint"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "content-visibility: auto skips rendering off-screen elements, dramatically improving initial page load performance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0284",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the estimated size of an element when content-visibility: auto skips its rendering?",
+    "options": [
+      "estimated-size",
+      "render-size-hint",
+      "contain-intrinsic-size",
+      "virtual-size"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "contain-intrinsic-size gives an element a placeholder size to avoid scrollbar jumping when off-screen.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0285",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property specifies that an element and its contents are independent of the rest of the document tree?",
+    "options": [
+      "render-boundary",
+      "isolate-layout",
+      "sandbox",
+      "contain"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "The contain property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the tree.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0286",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the style of an element's text underline (e.g. wavy or dotted)?",
+    "options": [
+      "text-decoration-style",
+      "underline-style",
+      "text-line-mode",
+      "decoration-type"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "text-decoration-style sets the style of the lines specified by text-decoration-line.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0287",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the color of an element's text underline independently of font color?",
+    "options": [
+      "underline-color",
+      "text-decoration-color",
+      "line-color",
+      "decoration-tint"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "text-decoration-color sets the color of decorations added by text-decoration-line.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0288",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the thickness of an element's text underline?",
+    "options": [
+      "decoration-weight",
+      "underline-width",
+      "text-decoration-thickness",
+      "line-thickness"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "text-decoration-thickness sets the stroke thickness of the decoration line that is used on text.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0289",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the offset distance of an underline from its text baseline?",
+    "options": [
+      "baseline-offset",
+      "underline-distance",
+      "underline-gap",
+      "text-underline-offset"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "text-underline-offset sets the offset distance of an underline text decoration line from its normal position.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0290",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls the position of the underline relative to text descendants?",
+    "options": [
+      "text-line-position",
+      "underline-mode",
+      "underline-align",
+      "text-underline-position"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "text-underline-position specifies the position of the underline line used in text decoration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0291",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets how white space inside an element is handled?",
+    "options": [
+      "white-space",
+      "text-space",
+      "whitespace-mode",
+      "space-collapse"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "white-space sets how white space inside an element is handled.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0292",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the tab size (in characters or spaces) in preformatted text?",
+    "options": [
+      "tab-width",
+      "tab-size",
+      "indent-size",
+      "tab-stop"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "tab-size sets the width of a tab character (U+0009).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0293",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls whether line breaks are forbidden or allowed within words for Asian text?",
+    "options": [
+      "word-break-cjk",
+      "cjk-break",
+      "line-break",
+      "text-wrap-mode"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "line-break sets how breaking rules are applied to Chinese, Japanese, and Korean (CJK) text.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0294",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls the alignment of the last line of a block or a line right before a forced line break?",
+    "options": [
+      "text-last",
+      "last-line-align",
+      "final-align",
+      "text-align-last"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "text-align-last sets how the last line of a block or a line right before a forced line break is aligned.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0295",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the orientation of the text in a line?",
+    "options": [
+      "text-orientation",
+      "glyph-orientation",
+      "text-direction-angle",
+      "vertical-text-mode"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "text-orientation sets the orientation of the text characters in a line.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0296",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets the appearance of emphasis marks on text characters?",
+    "options": [
+      "text-accent-marks",
+      "text-emphasis",
+      "character-dots",
+      "text-callout"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Properties.",
+    "explanation": "text-emphasis applies emphasis marks to text (except spaces and control characters).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0297",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property specifies the indentation of the first line in a block of text?",
+    "options": [
+      "paragraph-indent",
+      "first-line-indent",
+      "text-indent",
+      "indent-left"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Properties.",
+    "explanation": "text-indent sets the length of empty space that is put before lines of text in a block.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0298",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls how an element's text is justified when text-align: justify is set?",
+    "options": [
+      "spacing-justify",
+      "justify-mode",
+      "text-justify-algorithm",
+      "text-justify"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "text-justify sets which justification method should be applied when text-align: justify is used.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0299",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property sets how the text rendering engine optimizes speed, legibility, or geometric precision?",
+    "options": [
+      "text-rendering",
+      "font-smooth",
+      "render-quality",
+      "text-optimization"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Properties.",
+    "explanation": "text-rendering provides information to the rendering engine about what to optimize for when rendering text.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "css_0300",
+    "topic": "CSS",
+    "subtopic": "Properties",
+    "difficulty": "medium",
+    "question": "Which property controls text wrapping across lines in modern CSS (e.g. balance or pretty)?",
+    "options": [
+      "balance-wrap",
+      "wrap-style",
+      "line-wrap-mode",
+      "text-wrap"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Properties.",
+    "explanation": "text-wrap controls how text inside an element wraps, supporting keywords like balance and pretty.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

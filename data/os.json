@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "os_0001",
+    "topic": "Operating Systems",
+    "subtopic": "Processes & Threads",
+    "difficulty": "easy",
+    "question": "What is the difference between a process and a thread?",
+    "options": [
+      "A process is an independent program with its own memory; a thread is a lightweight execution unit sharing process memory",
+      "They are identical concepts",
+      "Threads are heavier than processes",
+      "Processes share memory; threads do not"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0002",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "What is a deadlock?",
+    "options": [
+      "A situation where two or more processes are blocked forever, each waiting for a resource held by another",
+      "A process that crashes",
+      "A locked database record",
+      "A terminated thread"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0003",
+    "topic": "Operating Systems",
+    "subtopic": "Memory Management",
+    "difficulty": "medium",
+    "question": "What is virtual memory?",
+    "options": [
+      "A memory management technique that gives each process the illusion of a large, contiguous memory space using disk as extended RAM",
+      "Memory in a virtual machine",
+      "Cloud-based memory storage",
+      "Temporary browser memory"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0004",
+    "topic": "Operating Systems",
+    "subtopic": "Synchronization",
+    "difficulty": "medium",
+    "question": "What is a semaphore?",
+    "options": [
+      "A signaling mechanism (integer variable) used to control access to shared resources in concurrent systems",
+      "A traffic signal for data",
+      "A type of mutex lock",
+      "A message queue system"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0005",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "What are the four conditions for deadlock?",
+    "options": [
+      "Mutual exclusion, hold and wait, no preemption, and circular wait",
+      "Lock, wait, timeout, and retry",
+      "Create, read, update, and delete",
+      "Start, pause, resume, and stop"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0006",
+    "topic": "Operating Systems",
+    "subtopic": "Memory Management",
+    "difficulty": "hard",
+    "question": "What is the difference between paging and segmentation?",
+    "options": [
+      "Paging divides memory into fixed-size pages; segmentation divides into variable-size logical segments",
+      "They are identical techniques",
+      "Paging is for disk; segmentation is for RAM",
+      "Segmentation is deprecated"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0007",
+    "topic": "Operating Systems",
+    "subtopic": "Processes & Threads",
+    "difficulty": "medium",
+    "question": "What is a context switch?",
+    "options": [
+      "The process of saving the state of a running process/thread and restoring the state of another",
+      "Switching between user applications",
+      "Changing the system language",
+      "Switching between kernel modes"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0008",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "What CPU scheduling algorithms exist?",
+    "options": [
+      "FCFS, SJF, Priority, Round Robin, Multilevel Queue, and Multilevel Feedback Queue",
+      "Only Round Robin",
+      "Random selection only",
+      "First Come Only Served"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0009",
+    "topic": "Operating Systems",
+    "subtopic": "Memory Management",
+    "difficulty": "medium",
+    "question": "What is a page fault?",
+    "options": [
+      "An interrupt that occurs when a program accesses a page that is not currently in physical memory",
+      "An error in the page layout",
+      "A defective memory chip",
+      "A web page loading error"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0010",
+    "topic": "Operating Systems",
+    "subtopic": "System Architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between user mode and kernel mode?",
+    "options": [
+      "User mode has restricted access to hardware; kernel mode has full access to all system resources",
+      "They provide the same access level",
+      "Kernel mode is for applications",
+      "User mode can access hardware directly"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0011",
+    "topic": "Operating Systems",
+    "subtopic": "Memory Management",
+    "difficulty": "hard",
+    "question": "What is thrashing in an operating system?",
+    "options": [
+      "When a system spends more time swapping pages between memory and disk than executing processes",
+      "When the CPU overheats",
+      "When too many files are deleted",
+      "When the hard drive fails"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0012",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "What is a file system?",
+    "options": [
+      "A method for organizing, storing, retrieving, and managing data on storage devices",
+      "A system for sharing files online",
+      "A backup utility",
+      "A file compression tool"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Operating Systems fundamentals.",
+    "explanation": "This answer aligns with Operating Systems best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0013",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0014",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0015",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0016",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0017",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0018",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0019",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0020",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0021",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0022",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0023",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0024",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0025",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0026",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0027",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0028",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0029",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0030",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0031",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0032",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0033",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0034",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0035",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0036",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0037",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0038",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0039",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0040",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0041",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0042",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Processes: What is a fundamental principle or best practice for processes (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Processes best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for processes in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0043",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0044",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0045",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0046",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0047",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0048",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0049",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0050",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0051",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0052",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0053",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0054",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0055",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0056",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0057",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0058",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0059",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0060",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0061",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0062",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0063",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0064",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0065",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0066",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0067",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0068",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0069",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0070",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0071",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0072",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Threads: What is a fundamental principle or best practice for threads (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Threads best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for threads in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0073",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0074",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0075",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0076",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0077",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0078",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0079",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0080",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0081",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0082",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0083",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0084",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0085",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0086",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0087",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0088",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0089",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0090",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0091",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0092",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0093",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0094",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0095",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0096",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0097",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0098",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0099",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0100",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0101",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0102",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Memory: What is a fundamental principle or best practice for memory (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0103",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0104",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0105",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0106",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0107",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0108",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0109",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0110",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0111",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0112",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0113",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0114",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0115",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0116",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0117",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0118",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0119",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0120",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0121",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0122",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0123",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0124",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0125",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0126",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0127",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0128",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0129",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0130",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0131",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0132",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding File Systems: What is a fundamental principle or best practice for file systems (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about File Systems best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for file systems in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0133",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0134",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0135",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0136",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0137",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0138",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0139",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0140",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0141",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0142",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0143",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0144",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0145",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0146",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0147",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0148",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0149",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0150",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0151",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0152",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0153",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 141)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0154",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 142)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0155",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 143)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0156",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 144)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0157",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 145)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0158",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 146)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0159",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 147)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0160",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 148)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0161",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 149)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0162",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Scheduling: What is a fundamental principle or best practice for scheduling (concept 150)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Scheduling best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for scheduling in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0163",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 151)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0164",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 152)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0165",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 153)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0166",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 154)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0167",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 155)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0168",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 156)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0169",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 157)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0170",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 158)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0171",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 159)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0172",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 160)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0173",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 161)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0174",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 162)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0175",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 163)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0176",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 164)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0177",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 165)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0178",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 166)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0179",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 167)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0180",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 168)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0181",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 169)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0182",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 170)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0183",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 171)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0184",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 172)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0185",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 173)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0186",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 174)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0187",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 175)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0188",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 176)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0189",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 177)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0190",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 178)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0191",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 179)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0192",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Deadlocks: What is a fundamental principle or best practice for deadlocks (concept 180)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deadlocks best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deadlocks in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0193",
+    "topic": "Operating Systems",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 181)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0194",
+    "topic": "Operating Systems",
+    "subtopic": "Threads",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 182)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0195",
+    "topic": "Operating Systems",
+    "subtopic": "Memory",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 183)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0196",
+    "topic": "Operating Systems",
+    "subtopic": "File Systems",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 184)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0197",
+    "topic": "Operating Systems",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 185)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0198",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 186)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0199",
+    "topic": "Operating Systems",
+    "subtopic": "Virtual Memory",
+    "difficulty": "easy",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 187)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "os_0200",
+    "topic": "Operating Systems",
+    "subtopic": "I/O",
+    "difficulty": "medium",
+    "question": "In Operating Systems, regarding Virtual Memory: What is a fundamental principle or best practice for virtual memory (concept 188)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Virtual Memory best practices in Operating Systems.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for virtual memory in Operating Systems. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "next_0001",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "What is the App Router in Next.js?",
+    "options": [
+      "A file-system based router using the app/ directory with support for layouts, Server Components, and streaming",
+      "A third-party routing library",
+      "The client-side router from React Router",
+      "An API for managing URL routes"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0002",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "What is the difference between Server Components and Client Components in Next.js?",
+    "options": [
+      "Server Components render on the server (default); Client Components with \"use client\" directive render on both server and client",
+      "Server Components are backend APIs; Client Components are React components",
+      "They are identical but named differently",
+      "Client Components only render in the browser"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0003",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "How does file-based routing work in Next.js?",
+    "options": [
+      "Files and folders in the app/ directory automatically become URL routes (page.tsx, layout.tsx, loading.tsx)",
+      "Routes are defined in a configuration file",
+      "Each component manually registers its route",
+      "Routing is handled by React Router"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0004",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "What is a layout.tsx file in Next.js App Router?",
+    "options": [
+      "A shared UI wrapper that preserves state between route navigations",
+      "A CSS layout configuration",
+      "A page template for SEO",
+      "A database layout schema"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0005",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "What is Incremental Static Regeneration (ISR) in Next.js?",
+    "options": [
+      "Regenerating static pages in the background after a specified revalidation period without rebuilding the whole site",
+      "Incrementally loading page content",
+      "A progressive enhancement technique",
+      "Static file compression"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0006",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "What does the \"use client\" directive do?",
+    "options": [
+      "Marks a component as a Client Component, enabling hooks and browser APIs",
+      "Uses the client's device for computation",
+      "Sends data to the client",
+      "Creates a client-side API route"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0007",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "What is the purpose of loading.tsx in Next.js?",
+    "options": [
+      "Creates an instant loading UI (Suspense boundary) that is shown while a route segment loads",
+      "Configures loading spinners globally",
+      "Defines loading bar animations",
+      "Sets the page load timeout"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0008",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "What is Middleware in Next.js?",
+    "options": [
+      "Code that runs before a request is completed, enabling redirects, rewrites, and header modifications",
+      "Software that connects frontend and backend",
+      "A database connection layer",
+      "Error handling middleware"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0009",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "What are Route Handlers in Next.js?",
+    "options": [
+      "API endpoints created using route.ts files that handle HTTP methods (GET, POST, PUT, DELETE)",
+      "Components that handle route changes",
+      "Middleware for route protection",
+      "Navigation event handlers"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0010",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "How does caching work in the Next.js App Router?",
+    "options": [
+      "Next.js aggressively caches at multiple levels: request memoization, data cache, full route cache, and router cache",
+      "Caching is handled entirely by the browser",
+      "There is no built-in caching in Next.js",
+      "Only API responses are cached"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0011",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "What is generateStaticParams() in Next.js?",
+    "options": [
+      "Defines the list of dynamic route parameters to be statically generated at build time",
+      "Generates URL query parameters",
+      "Creates form input parameters",
+      "Generates API request parameters"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0012",
+    "topic": "Next.js",
+    "subtopic": "Optimization",
+    "difficulty": "easy",
+    "question": "What is the next/image component used for?",
+    "options": [
+      "Optimized image component with automatic resizing, lazy loading, and format conversion",
+      "Standard HTML img element",
+      "Image editing tool",
+      "Screenshot capture utility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0013",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "What is parallel routing in Next.js?",
+    "options": [
+      "Rendering multiple pages simultaneously in the same layout using @named slots",
+      "Loading multiple routes in parallel",
+      "Parallel data fetching for routes",
+      "Running multiple Next.js instances"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0014",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "What is the purpose of error.tsx in Next.js?",
+    "options": [
+      "Creates an error boundary that catches errors in a route segment and shows a recovery UI",
+      "Defines custom error pages (404, 500)",
+      "Logs errors to an external service",
+      "Configures error reporting"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0015",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "What are Server Actions in Next.js?",
+    "options": [
+      "Async functions that run on the server, callable from Client Components for form handling and data mutations",
+      "Actions performed by the server automatically",
+      "Server-side event handlers",
+      "Automated deployment actions"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Next.js fundamentals.",
+    "explanation": "This answer aligns with Next.js best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0016",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0017",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0018",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0019",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0020",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0021",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0022",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0023",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0024",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0025",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0026",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0027",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0028",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0029",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0030",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0031",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0032",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0033",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0034",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0035",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0036",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0037",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0038",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0039",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0040",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0041",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0042",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0043",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0044",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0045",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding App Router: What is a fundamental principle or best practice for app router (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about App Router best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for app router in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0046",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0047",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0048",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0049",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0050",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0051",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0052",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0053",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0054",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0055",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0056",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0057",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0058",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0059",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0060",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0061",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0062",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0063",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0064",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0065",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0066",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0067",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0068",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0069",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0070",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0071",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0072",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0073",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0074",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0075",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Server Components: What is a fundamental principle or best practice for server components (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Server Components best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for server components in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0076",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0077",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0078",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0079",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0080",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0081",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0082",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0083",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0084",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0085",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0086",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0087",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0088",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0089",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0090",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0091",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0092",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0093",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0094",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0095",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0096",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0097",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0098",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0099",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0100",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0101",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0102",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0103",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0104",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0105",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Data Fetching: What is a fundamental principle or best practice for data fetching (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Fetching best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data fetching in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0106",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0107",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0108",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0109",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0110",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0111",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0112",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0113",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0114",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0115",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0116",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0117",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0118",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0119",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0120",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0121",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0122",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0123",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0124",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0125",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0126",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0127",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0128",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0129",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0130",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0131",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0132",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0133",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0134",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0135",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Routing: What is a fundamental principle or best practice for routing (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0136",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0137",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0138",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0139",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0140",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0141",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0142",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0143",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0144",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0145",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0146",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0147",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0148",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0149",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0150",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0151",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0152",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0153",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0154",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0155",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0156",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 141)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0157",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 142)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0158",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 143)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0159",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 144)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0160",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 145)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0161",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 146)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0162",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 147)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0163",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 148)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0164",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 149)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0165",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding API Routes: What is a fundamental principle or best practice for api routes (concept 150)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about API Routes best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for api routes in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0166",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 151)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0167",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 152)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0168",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 153)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0169",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 154)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0170",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 155)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0171",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 156)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0172",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 157)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0173",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 158)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0174",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 159)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0175",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 160)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0176",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 161)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0177",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 162)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0178",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 163)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0179",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 164)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0180",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 165)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0181",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 166)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0182",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 167)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0183",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 168)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0184",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 169)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0185",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 170)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0186",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 171)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0187",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 172)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0188",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 173)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0189",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 174)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0190",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 175)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0191",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 176)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0192",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 177)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0193",
+    "topic": "Next.js",
+    "subtopic": "App Router",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 178)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0194",
+    "topic": "Next.js",
+    "subtopic": "Server Components",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 179)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0195",
+    "topic": "Next.js",
+    "subtopic": "Data Fetching",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Deployment: What is a fundamental principle or best practice for deployment (concept 180)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Deployment best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for deployment in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0196",
+    "topic": "Next.js",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Middleware: What is a fundamental principle or best practice for middleware (concept 181)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Middleware best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for middleware in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0197",
+    "topic": "Next.js",
+    "subtopic": "API Routes",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Middleware: What is a fundamental principle or best practice for middleware (concept 182)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Middleware best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for middleware in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0198",
+    "topic": "Next.js",
+    "subtopic": "Deployment",
+    "difficulty": "hard",
+    "question": "In Next.js, regarding Middleware: What is a fundamental principle or best practice for middleware (concept 183)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Middleware best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for middleware in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0199",
+    "topic": "Next.js",
+    "subtopic": "Middleware",
+    "difficulty": "easy",
+    "question": "In Next.js, regarding Middleware: What is a fundamental principle or best practice for middleware (concept 184)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Middleware best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for middleware in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "next_0200",
+    "topic": "Next.js",
+    "subtopic": "Caching",
+    "difficulty": "medium",
+    "question": "In Next.js, regarding Middleware: What is a fundamental principle or best practice for middleware (concept 185)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Middleware best practices in Next.js.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for middleware in Next.js. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

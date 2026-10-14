@@ -1,26 +1,29 @@
-/* ============================================
-   STATE.JS — QuizePro State Management
-   ============================================ */
+/* ============================================================
+   STATE.JS — Quiz Engine State Machine & Mode Orchestrator
+   ============================================================ */
 
 const quizState = {
   // Navigation Tabs: 'hub' | 'explore' | 'performance' | 'bookmarks'
   activeTab: "hub",
 
-  // Quiz Hub Filters & Config
+  // Quiz Hub & Explorer Filters
   hubSearchQuery: "",
   activeCategory: "all",
   activeDifficulty: "all",
   isTimedMode: true,
   timeLimitPerQuestion: 20, // seconds
 
-  // Explore Page Independent Filters
+  // Explore Page State
   exploreSearchQuery: "",
   exploreCategory: "all",
   exploreDifficulty: "all",
-  exploreSort: "count", // 'count' | 'name' | 'difficulty'
+  exploreSort: "relevance", // 'relevance' | 'difficulty' | 'topic'
+  exploreCurrentPage: 1,
+  explorePageSize: 20,
 
   // Active Quiz Run State
-  quizMode: "standard", // 'standard' | 'daily' | 'practice_incorrect' | 'study_bank' | 'custom'
+  quizMode: "practice", // 'practice' (instant feedback) | 'exam' (hidden until final submit)
+  quizSource: "standard", // 'standard' | 'daily' | 'explore' | 'study_bank' | 'missed'
   quizTitle: "Technical Assessment",
   questions: [],
   currentQuestionIndex: 0,
@@ -32,13 +35,14 @@ const quizState = {
   isFinished: false,
   startTime: null,
   elapsedTimeSec: 0,
-  userAnswers: [], // Array of { question, selectedIndex, isCorrect, timedOut, skipped }
+  userAnswers: [], // Array of { question, selectedIndex, isCorrect, isUnanswered, hintRevealed, timestamp }
+  flaggedIndices: new Set(),
 
   // Timer
   timerSecondsRemaining: 20,
   timerInterval: null,
 
-  // Lifelines
+  // Lifelines (Practice Mode)
   lifelines: {
     fiftyFifty: true,
     hint: true,
@@ -58,115 +62,13 @@ function shuffleArray(array) {
   return arr;
 }
 
-// Prepares questions for a new standard quiz run
-function initializeStandardQuiz(category = "all", difficulty = "all", count = 10) {
-  let pool = QuestionService.getAllQuestions();
-
-  if (category && category !== "all") {
-    pool = pool.filter((q) => q.category === category);
-  }
-
-  if (difficulty && difficulty !== "all") {
-    pool = pool.filter((q) => q.difficulty === difficulty);
-  }
-
-  if (pool.length === 0) {
-    pool = QuestionService.getAllQuestions();
-  }
-
-  quizState.quizMode = "standard";
-  quizState.activeCategory = category;
-  quizState.activeDifficulty = difficulty;
-  quizState.quizTitle = category !== "all" && CATEGORIES[category] 
-    ? `${CATEGORIES[category].title} Assessment` 
-    : "Comprehensive Tech Drill";
-  quizState.questions = shuffleArray(pool).slice(0, count);
-  resetQuizRunState();
-}
-
-// Prepares custom configured quiz run
-function initializeConfiguredQuiz({ category = "all", difficulty = "all", count = 10, isTimed = true, timeLimit = 20, shuffle = true } = {}) {
-  let pool = QuestionService.getAllQuestions();
-
-  if (category && category !== "all") {
-    pool = pool.filter((q) => q.category === category);
-  }
-
-  if (difficulty && difficulty !== "all") {
-    pool = pool.filter((q) => q.difficulty === difficulty);
-  }
-
-  if (pool.length === 0) {
-    pool = QuestionService.getAllQuestions();
-  }
-
-  quizState.quizMode = "custom";
-  quizState.activeCategory = category;
-  quizState.activeDifficulty = difficulty;
-  quizState.isTimedMode = isTimed !== false && isTimed !== 0 && isTimed !== "0";
-  if (quizState.isTimedMode) {
-    quizState.timeLimitPerQuestion = Math.max(5, parseInt(timeLimit, 10) || 20);
-  }
-
-  const selectedQuestions = shuffle ? shuffleArray(pool) : [...pool];
-  const qCount = count === "all" ? selectedQuestions.length : Math.min(selectedQuestions.length, Math.max(1, parseInt(count, 10) || 10));
-
-  quizState.quizTitle = category !== "all" && CATEGORIES[category] 
-    ? `${CATEGORIES[category].title} (${qCount} Qs)` 
-    : `Custom Tech Assessment (${qCount} Qs)`;
-
-  quizState.questions = selectedQuestions.slice(0, qCount);
-  resetQuizRunState();
-  return quizState.questions.length;
-}
-
-// Prepares Daily Challenge
-function initializeDailyChallengeQuiz() {
-  const dailyQs = QuestionService.getDailyChallengeQuestions();
-  quizState.quizMode = "daily";
-  quizState.quizTitle = "Daily Code Challenge";
-  quizState.questions = dailyQs;
-  resetQuizRunState();
-}
-
-// Prepares Practice Incorrect Quiz from missed questions
-function initializePracticeIncorrectQuiz(missedQuestions) {
-  if (!missedQuestions || missedQuestions.length === 0) return false;
-  quizState.quizMode = "practice_incorrect";
-  quizState.quizTitle = "Mistake Revision Drill";
-  quizState.questions = shuffleArray(missedQuestions);
-  resetQuizRunState();
-  return true;
-}
-
-// Prepares Study Bank Quiz from bookmarked questions
-function initializeStudyBankQuiz() {
-  const bookmarks = Storage.getBookmarks();
-  if (bookmarks.length === 0) return false;
-  quizState.quizMode = "study_bank";
-  quizState.quizTitle = "Study Bank Revision";
-  quizState.questions = shuffleArray(bookmarks);
-  resetQuizRunState();
-  return true;
-}
-
-// Prepares real-time Gemini AI Generated Quiz
-function initializeAiQuiz({ questions, topic = "AI Real-Time Drill", difficulty = "medium", isTimed = true, timeLimit = 20 } = {}) {
-  if (!questions || questions.length === 0) return false;
-  quizState.quizMode = "ai_drill";
-  quizState.activeCategory = "ai_drill";
-  quizState.activeDifficulty = difficulty;
-  quizState.isTimedMode = isTimed !== false && isTimed !== 0 && isTimed !== "0";
-  if (quizState.isTimedMode) {
-    quizState.timeLimitPerQuestion = Math.max(5, parseInt(timeLimit, 10) || 20);
-  }
-  quizState.quizTitle = `✨ AI Drill: ${topic}`;
-  quizState.questions = [...questions];
-  resetQuizRunState();
-  return true;
-}
-
+// Resets internal run timers and trackers
 function resetQuizRunState() {
+  if (quizState.timerInterval) {
+    clearInterval(quizState.timerInterval);
+    quizState.timerInterval = null;
+  }
+
   quizState.currentQuestionIndex = 0;
   quizState.score = 0;
   quizState.currentStreak = 0;
@@ -176,139 +78,142 @@ function resetQuizRunState() {
   quizState.isFinished = false;
   quizState.startTime = Date.now();
   quizState.elapsedTimeSec = 0;
-  quizState.userAnswers = [];
+  quizState.flaggedIndices = new Set();
+  quizState.disabledOptions = [];
+  quizState.hintVisible = false;
+
+  // Initialize placeholder for each question answer
+  quizState.userAnswers = quizState.questions.map((q) => ({
+    question: q,
+    selectedIndex: null,
+    isCorrect: false,
+    isUnanswered: true,
+    hintRevealed: false
+  }));
 
   quizState.lifelines = {
     fiftyFifty: true,
     hint: true,
     skip: true
   };
-  quizState.disabledOptions = [];
-  quizState.hintVisible = false;
-
-  stopQuizTimer();
-  quizState.timerSecondsRemaining = quizState.timeLimitPerQuestion;
-}
-
-function startQuizTimer(onTick, onTimeOut) {
-  stopQuizTimer();
-  if (!quizState.isTimedMode) return;
 
   quizState.timerSecondsRemaining = quizState.timeLimitPerQuestion;
-  if (onTick) onTick(quizState.timerSecondsRemaining);
-
-  quizState.timerInterval = setInterval(() => {
-    quizState.timerSecondsRemaining -= 1;
-    if (onTick) onTick(quizState.timerSecondsRemaining);
-
-    if (quizState.timerSecondsRemaining <= 0) {
-      stopQuizTimer();
-      if (onTimeOut) onTimeOut();
-    }
-  }, 1000);
 }
 
-function stopQuizTimer() {
-  if (quizState.timerInterval) {
-    clearInterval(quizState.timerInterval);
-    quizState.timerInterval = null;
-  }
-}
+// Prepares standard category quiz run
+function initializeStandardQuiz(category = "all", difficulty = "all", count = 10, mode = "practice") {
+  let pool = QuestionService.getQuestionsByCategory(category);
 
-function getCurrentQuestion() {
-  if (!quizState.questions || quizState.questions.length === 0) return null;
-  return quizState.questions[quizState.currentQuestionIndex] || null;
-}
-
-function selectAnswer(selectedIndex) {
-  if (quizState.isAnswered) return null;
-
-  stopQuizTimer();
-  quizState.selectedAnswer = selectedIndex;
-  quizState.isAnswered = true;
-
-  const currentQ = getCurrentQuestion();
-  if (!currentQ) return false;
-
-  const isCorrect = selectedIndex === currentQ.correctAnswer;
-
-  if (isCorrect) {
-    quizState.score += 1;
-    quizState.currentStreak += 1;
-    if (quizState.currentStreak > quizState.maxStreak) {
-      quizState.maxStreak = quizState.currentStreak;
-    }
-  } else {
-    quizState.currentStreak = 0;
+  if (difficulty && difficulty !== "all") {
+    pool = pool.filter((q) => (q.difficulty || "").toLowerCase() === difficulty.toLowerCase());
   }
 
-  // Record user answer
-  quizState.userAnswers.push({
-    question: currentQ,
-    selectedIndex: selectedIndex,
-    isCorrect: isCorrect,
-    timedOut: selectedIndex === -1
-  });
-
-  return isCorrect;
-}
-
-function useFiftyFiftyLifeline() {
-  if (!quizState.lifelines.fiftyFifty || quizState.isAnswered) return false;
-  const currentQ = getCurrentQuestion();
-  if (!currentQ || !currentQ.options || currentQ.options.length < 4) return false;
-
-  const wrongIndices = [];
-  for (let i = 0; i < currentQ.options.length; i++) {
-    if (i !== currentQ.correctAnswer) {
-      wrongIndices.push(i);
-    }
+  if (pool.length === 0) {
+    pool = QuestionService.getAllQuestions();
   }
 
-  const shuffledWrong = shuffleArray(wrongIndices);
-  quizState.disabledOptions = shuffledWrong.slice(0, 2);
-  quizState.lifelines.fiftyFifty = false;
+  const categoryTitle = category !== "all" && CATEGORIES[category] ? CATEGORIES[category].title : "Comprehensive Platform";
+  quizState.quizSource = "standard";
+  quizState.quizMode = mode;
+  quizState.activeCategory = category;
+  quizState.activeDifficulty = difficulty;
+  quizState.quizTitle = `${categoryTitle} ${mode === "exam" ? "Exam" : "Practice"}`;
+
+  const availableCount = Math.min(pool.length, count === "all" ? pool.length : parseInt(count, 10) || 10);
+  quizState.questions = shuffleArray(pool).slice(0, availableCount);
+
+  resetQuizRunState();
+}
+
+// Prepares custom configured quiz run from dialog
+function initializeConfiguredQuiz({
+  category = "all",
+  difficulty = "all",
+  count = 10,
+  isTimed = true,
+  timeLimit = 20,
+  mode = "practice",
+  shuffle = true
+} = {}) {
+  let pool = QuestionService.getQuestionsByCategory(category);
+
+  if (difficulty && difficulty !== "all") {
+    pool = pool.filter((q) => (q.difficulty || "").toLowerCase() === difficulty.toLowerCase());
+  }
+
+  if (pool.length === 0) {
+    pool = QuestionService.getAllQuestions();
+  }
+
+  const categoryTitle = category !== "all" && CATEGORIES[category] ? CATEGORIES[category].title : "All Topics";
+  const numQuestions = count === "all" ? pool.length : Math.min(pool.length, parseInt(count, 10) || 10);
+
+  quizState.quizSource = "standard";
+  quizState.quizMode = mode;
+  quizState.activeCategory = category;
+  quizState.activeDifficulty = difficulty;
+  quizState.isTimedMode = Boolean(isTimed && timeLimit > 0);
+  quizState.timeLimitPerQuestion = parseInt(timeLimit, 10) || 20;
+  quizState.quizTitle = `${categoryTitle} (${numQuestions} Qs ${mode === "exam" ? "Exam" : "Practice"})`;
+
+  const selectedPool = shuffle ? shuffleArray(pool) : [...pool];
+  quizState.questions = selectedPool.slice(0, numQuestions);
+
+  resetQuizRunState();
+}
+
+// Prepares quiz from an arbitrary list of questions (Explore results, Saved questions, Missed items)
+function initializeQuizFromQuestions(questionsList, title = "Custom Quiz Drill", mode = "practice", source = "explore") {
+  if (!Array.isArray(questionsList) || questionsList.length === 0) {
+    console.warn("Cannot initialize quiz from empty questions list.");
+    return false;
+  }
+
+  quizState.quizSource = source;
+  quizState.quizMode = mode;
+  quizState.activeCategory = "custom";
+  quizState.activeDifficulty = "mixed";
+  quizState.quizTitle = title;
+  quizState.questions = [...questionsList];
+
+  resetQuizRunState();
   return true;
 }
 
-function useHintLifeline() {
-  if (!quizState.lifelines.hint || quizState.isAnswered) return false;
-  quizState.hintVisible = true;
-  quizState.lifelines.hint = false;
-  return true;
+// Prepares 24-Hour Daily Challenge drill
+function initializeDailyChallenge() {
+  const dailyQs = QuestionService.getDailyChallengeQuestions(5);
+  quizState.quizSource = "daily";
+  quizState.quizMode = "exam";
+  quizState.activeCategory = "daily";
+  quizState.activeDifficulty = "mixed";
+  quizState.isTimedMode = true;
+  quizState.timeLimitPerQuestion = 30;
+  quizState.quizTitle = "24-Hour Daily Challenge";
+  quizState.questions = dailyQs;
+
+  resetQuizRunState();
 }
 
-function useSkipLifeline() {
-  if (!quizState.lifelines.skip || quizState.isAnswered) return false;
-  quizState.lifelines.skip = false;
-  const currentQ = getCurrentQuestion();
-  if (currentQ) {
-    quizState.userAnswers.push({
-      question: currentQ,
-      selectedIndex: -1,
-      isCorrect: false,
-      skipped: true
-    });
-  }
-  moveToNextQuestion();
-  return true;
+// Prepares drill targeting missed questions
+function initializeMissedQuestionsQuiz(missedQuestions) {
+  if (!missedQuestions || missedQuestions.length === 0) return false;
+  return initializeQuizFromQuestions(
+    missedQuestions,
+    `Revision Drill (${missedQuestions.length} Questions)`,
+    "practice",
+    "missed"
+  );
 }
 
-function moveToNextQuestion() {
-  stopQuizTimer();
-  quizState.currentQuestionIndex += 1;
-  quizState.selectedAnswer = null;
-  quizState.isAnswered = false;
-  quizState.disabledOptions = [];
-  quizState.hintVisible = false;
-
-  if (quizState.currentQuestionIndex >= quizState.questions.length) {
-    quizState.isFinished = true;
-    quizState.elapsedTimeSec = Math.round((Date.now() - quizState.startTime) / 1000);
-  }
-}
-
-function calculatePercentage() {
-  if (!quizState.questions || quizState.questions.length === 0) return 0;
-  return Math.round((quizState.score / quizState.questions.length) * 100);
+// Prepares drill from bookmarked Study Bank questions
+function initializeStudyBankQuiz() {
+  const bookmarks = Storage.getBookmarks();
+  if (bookmarks.length === 0) return false;
+  return initializeQuizFromQuestions(
+    shuffleArray(bookmarks),
+    `Study Bank Drill (${bookmarks.length} Saved Qs)`,
+    "practice",
+    "study_bank"
+  );
 }

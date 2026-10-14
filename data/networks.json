@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "net_0001",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "What are the layers of the OSI model?",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application (7 layers)",
+      "Client, Server, Database (3 layers)",
+      "Hardware, Software, Network (3 layers)",
+      "Input, Process, Output (3 layers)"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0002",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "What is the difference between TCP and UDP?",
+    "options": [
+      "TCP is connection-oriented with guaranteed delivery; UDP is connectionless with no delivery guarantee but faster",
+      "TCP is faster than UDP",
+      "UDP guarantees delivery; TCP does not",
+      "They are identical protocols"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0003",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "What is DNS and how does it work?",
+    "options": [
+      "Domain Name System translates human-readable domain names to IP addresses through a hierarchical lookup process",
+      "A direct network service",
+      "A database naming system",
+      "A security protocol"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0004",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "What is the difference between HTTP and HTTPS?",
+    "options": [
+      "HTTPS adds TLS/SSL encryption to HTTP, securing data in transit between client and server",
+      "HTTPS is faster than HTTP",
+      "HTTP is more secure",
+      "They use different ports only"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0005",
+    "topic": "Computer Networks",
+    "subtopic": "IP Addressing",
+    "difficulty": "medium",
+    "question": "What is a subnet mask?",
+    "options": [
+      "A 32-bit number that divides an IP address into network and host portions",
+      "A security mask for network traffic",
+      "A firewall configuration",
+      "A DNS filtering rule"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0006",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "What is the three-way handshake in TCP?",
+    "options": [
+      "SYN → SYN-ACK → ACK: the process to establish a reliable TCP connection",
+      "A greeting protocol between servers",
+      "Three password verification steps",
+      "Three-stage data encryption"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0007",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "What is a firewall?",
+    "options": [
+      "A network security system that monitors and controls incoming and outgoing traffic based on rules",
+      "A physical wall in a data center",
+      "A heat protection system for servers",
+      "A type of antivirus software"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0008",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "What is NAT (Network Address Translation)?",
+    "options": [
+      "A method of remapping IP addresses by modifying packet headers, allowing multiple devices to share one public IP",
+      "A network authentication technique",
+      "A naming convention for networks",
+      "A natural network topology"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0009",
+    "topic": "Computer Networks",
+    "subtopic": "IP Addressing",
+    "difficulty": "easy",
+    "question": "What is the difference between IPv4 and IPv6?",
+    "options": [
+      "IPv4 uses 32-bit addresses (4.3 billion); IPv6 uses 128-bit addresses (virtually unlimited)",
+      "IPv6 is slower than IPv4",
+      "IPv4 is more secure",
+      "They are identical except for naming"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0010",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "What is WebSocket?",
+    "options": [
+      "A protocol providing full-duplex communication over a single TCP connection between client and server",
+      "A socket wrench for web servers",
+      "A type of HTTP request",
+      "A web-based power outlet"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0011",
+    "topic": "Computer Networks",
+    "subtopic": "Infrastructure",
+    "difficulty": "easy",
+    "question": "What is a CDN (Content Delivery Network)?",
+    "options": [
+      "A distributed network of servers that delivers content to users from the nearest geographic location",
+      "A central database network",
+      "A type of VPN",
+      "A cloud development network"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0012",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Devices",
+    "difficulty": "medium",
+    "question": "What is the difference between a switch and a router?",
+    "options": [
+      "A switch connects devices within a LAN using MAC addresses; a router connects different networks using IP addresses",
+      "They are identical devices",
+      "Routers are faster than switches",
+      "Switches connect to the internet; routers connect local devices"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Computer Networks fundamentals.",
+    "explanation": "This answer aligns with Computer Networks best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0013",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0014",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0015",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0016",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0017",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0018",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0019",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0020",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0021",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0022",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0023",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0024",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0025",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0026",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0027",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0028",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0029",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0030",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0031",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0032",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0033",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0034",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0035",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0036",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0037",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0038",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0039",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0040",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0041",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0042",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding TCP/IP: What is a fundamental principle or best practice for tcp/ip (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about TCP/IP best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for tcp/ip in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0043",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0044",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0045",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0046",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0047",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0048",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0049",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0050",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0051",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0052",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0053",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0054",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0055",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0056",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0057",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0058",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0059",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0060",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0061",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0062",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0063",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0064",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0065",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0066",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0067",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0068",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0069",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0070",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0071",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0072",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding HTTP/HTTPS: What is a fundamental principle or best practice for http/https (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about HTTP/HTTPS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for http/https in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0073",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0074",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0075",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0076",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0077",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0078",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0079",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0080",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0081",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0082",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0083",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0084",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0085",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0086",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0087",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0088",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0089",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0090",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0091",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0092",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0093",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0094",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0095",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0096",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0097",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0098",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0099",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0100",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0101",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0102",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding DNS: What is a fundamental principle or best practice for dns (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about DNS best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for dns in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0103",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0104",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0105",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0106",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0107",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0108",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0109",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0110",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0111",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0112",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0113",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0114",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0115",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0116",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0117",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0118",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0119",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0120",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0121",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0122",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0123",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0124",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0125",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0126",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0127",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0128",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0129",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0130",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0131",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0132",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding OSI Model: What is a fundamental principle or best practice for osi model (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OSI Model best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for osi model in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0133",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0134",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0135",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0136",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0137",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0138",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0139",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0140",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0141",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0142",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0143",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0144",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0145",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0146",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0147",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0148",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0149",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0150",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0151",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0152",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0153",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 141)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0154",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 142)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0155",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 143)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0156",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 144)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0157",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 145)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0158",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 146)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0159",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 147)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0160",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 148)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0161",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 149)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0162",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Routing: What is a fundamental principle or best practice for routing (concept 150)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Routing best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for routing in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0163",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 151)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0164",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 152)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0165",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 153)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0166",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 154)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0167",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 155)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0168",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 156)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0169",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 157)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0170",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 158)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0171",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 159)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0172",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 160)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0173",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 161)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0174",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 162)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0175",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 163)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0176",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 164)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0177",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 165)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0178",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 166)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0179",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 167)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0180",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 168)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0181",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 169)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0182",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 170)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0183",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 171)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0184",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 172)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0185",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 173)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0186",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 174)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0187",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 175)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0188",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 176)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0189",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 177)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0190",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 178)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0191",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 179)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0192",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding WebSockets: What is a fundamental principle or best practice for websockets (concept 180)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about WebSockets best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for websockets in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0193",
+    "topic": "Computer Networks",
+    "subtopic": "TCP/IP",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 181)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0194",
+    "topic": "Computer Networks",
+    "subtopic": "HTTP/HTTPS",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 182)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0195",
+    "topic": "Computer Networks",
+    "subtopic": "DNS",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 183)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0196",
+    "topic": "Computer Networks",
+    "subtopic": "OSI Model",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 184)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0197",
+    "topic": "Computer Networks",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 185)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0198",
+    "topic": "Computer Networks",
+    "subtopic": "WebSockets",
+    "difficulty": "hard",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 186)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0199",
+    "topic": "Computer Networks",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 187)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "net_0200",
+    "topic": "Computer Networks",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "question": "In Computer Networks, regarding Security: What is a fundamental principle or best practice for security (concept 188)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Security best practices in Computer Networks.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for security in Computer Networks. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

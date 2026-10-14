@@ -1,0 +1,22 @@
+{
+  "name": "quizepro",
+  "version": "4.0.0",
+  "description": "QuizePro — Developer Quiz & Interactive Learning Platform with Live AI Generation and 5,200+ Offline Questions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "validate": "node scripts/validate-questions.js"
+  },
+  "keywords": [
+    "quiz",
+    "developer",
+    "learning",
+    "javascript",
+    "react",
+    "algorithms",
+    "dsa"
+  ],
+  "author": "",
+  "license": "MIT"
+}

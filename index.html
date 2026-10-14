@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuizePro — Developer Learning Platform</title>
-  <meta name="description" content="QuizePro is a modern interactive learning platform for developers to practice technical concepts, algorithms, frameworks, and track learning progress." />
-  <meta name="theme-color" content="#090d16" />
+  <title>QuizPro — Technical Question Practice Platform</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="QuizPro is a clean, minimal developer learning platform with 5,200+ technical questions across 20 topics, practice and exam modes, deterministic analytics, and 8 progression levels." />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.ico" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='24' width='100' height='100' fill='%238b5cf6'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23ffffff' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif' font-weight='800'>QP</text></svg>" />
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="alternate icon" href="./favicon.ico" />
-
-  <link rel="stylesheet" href="css/global.css?v=3.4" />
-  <link rel="stylesheet" href="css/style.css?v=3.4" />
+  <link rel="stylesheet" href="css/global.css?v=5.0" />
+  <link rel="stylesheet" href="css/style.css?v=5.0" />
 </head>
 <body>
 
@@ -25,9 +25,9 @@
   <header class="app-header" id="app-header">
     <div class="header-inner container">
       <!-- Logo & Wordmark -->
-      <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizePro Home">
+      <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizPro Home">
         <span class="brand-icon">QP</span>
-        <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        <span class="brand-name">Quiz<span class="brand-accent">Pro</span></span>
       </a>
 
       <!-- Desktop Nav Tabs -->
@@ -37,14 +37,6 @@
 
       <!-- Utility Actions -->
       <div class="header-actions">
-        <!-- Gemini AI Settings Toggle -->
-        <button type="button" class="action-btn ai-settings-btn" id="ai-settings-toggle-btn" aria-label="Gemini AI Real-Time Questions Settings" title="Gemini AI Key & Live Generator">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-          </svg>
-          <span class="ai-key-status-dot" id="header-ai-status-dot" title="API Key Status"></span>
-        </button>
-
         <!-- Sound FX Toggle -->
         <button type="button" class="action-btn" id="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Toggle Sound FX">
           <!-- Injected via UI -->
@@ -57,7 +49,7 @@
 
         <!-- Mobile Menu Toggle -->
         <button type="button" class="action-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="4" x2="20" y1="12" y2="12"/>
             <line x1="4" x2="20" y1="6" y2="6"/>
             <line x1="4" x2="20" y1="18" y2="18"/>
@@ -71,19 +63,19 @@
   <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true">
     <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <div class="mobile-drawer-header">
-        <div style="display: flex; align-items: center; gap: 0.65rem;">
-          <span class="brand-icon" style="width: 32px; height: 32px; font-size: 0.85rem;">QP</span>
-          <span class="brand-name">Quize<span class="brand-accent">Pro</span></span>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span class="brand-icon">QP</span>
+          <span class="brand-name">Quiz<span class="brand-accent">Pro</span></span>
         </div>
         <button type="button" class="action-btn" id="mobile-close-btn" aria-label="Close menu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
           </svg>
         </button>
       </div>
       <nav class="mobile-nav-links" id="mobile-nav-links"></nav>
       <div class="mobile-drawer-footer">
-        <p class="drawer-hint">Practice technical concepts & track skills</p>
+        <p class="drawer-hint">5,200+ offline questions • 20 technical topics</p>
       </div>
     </div>
   </div>
@@ -126,54 +118,25 @@
           </svg>
         </div>
         <div>
-          <h3 class="dialog-title" id="config-dialog-title">Custom Quiz Configuration</h3>
-          <p class="dialog-desc">Tailor question count, difficulty, and timer to your learning goals.</p>
+          <h3 class="dialog-title" id="config-dialog-title">Quiz Configuration</h3>
+          <p class="dialog-desc">Select topic, difficulty, and quiz preferences.</p>
         </div>
       </div>
 
       <form id="quiz-config-form" method="dialog">
-        <!-- Mode Switcher: Static Bank vs AI Live -->
-        <div class="config-mode-tabs" style="display: flex; gap: 0.4rem; margin-bottom: 1.25rem; background: var(--bg-subtle); padding: 4px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-          <button type="button" class="btn btn-sm config-mode-tab-btn active" id="config-mode-tab-bank" style="flex: 1; border-radius: var(--radius-sm); font-weight: 600;">
-            📚 Question Bank
-          </button>
-          <button type="button" class="btn btn-sm config-mode-tab-btn" id="config-mode-tab-ai" style="flex: 1; border-radius: var(--radius-sm); font-weight: 600;">
-            ✨ Gemini AI (Live)
-          </button>
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
-          <!-- Topic Selector (Standard Mode) -->
-          <div id="config-standard-topic-group">
-            <label for="config-topic-select" class="form-label">Domain / Topic</label>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 1.25rem;">
+          <!-- Topic Selector -->
+          <div>
+            <label for="config-topic-select" class="form-label">Topic</label>
             <select id="config-topic-select" class="form-select">
-              <option value="all">All Domains (Comprehensive Drill)</option>
-              <!-- Injected dynamically -->
+              <option value="all">All Topics (Comprehensive Pool)</option>
+              <!-- Injected dynamically with all 20 topics -->
             </select>
-          </div>
-
-          <!-- AI Custom Topic Prompt (AI Mode, hidden by default) -->
-          <div id="config-ai-topic-group" style="display: none;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-              <label for="config-ai-topic-input" class="form-label" style="margin: 0;">AI Target Topic or Concept</label>
-              <span id="config-ai-key-badge" class="badge badge-sm" style="font-size: 0.7rem; cursor: pointer;">Key Status</span>
-            </div>
-            <input type="text" id="config-ai-topic-input" class="form-control" placeholder="e.g. React 19 Server Actions, Rust Borrow Checker, System Design..." />
-            
-            <!-- Quick Suggestion Topic Chips -->
-            <div class="ai-quick-topics-row" style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem;">
-              <button type="button" class="ai-quick-topic-chip" data-topic="React 19 & Server Components">React 19</button>
-              <button type="button" class="ai-quick-topic-chip" data-topic="Rust Memory Safety & Lifetimes">Rust</button>
-              <button type="button" class="ai-quick-topic-chip" data-topic="Docker & Kubernetes Architecture">DevOps</button>
-              <button type="button" class="ai-quick-topic-chip" data-topic="PostgreSQL Indexing & Optimization">SQL Perf</button>
-              <button type="button" class="ai-quick-topic-chip" data-topic="Python AsyncIO & Concurrency">Python Async</button>
-              <button type="button" class="ai-quick-topic-chip" data-topic="System Design & Scalability">System Design</button>
-            </div>
           </div>
 
           <!-- Difficulty Selector -->
           <div>
-            <label for="config-diff-select" class="form-label">Difficulty Level</label>
+            <label for="config-diff-select" class="form-label">Difficulty Filter</label>
             <select id="config-diff-select" class="form-select">
               <option value="all">All Difficulties (Adaptive Mix)</option>
               <option value="easy">Easy (Fundamentals & Syntax)</option>
@@ -182,117 +145,63 @@
             </select>
           </div>
 
-          <!-- Question Count Selector -->
+
+          <!-- Mode & Count Grid -->
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
             <div>
-              <label for="config-count-select" class="form-label">Question Count</label>
-              <select id="config-count-select" class="form-select">
-                <option value="5" selected>5 Questions (Quick)</option>
-                <option value="10">10 Questions (Standard)</option>
-                <option value="15">15 Questions (Thorough)</option>
-                <option value="all" id="config-count-opt-all">Max Available</option>
+              <label for="config-mode-select" class="form-label">Assessment Mode</label>
+              <select id="config-mode-select" class="form-select">
+                <option value="practice" selected>Practice (Instant Feedback & Hints)</option>
+                <option value="exam">Exam (Strict, Hidden Answers)</option>
               </select>
             </div>
 
+            <div>
+              <label for="config-count-select" class="form-label">Question Count</label>
+              <select id="config-count-select" class="form-select">
+                <option value="5">5 Questions (Quick Drill)</option>
+                <option value="10" selected>10 Questions (Standard)</option>
+                <option value="15">15 Questions (Thorough)</option>
+                <option value="20">20 Questions (Deep Dive)</option>
+                <option value="30">30 Questions (Exam Simulation)</option>
+                <option value="50">50 Questions (Comprehensive)</option>
+                <option value="all" id="config-count-opt-all">All Matching</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Timer Mode -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
             <div>
               <label for="config-timer-select" class="form-label">Timer Mode</label>
               <select id="config-timer-select" class="form-select">
                 <option value="20" selected>Timed (20s per Q)</option>
                 <option value="30">Timed (30s per Q)</option>
-                <option value="15">Speed Run (15s per Q)</option>
+                <option value="60">Extended (60s per Q)</option>
                 <option value="0">Untimed (Self-Paced)</option>
               </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: flex-end;">
+              <label class="form-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; margin-bottom: 0.5rem;">
+                <input type="checkbox" id="config-shuffle-checkbox" checked style="accent-color: var(--accent-primary); width: 16px; height: 16px;" />
+                <span style="font-size: 0.85rem; font-weight: 500;">Randomize Question Order</span>
+              </label>
             </div>
           </div>
 
           <!-- Questions available feedback pill -->
-          <div id="config-pool-feedback" style="font-size: 0.825rem; color: var(--text-muted); background: var(--bg-subtle); padding: 0.45rem 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
-            <span id="config-pool-label">Available Questions:</span>
+          <div id="config-pool-feedback" style="font-size: 0.825rem; color: var(--text-muted); background: var(--bg-subtle); padding: 0.55rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+            <span id="config-pool-label">Available in Selected Pool:</span>
             <strong id="config-pool-count" style="color: var(--accent-primary);">--</strong>
           </div>
         </div>
 
         <div class="dialog-actions">
           <button type="button" class="btn btn-secondary" id="config-cancel-btn">Cancel</button>
-          <button type="button" class="btn btn-primary" id="config-start-btn">Start Assessment</button>
+          <button type="button" class="btn btn-primary" id="config-start-btn">Start Quiz</button>
         </div>
       </form>
-    </div>
-  </dialog>
-
-  <!-- Gemini AI API Key Settings Dialog -->
-  <dialog class="app-dialog" id="ai-config-dialog" aria-labelledby="ai-dialog-title">
-    <div class="dialog-content" style="max-width: 500px;">
-      <div class="dialog-header">
-        <div class="dialog-icon-wrap" style="background: rgba(139, 92, 246, 0.15); color: #c084fc;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-          </svg>
-        </div>
-        <div>
-          <h3 class="dialog-title" id="ai-dialog-title">Gemini AI Real-Time Questions</h3>
-          <p class="dialog-desc">Generate unlimited dynamic developer questions with code snippets in real time.</p>
-        </div>
-      </div>
-
-      <div style="margin-bottom: 1.5rem;">
-        <label for="ai-api-key-input" class="form-label" style="display: flex; justify-content: space-between; align-items: center;">
-          <span>Google Gemini API Key</span>
-          <span id="ai-modal-status-pill" class="badge badge-sm badge-secondary" style="font-size: 0.72rem;">Checking...</span>
-        </label>
-        <div style="position: relative;">
-          <input type="password" id="ai-api-key-input" class="form-control" placeholder="AIzaSy..." style="padding-right: 2.8rem; font-family: var(--font-mono); font-size: 0.88rem;" />
-          <button type="button" id="toggle-key-visibility-btn" style="position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 0.2rem;" title="Show/Hide Key">
-            👁️
-          </button>
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.65rem; flex-wrap: wrap; gap: 0.5rem;">
-          <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: #38bdf8; text-decoration: underline;">
-            Get a free API key at Google AI Studio ↗
-          </a>
-          <button type="button" class="btn btn-secondary btn-sm" id="test-api-key-btn" style="font-size: 0.78rem; padding: 0.25rem 0.7rem;">
-            ⚡ Ping & Test Key
-          </button>
-        </div>
-
-        <div id="ai-test-feedback" style="margin-top: 0.65rem; font-size: 0.82rem; display: none; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm);"></div>
-
-        <div style="margin-top: 1rem; background: var(--bg-subtle); border: 1px solid var(--border-subtle); padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
-          🔒 <strong>Privacy:</strong> Your API key is stored strictly on your device in <code>localStorage</code>. It is never transmitted anywhere other than directly to Google's official Gemini endpoint.
-        </div>
-      </div>
-
-      <div class="dialog-actions" style="justify-content: space-between;">
-        <button type="button" class="btn btn-ghost btn-sm" id="remove-api-key-btn" style="color: var(--color-danger);">
-          Remove Key
-        </button>
-        <div style="display: flex; gap: 0.5rem;">
-          <button type="button" class="btn btn-secondary" id="ai-cancel-btn">Cancel</button>
-          <button type="button" class="btn btn-primary" id="ai-save-btn">Save Key</button>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- Real-Time AI Generation Loading Modal/Overlay -->
-  <dialog class="app-dialog" id="ai-loading-dialog" aria-labelledby="ai-loading-title">
-    <div class="dialog-content" style="text-align: center; max-width: 440px; padding: 2.2rem 1.8rem;">
-      <div class="ai-pulse-spinner" style="margin: 0 auto 1.4rem;">
-        <div class="ai-sparkle-core">
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-          </svg>
-        </div>
-      </div>
-      <h3 class="dialog-title" id="ai-loading-title" style="margin-bottom: 0.4rem; font-size: 1.25rem;">Crafting Questions in Real Time</h3>
-      <p id="ai-loading-desc" style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1.2rem; line-height: 1.45;">
-        Gemini AI is generating custom technical problems, code snippets, and explanations...
-      </p>
-      <div class="ai-loading-bar-wrap" style="height: 4px; background: var(--bg-subtle); border-radius: 2px; overflow: hidden; margin-bottom: 0.8rem;">
-        <div class="ai-loading-bar-fill"></div>
-      </div>
-      <span id="ai-loading-topic-pill" class="badge badge-info badge-sm" style="font-size: 0.75rem;">Topic: React 19</span>
     </div>
   </dialog>
 
@@ -306,8 +215,8 @@
           </svg>
         </div>
         <div>
-          <h3 class="dialog-title" id="goal-dialog-title">Set Daily Learning Target</h3>
-          <p class="dialog-desc">Set your daily question objective to build consistent practice habits.</p>
+          <h3 class="dialog-title" id="goal-dialog-title">Set Daily Practice Target</h3>
+          <p class="dialog-desc">Set your daily question objective to build consistent learning consistency.</p>
         </div>
       </div>
 
@@ -318,13 +227,61 @@
           <span style="color: var(--text-secondary); font-size: 0.9rem;">questions per day</span>
         </div>
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem;">
-          Recommended: 10 questions daily (approx. 5 minutes).
+          Recommended: 10 to 20 questions daily (approx. 5-10 minutes).
         </p>
       </div>
 
       <div class="dialog-actions">
         <button type="button" class="btn btn-secondary" id="goal-cancel-btn">Cancel</button>
         <button type="button" class="btn btn-primary" id="goal-save-btn">Save Target</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Progress Backup & Restore Modal Dialog -->
+  <dialog class="app-dialog" id="backup-dialog" aria-labelledby="backup-dialog-title">
+    <div class="dialog-content" style="max-width: 520px;">
+      <div class="dialog-header">
+        <div class="dialog-icon-wrap" style="background: var(--accent-subtle); color: var(--accent-primary);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="dialog-title" id="backup-dialog-title">Data Management & Backup</h3>
+          <p class="dialog-desc">Export your learning history, bookmarks, and achievements as a JSON backup or restore from a previous save.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+        <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem;">Export Progress Backup</h4>
+          <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 0.75rem;">Download a complete JSON file containing your quiz history, bookmarks, and achievement stats.</p>
+          <button type="button" class="btn btn-secondary btn-sm" id="export-backup-btn">
+            📥 Download Backup (JSON)
+          </button>
+        </div>
+
+        <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem;">Import Existing Backup</h4>
+          <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 0.75rem;">Restore your history and bookmarks from a valid QuizePro JSON backup file.</p>
+          <input type="file" id="import-backup-file-input" accept=".json,application/json" style="display: none;" />
+          <button type="button" class="btn btn-secondary btn-sm" id="trigger-import-btn">
+            📤 Choose JSON File to Restore
+          </button>
+          <div id="import-status-msg" style="margin-top: 0.5rem; font-size: 0.825rem; display: none;"></div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.8rem; color: var(--color-danger);">Reset all data on this device:</span>
+          <button type="button" class="btn btn-ghost btn-sm" id="reset-storage-btn" style="color: var(--color-danger); font-size: 0.8rem;">
+            ⚠️ Reset All Data
+          </button>
+        </div>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-secondary" id="backup-close-btn">Close</button>
       </div>
     </div>
   </dialog>
@@ -337,10 +294,10 @@
     <div class="container footer-content">
       <div class="footer-left">
         <div class="footer-brand-wrap">
-          <span class="brand-icon" style="width: 28px; height: 28px; font-size: 0.75rem; border-radius: 6px;">QP</span>
-          <span class="footer-brand">QuizePro</span>
+          <span class="brand-icon">QP</span>
+          <span class="footer-brand">Quiz<span class="brand-accent">Pro</span></span>
         </div>
-        <span class="footer-tagline">Interactive Developer Assessment & Concept Mastery Platform</span>
+        <span class="footer-tagline">5,200+ Offline Technical Questions Across 20 Developer Topics</span>
       </div>
 
       <div class="footer-center">
@@ -358,21 +315,20 @@
           <span class="kbd-hint"><kbd>Enter</kbd> Next</span>
           <span class="kbd-hint"><kbd>Esc</kbd> Close</span>
         </div>
-        <p class="footer-copy">© <span id="footer-year">2026</span> QuizePro. Built for developers.</p>
+        <p class="footer-copy">© <span id="footer-year">2026</span> QuizPro. 100% Local & Free.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Application Scripts -->
-  <script src="js/questions.js?v=3.4"></script>
-  <script src="js/audio.js?v=3.4"></script>
-  <script src="js/confetti.js?v=3.4"></script>
-  <script src="js/storage.js?v=3.4"></script>
-  <script src="js/ai-service.js?v=3.4"></script>
-  <script src="js/theme.js?v=3.4"></script>
-  <script src="js/state.js?v=3.4"></script>
-  <script src="js/ui.js?v=3.4"></script>
-  <script src="js/main.js?v=3.4"></script>
+  <!-- Application Scripts (Clean local modular architecture) -->
+  <script src="js/questions.js?v=5.0"></script>
+  <script src="js/audio.js?v=5.0"></script>
+  <script src="js/confetti.js?v=5.0"></script>
+  <script src="js/storage.js?v=5.0"></script>
+  <script src="js/theme.js?v=5.0"></script>
+  <script src="js/state.js?v=5.0"></script>
+  <script src="js/ui.js?v=5.0"></script>
+  <script src="js/main.js?v=5.0"></script>
 
 </body>
 </html>

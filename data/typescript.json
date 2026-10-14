@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "ts_0001",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What is the difference between \"type\" and \"interface\" in TypeScript?",
+    "options": [
+      "Both define object shapes, but interfaces support declaration merging and extension; types support unions, intersections, and mapped types",
+      "They are identical and interchangeable",
+      "Types are for primitives; interfaces are for objects",
+      "Interfaces are deprecated in favor of types"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Interfaces support declaration merging (re-opening) and extends. Types support unions (|), intersections (&), mapped types, and conditional types. Both can define object shapes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0002",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "easy",
+    "question": "What is a union type in TypeScript?",
+    "options": [
+      "A type that can be one of several specified types, written with the | operator",
+      "A type that combines all properties of multiple types",
+      "A type for trade union data",
+      "A type that merges two interfaces"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Union types (string | number) allow a value to be one of several types. TypeScript narrows the type using type guards (typeof, instanceof, discriminated unions).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0003",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What is a generic type in TypeScript?",
+    "options": [
+      "A type parameter that makes functions, classes, and interfaces work with multiple types while maintaining type safety",
+      "A type that works with any value without checking",
+      "A default type applied to all variables",
+      "A type that generates other types automatically"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Generics (<T>) create reusable components that work with different types while preserving type information: function identity<T>(arg: T): T { return arg; }",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0004",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What does the \"keyof\" operator do in TypeScript?",
+    "options": [
+      "Creates a union type of all property key names of a given type",
+      "Gets the value of a key from an object",
+      "Checks if a key exists in an object",
+      "Creates a new type from keys"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "keyof T produces a union of all known property names of T. For type Person = { name: string; age: number }, keyof Person is \"name\" | \"age\".",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0005",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "hard",
+    "question": "What is a mapped type in TypeScript?",
+    "options": [
+      "A type that transforms properties of another type using a mapping syntax: { [K in keyof T]: NewType }",
+      "A type that maps values from one object to another",
+      "A type for Map data structures",
+      "A type created by the map() function"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Mapped types iterate over keys to create new types: type Readonly<T> = { readonly [K in keyof T]: T[K] }. Built-in utilities like Partial, Required, and Pick use mapped types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0006",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "hard",
+    "question": "What is a conditional type in TypeScript?",
+    "options": [
+      "A type that resolves differently based on a condition: T extends U ? X : Y",
+      "A type that changes at runtime based on if/else",
+      "A type that conditionally validates data",
+      "A type used in ternary expressions"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Conditional types (T extends U ? X : Y) select types based on assignability. They power utility types like Extract, Exclude, NonNullable, and enable advanced type inference.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0007",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What is the \"unknown\" type and how does it differ from \"any\"?",
+    "options": [
+      "\"unknown\" is type-safe top type that requires type narrowing before use; \"any\" bypasses all type checking",
+      "\"unknown\" is the same as \"any\"",
+      "\"any\" is safer than \"unknown\"",
+      "\"unknown\" is deprecated"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "unknown is the type-safe counterpart of any. You cannot perform operations on unknown values without first narrowing the type via typeof, instanceof, or type guards.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0008",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What are utility types in TypeScript?",
+    "options": [
+      "Built-in generic types like Partial<T>, Required<T>, Pick<T, K>, Omit<T, K>, Record<K, V> for common type transformations",
+      "Types for utility functions",
+      "Types installed from npm utility packages",
+      "Types for CSS utility classes"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "TypeScript provides built-in utility types for common transformations: Partial (all optional), Required (all required), Pick (subset), Omit (exclude keys), Record (key-value map).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0009",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "medium",
+    "question": "What is a type guard in TypeScript?",
+    "options": [
+      "An expression that narrows the type of a variable within a conditional block",
+      "A guard that prevents type errors at runtime",
+      "A security feature for type checking",
+      "A pattern for protecting private types"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Type guards narrow types in conditional blocks: typeof (primitives), instanceof (classes), \"in\" operator (properties), and custom type predicates (x is Type).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0010",
+    "topic": "TypeScript",
+    "subtopic": "Type System",
+    "difficulty": "hard",
+    "question": "What is the \"never\" type used for?",
+    "options": [
+      "Represents values that never occur - used for exhaustive checks, functions that always throw, and infinite loops",
+      "A type that never changes value",
+      "A deprecated type placeholder",
+      "A type that prevents variable declaration"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "never represents the type of values that never occur. Functions that always throw or have infinite loops return never. It is useful for exhaustive switch/if checks.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0011",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "hard",
+    "question": "What is a discriminated union in TypeScript?",
+    "options": [
+      "A union type where each member has a common property with a literal type that TypeScript uses for narrowing",
+      "A union that discriminates against certain types",
+      "A union with exactly two members",
+      "A union that prevents duplicate types"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Discriminated unions use a common \"tag\" property with literal types. TypeScript narrows the union based on the discriminant: type Shape = { kind: \"circle\"; radius: number } | { kind: \"square\"; side: number }",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0012",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "hard",
+    "question": "What is the \"infer\" keyword used for in TypeScript?",
+    "options": [
+      "Extracts and infers a type within a conditional type expression",
+      "Infers types from JavaScript code",
+      "Forces type inference on variables",
+      "Imports type definitions"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "infer declares a type variable within a conditional type: type ReturnType<T> = T extends (...args: any[]) => infer R ? R : never; Here, R is inferred from the function's return type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0013",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "medium",
+    "question": "What does \"as const\" do in TypeScript?",
+    "options": [
+      "Creates a readonly literal type from a value, inferring the narrowest possible type",
+      "Casts a value to a constant",
+      "Creates a const variable",
+      "Asserts that a value will never change at runtime"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "as const creates a deeply readonly literal type. const arr = [1, 2, 3] as const gives type readonly [1, 2, 3] instead of number[]. Properties become literal types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0014",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "hard",
+    "question": "What is a template literal type in TypeScript?",
+    "options": [
+      "A type built from string literal types using template literal syntax: `${Type1}-${Type2}`",
+      "A type for template strings",
+      "A type that generates HTML templates",
+      "A type for regular expressions"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Template literal types create new string literal types from combinations: type Color = \"red\" | \"blue\"; type Size = \"sm\" | \"lg\"; type Token = `${Size}-${Color}` gives \"sm-red\" | \"sm-blue\" | \"lg-red\" | \"lg-blue\".",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0015",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "hard",
+    "question": "What is the \"satisfies\" operator in TypeScript?",
+    "options": [
+      "Validates that a value matches a type without changing the inferred type",
+      "Checks if a value satisfies a condition",
+      "Similar to the \"as\" type assertion",
+      "Validates runtime types"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "satisfies validates type compatibility while preserving the inferred type. Unlike \"as\", it catches errors while keeping narrow literal types: const colors = { red: \"#ff0000\" } satisfies Record<string, string>",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0016",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "medium",
+    "question": "What are declaration files (.d.ts) in TypeScript?",
+    "options": [
+      "Files containing only type declarations for JavaScript libraries, enabling TypeScript to understand their API",
+      "Compiled JavaScript output files",
+      "Configuration files for TypeScript",
+      "Declaration of global variables"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": ".d.ts files provide type information for JavaScript code without including implementation. They enable TypeScript to type-check code using JS libraries (e.g., @types/react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0017",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "easy",
+    "question": "What is the \"readonly\" modifier in TypeScript?",
+    "options": [
+      "Makes properties immutable after initialization - they can be set in the constructor but not modified afterward",
+      "Creates a read-only copy of an object",
+      "Prevents a class from being extended",
+      "Makes variables constant"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "readonly marks properties as immutable after construction. readonly name: string can be set in the constructor but not reassigned later. It is purely a compile-time check.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0018",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "medium",
+    "question": "What is a type assertion and when should you use it?",
+    "options": [
+      "Tells TypeScript to treat a value as a specific type using \"as Type\" or <Type> syntax, when you know more than the compiler",
+      "Validates types at runtime",
+      "Creates a new type from a value",
+      "Asserts that a variable is not null"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Type assertions (value as Type) tell TypeScript to treat a value as a specific type. Use sparingly when you have more type knowledge than the compiler, as they bypass type checking.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0019",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "easy",
+    "question": "What is an enum in TypeScript?",
+    "options": [
+      "A set of named constants (numeric by default) that can also be string-valued or computed",
+      "A type for enumerating array elements",
+      "A loop construct for type iteration",
+      "A type that generates sequential values"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Enums define a set of named constants: enum Direction { Up, Down, Left, Right }. They can be numeric (default), string-valued, or const enums (inlined at compile time).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0020",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "easy",
+    "question": "What is a tuple type in TypeScript?",
+    "options": [
+      "A fixed-length array type where each element has a specific type at its position",
+      "A pair of key-value types",
+      "A type for database tuples",
+      "A type that holds exactly two values"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think carefully about TypeScript concepts.",
+    "explanation": "Tuples define arrays with fixed length and specific types per position: type Pair = [string, number]. They can have optional elements, rest elements, and labels.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0021",
+    "topic": "TypeScript",
+    "subtopic": "Basic Types",
+    "difficulty": "easy",
+    "question": "What is the key difference between 'any' and 'unknown' in TypeScript?",
+    "options": [
+      "'unknown' can only be assigned to string variables",
+      "'unknown' requires type checking or narrowing before you can perform operations on it, while 'any' disables all type checking",
+      "'any' is stricter than 'unknown'",
+      "There is no operational difference"
+    ],
+    "correctAnswer": 1,
+    "hint": "Type-safe top type.",
+    "explanation": "'unknown' is the type-safe counterpart of 'any'. Anything is assignable to unknown, but unknown is not assignable to anything without narrowing.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0022",
+    "topic": "TypeScript",
+    "subtopic": "Basic Types",
+    "difficulty": "medium",
+    "question": "What does the 'never' type represent in TypeScript?",
+    "options": [
+      "An optional parameter type",
+      "An alias for null or undefined",
+      "Values that never occur, such as a function that always throws an error or never returns",
+      "A type that accepts any value"
+    ],
+    "correctAnswer": 2,
+    "hint": "Bottom type.",
+    "explanation": "The never type represents the type of values that never occur (e.g. unreachable code or infinite loops).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0023",
+    "topic": "TypeScript",
+    "subtopic": "Basic Types",
+    "difficulty": "easy",
+    "question": "What does the 'void' type indicate when used as a function return type?",
+    "options": [
+      "The function is asynchronous",
+      "The function returns null exclusively",
+      "The function never terminates",
+      "The function does not return a meaningful value"
+    ],
+    "correctAnswer": 3,
+    "hint": "No return value.",
+    "explanation": "void indicates the absence of any value, typically returned by functions that have no return statement.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0024",
+    "topic": "TypeScript",
+    "subtopic": "Modern TS",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'satisfies' operator introduced in TypeScript 4.9?",
+    "options": [
+      "It validates that an expression matches a type without widening or losing its specific inferred type",
+      "It performs runtime type coercion",
+      "It declares an abstract class method",
+      "It converts JSON into TypeScript interfaces"
+    ],
+    "correctAnswer": 0,
+    "hint": "Type validation without type widening.",
+    "explanation": "The satisfies operator lets us validate that the type of an expression matches some type, without changing the resulting type of that expression.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0025",
+    "topic": "TypeScript",
+    "subtopic": "Modern TS",
+    "difficulty": "medium",
+    "question": "What does the 'as const' assertion do when applied to an object or array literal?",
+    "options": [
+      "Converts the object to JSON at compile time",
+      "Locks properties into readonly literal types rather than widened general types (e.g. 'readonly [1, 2]')",
+      "Freezes the object in runtime memory using Object.freeze()",
+      "Makes all properties optional"
+    ],
+    "correctAnswer": 1,
+    "hint": "Const assertion.",
+    "explanation": "as const turns arrays into readonly tuples and primitives into literal types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0026",
+    "topic": "TypeScript",
+    "subtopic": "Interfaces & Types",
+    "difficulty": "easy",
+    "question": "What is Declaration Merging in TypeScript?",
+    "options": [
+      "Inheriting private methods from a class",
+      "Combining two different npm packages together",
+      "The compiler automatically merging multiple interface declarations with the same name into a single definition",
+      "Converting a type alias into an enum"
+    ],
+    "correctAnswer": 2,
+    "hint": "Interface declaration merging.",
+    "explanation": "Interfaces with identical names in the same scope automatically merge their declared members.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0027",
+    "topic": "TypeScript",
+    "subtopic": "Interfaces & Types",
+    "difficulty": "medium",
+    "question": "Can a TypeScript 'type' alias participate in Declaration Merging?",
+    "options": [
+      "Only inside namespace blocks",
+      "Yes, exactly like interfaces",
+      "Only if it defines union types",
+      "No, declaring duplicate type alias names in the same scope produces a compile error"
+    ],
+    "correctAnswer": 3,
+    "hint": "Type alias uniqueness.",
+    "explanation": "Type aliases cannot be merged; duplicate identifier errors occur.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0028",
+    "topic": "TypeScript",
+    "subtopic": "Interfaces & Types",
+    "difficulty": "medium",
+    "question": "How do you extend an interface in TypeScript?",
+    "options": [
+      "Using the 'extends' keyword (e.g. 'interface Dog extends Animal')",
+      "Using the 'implements' keyword",
+      "Using the '&' intersection operator",
+      "Using the 'merge' keyword"
+    ],
+    "correctAnswer": 0,
+    "hint": "extends keyword.",
+    "explanation": "Interfaces extend other interfaces or classes using the extends keyword.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0029",
+    "topic": "TypeScript",
+    "subtopic": "Type Narrowing",
+    "difficulty": "medium",
+    "question": "What is a user-defined type guard in TypeScript?",
+    "options": [
+      "A function that throws a TypeError at runtime",
+      "A function whose return type is a type predicate of the form 'parameterName is Type'",
+      "A class decorator that inspects methods",
+      "A tsconfig compiler setting"
+    ],
+    "correctAnswer": 1,
+    "hint": "Type predicate return type.",
+    "explanation": "A type predicate takes the form 'paramName is Type' and tells TypeScript the type if the function returns true.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0030",
+    "topic": "TypeScript",
+    "subtopic": "Type Narrowing",
+    "difficulty": "medium",
+    "question": "What is an assertion signature in TypeScript (e.g. 'asserts condition')?",
+    "options": [
+      "A method to sign cryptographic certificates",
+      "A function that guarantees a condition holds, narrowing types for the remainder of the containing scope or throwing an error",
+      "A unit test assertion for Jest",
+      "An interface contract validator"
+    ],
+    "correctAnswer": 1,
+    "hint": "asserts param is Type.",
+    "explanation": "Assertion functions narrow types for subsequent statements by asserting invariants.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0031",
+    "topic": "TypeScript",
+    "subtopic": "Type Narrowing",
+    "difficulty": "easy",
+    "question": "Which operator checks if a property exists on an object and narrows its type accordingly?",
+    "options": [
+      "The 'exists' keyword",
+      "The 'has' operator",
+      "The 'in' operator (e.g. 'if (\"fly\" in animal)')",
+      "The 'is' operator"
+    ],
+    "correctAnswer": 2,
+    "hint": "Property existence check.",
+    "explanation": "The 'in' operator acts as a type guard to narrow between union types based on property existence.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0032",
+    "topic": "TypeScript",
+    "subtopic": "Type Narrowing",
+    "difficulty": "hard",
+    "question": "How do you perform Exhaustiveness Checking in a switch statement over a discriminated union?",
+    "options": [
+      "By setting tsconfig strict to false",
+      "By adding a throw statement in case 0",
+      "By using Object.keys() on the union",
+      "By assigning the remaining unhandled value to a variable of type 'never' in the default case"
+    ],
+    "correctAnswer": 3,
+    "hint": "Default case never check.",
+    "explanation": "Assigning an unhandled union case to type 'never' causes a compile error if a case is forgotten.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0033",
+    "topic": "TypeScript",
+    "subtopic": "Generics",
+    "difficulty": "easy",
+    "question": "What is the purpose of Generics in TypeScript?",
+    "options": [
+      "To create reusable components that can work over a variety of types rather than a single one",
+      "To optimize JavaScript bytecode for V8",
+      "To generate database schemas automatically",
+      "To convert synchronous functions into async promises"
+    ],
+    "correctAnswer": 0,
+    "hint": "Type parameter abstraction.",
+    "explanation": "Generics allow writing flexible, reusable functions, classes, and types with type parameters.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0034",
+    "topic": "TypeScript",
+    "subtopic": "Generics",
+    "difficulty": "medium",
+    "question": "How do you constrain a generic type parameter 'T' to only accept types that have a 'length' property?",
+    "options": [
+      "T implements Lengthwise",
+      "T extends { length: number }",
+      "T: { length: number }",
+      "T instanceof Array"
+    ],
+    "correctAnswer": 1,
+    "hint": "Generic extends constraint.",
+    "explanation": "Generic constraints use the 'extends' keyword to restrict acceptable types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0035",
+    "topic": "TypeScript",
+    "subtopic": "Generics",
+    "difficulty": "medium",
+    "question": "How do you define a default type for a generic type parameter 'T'?",
+    "options": [
+      "<T default string>",
+      "<T: string>",
+      "<T = string>",
+      "<T fallback string>"
+    ],
+    "correctAnswer": 2,
+    "hint": "Generic default assignment.",
+    "explanation": "Generic type parameters can specify a default type using the '=' assignment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0036",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Partial<T>' do in TypeScript?",
+    "options": [
+      "Makes all properties readonly",
+      "Constructs a type with all properties set to required",
+      "Removes all methods from type T",
+      "Constructs a type with all properties of T set to optional"
+    ],
+    "correctAnswer": 3,
+    "hint": "All properties optional.",
+    "explanation": "Partial<T> returns a type with every property of T marked with '?' optional.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0037",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Required<T>' do?",
+    "options": [
+      "Constructs a type consisting of all properties of T set to required (removing optional '?')",
+      "Freezes all properties from modification",
+      "Makes all properties nullable",
+      "Validates non-empty strings"
+    ],
+    "correctAnswer": 0,
+    "hint": "Removes optional flags.",
+    "explanation": "Required<T> makes all properties of T mandatory.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0038",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Readonly<T>' do?",
+    "options": [
+      "Freezes the object in runtime memory",
+      "Constructs a type with all properties of T set to readonly (preventing reassignment)",
+      "Hides properties from auto-complete",
+      "Deletes setter methods"
+    ],
+    "correctAnswer": 1,
+    "hint": "Prevents property reassignment.",
+    "explanation": "Readonly<T> marks all properties with the readonly modifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0039",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Record<K, T>' do?",
+    "options": [
+      "Creates a tuple of length K",
+      "Creates a persistent database record",
+      "Constructs an object type whose property keys are K and property values are T",
+      "Tracks changes made to object T"
+    ],
+    "correctAnswer": 2,
+    "hint": "Key-value dictionary mapping.",
+    "explanation": "Record<Keys, Type> constructs an object type mapping keys to value types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0040",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Pick<T, K>' do?",
+    "options": [
+      "Selects only non-null properties",
+      "Removes the keys K from type T",
+      "Constructs a type by picking the set of properties K from T",
+      "Returns a union of property value types"
+    ],
+    "correctAnswer": 2,
+    "hint": "Picks subset of keys.",
+    "explanation": "Pick<T, K> extracts the specified properties from type T.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0041",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "easy",
+    "question": "What does 'Omit<T, K>' do?",
+    "options": [
+      "Makes keys K optional",
+      "Constructs a type with only properties K",
+      "Omits all optional properties",
+      "Constructs a type by picking all properties from T and then removing keys K"
+    ],
+    "correctAnswer": 3,
+    "hint": "Omits keys from type.",
+    "explanation": "Omit<T, K> removes specified keys from type T.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0042",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What is the difference between 'Exclude<Union, Members>' and 'Omit<Type, Keys>'?",
+    "options": [
+      "'Exclude' operates on union types; 'Omit' operates on object properties",
+      "'Exclude' deletes database rows",
+      "'Omit' only works on interfaces",
+      "They are identical aliases"
+    ],
+    "correctAnswer": 0,
+    "hint": "Union filtering vs object key omission.",
+    "explanation": "Exclude<T, U> filters types out of a union; Omit<T, K> removes keys from an object type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0043",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What does 'Extract<T, U>' do?",
+    "options": [
+      "Extracts the return type of a function",
+      "Constructs a type by extracting from union T all union members that are assignable to U",
+      "Extracts prototype properties from a class",
+      "Unwraps a Promise value"
+    ],
+    "correctAnswer": 1,
+    "hint": "Union intersection filtering.",
+    "explanation": "Extract<T, U> keeps only members of T that match U.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0044",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What does 'NonNullable<T>' do?",
+    "options": [
+      "Forces values to be non-zero",
+      "Converts undefined into null",
+      "Constructs a type by excluding null and undefined from type T",
+      "Throws an error if value is null"
+    ],
+    "correctAnswer": 2,
+    "hint": "Strips null and undefined.",
+    "explanation": "NonNullable<T> strips null and undefined from the type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0045",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What does 'ReturnType<T>' do?",
+    "options": [
+      "Extracts the parameter list",
+      "Returns the function name as a string",
+      "Executes the function and checks the value",
+      "Constructs a type consisting of the return type of function type T"
+    ],
+    "correctAnswer": 3,
+    "hint": "Function return type extraction.",
+    "explanation": "ReturnType<T> obtains the return type of a function type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0046",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What does 'Parameters<T>' do?",
+    "options": [
+      "Constructs a tuple type of the types of the parameters of function type T",
+      "Extracts query parameters from a URL",
+      "Returns an array of parameter names",
+      "Validates function argument counts"
+    ],
+    "correctAnswer": 0,
+    "hint": "Function parameter tuple.",
+    "explanation": "Parameters<T> extracts parameter types as a tuple.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0047",
+    "topic": "TypeScript",
+    "subtopic": "Utility Types",
+    "difficulty": "medium",
+    "question": "What does 'Awaited<T>' do (introduced in TypeScript 4.5)?",
+    "options": [
+      "Converts an async function into a generator",
+      "Recursively unwraps the resolved type of a Promise or thenable",
+      "Awaits promises at compile time",
+      "Rejects on promise errors"
+    ],
+    "correctAnswer": 1,
+    "hint": "Unwraps Promise types.",
+    "explanation": "Awaited<T> models operations like await in async functions, unwrapping nested Promises.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0048",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "medium",
+    "question": "What does the 'keyof' type operator return?",
+    "options": [
+      "A boolean indicating if the key exists",
+      "An array of keys at runtime",
+      "A union of string and numeric literal types representing the keys of an object type",
+      "The prototype chain of the object"
+    ],
+    "correctAnswer": 2,
+    "hint": "Keys union operator.",
+    "explanation": "keyof T produces a string or numeric literal union of its keys.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0049",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "medium",
+    "question": "What is an Indexed Access Type in TypeScript (e.g. 'Person[\"age\"]')?",
+    "options": [
+      "A database index declaration",
+      "Accessing an array element by numeric index",
+      "Importing a module dynamically",
+      "Looking up the type of a specific property on another type"
+    ],
+    "correctAnswer": 3,
+    "hint": "Type property lookup.",
+    "explanation": "Type['key'] retrieves the type of that property from the referenced type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0050",
+    "topic": "TypeScript",
+    "subtopic": "Advanced Types",
+    "difficulty": "hard",
+    "question": "What keyword introduces type variable inference within conditional types?",
+    "options": [
+      "capture",
+      "extract",
+      "deduce",
+      "infer"
+    ],
+    "correctAnswer": 3,
+    "hint": "infer keyword in conditional types.",
+    "explanation": "The infer keyword in conditional types allows introducing a type variable to be deduced.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0051",
+    "topic": "TypeScript",
+    "subtopic": "Classes",
+    "difficulty": "easy",
+    "question": "What is the difference between 'private' and 'protected' access modifiers in TypeScript?",
+    "options": [
+      "'private' is accessible only within the declaring class; 'protected' is also accessible in subclasses",
+      "'protected' allows access from any file in the package",
+      "'private' can be accessed by instance callers",
+      "There is no difference"
+    ],
+    "correctAnswer": 0,
+    "hint": "Subclass accessibility.",
+    "explanation": "protected members are visible to derived subclasses, while private members are strictly internal.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0052",
+    "topic": "TypeScript",
+    "subtopic": "Classes",
+    "difficulty": "easy",
+    "question": "What is a parameter property in a TypeScript constructor?",
+    "options": [
+      "A decorator applied to function arguments",
+      "Declaring an access modifier (public/private/readonly) on a constructor argument to automatically create and assign the property",
+      "A documentation comment tag",
+      "A property that cannot be mutated"
+    ],
+    "correctAnswer": 1,
+    "hint": "Constructor parameter shorthand.",
+    "explanation": "Parameter properties (e.g. constructor(public name: string)) automatically declare and initialize the member.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0053",
+    "topic": "TypeScript",
+    "subtopic": "Classes",
+    "difficulty": "medium",
+    "question": "What is an 'abstract' class in TypeScript?",
+    "options": [
+      "A class with all private methods",
+      "A class that compiles to WebAssembly",
+      "A base class that cannot be instantiated directly and may contain abstract methods that derived classes must implement",
+      "A class that only contains static properties"
+    ],
+    "correctAnswer": 2,
+    "hint": "Non-instantiable base class.",
+    "explanation": "Abstract classes serve as base classes from which other classes may be derived, preventing direct new instantiation.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0054",
+    "topic": "TypeScript",
+    "subtopic": "Enums",
+    "difficulty": "medium",
+    "question": "What is the difference between a standard 'enum' and a 'const enum' in TypeScript?",
+    "options": [
+      "There is no difference in emitted JavaScript",
+      "'const enum' values can be reassigned at runtime",
+      "'standard enum' cannot have string values",
+      "'const enum' members are inlined at use sites during compilation without generating a runtime JavaScript object"
+    ],
+    "correctAnswer": 3,
+    "hint": "Compile-time inlining.",
+    "explanation": "const enums are completely erased during compilation and their values are inlined directly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0055",
+    "topic": "TypeScript",
+    "subtopic": "Enums",
+    "difficulty": "medium",
+    "question": "What is a String Enum in TypeScript?",
+    "options": [
+      "An enum where each member is initialized with a string literal",
+      "An enum that can only hold alphabet characters",
+      "A list of strings saved in localStorage",
+      "A deprecated enum format"
+    ],
+    "correctAnswer": 0,
+    "hint": "String literal enum.",
+    "explanation": "String enums have each member explicitly initialized with a string literal.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0056",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "easy",
+    "question": "What does 'strict: true' enable in tsconfig.json?",
+    "options": [
+      "Forces code to run only in Node.js",
+      "Enables a broad suite of strict type checking behaviors including noImplicitAny and strictNullChecks",
+      "Disables all external library imports",
+      "Enforces ESLint styling rules"
+    ],
+    "correctAnswer": 1,
+    "hint": "Comprehensive strict flag.",
+    "explanation": "The strict flag turns on all strict type checking options in TypeScript.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0057",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "easy",
+    "question": "What does 'strictNullChecks: true' do in TypeScript?",
+    "options": [
+      "Automatically converts undefined to empty strings",
+      "Deletes null values from database payloads",
+      "Ensures 'null' and 'undefined' are not assignable to other types unless explicitly included in a union",
+      "Disables the use of the ? optional operator"
+    ],
+    "correctAnswer": 2,
+    "hint": "Explicit nullability.",
+    "explanation": "When strictNullChecks is true, null and undefined have their own distinct types.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0058",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "medium",
+    "question": "What does 'noImplicitAny: true' do?",
+    "options": [
+      "Converts any to unknown automatically",
+      "Automatically removes any keyword from code",
+      "Allows any type without warning",
+      "Raises a compile error on any expression or declaration for which TypeScript cannot infer a type and defaults to 'any'"
+    ],
+    "correctAnswer": 3,
+    "hint": "Requires explicit typing.",
+    "explanation": "noImplicitAny prevents accidental fallback to the unrestricted any type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0059",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "medium",
+    "question": "What does 'skipLibCheck: true' in tsconfig.json do?",
+    "options": [
+      "Skips type checking of declaration files (*.d.ts) to speed up compilation",
+      "Disables all external dependencies",
+      "Ignores syntax errors in project source files",
+      "Skips unit test execution"
+    ],
+    "correctAnswer": 0,
+    "hint": "Skip d.ts checks.",
+    "explanation": "skipLibCheck speeds up compilation time by skipping type checks on third-party declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0060",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "medium",
+    "question": "What does 'noUnusedLocals: true' do in tsconfig.json?",
+    "options": [
+      "Reports errors on unused local variables",
+      "Deletes unused variables automatically",
+      "Minifies local variables",
+      "Forces all variables to be global"
+    ],
+    "correctAnswer": 0,
+    "hint": "Unused variable detection.",
+    "explanation": "noUnusedLocals warns or errors if local variables are declared but never read.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0061",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Options",
+    "difficulty": "medium",
+    "question": "What does 'noUnusedParameters: true' do in tsconfig.json?",
+    "options": [
+      "Deletes unused arguments from callers",
+      "Reports errors on unused function parameters",
+      "Allows calling functions with fewer arguments",
+      "Permits any parameter name"
+    ],
+    "correctAnswer": 1,
+    "hint": "Unused argument detection.",
+    "explanation": "noUnusedParameters flags function arguments that are never referenced.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0062",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'Uppercase<StringType>' utility type do?",
+    "options": [
+      "Throws if string is lowercase",
+      "Converts variable names to uppercase",
+      "Converts each character in the string literal type to uppercase",
+      "Formats text at runtime"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "Uppercase<StringType> converts string literal types to uppercase at the type level.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0063",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'Lowercase<StringType>' utility type do?",
+    "options": [
+      "Strips special characters",
+      "Formats text at runtime",
+      "Converts numbers to strings",
+      "Converts each character in the string literal type to lowercase"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "Lowercase<StringType> converts string literal types to lowercase at the type level.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0064",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'Capitalize<StringType>' utility type do?",
+    "options": [
+      "Converts the first character in the string literal type to uppercase",
+      "Converts every letter to uppercase",
+      "Formats headers in console",
+      "Converts snake_case to camelCase"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "Capitalize<StringType> capitalizes the first character of a string literal type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0065",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'Uncapitalize<StringType>' utility type do?",
+    "options": [
+      "Converts all letters to lowercase",
+      "Converts the first character in the string literal type to lowercase",
+      "Strips capital letters",
+      "Validates lower case variable names"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "Uncapitalize<StringType> converts the initial character of a string literal type to lowercase.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0066",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'ConstructorParameters<T>' utility type do?",
+    "options": [
+      "Creates a constructor mock",
+      "Initializes a new class instance",
+      "Extracts the parameter types of a class constructor function type as a tuple",
+      "Returns the class property names"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "ConstructorParameters<T> produces a tuple type from the types of a constructor function.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0067",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'InstanceType<T>' utility type do?",
+    "options": [
+      "Checks if an object is an instance",
+      "Creates a singleton instance",
+      "Returns the class constructor function",
+      "Constructs a type consisting of the instance type of a constructor function type T"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "InstanceType<T> obtains the instance type of a constructor function type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0068",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'ThisParameterType<T>' utility type do?",
+    "options": [
+      "Extracts the type of the 'this' parameter for a function type, or unknown if absent",
+      "Binds this permanently",
+      "Returns the prototype object",
+      "Extracts function arguments"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "ThisParameterType<T> extracts the type of the this parameter.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0069",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'OmitThisParameter<T>' utility type do?",
+    "options": [
+      "Removes all methods using this",
+      "Removes the 'this' parameter from a function type T",
+      "Binds this to global object",
+      "Throws if this is referenced"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "OmitThisParameter<T> strips this typing from a function signature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0070",
+    "topic": "TypeScript",
+    "subtopic": "Type Manipulation",
+    "difficulty": "medium",
+    "question": "What does 'ThisType<T>' utility type do?",
+    "options": [
+      "Binds this to type T at runtime",
+      "Serves as a marker for contextual 'this' types in object literal methods (with no emitted code)",
+      "Generates a constructor",
+      "Creates an interface extension"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Type Manipulation.",
+    "explanation": "ThisType<T> marks contextual this typing in object literals without modifying structure.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0071",
+    "topic": "TypeScript",
+    "subtopic": "Namespaces & Modules",
+    "difficulty": "medium",
+    "question": "What is a 'namespace' in TypeScript (formerly internal modules)?",
+    "options": [
+      "A CSS scoping mechanism",
+      "A replacement for ES modules in browser code",
+      "A TypeScript-specific way to group code and prevent global scope pollution, typically in declaration files",
+      "A database connection pool"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Namespaces & Modules.",
+    "explanation": "Namespaces group related code within an object in global or local scope.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0072",
+    "topic": "TypeScript",
+    "subtopic": "Namespaces & Modules",
+    "difficulty": "medium",
+    "question": "What does the 'declare' keyword indicate in TypeScript?",
+    "options": [
+      "It freezes an object",
+      "It allocates memory for a variable",
+      "It exports a variable as default",
+      "It tells the compiler that an ambient variable, function, or module exists at runtime outside this file"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Namespaces & Modules.",
+    "explanation": "declare is used for ambient declarations where implementation is defined elsewhere (e.g. browser or CJS).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0073",
+    "topic": "TypeScript",
+    "subtopic": "Namespaces & Modules",
+    "difficulty": "medium",
+    "question": "What is a '.d.ts' file in TypeScript?",
+    "options": [
+      "A type declaration file containing only type definitions with no executable JavaScript runtime code",
+      "A test runner file",
+      "A dynamic template script",
+      "A database schema migration file"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Namespaces & Modules.",
+    "explanation": ".d.ts files provide typing information for JavaScript libraries without emitting executable code.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0074",
+    "topic": "TypeScript",
+    "subtopic": "Namespaces & Modules",
+    "difficulty": "medium",
+    "question": "What does 'declare global' allow within an external module file?",
+    "options": [
+      "Exporting all module variables globally",
+      "Augmenting the global scope with additional interfaces or types from inside an ES module",
+      "Disabling module strict mode",
+      "Creating global environment variables"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Namespaces & Modules.",
+    "explanation": "declare global enables augmenting global interfaces like Window from inside modular files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0075",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "What is distributive conditional typing in TypeScript?",
+    "options": [
+      "Splitting interfaces across files",
+      "Distributing types across multiple worker threads",
+      "When conditional types act on a generic parameter that is a bare type variable, they distribute over union types",
+      "Converting tuples to records"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "T extends U distributes over each member in a union when T is a naked type parameter.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0076",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "How can you prevent a conditional type from distributing over a union type?",
+    "options": [
+      "By using the as const assertion",
+      "By setting distributive: false in tsconfig",
+      "By converting the union to an interface",
+      "By wrapping both sides of the 'extends' check in square brackets (e.g. '[T] extends [any]')"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "Wrapping type arguments in brackets prevents distributive conditional type behavior.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0077",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "What does an index signature '[key: string]: any' allow on an interface?",
+    "options": [
+      "Allowing the object to contain any number of additional string-keyed properties of any type",
+      "Creating an array index lookup",
+      "Forcing all property names to be strings",
+      "Validating dictionary size"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "Index signatures describe types that can be indexed like dictionaries.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0078",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "Can an interface have both a string index signature and specific named properties?",
+    "options": [
+      "No, doing so is a syntax error",
+      "Yes, but the specific property types must be assignable to the index signature return type",
+      "Only if the properties are optional",
+      "Only if the index signature is numeric"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "All specific property types must be subtypes of the index signature type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0079",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "What is a numeric index signature in TypeScript (e.g. '[index: number]: T')?",
+    "options": [
+      "A binary bitmask typing",
+      "A method to count object properties",
+      "An index signature representing array-like numeric access",
+      "A numeric enum mapping"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "Numeric index signatures represent numeric key access, compatible with array indexing.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0080",
+    "topic": "TypeScript",
+    "subtopic": "Generics & Typing",
+    "difficulty": "medium",
+    "question": "What does 'readonly' modifier do on array types (e.g. 'readonly number[]')?",
+    "options": [
+      "Makes all numbers constants",
+      "Freezes the array at runtime",
+      "Prevents mutating methods like push, pop, or splice from being called on the array",
+      "Prevents iterating over the array"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider Generics & Typing.",
+    "explanation": "ReadonlyArray / readonly T[] disallows mutating array methods at compile time.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0081",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'target' setting in tsconfig.json (Option #1)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext)."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag target.",
+    "explanation": "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0082",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'module' setting in tsconfig.json (Option #2)?",
+    "options": [
+      "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag module.",
+    "explanation": "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0083",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'lib' setting in tsconfig.json (Option #3)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify a list of bundled library declaration files that describe the target runtime environment.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag lib.",
+    "explanation": "Specify a list of bundled library declaration files that describe the target runtime environment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0084",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'allowJs' setting in tsconfig.json (Option #4)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Allow JavaScript files to be compiled alongside TypeScript files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag allowJs.",
+    "explanation": "Allow JavaScript files to be compiled alongside TypeScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0085",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'checkJs' setting in tsconfig.json (Option #5)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Enable error reporting in type-checked JavaScript files."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag checkJs.",
+    "explanation": "Enable error reporting in type-checked JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0086",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'jsx' setting in tsconfig.json (Option #6)?",
+    "options": [
+      "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag jsx.",
+    "explanation": "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0087",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'declaration' setting in tsconfig.json (Option #7)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag declaration.",
+    "explanation": "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0088",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'declarationMap' setting in tsconfig.json (Option #8)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag declarationMap.",
+    "explanation": "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0089",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'sourceMap' setting in tsconfig.json (Option #9)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Create source map files for emitted JavaScript files."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag sourceMap.",
+    "explanation": "Create source map files for emitted JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0090",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'outFile' setting in tsconfig.json (Option #10)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Concatenate and emit output to single file (only for AMD or System modules)."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag outFile.",
+    "explanation": "Concatenate and emit output to single file (only for AMD or System modules).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0091",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'outDir' setting in tsconfig.json (Option #11)?",
+    "options": [
+      "Specify an output folder for all emitted JavaScript and declaration files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag outDir.",
+    "explanation": "Specify an output folder for all emitted JavaScript and declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0092",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'rootDir' setting in tsconfig.json (Option #12)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify the root folder within your source files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag rootDir.",
+    "explanation": "Specify the root folder within your source files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0093",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'composite' setting in tsconfig.json (Option #13)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Enable constraints that allow a TypeScript project to be referenced by project references.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag composite.",
+    "explanation": "Enable constraints that allow a TypeScript project to be referenced by project references.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0094",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'tsBuildInfoFile' setting in tsconfig.json (Option #14)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify the path to .tsbuildinfo incremental compilation cache file."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag tsBuildInfoFile.",
+    "explanation": "Specify the path to .tsbuildinfo incremental compilation cache file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0095",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'removeComments' setting in tsconfig.json (Option #15)?",
+    "options": [
+      "Disable emitting comments in the generated JavaScript output.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag removeComments.",
+    "explanation": "Disable emitting comments in the generated JavaScript output.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0096",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noEmit' setting in tsconfig.json (Option #16)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Disable emitting files from a compilation, performing type checking only.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noEmit.",
+    "explanation": "Disable emitting files from a compilation, performing type checking only.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0097",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'downlevelIteration' setting in tsconfig.json (Option #17)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag downlevelIteration.",
+    "explanation": "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0098",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'isolatedModules' setting in tsconfig.json (Option #18)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure each file can be safely transpiled without relying on other imports."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag isolatedModules.",
+    "explanation": "Ensure each file can be safely transpiled without relying on other imports.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0099",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'strictFunctionTypes' setting in tsconfig.json (Option #19)?",
+    "options": [
+      "Enable strict checking of function parameter bivariance.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag strictFunctionTypes.",
+    "explanation": "Enable strict checking of function parameter bivariance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0100",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'strictBindCallApply' setting in tsconfig.json (Option #20)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Enable strict type checking of function call, bind, and apply methods."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag strictBindCallApply.",
+    "explanation": "Enable strict type checking of function call, bind, and apply methods.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0101",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'strictPropertyInitialization' setting in tsconfig.json (Option #21)?",
+    "options": [
+      "Ensure class properties declared with a type are initialized in the constructor.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag strictPropertyInitialization.",
+    "explanation": "Ensure class properties declared with a type are initialized in the constructor.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0102",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noImplicitThis' setting in tsconfig.json (Option #22)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Raise error on expressions where 'this' has an implicit 'any' type.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noImplicitThis.",
+    "explanation": "Raise error on expressions where 'this' has an implicit 'any' type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0103",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'alwaysStrict' setting in tsconfig.json (Option #23)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Parse in strict mode and emit 'use strict' for each source file.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag alwaysStrict.",
+    "explanation": "Parse in strict mode and emit 'use strict' for each source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0104",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noImplicitReturns' setting in tsconfig.json (Option #24)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure all code paths in a function return a value."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noImplicitReturns.",
+    "explanation": "Ensure all code paths in a function return a value.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0105",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noFallthroughCasesInSwitch' setting in tsconfig.json (Option #25)?",
+    "options": [
+      "Report errors for fallthrough cases in switch statements without break.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noFallthroughCasesInSwitch.",
+    "explanation": "Report errors for fallthrough cases in switch statements without break.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0106",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noUncheckedIndexedAccess' setting in tsconfig.json (Option #26)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Include 'undefined' in type when indexing objects with index signatures.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noUncheckedIndexedAccess.",
+    "explanation": "Include 'undefined' in type when indexing objects with index signatures.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0107",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noImplicitOverride' setting in tsconfig.json (Option #27)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noImplicitOverride.",
+    "explanation": "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0108",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noPropertyAccessFromIndexSignature' setting in tsconfig.json (Option #28)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Require using indexed access notation for keys declared via an index signature."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noPropertyAccessFromIndexSignature.",
+    "explanation": "Require using indexed access notation for keys declared via an index signature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0109",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'exactOptionalPropertyTypes' setting in tsconfig.json (Option #29)?",
+    "options": [
+      "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag exactOptionalPropertyTypes.",
+    "explanation": "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0110",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'moduleResolution' setting in tsconfig.json (Option #30)?",
+    "options": [
+      "Specify how TypeScript looks up a file from a given module specifier.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag moduleResolution.",
+    "explanation": "Specify how TypeScript looks up a file from a given module specifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0111",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'baseUrl' setting in tsconfig.json (Option #31)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify the base directory to resolve non-relative module names.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag baseUrl.",
+    "explanation": "Specify the base directory to resolve non-relative module names.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0112",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'paths' setting in tsconfig.json (Option #32)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify a set of entries that re-map imports to additional lookup locations.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag paths.",
+    "explanation": "Specify a set of entries that re-map imports to additional lookup locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0113",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'rootDirs' setting in tsconfig.json (Option #33)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Allow multiple folders to be treated as one virtual directory when resolving modules."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag rootDirs.",
+    "explanation": "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0114",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'typeRoots' setting in tsconfig.json (Option #34)?",
+    "options": [
+      "Specify multiple folders that act like './node_modules/@types'.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag typeRoots.",
+    "explanation": "Specify multiple folders that act like './node_modules/@types'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0115",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'types' setting in tsconfig.json (Option #35)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify type package names to be included without being referenced in a source file.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag types.",
+    "explanation": "Specify type package names to be included without being referenced in a source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0116",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'allowSyntheticDefaultImports' setting in tsconfig.json (Option #36)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Allow 'import x from y' when a module doesn't have a default export.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag allowSyntheticDefaultImports.",
+    "explanation": "Allow 'import x from y' when a module doesn't have a default export.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0117",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'esModuleInterop' setting in tsconfig.json (Option #37)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Emit additional JavaScript to ease support for importing CommonJS modules."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag esModuleInterop.",
+    "explanation": "Emit additional JavaScript to ease support for importing CommonJS modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0118",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'preserveSymlinks' setting in tsconfig.json (Option #38)?",
+    "options": [
+      "Do not resolve the real path of symlinks when resolving module locations.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag preserveSymlinks.",
+    "explanation": "Do not resolve the real path of symlinks when resolving module locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0119",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'forceConsistentCasingInFileNames' setting in tsconfig.json (Option #39)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure that casing is correct in imports across case-insensitive filesystems.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag forceConsistentCasingInFileNames.",
+    "explanation": "Ensure that casing is correct in imports across case-insensitive filesystems.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0120",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'target' setting in tsconfig.json (Option #40)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag target.",
+    "explanation": "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0121",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'module' setting in tsconfig.json (Option #41)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag module.",
+    "explanation": "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0122",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'lib' setting in tsconfig.json (Option #42)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify a list of bundled library declaration files that describe the target runtime environment."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag lib.",
+    "explanation": "Specify a list of bundled library declaration files that describe the target runtime environment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0123",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'allowJs' setting in tsconfig.json (Option #43)?",
+    "options": [
+      "Allow JavaScript files to be compiled alongside TypeScript files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag allowJs.",
+    "explanation": "Allow JavaScript files to be compiled alongside TypeScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0124",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'checkJs' setting in tsconfig.json (Option #44)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Enable error reporting in type-checked JavaScript files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag checkJs.",
+    "explanation": "Enable error reporting in type-checked JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0125",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'jsx' setting in tsconfig.json (Option #45)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag jsx.",
+    "explanation": "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0126",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'declaration' setting in tsconfig.json (Option #46)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Generate .d.ts files for every TypeScript and JavaScript file in your project."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag declaration.",
+    "explanation": "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0127",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'declarationMap' setting in tsconfig.json (Option #47)?",
+    "options": [
+      "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag declarationMap.",
+    "explanation": "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0128",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'sourceMap' setting in tsconfig.json (Option #48)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Create source map files for emitted JavaScript files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag sourceMap.",
+    "explanation": "Create source map files for emitted JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0129",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'outFile' setting in tsconfig.json (Option #49)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Concatenate and emit output to single file (only for AMD or System modules).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag outFile.",
+    "explanation": "Concatenate and emit output to single file (only for AMD or System modules).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0130",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'outDir' setting in tsconfig.json (Option #50)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify an output folder for all emitted JavaScript and declaration files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag outDir.",
+    "explanation": "Specify an output folder for all emitted JavaScript and declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0131",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'rootDir' setting in tsconfig.json (Option #51)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify the root folder within your source files."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag rootDir.",
+    "explanation": "Specify the root folder within your source files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0132",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'composite' setting in tsconfig.json (Option #52)?",
+    "options": [
+      "Enable constraints that allow a TypeScript project to be referenced by project references.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag composite.",
+    "explanation": "Enable constraints that allow a TypeScript project to be referenced by project references.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0133",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'tsBuildInfoFile' setting in tsconfig.json (Option #53)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify the path to .tsbuildinfo incremental compilation cache file.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag tsBuildInfoFile.",
+    "explanation": "Specify the path to .tsbuildinfo incremental compilation cache file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0134",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'removeComments' setting in tsconfig.json (Option #54)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Disable emitting comments in the generated JavaScript output.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag removeComments.",
+    "explanation": "Disable emitting comments in the generated JavaScript output.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0135",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noEmit' setting in tsconfig.json (Option #55)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Disable emitting files from a compilation, performing type checking only."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noEmit.",
+    "explanation": "Disable emitting files from a compilation, performing type checking only.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0136",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'downlevelIteration' setting in tsconfig.json (Option #56)?",
+    "options": [
+      "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag downlevelIteration.",
+    "explanation": "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0137",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'isolatedModules' setting in tsconfig.json (Option #57)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure each file can be safely transpiled without relying on other imports.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag isolatedModules.",
+    "explanation": "Ensure each file can be safely transpiled without relying on other imports.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0138",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'strictFunctionTypes' setting in tsconfig.json (Option #58)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Enable strict checking of function parameter bivariance.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag strictFunctionTypes.",
+    "explanation": "Enable strict checking of function parameter bivariance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0139",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'strictBindCallApply' setting in tsconfig.json (Option #59)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Enable strict type checking of function call, bind, and apply methods."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag strictBindCallApply.",
+    "explanation": "Enable strict type checking of function call, bind, and apply methods.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0140",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'strictPropertyInitialization' setting in tsconfig.json (Option #60)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure class properties declared with a type are initialized in the constructor."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag strictPropertyInitialization.",
+    "explanation": "Ensure class properties declared with a type are initialized in the constructor.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0141",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noImplicitThis' setting in tsconfig.json (Option #61)?",
+    "options": [
+      "Raise error on expressions where 'this' has an implicit 'any' type.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noImplicitThis.",
+    "explanation": "Raise error on expressions where 'this' has an implicit 'any' type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0142",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'alwaysStrict' setting in tsconfig.json (Option #62)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Parse in strict mode and emit 'use strict' for each source file.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag alwaysStrict.",
+    "explanation": "Parse in strict mode and emit 'use strict' for each source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0143",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noImplicitReturns' setting in tsconfig.json (Option #63)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Ensure all code paths in a function return a value.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noImplicitReturns.",
+    "explanation": "Ensure all code paths in a function return a value.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0144",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noFallthroughCasesInSwitch' setting in tsconfig.json (Option #64)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Report errors for fallthrough cases in switch statements without break."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noFallthroughCasesInSwitch.",
+    "explanation": "Report errors for fallthrough cases in switch statements without break.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0145",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noUncheckedIndexedAccess' setting in tsconfig.json (Option #65)?",
+    "options": [
+      "Include 'undefined' in type when indexing objects with index signatures.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noUncheckedIndexedAccess.",
+    "explanation": "Include 'undefined' in type when indexing objects with index signatures.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0146",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noImplicitOverride' setting in tsconfig.json (Option #66)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noImplicitOverride.",
+    "explanation": "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0147",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noPropertyAccessFromIndexSignature' setting in tsconfig.json (Option #67)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Require using indexed access notation for keys declared via an index signature.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noPropertyAccessFromIndexSignature.",
+    "explanation": "Require using indexed access notation for keys declared via an index signature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0148",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'exactOptionalPropertyTypes' setting in tsconfig.json (Option #68)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Differentiate between optional properties and properties explicitly holding 'undefined'."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag exactOptionalPropertyTypes.",
+    "explanation": "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0149",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'moduleResolution' setting in tsconfig.json (Option #69)?",
+    "options": [
+      "Specify how TypeScript looks up a file from a given module specifier.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag moduleResolution.",
+    "explanation": "Specify how TypeScript looks up a file from a given module specifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0150",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'baseUrl' setting in tsconfig.json (Option #70)?",
+    "options": [
+      "Specify the base directory to resolve non-relative module names.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag baseUrl.",
+    "explanation": "Specify the base directory to resolve non-relative module names.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0151",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'paths' setting in tsconfig.json (Option #71)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify a set of entries that re-map imports to additional lookup locations.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag paths.",
+    "explanation": "Specify a set of entries that re-map imports to additional lookup locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0152",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'rootDirs' setting in tsconfig.json (Option #72)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag rootDirs.",
+    "explanation": "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0153",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'typeRoots' setting in tsconfig.json (Option #73)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify multiple folders that act like './node_modules/@types'."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag typeRoots.",
+    "explanation": "Specify multiple folders that act like './node_modules/@types'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0154",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'types' setting in tsconfig.json (Option #74)?",
+    "options": [
+      "Specify type package names to be included without being referenced in a source file.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag types.",
+    "explanation": "Specify type package names to be included without being referenced in a source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0155",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'allowSyntheticDefaultImports' setting in tsconfig.json (Option #75)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Allow 'import x from y' when a module doesn't have a default export.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag allowSyntheticDefaultImports.",
+    "explanation": "Allow 'import x from y' when a module doesn't have a default export.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0156",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'esModuleInterop' setting in tsconfig.json (Option #76)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Emit additional JavaScript to ease support for importing CommonJS modules.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag esModuleInterop.",
+    "explanation": "Emit additional JavaScript to ease support for importing CommonJS modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0157",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'preserveSymlinks' setting in tsconfig.json (Option #77)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Do not resolve the real path of symlinks when resolving module locations."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag preserveSymlinks.",
+    "explanation": "Do not resolve the real path of symlinks when resolving module locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0158",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'forceConsistentCasingInFileNames' setting in tsconfig.json (Option #78)?",
+    "options": [
+      "Ensure that casing is correct in imports across case-insensitive filesystems.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag forceConsistentCasingInFileNames.",
+    "explanation": "Ensure that casing is correct in imports across case-insensitive filesystems.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0159",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'target' setting in tsconfig.json (Option #79)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag target.",
+    "explanation": "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0160",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'module' setting in tsconfig.json (Option #80)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag module.",
+    "explanation": "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0161",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'lib' setting in tsconfig.json (Option #81)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify a list of bundled library declaration files that describe the target runtime environment.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag lib.",
+    "explanation": "Specify a list of bundled library declaration files that describe the target runtime environment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0162",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'allowJs' setting in tsconfig.json (Option #82)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Allow JavaScript files to be compiled alongside TypeScript files."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag allowJs.",
+    "explanation": "Allow JavaScript files to be compiled alongside TypeScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0163",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'checkJs' setting in tsconfig.json (Option #83)?",
+    "options": [
+      "Enable error reporting in type-checked JavaScript files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag checkJs.",
+    "explanation": "Enable error reporting in type-checked JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0164",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'jsx' setting in tsconfig.json (Option #84)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag jsx.",
+    "explanation": "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0165",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'declaration' setting in tsconfig.json (Option #85)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag declaration.",
+    "explanation": "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0166",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'declarationMap' setting in tsconfig.json (Option #86)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Create sourcemaps for d.ts files to enable go-to-definition in editors."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag declarationMap.",
+    "explanation": "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0167",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'sourceMap' setting in tsconfig.json (Option #87)?",
+    "options": [
+      "Create source map files for emitted JavaScript files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag sourceMap.",
+    "explanation": "Create source map files for emitted JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0168",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'outFile' setting in tsconfig.json (Option #88)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Concatenate and emit output to single file (only for AMD or System modules).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag outFile.",
+    "explanation": "Concatenate and emit output to single file (only for AMD or System modules).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0169",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'outDir' setting in tsconfig.json (Option #89)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify an output folder for all emitted JavaScript and declaration files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag outDir.",
+    "explanation": "Specify an output folder for all emitted JavaScript and declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0170",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'rootDir' setting in tsconfig.json (Option #90)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify the root folder within your source files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag rootDir.",
+    "explanation": "Specify the root folder within your source files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0171",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'composite' setting in tsconfig.json (Option #91)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Enable constraints that allow a TypeScript project to be referenced by project references."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag composite.",
+    "explanation": "Enable constraints that allow a TypeScript project to be referenced by project references.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0172",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'tsBuildInfoFile' setting in tsconfig.json (Option #92)?",
+    "options": [
+      "Specify the path to .tsbuildinfo incremental compilation cache file.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag tsBuildInfoFile.",
+    "explanation": "Specify the path to .tsbuildinfo incremental compilation cache file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0173",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'removeComments' setting in tsconfig.json (Option #93)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Disable emitting comments in the generated JavaScript output.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag removeComments.",
+    "explanation": "Disable emitting comments in the generated JavaScript output.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0174",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noEmit' setting in tsconfig.json (Option #94)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Disable emitting files from a compilation, performing type checking only.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noEmit.",
+    "explanation": "Disable emitting files from a compilation, performing type checking only.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0175",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'downlevelIteration' setting in tsconfig.json (Option #95)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Emit more compliant, but verbose and less performant JavaScript for iteration."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag downlevelIteration.",
+    "explanation": "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0176",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'isolatedModules' setting in tsconfig.json (Option #96)?",
+    "options": [
+      "Ensure each file can be safely transpiled without relying on other imports.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag isolatedModules.",
+    "explanation": "Ensure each file can be safely transpiled without relying on other imports.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0177",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'strictFunctionTypes' setting in tsconfig.json (Option #97)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Enable strict checking of function parameter bivariance.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag strictFunctionTypes.",
+    "explanation": "Enable strict checking of function parameter bivariance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0178",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'strictBindCallApply' setting in tsconfig.json (Option #98)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Enable strict type checking of function call, bind, and apply methods.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag strictBindCallApply.",
+    "explanation": "Enable strict type checking of function call, bind, and apply methods.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0179",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'strictPropertyInitialization' setting in tsconfig.json (Option #99)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure class properties declared with a type are initialized in the constructor."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag strictPropertyInitialization.",
+    "explanation": "Ensure class properties declared with a type are initialized in the constructor.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0180",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noImplicitThis' setting in tsconfig.json (Option #100)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Raise error on expressions where 'this' has an implicit 'any' type."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noImplicitThis.",
+    "explanation": "Raise error on expressions where 'this' has an implicit 'any' type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0181",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'alwaysStrict' setting in tsconfig.json (Option #101)?",
+    "options": [
+      "Parse in strict mode and emit 'use strict' for each source file.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag alwaysStrict.",
+    "explanation": "Parse in strict mode and emit 'use strict' for each source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0182",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noImplicitReturns' setting in tsconfig.json (Option #102)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure all code paths in a function return a value.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noImplicitReturns.",
+    "explanation": "Ensure all code paths in a function return a value.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0183",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noFallthroughCasesInSwitch' setting in tsconfig.json (Option #103)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Report errors for fallthrough cases in switch statements without break.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noFallthroughCasesInSwitch.",
+    "explanation": "Report errors for fallthrough cases in switch statements without break.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0184",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noUncheckedIndexedAccess' setting in tsconfig.json (Option #104)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Include 'undefined' in type when indexing objects with index signatures."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noUncheckedIndexedAccess.",
+    "explanation": "Include 'undefined' in type when indexing objects with index signatures.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0185",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noImplicitOverride' setting in tsconfig.json (Option #105)?",
+    "options": [
+      "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noImplicitOverride.",
+    "explanation": "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0186",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noPropertyAccessFromIndexSignature' setting in tsconfig.json (Option #106)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Require using indexed access notation for keys declared via an index signature.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noPropertyAccessFromIndexSignature.",
+    "explanation": "Require using indexed access notation for keys declared via an index signature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0187",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'exactOptionalPropertyTypes' setting in tsconfig.json (Option #107)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag exactOptionalPropertyTypes.",
+    "explanation": "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0188",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'moduleResolution' setting in tsconfig.json (Option #108)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify how TypeScript looks up a file from a given module specifier."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag moduleResolution.",
+    "explanation": "Specify how TypeScript looks up a file from a given module specifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0189",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'baseUrl' setting in tsconfig.json (Option #109)?",
+    "options": [
+      "Specify the base directory to resolve non-relative module names.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag baseUrl.",
+    "explanation": "Specify the base directory to resolve non-relative module names.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0190",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'paths' setting in tsconfig.json (Option #110)?",
+    "options": [
+      "Specify a set of entries that re-map imports to additional lookup locations.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag paths.",
+    "explanation": "Specify a set of entries that re-map imports to additional lookup locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0191",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'rootDirs' setting in tsconfig.json (Option #111)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag rootDirs.",
+    "explanation": "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0192",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'typeRoots' setting in tsconfig.json (Option #112)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify multiple folders that act like './node_modules/@types'.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag typeRoots.",
+    "explanation": "Specify multiple folders that act like './node_modules/@types'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0193",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'types' setting in tsconfig.json (Option #113)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify type package names to be included without being referenced in a source file."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag types.",
+    "explanation": "Specify type package names to be included without being referenced in a source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0194",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'allowSyntheticDefaultImports' setting in tsconfig.json (Option #114)?",
+    "options": [
+      "Allow 'import x from y' when a module doesn't have a default export.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag allowSyntheticDefaultImports.",
+    "explanation": "Allow 'import x from y' when a module doesn't have a default export.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0195",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'esModuleInterop' setting in tsconfig.json (Option #115)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Emit additional JavaScript to ease support for importing CommonJS modules.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag esModuleInterop.",
+    "explanation": "Emit additional JavaScript to ease support for importing CommonJS modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0196",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'preserveSymlinks' setting in tsconfig.json (Option #116)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Do not resolve the real path of symlinks when resolving module locations.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag preserveSymlinks.",
+    "explanation": "Do not resolve the real path of symlinks when resolving module locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0197",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'forceConsistentCasingInFileNames' setting in tsconfig.json (Option #117)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure that casing is correct in imports across case-insensitive filesystems."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag forceConsistentCasingInFileNames.",
+    "explanation": "Ensure that casing is correct in imports across case-insensitive filesystems.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0198",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'target' setting in tsconfig.json (Option #118)?",
+    "options": [
+      "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag target.",
+    "explanation": "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0199",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'module' setting in tsconfig.json (Option #119)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag module.",
+    "explanation": "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0200",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'lib' setting in tsconfig.json (Option #120)?",
+    "options": [
+      "Specify a list of bundled library declaration files that describe the target runtime environment.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag lib.",
+    "explanation": "Specify a list of bundled library declaration files that describe the target runtime environment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0201",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'allowJs' setting in tsconfig.json (Option #121)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Allow JavaScript files to be compiled alongside TypeScript files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag allowJs.",
+    "explanation": "Allow JavaScript files to be compiled alongside TypeScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0202",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'checkJs' setting in tsconfig.json (Option #122)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Enable error reporting in type-checked JavaScript files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag checkJs.",
+    "explanation": "Enable error reporting in type-checked JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0203",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'jsx' setting in tsconfig.json (Option #123)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify what JSX code is generated (e.g. react-jsx, preserve, react)."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag jsx.",
+    "explanation": "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0204",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'declaration' setting in tsconfig.json (Option #124)?",
+    "options": [
+      "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag declaration.",
+    "explanation": "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0205",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'declarationMap' setting in tsconfig.json (Option #125)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag declarationMap.",
+    "explanation": "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0206",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'sourceMap' setting in tsconfig.json (Option #126)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Create source map files for emitted JavaScript files.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag sourceMap.",
+    "explanation": "Create source map files for emitted JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0207",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'outFile' setting in tsconfig.json (Option #127)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Concatenate and emit output to single file (only for AMD or System modules)."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag outFile.",
+    "explanation": "Concatenate and emit output to single file (only for AMD or System modules).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0208",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'outDir' setting in tsconfig.json (Option #128)?",
+    "options": [
+      "Specify an output folder for all emitted JavaScript and declaration files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag outDir.",
+    "explanation": "Specify an output folder for all emitted JavaScript and declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0209",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'rootDir' setting in tsconfig.json (Option #129)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify the root folder within your source files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag rootDir.",
+    "explanation": "Specify the root folder within your source files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0210",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'composite' setting in tsconfig.json (Option #130)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Enable constraints that allow a TypeScript project to be referenced by project references.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag composite.",
+    "explanation": "Enable constraints that allow a TypeScript project to be referenced by project references.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0211",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'tsBuildInfoFile' setting in tsconfig.json (Option #131)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify the path to .tsbuildinfo incremental compilation cache file.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag tsBuildInfoFile.",
+    "explanation": "Specify the path to .tsbuildinfo incremental compilation cache file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0212",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'removeComments' setting in tsconfig.json (Option #132)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Disable emitting comments in the generated JavaScript output."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag removeComments.",
+    "explanation": "Disable emitting comments in the generated JavaScript output.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0213",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noEmit' setting in tsconfig.json (Option #133)?",
+    "options": [
+      "Disable emitting files from a compilation, performing type checking only.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noEmit.",
+    "explanation": "Disable emitting files from a compilation, performing type checking only.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0214",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'downlevelIteration' setting in tsconfig.json (Option #134)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag downlevelIteration.",
+    "explanation": "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0215",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'isolatedModules' setting in tsconfig.json (Option #135)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Ensure each file can be safely transpiled without relying on other imports.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag isolatedModules.",
+    "explanation": "Ensure each file can be safely transpiled without relying on other imports.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0216",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'strictFunctionTypes' setting in tsconfig.json (Option #136)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Enable strict checking of function parameter bivariance."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag strictFunctionTypes.",
+    "explanation": "Enable strict checking of function parameter bivariance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0217",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'strictBindCallApply' setting in tsconfig.json (Option #137)?",
+    "options": [
+      "Enable strict type checking of function call, bind, and apply methods.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag strictBindCallApply.",
+    "explanation": "Enable strict type checking of function call, bind, and apply methods.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0218",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'strictPropertyInitialization' setting in tsconfig.json (Option #138)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure class properties declared with a type are initialized in the constructor.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag strictPropertyInitialization.",
+    "explanation": "Ensure class properties declared with a type are initialized in the constructor.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0219",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noImplicitThis' setting in tsconfig.json (Option #139)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Raise error on expressions where 'this' has an implicit 'any' type.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noImplicitThis.",
+    "explanation": "Raise error on expressions where 'this' has an implicit 'any' type.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0220",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'alwaysStrict' setting in tsconfig.json (Option #140)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Parse in strict mode and emit 'use strict' for each source file.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag alwaysStrict.",
+    "explanation": "Parse in strict mode and emit 'use strict' for each source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0221",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noImplicitReturns' setting in tsconfig.json (Option #141)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Ensure all code paths in a function return a value."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noImplicitReturns.",
+    "explanation": "Ensure all code paths in a function return a value.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0222",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noFallthroughCasesInSwitch' setting in tsconfig.json (Option #142)?",
+    "options": [
+      "Report errors for fallthrough cases in switch statements without break.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag noFallthroughCasesInSwitch.",
+    "explanation": "Report errors for fallthrough cases in switch statements without break.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0223",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'noUncheckedIndexedAccess' setting in tsconfig.json (Option #143)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Include 'undefined' in type when indexing objects with index signatures.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag noUncheckedIndexedAccess.",
+    "explanation": "Include 'undefined' in type when indexing objects with index signatures.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0224",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'noImplicitOverride' setting in tsconfig.json (Option #144)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag noImplicitOverride.",
+    "explanation": "Ensure overriding members in derived classes are marked with an 'override' modifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0225",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'noPropertyAccessFromIndexSignature' setting in tsconfig.json (Option #145)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Require using indexed access notation for keys declared via an index signature."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag noPropertyAccessFromIndexSignature.",
+    "explanation": "Require using indexed access notation for keys declared via an index signature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0226",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'exactOptionalPropertyTypes' setting in tsconfig.json (Option #146)?",
+    "options": [
+      "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag exactOptionalPropertyTypes.",
+    "explanation": "Differentiate between optional properties and properties explicitly holding 'undefined'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0227",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'moduleResolution' setting in tsconfig.json (Option #147)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify how TypeScript looks up a file from a given module specifier.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag moduleResolution.",
+    "explanation": "Specify how TypeScript looks up a file from a given module specifier.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0228",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'baseUrl' setting in tsconfig.json (Option #148)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify the base directory to resolve non-relative module names.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag baseUrl.",
+    "explanation": "Specify the base directory to resolve non-relative module names.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0229",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'paths' setting in tsconfig.json (Option #149)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify a set of entries that re-map imports to additional lookup locations."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag paths.",
+    "explanation": "Specify a set of entries that re-map imports to additional lookup locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0230",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'rootDirs' setting in tsconfig.json (Option #150)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Allow multiple folders to be treated as one virtual directory when resolving modules."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag rootDirs.",
+    "explanation": "Allow multiple folders to be treated as one virtual directory when resolving modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0231",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'typeRoots' setting in tsconfig.json (Option #151)?",
+    "options": [
+      "Specify multiple folders that act like './node_modules/@types'.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag typeRoots.",
+    "explanation": "Specify multiple folders that act like './node_modules/@types'.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0232",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'types' setting in tsconfig.json (Option #152)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify type package names to be included without being referenced in a source file.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag types.",
+    "explanation": "Specify type package names to be included without being referenced in a source file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0233",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'allowSyntheticDefaultImports' setting in tsconfig.json (Option #153)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Allow 'import x from y' when a module doesn't have a default export.",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag allowSyntheticDefaultImports.",
+    "explanation": "Allow 'import x from y' when a module doesn't have a default export.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0234",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'esModuleInterop' setting in tsconfig.json (Option #154)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Emit additional JavaScript to ease support for importing CommonJS modules."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag esModuleInterop.",
+    "explanation": "Emit additional JavaScript to ease support for importing CommonJS modules.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0235",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'preserveSymlinks' setting in tsconfig.json (Option #155)?",
+    "options": [
+      "Do not resolve the real path of symlinks when resolving module locations.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag preserveSymlinks.",
+    "explanation": "Do not resolve the real path of symlinks when resolving module locations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0236",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'forceConsistentCasingInFileNames' setting in tsconfig.json (Option #156)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Ensure that casing is correct in imports across case-insensitive filesystems.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag forceConsistentCasingInFileNames.",
+    "explanation": "Ensure that casing is correct in imports across case-insensitive filesystems.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0237",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'target' setting in tsconfig.json (Option #157)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag target.",
+    "explanation": "Specify ECMAScript target version for emitted JavaScript (e.g. ES2022, ESNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0238",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'module' setting in tsconfig.json (Option #158)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext)."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag module.",
+    "explanation": "Specify what module code is generated (e.g. CommonJS, ESNext, NodeNext).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0239",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'lib' setting in tsconfig.json (Option #159)?",
+    "options": [
+      "Specify a list of bundled library declaration files that describe the target runtime environment.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag lib.",
+    "explanation": "Specify a list of bundled library declaration files that describe the target runtime environment.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0240",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'allowJs' setting in tsconfig.json (Option #160)?",
+    "options": [
+      "Allow JavaScript files to be compiled alongside TypeScript files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag allowJs.",
+    "explanation": "Allow JavaScript files to be compiled alongside TypeScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0241",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'checkJs' setting in tsconfig.json (Option #161)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Enable error reporting in type-checked JavaScript files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag checkJs.",
+    "explanation": "Enable error reporting in type-checked JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0242",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'jsx' setting in tsconfig.json (Option #162)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag jsx.",
+    "explanation": "Specify what JSX code is generated (e.g. react-jsx, preserve, react).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0243",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'declaration' setting in tsconfig.json (Option #163)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Generate .d.ts files for every TypeScript and JavaScript file in your project."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag declaration.",
+    "explanation": "Generate .d.ts files for every TypeScript and JavaScript file in your project.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0244",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'declarationMap' setting in tsconfig.json (Option #164)?",
+    "options": [
+      "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag declarationMap.",
+    "explanation": "Create sourcemaps for d.ts files to enable go-to-definition in editors.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0245",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'sourceMap' setting in tsconfig.json (Option #165)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Create source map files for emitted JavaScript files.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag sourceMap.",
+    "explanation": "Create source map files for emitted JavaScript files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0246",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'outFile' setting in tsconfig.json (Option #166)?",
+    "options": [
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It automatically converts React JSX into HTML templates",
+      "Concatenate and emit output to single file (only for AMD or System modules).",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 2,
+    "hint": "Compiler configuration flag outFile.",
+    "explanation": "Concatenate and emit output to single file (only for AMD or System modules).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0247",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "medium",
+    "question": "What is the purpose of the 'outDir' setting in tsconfig.json (Option #167)?",
+    "options": [
+      "It disables TypeScript type checking completely",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "Specify an output folder for all emitted JavaScript and declaration files."
+    ],
+    "correctAnswer": 3,
+    "hint": "Compiler configuration flag outDir.",
+    "explanation": "Specify an output folder for all emitted JavaScript and declaration files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0248",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'rootDir' setting in tsconfig.json (Option #168)?",
+    "options": [
+      "Specify the root folder within your source files.",
+      "It automatically converts React JSX into HTML templates",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compiler configuration flag rootDir.",
+    "explanation": "Specify the root folder within your source files.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0249",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "hard",
+    "question": "What is the purpose of the 'composite' setting in tsconfig.json (Option #169)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Enable constraints that allow a TypeScript project to be referenced by project references.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag composite.",
+    "explanation": "Enable constraints that allow a TypeScript project to be referenced by project references.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "ts_0250",
+    "topic": "TypeScript",
+    "subtopic": "Compiler Configuration",
+    "difficulty": "easy",
+    "question": "What is the purpose of the 'tsBuildInfoFile' setting in tsconfig.json (Option #170)?",
+    "options": [
+      "It automatically converts React JSX into HTML templates",
+      "Specify the path to .tsbuildinfo incremental compilation cache file.",
+      "It compiles JavaScript directly into binary WebAssembly",
+      "It disables TypeScript type checking completely"
+    ],
+    "correctAnswer": 1,
+    "hint": "Compiler configuration flag tsBuildInfoFile.",
+    "explanation": "Specify the path to .tsbuildinfo incremental compilation cache file.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

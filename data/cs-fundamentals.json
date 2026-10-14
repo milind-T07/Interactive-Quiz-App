@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "csf_0001",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "What is the difference between a compiler and an interpreter?",
+    "options": [
+      "A compiler translates entire source code to machine code before execution; an interpreter executes code line by line",
+      "They produce identical output",
+      "Interpreters are faster than compilers",
+      "Compilers execute code directly"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0002",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "What is binary representation?",
+    "options": [
+      "A number system using only 0 and 1 (base-2), the fundamental language of computers",
+      "A pair of related numbers",
+      "A two-digit number system",
+      "A coding technique"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0003",
+    "topic": "CS Fundamentals",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "question": "What is the difference between stack memory and heap memory?",
+    "options": [
+      "Stack is LIFO, fixed-size, fast, for local variables; heap is dynamic, larger, slower, for objects",
+      "They are identical memory regions",
+      "Heap is faster than stack",
+      "Stack stores objects; heap stores primitives"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0004",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "easy",
+    "question": "What is recursion?",
+    "options": [
+      "A technique where a function calls itself to solve a problem by breaking it into smaller subproblems",
+      "A type of loop",
+      "A debugging technique",
+      "A memory optimization"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0005",
+    "topic": "CS Fundamentals",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "question": "What is the call stack?",
+    "options": [
+      "A stack data structure that tracks function calls and their execution contexts in a program",
+      "A list of API calls",
+      "A telephone call log",
+      "A stack of network packets"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0006",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "medium",
+    "question": "What is the difference between concurrency and parallelism?",
+    "options": [
+      "Concurrency is managing multiple tasks (possibly on one core); parallelism is executing multiple tasks simultaneously (multiple cores)",
+      "They are identical concepts",
+      "Parallelism is slower",
+      "Concurrency requires multiple processors"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0007",
+    "topic": "CS Fundamentals",
+    "subtopic": "Design",
+    "difficulty": "easy",
+    "question": "What are design patterns?",
+    "options": [
+      "Reusable solutions to commonly occurring problems in software design (Creational, Structural, Behavioral)",
+      "CSS design templates",
+      "UX wireframe patterns",
+      "Database schema designs"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0008",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation Theory",
+    "difficulty": "hard",
+    "question": "What is the halting problem?",
+    "options": [
+      "The undecidable problem of determining whether an arbitrary program will finish running or run forever",
+      "A program that stops unexpectedly",
+      "A debugging challenge",
+      "A performance issue"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0009",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "What is the Von Neumann architecture?",
+    "options": [
+      "A computer architecture where instructions and data share the same memory and bus (stored-program concept)",
+      "A neural network architecture",
+      "A cloud computing model",
+      "A database architecture"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0010",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "What is boolean algebra?",
+    "options": [
+      "A branch of algebra dealing with true/false values and logical operations (AND, OR, NOT, XOR)",
+      "Algebra for boolean variables only",
+      "A programming-specific math",
+      "Advanced calculus"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0011",
+    "topic": "CS Fundamentals",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "question": "What is a race condition?",
+    "options": [
+      "When the behavior of software depends on the relative timing of events, particularly in concurrent execution",
+      "A performance competition between threads",
+      "A testing methodology",
+      "A deployment strategy"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0012",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "easy",
+    "question": "What is cache memory?",
+    "options": [
+      "Small, fast memory between the CPU and main memory that stores frequently accessed data for quick retrieval",
+      "Browser storage",
+      "A backup memory system",
+      "External hard drive storage"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider CS Fundamentals fundamentals.",
+    "explanation": "This answer aligns with CS Fundamentals best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0013",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0014",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0015",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0016",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0017",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0018",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0019",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0020",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0021",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0022",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0023",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0024",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0025",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0026",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0027",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0028",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0029",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0030",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0031",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0032",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0033",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0034",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0035",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0036",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0037",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0038",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0039",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0040",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0041",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0042",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Binary & Logic: What is a fundamental principle or best practice for binary & logic (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Binary & Logic best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for binary & logic in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0043",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0044",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0045",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0046",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0047",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0048",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0049",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0050",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0051",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0052",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0053",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0054",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0055",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0056",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0057",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0058",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0059",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0060",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0061",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0062",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0063",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0064",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0065",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0066",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0067",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0068",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0069",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0070",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0071",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0072",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Data Representation: What is a fundamental principle or best practice for data representation (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Data Representation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for data representation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0073",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0074",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0075",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0076",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0077",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0078",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0079",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0080",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0081",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0082",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0083",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0084",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0085",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0086",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0087",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0088",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0089",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0090",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0091",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0092",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0093",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0094",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0095",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0096",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0097",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0098",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0099",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0100",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0101",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0102",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Computation: What is a fundamental principle or best practice for computation (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Computation best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for computation in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0103",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0104",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0105",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0106",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0107",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0108",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0109",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0110",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0111",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0112",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0113",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0114",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0115",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0116",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0117",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0118",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0119",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0120",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0121",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0122",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0123",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0124",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0125",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0126",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0127",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0128",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0129",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0130",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0131",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0132",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Compilers: What is a fundamental principle or best practice for compilers (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Compilers best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for compilers in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0133",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0134",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0135",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0136",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0137",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0138",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0139",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0140",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0141",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0142",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0143",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0144",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0145",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0146",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0147",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0148",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0149",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0150",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0151",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0152",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0153",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 141)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0154",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 142)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0155",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 143)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0156",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 144)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0157",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 145)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0158",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 146)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0159",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 147)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0160",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 148)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0161",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 149)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0162",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Architecture: What is a fundamental principle or best practice for architecture (concept 150)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Architecture best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for architecture in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0163",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 151)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0164",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 152)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0165",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 153)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0166",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 154)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0167",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 155)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0168",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 156)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0169",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 157)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0170",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 158)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0171",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 159)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0172",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 160)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0173",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 161)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0174",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 162)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0175",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 163)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0176",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 164)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0177",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 165)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0178",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 166)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0179",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 167)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0180",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 168)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0181",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 169)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0182",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 170)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0183",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 171)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0184",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 172)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0185",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 173)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0186",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 174)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0187",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 175)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0188",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 176)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0189",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 177)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0190",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 178)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0191",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 179)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0192",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "In CS Fundamentals, regarding Complexity Theory: What is a fundamental principle or best practice for complexity theory (concept 180)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Complexity Theory best practices in CS Fundamentals.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for complexity theory in CS Fundamentals. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0193",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "In CS Fundamentals (Binary & Logic), which design approach optimizes long-term maintainability and system resilience (case #1)?",
+    "options": [
+      "Decouple components using single-responsibility principles and automated tests",
+      "Rely exclusively on global state and minimize function abstraction",
+      "Bypass error validation at system boundaries to optimize execution throughput",
+      "Hardcode configuration variables directly in executable business logic"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Binary & Logic in CS Fundamentals.",
+    "explanation": "Decoupling modules according to single-responsibility and validating boundaries ensures high reliability and maintainability in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0194",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "When profiling data representation in CS Fundamentals, which metric provides the most accurate indicator of scalability under high concurrency (scenario #2)?",
+    "options": [
+      "Resource utilization (CPU/memory) and p99 latency distributions under load",
+      "The total count of source code lines written in the module",
+      "The frequency of code comments per executable statement",
+      "The alphabetic sort order of imported module references"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Data Representation in CS Fundamentals.",
+    "explanation": "Evaluating p99 latencies and system resource metrics under realistic concurrency profiles identifies bottlenecks and scaling limits in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0195",
+    "topic": "CS Fundamentals",
+    "subtopic": "Computation",
+    "difficulty": "hard",
+    "question": "What is considered a critical security or stability vulnerability when handling computation in CS Fundamentals (audit #3)?",
+    "options": [
+      "Trusting unsanitized external inputs without validation or schema enforcement",
+      "Using cryptographic hashes with high work factors for password storage",
+      "Enforcing strict role-based access control and principle of least privilege",
+      "Maintaining centralized structured logging for error auditing"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Computation in CS Fundamentals.",
+    "explanation": "Failing to sanitize and validate untrusted input exposes systems to injection, corruption, and remote code execution in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0196",
+    "topic": "CS Fundamentals",
+    "subtopic": "Compilers",
+    "difficulty": "easy",
+    "question": "In modern CS Fundamentals architectures, how should exceptional conditions and failure states in compilers be handled (pattern #4)?",
+    "options": [
+      "Catch errors specifically, log relevant contextual metadata, and degrade gracefully",
+      "Silently swallow all exceptions to prevent processes from terminating",
+      "Expose full internal database and runtime stack traces directly to end users",
+      "Restart the entire server instance whenever any unhandled warning occurs"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Compilers in CS Fundamentals.",
+    "explanation": "Structured error handling with contextual telemetry and graceful degradation keeps CS Fundamentals services robust and debuggable.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0197",
+    "topic": "CS Fundamentals",
+    "subtopic": "Architecture",
+    "difficulty": "medium",
+    "question": "In CS Fundamentals (Architecture), which design approach optimizes long-term maintainability and system resilience (case #5)?",
+    "options": [
+      "Decouple components using single-responsibility principles and automated tests",
+      "Rely exclusively on global state and minimize function abstraction",
+      "Bypass error validation at system boundaries to optimize execution throughput",
+      "Hardcode configuration variables directly in executable business logic"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Architecture in CS Fundamentals.",
+    "explanation": "Decoupling modules according to single-responsibility and validating boundaries ensures high reliability and maintainability in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0198",
+    "topic": "CS Fundamentals",
+    "subtopic": "Complexity Theory",
+    "difficulty": "hard",
+    "question": "When profiling complexity theory in CS Fundamentals, which metric provides the most accurate indicator of scalability under high concurrency (scenario #6)?",
+    "options": [
+      "Resource utilization (CPU/memory) and p99 latency distributions under load",
+      "The total count of source code lines written in the module",
+      "The frequency of code comments per executable statement",
+      "The alphabetic sort order of imported module references"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Complexity Theory in CS Fundamentals.",
+    "explanation": "Evaluating p99 latencies and system resource metrics under realistic concurrency profiles identifies bottlenecks and scaling limits in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0199",
+    "topic": "CS Fundamentals",
+    "subtopic": "Binary & Logic",
+    "difficulty": "easy",
+    "question": "What is considered a critical security or stability vulnerability when handling binary & logic in CS Fundamentals (audit #7)?",
+    "options": [
+      "Trusting unsanitized external inputs without validation or schema enforcement",
+      "Using cryptographic hashes with high work factors for password storage",
+      "Enforcing strict role-based access control and principle of least privilege",
+      "Maintaining centralized structured logging for error auditing"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Binary & Logic in CS Fundamentals.",
+    "explanation": "Failing to sanitize and validate untrusted input exposes systems to injection, corruption, and remote code execution in CS Fundamentals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "csf_0200",
+    "topic": "CS Fundamentals",
+    "subtopic": "Data Representation",
+    "difficulty": "medium",
+    "question": "In modern CS Fundamentals architectures, how should exceptional conditions and failure states in data representation be handled (pattern #8)?",
+    "options": [
+      "Catch errors specifically, log relevant contextual metadata, and degrade gracefully",
+      "Silently swallow all exceptions to prevent processes from terminating",
+      "Expose full internal database and runtime stack traces directly to end users",
+      "Restart the entire server instance whenever any unhandled warning occurs"
+    ],
+    "correctAnswer": 0,
+    "hint": "Reflect on core engineering standards for Data Representation in CS Fundamentals.",
+    "explanation": "Structured error handling with contextual telemetry and graceful degradation keeps CS Fundamentals services robust and debuggable.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

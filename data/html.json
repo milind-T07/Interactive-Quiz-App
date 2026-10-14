@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "html_0001",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <header> element?",
+    "options": [
+      "Creates a fixed toolbar",
+      "Imports external scripts",
+      "It represents introductory content or navigational links",
+      "Defines CSS variables"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"header\" semantically means.",
+    "explanation": "The <header> element is used to represent introductory content or navigational links. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0002",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <nav> element?",
+    "options": [
+      "Creates navigation arrows",
+      "It represents navigation links section",
+      "Renders a sidebar",
+      "Defines page margins"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"nav\" semantically means.",
+    "explanation": "The <nav> element is used to represent navigation links section. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0003",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <article> element?",
+    "options": [
+      "Defines a paragraph",
+      "Links to external articles",
+      "Creates a blog comment",
+      "It represents self-contained composition that could be independently distributable"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"article\" semantically means.",
+    "explanation": "The <article> element is used to represent self-contained composition that could be independently distributable. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0004",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <section> element?",
+    "options": [
+      "Generates a separator line",
+      "Defines a grid layout",
+      "It represents thematic grouping of content",
+      "Creates a new page"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"section\" semantically means.",
+    "explanation": "The <section> element is used to represent thematic grouping of content. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0005",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <aside> element?",
+    "options": [
+      "Defines the main content",
+      "It represents content tangentially related to the main content",
+      "Creates a navigation bar",
+      "Creates a horizontal rule"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"aside\" semantically means.",
+    "explanation": "The <aside> element is used to represent content tangentially related to the main content. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0006",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <footer> element?",
+    "options": [
+      "It represents footer for its nearest sectioning content",
+      "Creates a copyright notice automatically",
+      "Defines page scripts",
+      "Hides content on mobile"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"footer\" semantically means.",
+    "explanation": "The <footer> element is used to represent footer for its nearest sectioning content. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0007",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <main> element?",
+    "options": [
+      "It represents dominant content of the body",
+      "Creates the body element",
+      "Defines the viewport",
+      "Creates the root HTML element"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"main\" semantically means.",
+    "explanation": "The <main> element is used to represent dominant content of the body. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0008",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <figure> element?",
+    "options": [
+      "Defines responsive images",
+      "It represents self-contained content like illustrations, diagrams, or code listings",
+      "Imports images from CDN",
+      "Creates image borders"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"figure\" semantically means.",
+    "explanation": "The <figure> element is used to represent self-contained content like illustrations, diagrams, or code listings. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0009",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <figcaption> element?",
+    "options": [
+      "Generates image metadata",
+      "It represents caption for a <figure> element",
+      "Creates alt text",
+      "Defines image dimensions"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"figcaption\" semantically means.",
+    "explanation": "The <figcaption> element is used to represent caption for a <figure> element. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0010",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <details> element?",
+    "options": [
+      "Creates a tooltip",
+      "Creates a modal dialog",
+      "Defines hidden metadata",
+      "It represents disclosure widget that users can open/close"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"details\" semantically means.",
+    "explanation": "The <details> element is used to represent disclosure widget that users can open/close. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0011",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <summary> element?",
+    "options": [
+      "Defines meta description",
+      "Creates a page summary",
+      "It represents visible heading for a <details> element",
+      "Creates a table caption"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"summary\" semantically means.",
+    "explanation": "The <summary> element is used to represent visible heading for a <details> element. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0012",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <mark> element?",
+    "options": [
+      "Creates strikethrough text",
+      "Defines bookmarks",
+      "Creates bold text",
+      "It represents highlighted or marked text for reference"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"mark\" semantically means.",
+    "explanation": "The <mark> element is used to represent highlighted or marked text for reference. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0013",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <time> element?",
+    "options": [
+      "It represents specific time or date in machine-readable format",
+      "Creates a timestamp in the footer",
+      "Creates a countdown timer",
+      "Defines animation duration"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"time\" semantically means.",
+    "explanation": "The <time> element is used to represent specific time or date in machine-readable format. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0014",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <dialog> element?",
+    "options": [
+      "Creates a pop-up ad",
+      "Defines a chat widget",
+      "It represents dialog box or interactive component",
+      "Creates an alert box"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"dialog\" semantically means.",
+    "explanation": "The <dialog> element is used to represent dialog box or interactive component. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0015",
+    "topic": "HTML",
+    "subtopic": "Semantic Elements",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the HTML5 <template> element?",
+    "options": [
+      "It represents HTML fragment that is not rendered but can be used by JavaScript",
+      "Creates a CSS template",
+      "Defines a page layout",
+      "Creates a form template that auto-submits"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"template\" semantically means.",
+    "explanation": "The <template> element is used to represent HTML fragment that is not rendered but can be used by JavaScript. Using semantic elements improves accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0016",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"defer\" attribute do on the <script> element?",
+    "options": [
+      "Prevents script caching",
+      "It delays script execution until HTML parsing is complete",
+      "Loads script synchronously",
+      "Makes script run in a Web Worker"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"defer\" suggests about the element's behavior.",
+    "explanation": "The \"defer\" attribute delays script execution until HTML parsing is complete. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0017",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"async\" attribute do on the <script> element?",
+    "options": [
+      "Ensures scripts run in order",
+      "Enables service worker registration",
+      "Prevents script from running",
+      "It downloads script asynchronously and executes as soon as downloaded"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"async\" suggests about the element's behavior.",
+    "explanation": "The \"async\" attribute downloads script asynchronously and executes as soon as downloaded. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0018",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"loading=\"lazy\"\" attribute do on the <img> element?",
+    "options": [
+      "It defers loading of off-screen images until user scrolls near them",
+      "Reduces image quality",
+      "Adds blur placeholder",
+      "Converts images to WebP"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what \"loading=\"lazy\"\" suggests about the element's behavior.",
+    "explanation": "The \"loading=\"lazy\"\" attribute defers loading of off-screen images until user scrolls near them. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0019",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"srcset\" attribute do on the <img> element?",
+    "options": [
+      "Defines image alt text",
+      "Sets image source URL",
+      "It provides multiple image sources for different screen resolutions or sizes",
+      "Creates image animations"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"srcset\" suggests about the element's behavior.",
+    "explanation": "The \"srcset\" attribute provides multiple image sources for different screen resolutions or sizes. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0020",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"rel=\"noopener\"\" attribute do on the <a> element?",
+    "options": [
+      "Disables link prefetching",
+      "Prevents link indexing",
+      "It prevents the opened page from accessing window.opener for security",
+      "Opens link in same tab"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"rel=\"noopener\"\" suggests about the element's behavior.",
+    "explanation": "The \"rel=\"noopener\"\" attribute prevents the opened page from accessing window.opener for security. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0021",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"autocomplete\" attribute do on the <input> element?",
+    "options": [
+      "Validates input automatically",
+      "It hints to the browser about autofill behavior for form fields",
+      "Prevents form submission",
+      "Creates auto-suggestions"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"autocomplete\" suggests about the element's behavior.",
+    "explanation": "The \"autocomplete\" attribute hints to the browser about autofill behavior for form fields. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0022",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"contenteditable\" attribute do on an HTML element?",
+    "options": [
+      "It makes the element's content editable by the user",
+      "Enables spell checking",
+      "Locks content from editing",
+      "Creates a form input"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what \"contenteditable\" suggests about the element's behavior.",
+    "explanation": "The \"contenteditable\" attribute makes the element's content editable by the user. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0023",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"draggable\" attribute do on an HTML element?",
+    "options": [
+      "Creates scrollable content",
+      "It makes the element draggable using the Drag and Drop API",
+      "Enables touch gestures",
+      "Makes element resizable"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"draggable\" suggests about the element's behavior.",
+    "explanation": "The \"draggable\" attribute makes the element draggable using the Drag and Drop API. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0024",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"hidden\" attribute do on an HTML element?",
+    "options": [
+      "Sets visibility to visible",
+      "Makes element transparent",
+      "Removes element from DOM",
+      "It indicates the element is not yet relevant and should not be displayed"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"hidden\" suggests about the element's behavior.",
+    "explanation": "The \"hidden\" attribute indicates the element is not yet relevant and should not be displayed. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0025",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"aria-label\" attribute do on an HTML element?",
+    "options": [
+      "Defines element's CSS class",
+      "Creates a visible label",
+      "Adds a tooltip on hover",
+      "It provides an accessible name for the element when visible text is insufficient"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"aria-label\" suggests about the element's behavior.",
+    "explanation": "The \"aria-label\" attribute provides an accessible name for the element when visible text is insufficient. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0026",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"role\" attribute do on an HTML element?",
+    "options": [
+      "It defines the ARIA role of the element for accessibility technologies",
+      "Sets user permissions",
+      "Creates element hierarchy",
+      "Defines CSS display role"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what \"role\" suggests about the element's behavior.",
+    "explanation": "The \"role\" attribute defines the ARIA role of the element for accessibility technologies. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0027",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"tabindex\" attribute do on an HTML element?",
+    "options": [
+      "Creates tab navigation",
+      "Sets CSS z-index",
+      "Defines padding index",
+      "It controls whether and in what order the element can receive keyboard focus"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"tabindex\" suggests about the element's behavior.",
+    "explanation": "The \"tabindex\" attribute controls whether and in what order the element can receive keyboard focus. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0028",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"data-*\" attribute do on an HTML element?",
+    "options": [
+      "Creates database connections",
+      "Defines server-side variables",
+      "It stores custom data attributes accessible via JavaScript's dataset API",
+      "Stores cookies"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"data-*\" suggests about the element's behavior.",
+    "explanation": "The \"data-*\" attribute stores custom data attributes accessible via JavaScript's dataset API. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0029",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"download\" attribute do on the <a> element?",
+    "options": [
+      "Downloads page assets",
+      "It prompts the user to download the linked resource instead of navigating to it",
+      "Creates download progress bar",
+      "Enables offline access"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"download\" suggests about the element's behavior.",
+    "explanation": "The \"download\" attribute prompts the user to download the linked resource instead of navigating to it. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0030",
+    "topic": "HTML",
+    "subtopic": "Attributes",
+    "difficulty": "easy",
+    "question": "What does the \"spellcheck\" attribute do on the <textarea> element?",
+    "options": [
+      "Creates grammar suggestions",
+      "It enables or disables spell checking for the element",
+      "Auto-corrects text",
+      "Validates HTML syntax"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"spellcheck\" suggests about the element's behavior.",
+    "explanation": "The \"spellcheck\" attribute enables or disables spell checking for the element. This is important for web performance, accessibility, and proper HTML semantics.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0031",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "Which HTML5 input type provides a native date picker in modern browsers?",
+    "options": [
+      "type=\"date\"",
+      "type=\"calendar\"",
+      "type=\"datetime\"",
+      "type=\"picker\""
+    ],
+    "correctAnswer": 0,
+    "hint": "The type name is straightforward.",
+    "explanation": "The input type=\"date\" provides a native date picker widget in modern browsers without needing JavaScript libraries.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0032",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <fieldset> element in HTML forms?",
+    "options": [
+      "Groups related form controls and labels together",
+      "Creates a text field for user input",
+      "Defines the form's action URL",
+      "Sets default values for all fields"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about organizing form fields.",
+    "explanation": "<fieldset> groups related form controls together, often with a <legend> providing a caption for the group.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0033",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "Which attribute prevents a form from being submitted until a field is filled?",
+    "options": [
+      "required",
+      "mandatory",
+      "validate",
+      "notempty"
+    ],
+    "correctAnswer": 0,
+    "hint": "This is a boolean attribute.",
+    "explanation": "The \"required\" attribute makes a form field mandatory before the form can be submitted, providing native HTML5 validation.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0034",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What does the \"pattern\" attribute do on an input element?",
+    "options": [
+      "Specifies a regular expression the input value must match",
+      "Sets the visual pattern of the input field",
+      "Creates a password strength indicator",
+      "Defines the input placeholder text pattern"
+    ],
+    "correctAnswer": 0,
+    "hint": "It involves regex validation.",
+    "explanation": "The \"pattern\" attribute specifies a regular expression that the input's value must match for form validation to pass.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0035",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "Which input type is best for collecting email addresses with built-in validation?",
+    "options": [
+      "type=\"email\"",
+      "type=\"text\" with pattern",
+      "type=\"url\"",
+      "type=\"contact\""
+    ],
+    "correctAnswer": 0,
+    "hint": "HTML5 added specific input types for common data.",
+    "explanation": "input type=\"email\" provides built-in email format validation and optimized mobile keyboards.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0036",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <datalist> element?",
+    "options": [
+      "Provides a list of predefined autocomplete options for an input",
+      "Creates a drop-down select menu",
+      "Defines a data table",
+      "Lists form validation errors"
+    ],
+    "correctAnswer": 0,
+    "hint": "It works with the \"list\" attribute on input elements.",
+    "explanation": "<datalist> provides a set of suggested values that appears as autocomplete options when the user types in the associated input field.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0037",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What does the \"novalidate\" attribute on a <form> element do?",
+    "options": [
+      "Disables built-in HTML5 form validation on submission",
+      "Prevents form data from being sent",
+      "Removes all form styling",
+      "Blocks JavaScript form handlers"
+    ],
+    "correctAnswer": 0,
+    "hint": "It affects the validation step.",
+    "explanation": "The \"novalidate\" attribute on a form element skips HTML5 constraint validation when the form is submitted.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0038",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "Which element should be used to create a multi-line text input?",
+    "options": [
+      "<textarea>",
+      "<input type=\"multiline\">",
+      "<textbox>",
+      "<input type=\"paragraph\">"
+    ],
+    "correctAnswer": 0,
+    "hint": "It is its own element, not an input type.",
+    "explanation": "<textarea> creates a multi-line text input area. Unlike <input>, it uses an opening and closing tag.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0039",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "What is the purpose of the \"for\" attribute on a <label> element?",
+    "options": [
+      "Associates the label with a specific form control by matching its id",
+      "Defines a for-loop for form iteration",
+      "Sets the label's target URL",
+      "Creates a label for CSS styling"
+    ],
+    "correctAnswer": 0,
+    "hint": "It creates an association between elements.",
+    "explanation": "The \"for\" attribute on <label> matches the \"id\" of the associated form control, improving accessibility and click targeting.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0040",
+    "topic": "HTML",
+    "subtopic": "Forms",
+    "difficulty": "easy",
+    "question": "Which attribute specifies the URL where form data should be sent?",
+    "options": [
+      "action",
+      "href",
+      "src",
+      "target"
+    ],
+    "correctAnswer": 0,
+    "hint": "This is a form-level attribute.",
+    "explanation": "The \"action\" attribute on a <form> element specifies the URL where the form data will be submitted for processing.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0041",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the difference between localStorage and sessionStorage?",
+    "options": [
+      "localStorage persists until cleared; sessionStorage is cleared when the tab/window closes",
+      "localStorage stores more data than sessionStorage",
+      "sessionStorage works across tabs but localStorage does not",
+      "localStorage is synchronous while sessionStorage is asynchronous"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "localStorage data persists until explicitly cleared by JavaScript or the user. sessionStorage data is cleared when the page session ends (tab/window closes).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0042",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What does the \"use strict\" directive do in JavaScript embedded in HTML?",
+    "options": [
+      "Enables strict mode which catches common coding mistakes and unsafe actions",
+      "Makes the browser render HTML in strict standards mode",
+      "Enforces strict HTML validation rules",
+      "Prevents the page from loading non-HTTPS resources"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "\"use strict\" enables JavaScript strict mode, which throws errors for common mistakes like using undeclared variables.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0043",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the Shadow DOM primarily used for?",
+    "options": [
+      "Encapsulating component markup and styles to prevent leaking",
+      "Creating invisible DOM elements for SEO",
+      "Improving page load performance by lazy-loading DOM nodes",
+      "Rendering 3D content in the browser"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "Shadow DOM provides style and markup encapsulation, allowing web components to have their own isolated DOM tree.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0044",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <picture> element in responsive web design?",
+    "options": [
+      "Provides multiple image sources for different viewport conditions via <source> elements",
+      "Displays images in a gallery layout",
+      "Creates picture-in-picture video mode",
+      "Adds image editing capabilities"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The <picture> element allows specifying multiple <source> elements with media queries to serve different images based on viewport size, resolution, or format support.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0045",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What does the \"preload\" value do in <link rel=\"preload\">?",
+    "options": [
+      "Instructs the browser to fetch a resource early because it will be needed soon",
+      "Loads the resource after the page is fully rendered",
+      "Preloads the previous page in browser history",
+      "Caches the resource for offline use"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "<link rel=\"preload\"> tells the browser to download a resource early in the page lifecycle because it will be needed soon, improving loading performance.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0046",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the difference between the <b> and <strong> elements?",
+    "options": [
+      "<strong> indicates semantic importance; <b> only applies visual bold styling",
+      "<b> is deprecated and <strong> replaces it",
+      "They are identical in meaning and rendering",
+      "<strong> is for headings and <b> is for paragraphs"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "<strong> conveys semantic importance to screen readers and search engines, while <b> only applies visual bold styling without semantic meaning.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0047",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "Which Web API allows you to observe changes to the DOM tree?",
+    "options": [
+      "MutationObserver",
+      "IntersectionObserver",
+      "ResizeObserver",
+      "PerformanceObserver"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "MutationObserver watches for changes to the DOM tree, such as added/removed nodes or attribute changes, and triggers callbacks.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0048",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the purpose of the Content Security Policy (CSP) meta tag?",
+    "options": [
+      "Restricts which resources can be loaded to prevent XSS attacks",
+      "Sets the content type of the page",
+      "Defines caching policies for the page",
+      "Controls which users can access the page"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "CSP meta tags or headers restrict which scripts, styles, images, and other resources can be loaded, helping prevent cross-site scripting (XSS) attacks.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0049",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "How does the <slot> element work in Web Components?",
+    "options": [
+      "It acts as a placeholder for content projected from the light DOM into the shadow DOM",
+      "It creates a time slot for deferred script execution",
+      "It reserves space in the layout grid",
+      "It defines a variable slot in template strings"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "<slot> elements in shadow DOM act as distribution points for light DOM content, enabling component composition.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0050",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the purpose of the \"fetchpriority\" attribute?",
+    "options": [
+      "Signals to the browser the relative priority of fetching a resource",
+      "Determines the order of API fetch calls",
+      "Sets the priority of Service Worker caching",
+      "Controls which resources to prefetch"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The fetchpriority attribute (high, low, auto) helps browsers prioritize resource loading, useful for optimizing LCP and Core Web Vitals.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0051",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What does the Popover API in HTML provide?",
+    "options": [
+      "A native way to create popover UI elements without JavaScript libraries",
+      "A method to display pop-up advertisements",
+      "A technique for creating tooltip-style CSS effects",
+      "A framework for building modal dialog systems"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The Popover API (popover attribute + popovertarget) provides native browser support for creating popover UI elements with built-in dismissal behavior.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0052",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the difference between \"id\" and \"class\" attributes in HTML?",
+    "options": [
+      "\"id\" must be unique per page and targets one element; \"class\" can be shared across multiple elements",
+      "\"id\" is for JavaScript and \"class\" is only for CSS",
+      "\"class\" must be unique and \"id\" can repeat",
+      "They are interchangeable in modern HTML5"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The \"id\" attribute must be unique within a document and identifies a single element. The \"class\" attribute can be shared across multiple elements for styling and grouping.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0053",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What is the purpose of the \"viewport\" meta tag?",
+    "options": [
+      "Controls how the page is scaled and displayed on mobile devices",
+      "Defines the visible area of a canvas element",
+      "Sets the browser window size",
+      "Creates a virtual DOM viewport"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The viewport meta tag controls the page's dimensions and scaling on mobile devices, essential for responsive web design.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0054",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "Which HTML element is used to define key-value pairs in a description list?",
+    "options": [
+      "<dl>, <dt>, and <dd>",
+      "<ul> and <li>",
+      "<table>, <tr>, and <td>",
+      "<ol> and <li>"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "<dl> defines a description list, <dt> defines a term, and <dd> provides the description. This is ideal for glossaries, metadata, and key-value displays.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0055",
+    "topic": "HTML",
+    "subtopic": "Web APIs & Concepts",
+    "difficulty": "medium",
+    "question": "What does the \"inert\" attribute do to an HTML element?",
+    "options": [
+      "Makes the element and its descendants non-interactive and invisible to accessibility tools",
+      "Makes the element static (non-animated)",
+      "Prevents CSS transitions on the element",
+      "Delays element rendering until scrolled into view"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider the semantic and functional purpose.",
+    "explanation": "The \"inert\" attribute makes an element and all its descendants non-interactive, removing them from the tab order and accessibility tree.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0056",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is the \"CSSOM\" and how does it relate to HTML rendering?",
+    "options": [
+      "CSS Object Model - a tree representation of CSS rules that the browser combines with the DOM to create the render tree",
+      "CSS Output Manager - a tool for minifying CSS output",
+      "Client-Side Object Mapping - a pattern for mapping HTML to JavaScript objects",
+      "Cascading Style Order Model - determines CSS specificity"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "The CSSOM (CSS Object Model) is a map of all CSS selectors and properties. The browser combines the DOM and CSSOM to create the render tree for painting.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0057",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What happens during the \"Critical Rendering Path\" in a browser?",
+    "options": [
+      "The browser constructs DOM, CSSOM, render tree, computes layout, and paints pixels to screen",
+      "The browser downloads all resources before rendering anything",
+      "JavaScript executes before any HTML is parsed",
+      "The server renders the HTML and sends a screenshot"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "The Critical Rendering Path involves: 1) HTML → DOM construction, 2) CSS → CSSOM construction, 3) DOM + CSSOM → Render Tree, 4) Layout computation, 5) Paint to screen.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0058",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "How do Custom Elements lifecycle callbacks work in Web Components?",
+    "options": [
+      "connectedCallback fires when added to DOM, disconnectedCallback when removed, attributeChangedCallback when attributes change",
+      "onMount fires for creation, onDestroy for removal, onChange for updates",
+      "init() runs on creation, destroy() on removal, update() on changes",
+      "The browser handles all lifecycle automatically without callbacks"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "Custom Elements have specific lifecycle callbacks: connectedCallback, disconnectedCallback, adoptedCallback, and attributeChangedCallback with observedAttributes.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0059",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is the difference between \"defer\" and \"async\" script loading strategies?",
+    "options": [
+      "defer downloads in parallel and executes after HTML parsing in order; async downloads in parallel and executes immediately when downloaded regardless of order",
+      "defer blocks HTML parsing; async does not block anything",
+      "async preserves execution order; defer does not guarantee order",
+      "They are identical in behavior for ES modules"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "defer scripts download in parallel with HTML parsing and execute in document order after parsing. async scripts download in parallel and execute immediately when ready, regardless of order.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0060",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is \"document.adoptNode()\" used for?",
+    "options": [
+      "Transfers a node from another document into the current document, changing its ownerDocument",
+      "Creates a deep copy of a node",
+      "Removes a node from the DOM permanently",
+      "Wraps a node in a new parent element"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "adoptNode() takes a node from another document and changes its ownerDocument to the current document. Unlike importNode(), it removes the node from the original document.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0061",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "How does the browser handle \"render-blocking\" resources?",
+    "options": [
+      "It pauses rendering until critical CSS and synchronous scripts are downloaded and processed",
+      "It renders the page first and applies styles afterward",
+      "It loads all resources simultaneously without blocking",
+      "It only blocks rendering for images above the fold"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "Render-blocking resources (CSS files, synchronous JS) prevent the browser from rendering any content until they are downloaded and processed, impacting First Contentful Paint.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0062",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is the difference between \"document.querySelector()\" and \"document.getElementById()\"?",
+    "options": [
+      "querySelector accepts any CSS selector but is slightly slower; getElementById only matches IDs but is faster",
+      "getElementById is deprecated in favor of querySelector",
+      "querySelector only works in shadow DOM",
+      "They are identical in functionality and performance"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "querySelector() accepts any valid CSS selector (classes, attributes, pseudo-selectors), while getElementById() only matches by ID but is faster due to internal browser optimizations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0063",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is the Trusted Types API designed to prevent?",
+    "options": [
+      "DOM-based cross-site scripting (XSS) by enforcing type checks on dangerous DOM sinks",
+      "SQL injection attacks in client-side databases",
+      "Clickjacking attacks through frame busting",
+      "Cross-Site Request Forgery (CSRF) attacks"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "Trusted Types API prevents DOM XSS by requiring typed objects (TrustedHTML, TrustedScript, TrustedScriptURL) for dangerous DOM sinks like innerHTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0064",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "How does the \"is\" attribute work with customized built-in elements?",
+    "options": [
+      "It extends a standard HTML element with custom behavior: <button is=\"my-button\">",
+      "It checks if an element is visible in the viewport",
+      "It validates the element against a schema",
+      "It creates an alias for an existing element tag"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "The \"is\" attribute extends native HTML elements with custom functionality. <button is=\"fancy-button\"> creates a button that inherits native button behavior plus custom element features.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0065",
+    "topic": "HTML",
+    "subtopic": "Advanced Concepts",
+    "difficulty": "hard",
+    "question": "What is \"Declarative Shadow DOM\" and why was it introduced?",
+    "options": [
+      "It allows creating shadow DOM in HTML markup using <template shadowrootmode=\"open\">, enabling server-side rendering of web components",
+      "It automatically adds shadow DOM to all elements on the page",
+      "It creates shadow DOM through CSS declarations",
+      "It is a polyfill for browsers that do not support shadow DOM"
+    ],
+    "correctAnswer": 0,
+    "hint": "This requires deep understanding of browser internals.",
+    "explanation": "Declarative Shadow DOM allows shadow roots to be created in HTML using <template shadowrootmode=\"open|closed\">, enabling server-side rendering of web components without JavaScript.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0066",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which of the following is a block-level element by default?",
+    "options": [
+      "<a>",
+      "<div>",
+      "<strong>",
+      "<span>"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about the nature of block-level vs inline elements.",
+    "explanation": "<div> is a block-level element that takes up the full width available. Inline elements like <span> only take up as much width as necessary.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0067",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which HTML element is a \"void element\" (self-closing, cannot have children)?",
+    "options": [
+      "<br>",
+      "<span>",
+      "<p>",
+      "<div>"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about the nature of void elements.",
+    "explanation": "Void elements like <br>, <hr>, <img>, <input> cannot have content and do not need closing tags.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0068",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which element is classified as a \"replaced element\" in HTML?",
+    "options": [
+      "<p>",
+      "<div>",
+      "<span>",
+      "<img>"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about the nature of replaced elements.",
+    "explanation": "Replaced elements like <img>, <video>, <iframe> have their content determined by an external resource, not by the document content.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0069",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which category of HTML content model includes <em>, <strong>, and <span>?",
+    "options": [
+      "Sectioning content",
+      "Phrasing content",
+      "Metadata content",
+      "Flow content only"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about the nature of phrasing content.",
+    "explanation": "Phrasing content represents the text of a document and includes elements like <em>, <strong>, <span>, <a>, and <img>.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0070",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which element belongs to the \"metadata content\" category?",
+    "options": [
+      "<span>",
+      "<meta>",
+      "<div>",
+      "<p>"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about the nature of metadata content.",
+    "explanation": "Metadata content elements like <meta>, <title>, <link>, <style>, <script>, and <base> contain information about the document rather than content.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0071",
+    "topic": "HTML",
+    "subtopic": "Content Model",
+    "difficulty": "medium",
+    "question": "Which element is classified as \"interactive content\"?",
+    "options": [
+      "<button>",
+      "<div>",
+      "<p>",
+      "<span>"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about the nature of interactive content.",
+    "explanation": "Interactive content elements like <button>, <a>, <input>, <select>, <details> are specifically intended for user interaction.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0072",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "easy",
+    "question": "What is the purpose of \"alt\" text on images?",
+    "options": [
+      "Provides a text description for screen readers and when images fail to load",
+      "Adds a tooltip when hovering over the image",
+      "Sets the image title in search results",
+      "Defines the image file name"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "Alt text describes image content for screen readers and displays when images cannot be loaded, improving both accessibility and SEO.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0073",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "easy",
+    "question": "What ARIA role should a navigation landmark have?",
+    "options": [
+      "role=\"navigation\"",
+      "role=\"nav\"",
+      "role=\"menu\"",
+      "role=\"sidebar\""
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "role=\"navigation\" identifies a collection of navigational links. However, using the <nav> element is preferred as it has this role implicitly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0074",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "medium",
+    "question": "When should you use aria-hidden=\"true\"?",
+    "options": [
+      "To hide decorative or redundant content from screen readers while keeping it visually visible",
+      "To hide content from all users",
+      "To make content invisible on screen",
+      "To prevent content from being indexed by search engines"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "aria-hidden=\"true\" removes an element from the accessibility tree while keeping it visually present. Use it for decorative icons or duplicate content.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0075",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "medium",
+    "question": "What is the minimum recommended color contrast ratio for normal text (WCAG AA)?",
+    "options": [
+      "4.5:1",
+      "3:1",
+      "2:1",
+      "7:1"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "WCAG 2.1 Level AA requires a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text (18pt or 14pt bold).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0076",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "medium",
+    "question": "What is a \"skip navigation\" link and why is it important?",
+    "options": [
+      "A visually hidden link at the top of the page that allows keyboard users to jump past navigation to main content",
+      "A link that skips the browser's navigation bar",
+      "A JavaScript function that scrolls past navigation on page load",
+      "A CSS technique to hide the navigation on mobile"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "Skip navigation links let keyboard and screen reader users bypass repetitive navigation and jump directly to the main content, improving navigation efficiency.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0077",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "hard",
+    "question": "What does \"aria-live\" attribute control?",
+    "options": [
+      "How screen readers announce dynamic content updates to users",
+      "The lifetime of an element before it is removed",
+      "Whether an element stays visible during scrolling",
+      "The animation duration of live elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "aria-live announces dynamic content changes to screen readers. Values: \"polite\" (waits for current speech), \"assertive\" (interrupts immediately), \"off\" (no announcement).",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0078",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "medium",
+    "question": "What is the difference between aria-label and aria-labelledby?",
+    "options": [
+      "aria-label provides a direct string label; aria-labelledby references the ID of another element containing the label text",
+      "aria-label is for forms; aria-labelledby is for navigation",
+      "aria-labelledby creates a visible label; aria-label creates an invisible one",
+      "They are identical and interchangeable"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "aria-label provides a string directly as the accessible name. aria-labelledby references one or more element IDs whose text content forms the accessible name.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0079",
+    "topic": "HTML",
+    "subtopic": "Accessibility",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <output> element?",
+    "options": [
+      "Represents the result of a calculation or user action",
+      "Displays console output on the page",
+      "Creates a text output field similar to textarea",
+      "Outputs data to a file"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about users who rely on assistive technologies.",
+    "explanation": "<output> represents the result of a calculation or user action. It has a \"for\" attribute to associate it with the input elements that contributed to the result.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0080",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "medium",
+    "question": "Which API allows web applications to work offline?",
+    "options": [
+      "Service Workers and Cache API",
+      "Web Workers API",
+      "WebSocket API",
+      "Fetch API"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "Service Workers can intercept network requests and serve cached responses, enabling offline functionality through the Cache API.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0081",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "easy",
+    "question": "What is the Geolocation API used for?",
+    "options": [
+      "Getting the user's geographic position",
+      "Locating DOM elements on the page",
+      "Finding the server's IP address",
+      "Determining the user's timezone"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "The Geolocation API provides access to the user's geographical location through navigator.geolocation, requiring user permission.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0082",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "medium",
+    "question": "What does the History API allow developers to do?",
+    "options": [
+      "Manipulate the browser session history (back/forward/URL) without page reloads",
+      "View the user's browsing history",
+      "Store historical data in localStorage",
+      "Track user analytics"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "The History API (pushState, replaceState, popstate) allows single-page applications to update the URL and manage navigation without full page reloads.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0083",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "easy",
+    "question": "What is the Clipboard API used for?",
+    "options": [
+      "Reading from and writing to the system clipboard programmatically",
+      "Creating a virtual clipboard for the page",
+      "Managing browser bookmarks",
+      "Copying DOM elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "The Clipboard API (navigator.clipboard) allows reading and writing text and other data to the system clipboard, replacing the older document.execCommand approach.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0084",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "medium",
+    "question": "What is the purpose of the Web Workers API?",
+    "options": [
+      "Running JavaScript in background threads without blocking the UI",
+      "Managing web server workers",
+      "Creating service workers for offline support",
+      "Spawning child processes in Node.js"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "Web Workers run scripts in background threads, allowing computation-heavy tasks without blocking the main thread and UI responsiveness.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0085",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "medium",
+    "question": "Which API provides high-precision timing for performance measurements?",
+    "options": [
+      "Performance API (performance.now())",
+      "Date.now()",
+      "setTimeout with timestamp",
+      "requestAnimationFrame"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "The Performance API provides sub-millisecond timestamps via performance.now() and performance marks/measures for precise timing of operations.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0086",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "hard",
+    "question": "What is the Broadcast Channel API used for?",
+    "options": [
+      "Communication between browsing contexts (tabs, windows, frames) of the same origin",
+      "Broadcasting messages to all users",
+      "Sending push notifications",
+      "Creating WebRTC channels"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "Broadcast Channel API enables simple communication between browsing contexts (tabs, windows, iframes) of the same origin.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0087",
+    "topic": "HTML",
+    "subtopic": "HTML5 APIs",
+    "difficulty": "medium",
+    "question": "What does the ResizeObserver API do?",
+    "options": [
+      "Reports changes to the dimensions of an element's content or border box",
+      "Allows users to resize elements",
+      "Observes viewport size changes",
+      "Resizes images dynamically"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what modern web APIs enable.",
+    "explanation": "ResizeObserver watches for changes to an element's size, reporting new dimensions through its callback. It is more performant than listening to window resize events.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0088",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What is the DOCTYPE declaration used for?",
+    "options": [
+      "Tells the browser which version of HTML the page is written in",
+      "Imports a CSS stylesheet",
+      "Defines the document type as PDF or HTML",
+      "Creates a document header"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0089",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "What is the difference between <script>, <script defer>, and <script async>?",
+    "options": [
+      "Default blocks parsing; defer downloads parallel and runs after parsing; async downloads parallel and runs immediately",
+      "They all behave identically in modern browsers",
+      "Defer is fastest, async is slowest, default is medium",
+      "Async maintains execution order, defer does not"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0090",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "What is the purpose of the \"manifest\" file in Progressive Web Apps?",
+    "options": [
+      "Provides metadata (name, icons, colors) for installing the PWA on devices",
+      "Lists all HTML files in the application",
+      "Defines the JavaScript module dependency graph",
+      "Creates a sitemap for search engines"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0091",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <noscript> element?",
+    "options": [
+      "Provides fallback content for browsers with JavaScript disabled",
+      "Removes script tags from the page",
+      "Creates a non-scripted version of the page",
+      "Prevents script injection attacks"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0092",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "What is the \"sandbox\" attribute on an <iframe> used for?",
+    "options": [
+      "Restricts the iframe's capabilities (scripts, forms, popups) for security",
+      "Creates a sandboxed development environment",
+      "Adds a visual border around the iframe",
+      "Enables offline mode for the iframe content"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0093",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "What are \"microdata\" and \"structured data\" in HTML?",
+    "options": [
+      "Machine-readable annotations that help search engines understand page content",
+      "Compressed data stored in HTML attributes",
+      "Data stored in micro-databases within the browser",
+      "Small data files embedded in HTML"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0094",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "What is the \"ping\" attribute on the <a> element?",
+    "options": [
+      "Sends a POST request to specified URLs when the link is clicked for tracking",
+      "Tests if the link destination is reachable",
+      "Creates a ping sound effect on click",
+      "Measures page load time for the linked page"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0095",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "What does the \"translate\" attribute do on an HTML element?",
+    "options": [
+      "Indicates whether the element's content should be translated by browser translation features",
+      "Moves the element using CSS transforms",
+      "Converts text to another language automatically",
+      "Translates coordinates for SVG elements"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0096",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What is the Open Graph protocol used for in HTML meta tags?",
+    "options": [
+      "Controls how web pages appear when shared on social media platforms",
+      "Opens the page in a new graph visualization",
+      "Creates interactive charts from HTML data",
+      "Defines the page's knowledge graph entry"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0097",
+    "topic": "HTML",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "What is the purpose of the \"crossorigin\" attribute?",
+    "options": [
+      "Configures CORS requests for the element's resource (e.g., scripts, images, audio)",
+      "Allows loading resources from different domains without restrictions",
+      "Creates cross-browser compatible elements",
+      "Enables cross-frame communication"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what this HTML feature enables.",
+    "explanation": "The correct answer describes the actual purpose and behavior of this HTML feature.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0098",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <abbr> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It creates a styled container for layout purposes",
+      "It generates metadata for search engine optimization",
+      "It represents an abbreviation with an optional full expansion"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"abbr\" suggests.",
+    "explanation": "The <abbr> element represents an abbreviation with an optional full expansion. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0099",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <address> HTML element?",
+    "options": [
+      "It generates metadata for search engine optimization",
+      "It contains contact information for the author of a section",
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"address\" suggests.",
+    "explanation": "The <address> element contains contact information for the author of a section. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0100",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "hard",
+    "question": "What is the purpose of the <bdi> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It isolates text that might have different directionality from surrounding text",
+      "It generates metadata for search engine optimization",
+      "It creates a styled container for layout purposes"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"bdi\" suggests.",
+    "explanation": "The <bdi> element isolates text that might have different directionality from surrounding text. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0101",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <wbr> HTML element?",
+    "options": [
+      "It creates a styled container for layout purposes",
+      "It suggests a word break opportunity for the browser",
+      "It defines a JavaScript variable in the DOM",
+      "It generates metadata for search engine optimization"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"wbr\" suggests.",
+    "explanation": "The <wbr> element suggests a word break opportunity for the browser. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0102",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "hard",
+    "question": "What is the purpose of the <ruby> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It represents a ruby annotation for East Asian typography",
+      "It generates metadata for search engine optimization",
+      "It creates a styled container for layout purposes"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"ruby\" suggests.",
+    "explanation": "The <ruby> element represents a ruby annotation for East Asian typography. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0103",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <progress> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It generates metadata for search engine optimization",
+      "It creates a styled container for layout purposes",
+      "It represents the completion progress of a task"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"progress\" suggests.",
+    "explanation": "The <progress> element represents the completion progress of a task. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0104",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <meter> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It creates a styled container for layout purposes",
+      "It generates metadata for search engine optimization",
+      "It represents a scalar measurement within a known range"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"meter\" suggests.",
+    "explanation": "The <meter> element represents a scalar measurement within a known range. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0105",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <map> HTML element?",
+    "options": [
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM",
+      "It defines an image map with clickable areas",
+      "It generates metadata for search engine optimization"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"map\" suggests.",
+    "explanation": "The <map> element defines an image map with clickable areas. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0106",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <embed> HTML element?",
+    "options": [
+      "It generates metadata for search engine optimization",
+      "It embeds external content like plugins or multimedia",
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"embed\" suggests.",
+    "explanation": "The <embed> element embeds external content like plugins or multimedia. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0107",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <object> HTML element?",
+    "options": [
+      "It generates metadata for search engine optimization",
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM",
+      "It represents an external resource that can be treated as an image, plugin, or nested document"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"object\" suggests.",
+    "explanation": "The <object> element represents an external resource that can be treated as an image, plugin, or nested document. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0108",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <col> HTML element?",
+    "options": [
+      "It generates metadata for search engine optimization",
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM",
+      "It specifies column properties for each column within a colgroup"
+    ],
+    "correctAnswer": 3,
+    "hint": "Consider what \"col\" suggests.",
+    "explanation": "The <col> element specifies column properties for each column within a colgroup. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0109",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "medium",
+    "question": "What is the purpose of the <colgroup> HTML element?",
+    "options": [
+      "It creates a styled container for layout purposes",
+      "It generates metadata for search engine optimization",
+      "It groups columns in a table for styling or spanning purposes",
+      "It defines a JavaScript variable in the DOM"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"colgroup\" suggests.",
+    "explanation": "The <colgroup> element groups columns in a table for styling or spanning purposes. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0110",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <optgroup> HTML element?",
+    "options": [
+      "It creates a styled container for layout purposes",
+      "It groups related options within a select element",
+      "It generates metadata for search engine optimization",
+      "It defines a JavaScript variable in the DOM"
+    ],
+    "correctAnswer": 1,
+    "hint": "Consider what \"optgroup\" suggests.",
+    "explanation": "The <optgroup> element groups related options within a select element. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0111",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <legend> HTML element?",
+    "options": [
+      "It provides a caption for a fieldset element",
+      "It creates a styled container for layout purposes",
+      "It defines a JavaScript variable in the DOM",
+      "It generates metadata for search engine optimization"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider what \"legend\" suggests.",
+    "explanation": "The <legend> element provides a caption for a fieldset element. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0112",
+    "topic": "HTML",
+    "subtopic": "Elements",
+    "difficulty": "easy",
+    "question": "What is the purpose of the <caption> HTML element?",
+    "options": [
+      "It defines a JavaScript variable in the DOM",
+      "It creates a styled container for layout purposes",
+      "It specifies the title of a table",
+      "It generates metadata for search engine optimization"
+    ],
+    "correctAnswer": 2,
+    "hint": "Consider what \"caption\" suggests.",
+    "explanation": "The <caption> element specifies the title of a table. Understanding semantic elements is crucial for building accessible and well-structured web pages.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0113",
+    "topic": "HTML",
+    "subtopic": "Code Output",
+    "difficulty": "easy",
+    "question": "What will this HTML render?",
+    "options": [
+      "An ordered list starting from number 5",
+      "An ordered list with 5 items",
+      "An unordered list with bullets",
+      "A list with items labeled 5a and 5b"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the HTML markup carefully.",
+    "explanation": "The \"start\" attribute on <ol> specifies the starting number for the list items. So \"First\" will be numbered 5, \"Second\" will be 6.",
+    "codeSnippet": "<ol start=\"5\">\n  <li>First</li>\n  <li>Second</li>\n</ol>",
+    "type": "mcq"
+  },
+  {
+    "id": "html_0114",
+    "topic": "HTML",
+    "subtopic": "Code Output",
+    "difficulty": "medium",
+    "question": "What does this meta tag do?",
+    "options": [
+      "Redirects to example.com after 5 seconds",
+      "Refreshes the page every 5 seconds",
+      "Loads example.com in an iframe",
+      "Sets a 5-second cache timeout"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the HTML markup carefully.",
+    "explanation": "The http-equiv=\"refresh\" meta tag with a URL causes a redirect after the specified number of seconds (5 in this case).",
+    "codeSnippet": "<meta http-equiv=\"refresh\" content=\"5;url=https://example.com\">",
+    "type": "mcq"
+  },
+  {
+    "id": "html_0115",
+    "topic": "HTML",
+    "subtopic": "Code Output",
+    "difficulty": "easy",
+    "question": "What is the output of this HTML?",
+    "options": [
+      "A slider input starting at 50, ranging from 0 to 100 with steps of 10",
+      "A text input showing the number 50",
+      "A progress bar at 50%",
+      "A number input field with up/down arrows"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the HTML markup carefully.",
+    "explanation": "input type=\"range\" creates a slider control. The min, max, step, and value attributes configure its range and initial position.",
+    "codeSnippet": "<input type=\"range\" min=\"0\" max=\"100\" step=\"10\" value=\"50\">",
+    "type": "mcq"
+  },
+  {
+    "id": "html_0116",
+    "topic": "HTML",
+    "subtopic": "Code Output",
+    "difficulty": "easy",
+    "question": "What does this code create?",
+    "options": [
+      "An expanded disclosure widget showing \"FAQ\" as the heading and the answer content",
+      "A collapsed accordion that cannot be opened",
+      "A modal dialog with \"FAQ\" as the title",
+      "A tooltip showing on hover"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the HTML markup carefully.",
+    "explanation": "The <details> element with the \"open\" attribute renders in an expanded state by default, showing both the <summary> heading and the content.",
+    "codeSnippet": "<details open>\n  <summary>FAQ</summary>\n  <p>This is the answer.</p>\n</details>",
+    "type": "mcq"
+  },
+  {
+    "id": "html_0117",
+    "topic": "HTML",
+    "subtopic": "Code Output",
+    "difficulty": "easy",
+    "question": "What happens with this HTML?",
+    "options": [
+      "Creates a clickable link that initiates a phone call on mobile devices",
+      "Displays the phone number as plain text",
+      "Opens a VoIP application",
+      "Sends an SMS message"
+    ],
+    "correctAnswer": 0,
+    "hint": "Analyze the HTML markup carefully.",
+    "explanation": "The \"tel:\" URI scheme creates a link that, when clicked on a mobile device, initiates a phone call to the specified number.",
+    "codeSnippet": "<a href=\"tel:+1234567890\">Call Us</a>",
+    "type": "mcq"
+  },
+  {
+    "id": "html_0118",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onclick\" fire?",
+    "options": [
+      "It fires when a touch point is placed on the screen",
+      "It fires when the element is clicked",
+      "It fires when the right-click context menu is triggered",
+      "It fires when the mouse pointer enters the element"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onclick\".",
+    "explanation": "The onclick event handler fires when the element is clicked. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0119",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onload\" fire?",
+    "options": [
+      "It fires when a dragged element is dropped",
+      "It fires when the resource finishes loading",
+      "It fires when an element's value changes immediately",
+      "It fires when the element is clicked"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onload\".",
+    "explanation": "The onload event handler fires when the resource finishes loading. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0120",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onerror\" fire?",
+    "options": [
+      "It fires when the window or element is resized",
+      "It fires when a resource fails to load",
+      "It fires when a CSS animation completes",
+      "It fires during a drag operation"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onerror\".",
+    "explanation": "The onerror event handler fires when a resource fails to load. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0121",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onsubmit\" fire?",
+    "options": [
+      "It fires during a drag operation",
+      "It fires when the window or element is resized",
+      "It fires when a form is submitted",
+      "It fires when the mouse pointer leaves the element"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"onsubmit\".",
+    "explanation": "The onsubmit event handler fires when a form is submitted. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0122",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onfocus\" fire?",
+    "options": [
+      "It fires when an element receives focus",
+      "It fires when an element loses focus",
+      "It fires when an element's value changes and loses focus",
+      "It fires when the element is clicked"
+    ],
+    "correctAnswer": 0,
+    "hint": "Break down the event name: \"onfocus\".",
+    "explanation": "The onfocus event handler fires when an element receives focus. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0123",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onblur\" fire?",
+    "options": [
+      "It fires when a key is pressed down",
+      "It fires when an element loses focus",
+      "It fires when a form is submitted",
+      "It fires when an element's value changes and loses focus"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onblur\".",
+    "explanation": "The onblur event handler fires when an element loses focus. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0124",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onchange\" fire?",
+    "options": [
+      "It fires when a dragged element is dropped",
+      "It fires when an element receives focus",
+      "It fires when an element's value changes and loses focus",
+      "It fires when the right-click context menu is triggered"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"onchange\".",
+    "explanation": "The onchange event handler fires when an element's value changes and loses focus. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0125",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"oninput\" fire?",
+    "options": [
+      "It fires when the right-click context menu is triggered",
+      "It fires when a resource fails to load",
+      "It fires when an element is scrolled",
+      "It fires when an element's value changes immediately"
+    ],
+    "correctAnswer": 3,
+    "hint": "Break down the event name: \"oninput\".",
+    "explanation": "The oninput event handler fires when an element's value changes immediately. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0126",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onkeydown\" fire?",
+    "options": [
+      "It fires when an element's value changes immediately",
+      "It fires when the element is clicked",
+      "It fires when a key is pressed down",
+      "It fires when an element receives focus"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"onkeydown\".",
+    "explanation": "The onkeydown event handler fires when a key is pressed down. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0127",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onkeyup\" fire?",
+    "options": [
+      "It fires when a key is released",
+      "It fires when the resource finishes loading",
+      "It fires when a dragged element is dropped",
+      "It fires when the mouse pointer leaves the element"
+    ],
+    "correctAnswer": 0,
+    "hint": "Break down the event name: \"onkeyup\".",
+    "explanation": "The onkeyup event handler fires when a key is released. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0128",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onmouseover\" fire?",
+    "options": [
+      "It fires when an element loses focus",
+      "It fires when the right-click context menu is triggered",
+      "It fires when the mouse pointer enters the element",
+      "It fires when a CSS animation completes"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"onmouseover\".",
+    "explanation": "The onmouseover event handler fires when the mouse pointer enters the element. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0129",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onmouseout\" fire?",
+    "options": [
+      "It fires when a resource fails to load",
+      "It fires when the mouse pointer leaves the element",
+      "It fires when an element's value changes and loses focus",
+      "It fires when a key is pressed down"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onmouseout\".",
+    "explanation": "The onmouseout event handler fires when the mouse pointer leaves the element. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0130",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"ondrag\" fire?",
+    "options": [
+      "It fires during a drag operation",
+      "It fires when an element receives focus",
+      "It fires when the element is clicked",
+      "It fires when a key is released"
+    ],
+    "correctAnswer": 0,
+    "hint": "Break down the event name: \"ondrag\".",
+    "explanation": "The ondrag event handler fires during a drag operation. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0131",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"ondrop\" fire?",
+    "options": [
+      "It fires when an element receives focus",
+      "It fires when the resource finishes loading",
+      "It fires when a dragged element is dropped",
+      "It fires when an element loses focus"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"ondrop\".",
+    "explanation": "The ondrop event handler fires when a dragged element is dropped. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0132",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onscroll\" fire?",
+    "options": [
+      "It fires when an element receives focus",
+      "It fires when a CSS animation completes",
+      "It fires when an element is scrolled",
+      "It fires when a key is released"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"onscroll\".",
+    "explanation": "The onscroll event handler fires when an element is scrolled. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0133",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onresize\" fire?",
+    "options": [
+      "It fires when a key is pressed down",
+      "It fires when the window or element is resized",
+      "It fires when the mouse pointer enters the element",
+      "It fires when an element's value changes immediately"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onresize\".",
+    "explanation": "The onresize event handler fires when the window or element is resized. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0134",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"oncontextmenu\" fire?",
+    "options": [
+      "It fires when a pointer becomes active (mouse, touch, pen)",
+      "It fires when the right-click context menu is triggered",
+      "It fires when an element receives focus",
+      "It fires during a drag operation"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"oncontextmenu\".",
+    "explanation": "The oncontextmenu event handler fires when the right-click context menu is triggered. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0135",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"ontouchstart\" fire?",
+    "options": [
+      "It fires when the resource finishes loading",
+      "It fires when the window or element is resized",
+      "It fires when a touch point is placed on the screen",
+      "It fires when a key is released"
+    ],
+    "correctAnswer": 2,
+    "hint": "Break down the event name: \"ontouchstart\".",
+    "explanation": "The ontouchstart event handler fires when a touch point is placed on the screen. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0136",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onpointerdown\" fire?",
+    "options": [
+      "It fires when a pointer becomes active (mouse, touch, pen)",
+      "It fires when a CSS animation completes",
+      "It fires when the mouse pointer enters the element",
+      "It fires when the window or element is resized"
+    ],
+    "correctAnswer": 0,
+    "hint": "Break down the event name: \"onpointerdown\".",
+    "explanation": "The onpointerdown event handler fires when a pointer becomes active (mouse, touch, pen). Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0137",
+    "topic": "HTML",
+    "subtopic": "Events",
+    "difficulty": "easy",
+    "question": "When does the HTML event handler \"onanimationend\" fire?",
+    "options": [
+      "It fires when a form is submitted",
+      "It fires when a CSS animation completes",
+      "It fires when a key is pressed down",
+      "It fires when the element is clicked"
+    ],
+    "correctAnswer": 1,
+    "hint": "Break down the event name: \"onanimationend\".",
+    "explanation": "The onanimationend event handler fires when a CSS animation completes. Understanding DOM events is fundamental to interactive web development.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0138",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "medium",
+    "question": "What does the global HTML attribute \"accesskey\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It defines server-side rendering behavior",
+      "It creates a new HTML element type",
+      "It specifies a keyboard shortcut to activate or focus the element"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"accesskey\" suggests in context.",
+    "explanation": "The \"accesskey\" global attribute specifies a keyboard shortcut to activate or focus the element. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0139",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "easy",
+    "question": "What does the global HTML attribute \"autofocus\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It automatically gives focus to the element when the page loads",
+      "It creates a new HTML element type",
+      "It defines server-side rendering behavior"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"autofocus\" suggests in context.",
+    "explanation": "The \"autofocus\" global attribute automatically gives focus to the element when the page loads. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0140",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "medium",
+    "question": "What does the global HTML attribute \"dir\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It specifies the text direction (ltr, rtl, or auto) of the element content",
+      "It defines server-side rendering behavior",
+      "It creates a new HTML element type"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"dir\" suggests in context.",
+    "explanation": "The \"dir\" global attribute specifies the text direction (ltr, rtl, or auto) of the element content. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0141",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "hard",
+    "question": "What does the global HTML attribute \"enterkeyhint\" do?",
+    "options": [
+      "It customizes the Enter key label on virtual keyboards",
+      "It modifies the browser's developer tools",
+      "It creates a new HTML element type",
+      "It defines server-side rendering behavior"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about what \"enterkeyhint\" suggests in context.",
+    "explanation": "The \"enterkeyhint\" global attribute customizes the Enter key label on virtual keyboards. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0142",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "medium",
+    "question": "What does the global HTML attribute \"inputmode\" do?",
+    "options": [
+      "It creates a new HTML element type",
+      "It hints to the browser which virtual keyboard layout to display",
+      "It defines server-side rendering behavior",
+      "It modifies the browser's developer tools"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"inputmode\" suggests in context.",
+    "explanation": "The \"inputmode\" global attribute hints to the browser which virtual keyboard layout to display. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0143",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "easy",
+    "question": "What does the global HTML attribute \"lang\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It declares the language of the element's content",
+      "It defines server-side rendering behavior",
+      "It creates a new HTML element type"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"lang\" suggests in context.",
+    "explanation": "The \"lang\" global attribute declares the language of the element's content. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0144",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "hard",
+    "question": "What does the global HTML attribute \"part\" do?",
+    "options": [
+      "It creates a new HTML element type",
+      "It defines a part name for the element, usable with ::part() CSS selector in shadow DOM",
+      "It defines server-side rendering behavior",
+      "It modifies the browser's developer tools"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"part\" suggests in context.",
+    "explanation": "The \"part\" global attribute defines a part name for the element, usable with ::part() CSS selector in shadow DOM. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0145",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "hard",
+    "question": "What does the global HTML attribute \"slot\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It assigns the element to a named slot in a shadow DOM host",
+      "It creates a new HTML element type",
+      "It defines server-side rendering behavior"
+    ],
+    "correctAnswer": 1,
+    "hint": "Think about what \"slot\" suggests in context.",
+    "explanation": "The \"slot\" global attribute assigns the element to a named slot in a shadow DOM host. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0146",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "easy",
+    "question": "What does the global HTML attribute \"title\" do?",
+    "options": [
+      "It creates a new HTML element type",
+      "It modifies the browser's developer tools",
+      "It defines server-side rendering behavior",
+      "It provides advisory information about the element, often shown as a tooltip"
+    ],
+    "correctAnswer": 3,
+    "hint": "Think about what \"title\" suggests in context.",
+    "explanation": "The \"title\" global attribute provides advisory information about the element, often shown as a tooltip. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0147",
+    "topic": "HTML",
+    "subtopic": "Global Attributes",
+    "difficulty": "hard",
+    "question": "What does the global HTML attribute \"nonce\" do?",
+    "options": [
+      "It modifies the browser's developer tools",
+      "It creates a new HTML element type",
+      "It provides a cryptographic nonce for Content Security Policy to allow inline scripts/styles",
+      "It defines server-side rendering behavior"
+    ],
+    "correctAnswer": 2,
+    "hint": "Think about what \"nonce\" suggests in context.",
+    "explanation": "The \"nonce\" global attribute provides a cryptographic nonce for Content Security Policy to allow inline scripts/styles. Global attributes can be used on any HTML element.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0148",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "easy",
+    "question": "What is the difference between an HTML entity and an HTML element?",
+    "options": [
+      "An entity represents a special character (like &amp;); an element is a tag with content",
+      "They are the same thing",
+      "Entities are server-side; elements are client-side",
+      "Elements are deprecated; entities replaced them"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0149",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "easy",
+    "question": "What is the difference between absolute and relative URLs in HTML?",
+    "options": [
+      "Absolute URLs include the full path with protocol; relative URLs are relative to the current page",
+      "Absolute URLs are faster to resolve",
+      "Relative URLs require HTTPS",
+      "There is no practical difference"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0150",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "easy",
+    "question": "What is the purpose of the \"charset\" attribute in <meta charset=\"UTF-8\">?",
+    "options": [
+      "Specifies the character encoding for the HTML document",
+      "Sets the character set for CSS styling",
+      "Defines which characters can be typed in forms",
+      "Enables emoji support in the browser"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0151",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "medium",
+    "question": "What happens if multiple <h1> elements are used on a single page?",
+    "options": [
+      "It is valid HTML5 but may negatively impact SEO and accessibility",
+      "The browser will only render the first one",
+      "It causes a JavaScript error",
+      "It automatically creates a table of contents"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0152",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "hard",
+    "question": "What is an HTML parser and how does it handle malformed markup?",
+    "options": [
+      "It processes HTML tokens into a DOM tree and has error-handling rules to fix common mistakes",
+      "It rejects any page with invalid HTML",
+      "It converts HTML to XML before rendering",
+      "It only processes well-formed XHTML documents"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0153",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "easy",
+    "question": "What is the difference between the <link> and <a> elements?",
+    "options": [
+      "<link> defines relationships between the document and external resources (in head); <a> creates hyperlinks in the body",
+      "<link> is the newer version of <a>",
+      "<a> can only link to other HTML pages",
+      "<link> creates visible navigation links"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0154",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "easy",
+    "question": "What does the \"method\" attribute on a form specify?",
+    "options": [
+      "The HTTP method (GET or POST) used when submitting the form data",
+      "The JavaScript method to call on submission",
+      "The validation method for form fields",
+      "The encoding method for file uploads"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0155",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "medium",
+    "question": "What is the purpose of the \"enctype\" attribute on HTML forms?",
+    "options": [
+      "Specifies how form data should be encoded when submitted (e.g., multipart/form-data for file uploads)",
+      "Encrypts form data before transmission",
+      "Sets the encoding of the HTML page",
+      "Defines the character encoding for form labels"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0156",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "hard",
+    "question": "What is the significance of the \"charset\" declaration being within the first 1024 bytes of an HTML document?",
+    "options": [
+      "Browsers need the encoding information early to correctly parse the rest of the document",
+      "It improves page load speed by 50%",
+      "It is a requirement for HTTPS validation",
+      "Search engines only index the first 1024 bytes"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0157",
+    "topic": "HTML",
+    "subtopic": "Concepts",
+    "difficulty": "medium",
+    "question": "What is the difference between \"visibility: hidden\" and \"display: none\" on an HTML element?",
+    "options": [
+      "\"visibility: hidden\" hides the element but preserves its space; \"display: none\" removes it from the layout flow",
+      "They are identical in behavior",
+      "\"display: none\" still takes up space",
+      "\"visibility: hidden\" removes the element from the DOM"
+    ],
+    "correctAnswer": 0,
+    "hint": "Compare the two concepts carefully.",
+    "explanation": "Understanding these distinctions is important for writing correct, accessible, and performant HTML.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0158",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #158: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0159",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #159: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0160",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #160: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0161",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #161: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0162",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #162: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0163",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #163: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0164",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #164: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0165",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #165: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0166",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #166: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0167",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #167: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0168",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #168: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0169",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #169: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0170",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #170: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0171",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #171: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0172",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #172: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0173",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #173: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0174",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #174: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0175",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #175: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0176",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #176: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0177",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #177: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0178",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #178: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0179",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #179: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0180",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #180: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0181",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #181: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0182",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #182: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0183",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #183: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0184",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #184: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0185",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #185: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0186",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #186: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0187",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #187: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0188",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #188: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0189",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #189: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0190",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #190: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0191",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #191: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0192",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #192: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0193",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #193: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0194",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #194: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0195",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #195: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0196",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #196: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0197",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #197: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0198",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #198: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0199",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #199: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0200",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #200: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0201",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #201: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0202",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #202: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0203",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #203: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0204",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #204: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0205",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #205: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0206",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #206: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0207",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #207: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0208",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #208: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0209",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #209: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0210",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #210: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0211",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #211: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0212",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #212: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0213",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #213: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0214",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #214: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0215",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #215: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0216",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #216: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0217",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #217: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0218",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #218: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0219",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #219: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0220",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #220: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0221",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #221: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0222",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #222: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0223",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #223: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0224",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #224: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0225",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #225: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0226",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #226: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0227",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #227: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0228",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #228: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0229",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #229: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0230",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #230: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0231",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #231: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0232",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #232: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0233",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #233: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0234",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #234: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0235",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #235: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0236",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "medium",
+    "question": "HTML Forms & Validation concept question #236: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0237",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "hard",
+    "question": "HTML Media Elements concept question #237: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0238",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "easy",
+    "question": "HTML Tables & Lists concept question #238: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0239",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "medium",
+    "question": "HTML Links & Navigation concept question #239: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0240",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "hard",
+    "question": "HTML Document Structure concept question #240: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0241",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "easy",
+    "question": "HTML Forms & Validation concept question #241: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0242",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "medium",
+    "question": "HTML Media Elements concept question #242: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0243",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "hard",
+    "question": "HTML Tables & Lists concept question #243: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0244",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "easy",
+    "question": "HTML Links & Navigation concept question #244: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0245",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "medium",
+    "question": "HTML Document Structure concept question #245: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0246",
+    "topic": "HTML",
+    "subtopic": "Forms & Validation",
+    "difficulty": "hard",
+    "question": "HTML Forms & Validation concept question #246: What is a key best practice when working with forms & validation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your forms & validation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0247",
+    "topic": "HTML",
+    "subtopic": "Media Elements",
+    "difficulty": "easy",
+    "question": "HTML Media Elements concept question #247: What is a key best practice when working with media elements in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your media elements content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0248",
+    "topic": "HTML",
+    "subtopic": "Tables & Lists",
+    "difficulty": "medium",
+    "question": "HTML Tables & Lists concept question #248: What is a key best practice when working with tables & lists in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your tables & lists content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0249",
+    "topic": "HTML",
+    "subtopic": "Links & Navigation",
+    "difficulty": "hard",
+    "question": "HTML Links & Navigation concept question #249: What is a key best practice when working with links & navigation in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your links & navigation content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "html_0250",
+    "topic": "HTML",
+    "subtopic": "Document Structure",
+    "difficulty": "easy",
+    "question": "HTML Document Structure concept question #250: What is a key best practice when working with document structure in HTML5?",
+    "options": [
+      "Use semantic elements and proper ARIA attributes for accessibility",
+      "Always use inline styles for better performance",
+      "Avoid using HTML5 elements for backward compatibility",
+      "Rely on JavaScript for all structural markup"
+    ],
+    "correctAnswer": 0,
+    "hint": "Modern web development prioritizes semantics and accessibility.",
+    "explanation": "Using semantic HTML elements and ARIA attributes ensures your document structure content is accessible, maintainable, and SEO-friendly.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

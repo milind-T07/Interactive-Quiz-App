@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "devops_0001",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "What is Git and why is version control important?",
+    "options": [
+      "A distributed version control system that tracks changes in code, enabling collaboration and history",
+      "A programming language",
+      "A deployment tool",
+      "A project management tool"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0002",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "What is the difference between git merge and git rebase?",
+    "options": [
+      "Merge creates a merge commit preserving history; rebase replays commits on top of another branch for linear history",
+      "They produce identical results",
+      "Rebase is always preferred",
+      "Merge is deprecated"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0003",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "easy",
+    "question": "What is a CI/CD pipeline?",
+    "options": [
+      "Continuous Integration/Continuous Deployment: automated processes for building, testing, and deploying code changes",
+      "A data pipeline for analytics",
+      "A network infrastructure",
+      "A database migration tool"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0004",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "What is Docker?",
+    "options": [
+      "A platform for building, running, and shipping applications in lightweight, isolated containers",
+      "A document management system",
+      "A database engine",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0005",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "medium",
+    "question": "What is the difference between a Docker image and a container?",
+    "options": [
+      "An image is a read-only template; a container is a running instance of an image",
+      "They are identical concepts",
+      "Containers create images",
+      "Images run; containers store data"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0006",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "What is Kubernetes?",
+    "options": [
+      "An open-source container orchestration platform for automating deployment, scaling, and management of containerized applications",
+      "A container runtime",
+      "A Docker replacement",
+      "A CI/CD tool"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0007",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "What is a Dockerfile?",
+    "options": [
+      "A text file with instructions for building a Docker image, defining the base image, dependencies, and commands",
+      "A configuration file for Docker Desktop",
+      "A log file for Docker containers",
+      "A Docker network configuration"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0008",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Advanced",
+    "difficulty": "medium",
+    "question": "What is git cherry-pick?",
+    "options": [
+      "Applying a specific commit from one branch to another without merging the entire branch",
+      "Selecting the best code changes",
+      "Picking between merge and rebase",
+      "Choosing which files to commit"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0009",
+    "topic": "Git & DevOps",
+    "subtopic": "DevOps Practices",
+    "difficulty": "medium",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing and provisioning infrastructure through machine-readable configuration files (Terraform, Ansible)",
+      "Writing infrastructure documentation",
+      "Coding on cloud servers",
+      "Using code editors for infrastructure"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0010",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "What is git stash used for?",
+    "options": [
+      "Temporarily saving uncommitted changes so you can switch branches, then re-applying them later",
+      "Permanently storing code changes",
+      "Creating a hidden repository",
+      "Stashing commits for review"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Git & DevOps fundamentals.",
+    "explanation": "This answer aligns with Git & DevOps best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0011",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0012",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0013",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0014",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0015",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0016",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0017",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0018",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0019",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0020",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0021",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0022",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0023",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0024",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0025",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0026",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0027",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0028",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0029",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0030",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0031",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0032",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0033",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0034",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0035",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0036",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0037",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0038",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0039",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0040",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Git Basics: What is a fundamental principle or best practice for git basics (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Git Basics best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for git basics in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0041",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0042",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0043",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0044",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0045",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0046",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0047",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0048",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0049",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0050",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0051",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0052",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0053",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0054",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0055",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0056",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0057",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0058",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0059",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0060",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0061",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0062",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0063",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0064",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0065",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0066",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0067",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0068",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0069",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0070",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Branching: What is a fundamental principle or best practice for branching (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Branching best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for branching in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0071",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0072",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0073",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0074",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0075",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0076",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0077",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0078",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0079",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0080",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0081",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0082",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0083",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0084",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0085",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0086",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0087",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0088",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0089",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0090",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0091",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0092",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0093",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0094",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0095",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0096",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0097",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0098",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0099",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0100",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding CI/CD: What is a fundamental principle or best practice for ci/cd (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about CI/CD best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for ci/cd in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0101",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0102",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0103",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0104",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0105",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0106",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0107",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0108",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0109",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0110",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0111",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0112",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0113",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0114",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0115",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0116",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0117",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0118",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0119",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0120",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0121",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0122",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0123",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0124",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0125",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0126",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0127",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0128",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0129",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0130",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Docker: What is a fundamental principle or best practice for docker (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Docker best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for docker in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0131",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0132",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0133",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0134",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0135",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0136",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0137",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0138",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0139",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0140",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0141",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0142",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0143",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0144",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0145",
+    "topic": "Git & DevOps",
+    "subtopic": "Git Basics",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0146",
+    "topic": "Git & DevOps",
+    "subtopic": "Branching",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0147",
+    "topic": "Git & DevOps",
+    "subtopic": "CI/CD",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0148",
+    "topic": "Git & DevOps",
+    "subtopic": "Docker",
+    "difficulty": "easy",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0149",
+    "topic": "Git & DevOps",
+    "subtopic": "Kubernetes",
+    "difficulty": "medium",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "devops_0150",
+    "topic": "Git & DevOps",
+    "subtopic": "Monitoring",
+    "difficulty": "hard",
+    "question": "In Git & DevOps, regarding Kubernetes: What is a fundamental principle or best practice for kubernetes (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Kubernetes best practices in Git & DevOps.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for kubernetes in Git & DevOps. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

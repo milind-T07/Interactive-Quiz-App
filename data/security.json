@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "sec_0001",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "options": [
+      "A vulnerability where attackers inject malicious scripts into web pages viewed by other users",
+      "A technique for cross-browser compatibility",
+      "A method for sharing scripts between sites",
+      "A CSS styling technique"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0002",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "What is SQL injection?",
+    "options": [
+      "An attack that inserts malicious SQL code through user input to manipulate or access the database",
+      "A method for injecting SQL performance improvements",
+      "A technique for faster SQL queries",
+      "A database backup method"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0003",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "medium",
+    "question": "What is CSRF (Cross-Site Request Forgery)?",
+    "options": [
+      "An attack that tricks authenticated users into submitting unwanted requests to a web application",
+      "A CSS rendering framework",
+      "A cross-site file sharing protocol",
+      "A client-side rendering format"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0004",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "medium",
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "options": [
+      "Symmetric uses one key for encrypt/decrypt; asymmetric uses a public key to encrypt and private key to decrypt",
+      "They are identical methods",
+      "Asymmetric is faster",
+      "Symmetric uses two keys"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0005",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "medium",
+    "question": "What is HTTPS and how does TLS work?",
+    "options": [
+      "HTTPS is HTTP over TLS; TLS provides encryption via handshake, certificate verification, and symmetric key exchange",
+      "HTTPS is a faster version of HTTP",
+      "TLS is a type of firewall",
+      "HTTPS encrypts only passwords"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0006",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "What is the OWASP Top 10?",
+    "options": [
+      "A standard awareness document listing the 10 most critical web application security risks",
+      "The top 10 web frameworks",
+      "The 10 fastest programming languages",
+      "The 10 best development practices"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0007",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "easy",
+    "question": "What is two-factor authentication (2FA)?",
+    "options": [
+      "A security process requiring two different forms of identification to access an account",
+      "Using two passwords",
+      "Logging in from two devices",
+      "Having two admin accounts"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0008",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "What is a man-in-the-middle (MITM) attack?",
+    "options": [
+      "An attack where the attacker secretly intercepts and possibly alters communication between two parties",
+      "A mediator in a network dispute",
+      "A type of DDoS attack",
+      "A social engineering technique"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0009",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "What is input validation and why is it important?",
+    "options": [
+      "Checking user input against expected formats to prevent injection attacks and data corruption",
+      "Validating that inputs are in the correct language",
+      "Checking input device compatibility",
+      "Verifying keyboard input signals"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0010",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "medium",
+    "question": "What is hashing and how does it differ from encryption?",
+    "options": [
+      "Hashing is one-way (cannot be reversed); encryption is two-way (can be decrypted with a key)",
+      "They are identical processes",
+      "Hashing is reversible; encryption is not",
+      "Hashing is for files; encryption is for text"
+    ],
+    "correctAnswer": 0,
+    "hint": "Consider Cybersecurity fundamentals.",
+    "explanation": "This answer aligns with Cybersecurity best practices.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0011",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 1)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0012",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 2)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0013",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 3)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0014",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 4)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0015",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 5)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0016",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 6)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0017",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 7)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0018",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 8)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0019",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 9)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0020",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 10)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0021",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 11)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0022",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 12)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0023",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 13)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0024",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 14)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0025",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 15)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0026",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 16)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0027",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 17)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0028",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 18)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0029",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 19)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0030",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 20)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0031",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 21)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0032",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 22)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0033",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 23)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0034",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 24)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0035",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 25)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0036",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 26)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0037",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 27)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0038",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 28)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0039",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 29)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0040",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Web Security: What is a fundamental principle or best practice for web security (concept 30)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Web Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for web security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0041",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 31)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0042",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 32)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0043",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 33)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0044",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 34)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0045",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 35)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0046",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 36)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0047",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 37)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0048",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 38)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0049",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 39)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0050",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 40)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0051",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 41)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0052",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 42)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0053",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 43)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0054",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 44)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0055",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 45)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0056",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 46)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0057",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 47)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0058",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 48)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0059",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 49)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0060",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 50)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0061",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 51)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0062",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 52)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0063",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 53)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0064",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 54)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0065",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 55)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0066",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 56)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0067",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 57)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0068",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 58)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0069",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 59)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0070",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Authentication: What is a fundamental principle or best practice for authentication (concept 60)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Authentication best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for authentication in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0071",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 61)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0072",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 62)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0073",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 63)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0074",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 64)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0075",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 65)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0076",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 66)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0077",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 67)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0078",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 68)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0079",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 69)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0080",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 70)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0081",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 71)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0082",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 72)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0083",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 73)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0084",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 74)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0085",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 75)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0086",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 76)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0087",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 77)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0088",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 78)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0089",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 79)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0090",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 80)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0091",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 81)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0092",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 82)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0093",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 83)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0094",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 84)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0095",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 85)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0096",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 86)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0097",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 87)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0098",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 88)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0099",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 89)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0100",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Encryption: What is a fundamental principle or best practice for encryption (concept 90)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Encryption best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for encryption in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0101",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 91)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0102",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 92)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0103",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 93)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0104",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 94)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0105",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 95)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0106",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 96)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0107",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 97)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0108",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 98)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0109",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 99)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0110",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 100)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0111",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 101)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0112",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 102)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0113",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 103)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0114",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 104)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0115",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 105)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0116",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 106)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0117",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 107)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0118",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 108)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0119",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 109)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0120",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 110)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0121",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 111)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0122",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 112)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0123",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 113)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0124",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 114)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0125",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 115)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0126",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 116)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0127",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 117)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0128",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 118)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0129",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 119)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0130",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding OWASP: What is a fundamental principle or best practice for owasp (concept 120)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about OWASP best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for owasp in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0131",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 121)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0132",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 122)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0133",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 123)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0134",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 124)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0135",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 125)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0136",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 126)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0137",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 127)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0138",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 128)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0139",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 129)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0140",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 130)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0141",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 131)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0142",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 132)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0143",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 133)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0144",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 134)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0145",
+    "topic": "Cybersecurity",
+    "subtopic": "Web Security",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 135)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0146",
+    "topic": "Cybersecurity",
+    "subtopic": "Authentication",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 136)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0147",
+    "topic": "Cybersecurity",
+    "subtopic": "Encryption",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 137)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0148",
+    "topic": "Cybersecurity",
+    "subtopic": "OWASP",
+    "difficulty": "easy",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 138)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0149",
+    "topic": "Cybersecurity",
+    "subtopic": "Network Security",
+    "difficulty": "medium",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 139)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  },
+  {
+    "id": "sec_0150",
+    "topic": "Cybersecurity",
+    "subtopic": "Vulnerabilities",
+    "difficulty": "hard",
+    "question": "In Cybersecurity, regarding Network Security: What is a fundamental principle or best practice for network security (concept 140)?",
+    "options": [
+      "Follow the principle of least surprise and write code that is clear, testable, and maintainable",
+      "Prioritize clever optimizations over code readability in all cases",
+      "Avoid documentation since code should be self-explanatory",
+      "Use deprecated patterns for maximum backward compatibility"
+    ],
+    "correctAnswer": 0,
+    "hint": "Think about Network Security best practices in Cybersecurity.",
+    "explanation": "Following clear, testable, and maintainable patterns is essential for network security in Cybersecurity. Good code should be understandable by other developers and easy to modify.",
+    "codeSnippet": null,
+    "type": "mcq"
+  }
+]

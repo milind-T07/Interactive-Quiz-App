@@ -1,14 +1,22 @@
-/* ============================================
-   MAIN.JS — Application Entry Point & Event Wiring
-   ============================================ */
+/* ============================================================
+   MAIN.JS — Application Entry Point & Global Event Orchestrator
+   ============================================================ */
 
-document.addEventListener("DOMContentLoaded", function () {
-  // 1. Initialize Navigation and View
+document.addEventListener("DOMContentLoaded", async function () {
+  console.log("[QuizePro] Initializing application...");
+
+  // 1. Initialize Question Bank from local JSON files
+  try {
+    await QuestionService.init();
+  } catch (err) {
+    console.error("[QuizePro] Failed to initialize QuestionService:", err);
+  }
+
+  // 2. Render Navigation and Initial View
   UI.renderNavigation();
   UI.renderActiveView();
-  UI.initAiSettings();
 
-  // 2. Brand Link Home Navigation
+  // 3. Brand Link Home Navigation
   const brandLink = document.getElementById("brand-home-link");
   if (brandLink) {
     brandLink.addEventListener("click", (e) => {
@@ -17,29 +25,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 3. Sound Effects Toggle
+  // 4. Sound Effects Toggle
   const soundBtn = document.getElementById("sound-toggle-btn");
   if (soundBtn && typeof SoundEngine !== "undefined") {
     soundBtn.addEventListener("click", () => {
       const isMuted = SoundEngine.toggleMute();
       UI.updateHeaderActions();
-      UI.showToast(isMuted ? "Sound muted" : "Sound effects enabled", "info");
+      UI.showToast(isMuted ? "Sound effects muted" : "Sound effects enabled", "info");
       if (!isMuted) {
         SoundEngine.click();
       }
     });
   }
 
-  // 4. Theme Toggle
+  // 5. Theme Toggle
   const themeBtn = document.getElementById("theme-toggle-btn");
   if (themeBtn && typeof ThemeManager !== "undefined") {
     themeBtn.addEventListener("click", () => {
-      const next = ThemeManager.toggleTheme();
-      UI.showToast(`Switched to ${next} theme`, "info");
+      const nextTheme = ThemeManager.toggleTheme();
+      UI.updateHeaderActions();
+      UI.showToast(`Switched to ${nextTheme} theme`, "info");
     });
   }
 
-  // 5. Mobile Navigation Drawer
+  // 6. Mobile Navigation Drawer
   const mobileMenuBtn = document.getElementById("mobile-menu-btn");
   const mobileDrawerOverlay = document.getElementById("mobile-drawer-overlay");
   const mobileCloseBtn = document.getElementById("mobile-close-btn");
@@ -67,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 6. Footer Links Navigation & Year
+  // 7. Footer Navigation Links & Dynamic Copyright Year
   const yearEl = document.getElementById("footer-year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
@@ -82,15 +91,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 7. Keyboard Shortcuts Handler
+  // 8. Global Keyboard Shortcuts Handler
   document.addEventListener("keydown", function (e) {
-    // Escape key closes mobile drawer or active modals if open
+    // Avoid intercepting input elements
+    const tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
+
+    // Escape closes modals or mobile drawer
     if (e.key === "Escape") {
       if (mobileDrawerOverlay && mobileDrawerOverlay.classList.contains("open")) {
         mobileDrawerOverlay.classList.remove("open");
         return;
       }
-      const dialogs = ["confirm-dialog", "quiz-config-dialog", "goal-dialog", "ai-config-dialog"];
+      const dialogs = ["confirm-dialog", "quiz-config-dialog", "goal-dialog", "backup-dialog"];
       for (const dId of dialogs) {
         const d = document.getElementById(dId);
         if (d && d.open) {
@@ -98,45 +111,60 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
       }
+      return;
     }
 
-    // Quiz Runner Keyboard navigation
-    const isQuizActive = quizState.activeTab === "hub" && 
-      quizState.questions.length > 0 && 
-      !quizState.isFinished;
+    // Active Quiz Shortcuts
+    if (quizState.questions.length > 0 && !quizState.isFinished) {
+      // 1, 2, 3, 4 or A, B, C, D to pick options
+      const keyUpper = e.key.toUpperCase();
+      let optionIndex = -1;
 
-    if (!isQuizActive) return;
+      if (e.key === "1" || keyUpper === "A") optionIndex = 0;
+      else if (e.key === "2" || keyUpper === "B") optionIndex = 1;
+      else if (e.key === "3" || keyUpper === "C") optionIndex = 2;
+      else if (e.key === "4" || keyUpper === "D") optionIndex = 3;
 
-    // Do not capture keyboard if user is typing in an input or textarea
-    const activeTagName = document.activeElement ? document.activeElement.tagName.toLowerCase() : "";
-    if (activeTagName === "input" || activeTagName === "textarea") return;
-
-    const key = e.key;
-    const currentQ = getCurrentQuestion();
-    if (!currentQ) return;
-
-    // Keys 1, 2, 3, 4 or A, B, C, D to select answers
-    if (!quizState.isAnswered) {
-      let selectedIdx = -1;
-      if (key === "1" || key === "a" || key === "A") selectedIdx = 0;
-      else if (key === "2" || key === "b" || key === "B") selectedIdx = 1;
-      else if (key === "3" || key === "c" || key === "C") selectedIdx = 2;
-      else if (key === "4" || key === "d" || key === "D") selectedIdx = 3;
-
-      if (selectedIdx >= 0 && selectedIdx < currentQ.options.length) {
-        if (!quizState.disabledOptions.includes(selectedIdx)) {
-          e.preventDefault();
-          const optionBtn = document.querySelector(`.option-btn[data-index="${selectedIdx}"]`);
-          if (optionBtn) optionBtn.click();
+      if (optionIndex !== -1) {
+        const optBtn = document.querySelector(`.quiz-opt-btn[data-opt-idx="${optionIndex}"]`);
+        if (optBtn && !optBtn.disabled) {
+          optBtn.click();
         }
+        return;
       }
-    } else {
-      // Space or Enter key to proceed to Next Question
-      if (key === " " || key === "Enter") {
+
+      // Enter or Space to advance or submit
+      if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        const nextBtn = document.getElementById("quiz-next-btn");
+        const nextBtn = document.getElementById("next-question-btn");
+        const finishBtn = document.getElementById("finish-quiz-btn");
         if (nextBtn) nextBtn.click();
+        else if (finishBtn) finishBtn.click();
+        return;
+      }
+
+      // 'P' for previous question
+      if (keyUpper === "P") {
+        const prevBtn = document.getElementById("prev-question-btn");
+        if (prevBtn && !prevBtn.disabled) prevBtn.click();
+        return;
+      }
+
+      // 'F' to flag question
+      if (keyUpper === "F") {
+        const flagBtn = document.getElementById("flag-question-btn");
+        if (flagBtn) flagBtn.click();
+        return;
+      }
+
+      // 'H' for hint
+      if (keyUpper === "H") {
+        const hintBtn = document.getElementById("lifeline-hint-btn");
+        if (hintBtn && !hintBtn.disabled) hintBtn.click();
+        return;
       }
     }
   });
+
+  console.log("[QuizePro] Application ready. 5,200+ offline questions loaded.");
 });
