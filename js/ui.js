@@ -116,6 +116,7 @@ const UI = (function () {
             ${item.icon}
             <span>${item.label}</span>
             ${hasBadge ? `<span class="badge badge-primary">${item.count}</span>` : ''}
+            ${isActive ? `<span class="nav-indicator-dot" aria-hidden="true"></span>` : ''}
           </button>
         `;
       }).join("");
@@ -137,6 +138,7 @@ const UI = (function () {
             ${item.icon}
             <span>${item.label}</span>
             ${hasBadge ? `<span class="badge badge-primary" style="margin-left: auto;">${item.count}</span>` : ''}
+            ${isActive ? `<span class="nav-indicator-dot" aria-hidden="true"></span>` : ''}
           </button>
         `;
       }).join("");
@@ -155,6 +157,26 @@ const UI = (function () {
   }
 
   function updateHeaderActions() {
+    // Header streak counter
+    const streakCountEl = document.getElementById("header-streak-count");
+    if (streakCountEl && typeof Storage !== "undefined" && Storage.getAnalytics) {
+      try {
+        const analytics = Storage.getAnalytics();
+        const streak = analytics.currentStreak || 0;
+        streakCountEl.textContent = streak;
+      } catch (e) {
+        streakCountEl.textContent = "0";
+      }
+    }
+
+    const streakBtn = document.getElementById("header-streak-btn");
+    if (streakBtn && !streakBtn.dataset.bound) {
+      streakBtn.dataset.bound = "true";
+      streakBtn.addEventListener("click", () => {
+        switchTab("performance");
+      });
+    }
+
     const soundBtn = document.getElementById("sound-toggle-btn");
     if (soundBtn && typeof SoundEngine !== "undefined") {
       const muted = SoundEngine.isMuted();
