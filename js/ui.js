@@ -157,26 +157,6 @@ const UI = (function () {
   }
 
   function updateHeaderActions() {
-    // Header streak counter
-    const streakCountEl = document.getElementById("header-streak-count");
-    if (streakCountEl && typeof Storage !== "undefined" && Storage.getAnalytics) {
-      try {
-        const analytics = Storage.getAnalytics();
-        const streak = analytics.currentStreak || 0;
-        streakCountEl.textContent = streak;
-      } catch (e) {
-        streakCountEl.textContent = "0";
-      }
-    }
-
-    const streakBtn = document.getElementById("header-streak-btn");
-    if (streakBtn && !streakBtn.dataset.bound) {
-      streakBtn.dataset.bound = "true";
-      streakBtn.addEventListener("click", () => {
-        switchTab("performance");
-      });
-    }
-
     const soundBtn = document.getElementById("sound-toggle-btn");
     if (soundBtn && typeof SoundEngine !== "undefined") {
       const muted = SoundEngine.isMuted();
@@ -373,25 +353,166 @@ const UI = (function () {
       `;
     }
 
+    // Generate 7-day streak activity pills (ending today)
+    const weekDays = [];
+    const todayDate = new Date();
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(todayDate.getDate() - i);
+      const dateKey = d.toDateString();
+      const dayLetters = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+      const dayLetter = dayLetters[d.getDay()];
+      const isToday = i === 0;
+      const isCompleted = Boolean(analytics.dailyActivity && analytics.dailyActivity[dateKey] > 0);
+      weekDays.push({
+        dayLetter,
+        dateLabel: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        isToday,
+        isCompleted
+      });
+    }
+
     container.innerHTML = `
       <div class="fade-in">
-        <!-- 1. Welcome Section -->
-        <section class="welcome-section" aria-label="Welcome">
+        <!-- 1. Welcome Section & Dynamic Streak Showcase -->
+        <section class="welcome-section" aria-label="Welcome & Daily Streak">
           <div class="welcome-content">
-            <h1 class="welcome-title">Welcome to QuizPro</h1>
-            <p class="welcome-desc">
-              Practice technical concepts, improve your problem-solving skills, and track your progress.
-            </p>
-            <div class="welcome-actions">
-              <button type="button" class="btn btn-primary" id="welcome-start-btn">
-                Start Practicing
-              </button>
-              <button type="button" class="btn btn-secondary" id="welcome-explore-btn">
-                Explore Questions
-              </button>
+            <div class="welcome-kicker">
+              <span class="welcome-kicker-pulse"></span>
+              <span class="welcome-kicker-text">Offline Developer Assessment Platform</span>
+              <span class="welcome-kicker-tag">PRO</span>
             </div>
-            <div class="welcome-meta">
-              ${allQuestions.length > 0 ? `${allQuestions.length.toLocaleString()}+ Questions` : '5,200+ Questions'} • 20 Technical Topics • 100% Free & Local
+            
+            <h1 class="welcome-title">
+              Welcome to <span class="welcome-title-accent">QuizPro</span>
+            </h1>
+
+            <p class="welcome-desc">
+              Sharpen your engineering intuition, drill system internals, and build an unbreakable developer streak across 20 specialized disciplines.
+            </p>
+
+            <div class="welcome-pill-row">
+              <div class="welcome-feature-badge">
+                <span class="feat-badge-icon">⚡</span>
+                <span class="feat-badge-label"><strong>${allQuestions.length > 0 ? allQuestions.length.toLocaleString() : '5,200'}+</strong> Questions</span>
+              </div>
+              <div class="welcome-feature-badge">
+                <span class="feat-badge-icon">🎯</span>
+                <span class="feat-badge-label"><strong>20</strong> Core Topics</span>
+              </div>
+              <div class="welcome-feature-badge">
+                <span class="feat-badge-icon">🔒</span>
+                <span class="feat-badge-label"><strong>100%</strong> Offline & Local</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Blowing Flame Streak Card (Spacious, Unhurried & Visual) -->
+          <div class="hero-streak-card" id="hero-streak-card" aria-label="Daily Streak">
+            <div class="streak-ambient-glow" aria-hidden="true"></div>
+            
+            <div class="streak-card-inner">
+              <!-- Top Row: Title & Active Status Pill -->
+              <div class="streak-header-bar">
+                <div class="streak-title-tag">
+                  <span class="streak-fire-symbol">🔥</span>
+                  <span class="streak-title-heading">DAILY HABIT STREAK</span>
+                </div>
+                <div class="streak-state-pill ${analytics.currentStreak > 0 ? 'is-active' : 'is-idle'}">
+                  <span class="state-dot"></span>
+                  <span>${analytics.currentStreak > 0 ? 'Flame Burning' : 'Ready to Ignite'}</span>
+                </div>
+              </div>
+
+              <!-- Main Row: Dynamic Wind-Blowing Flame & Clear Metric Pane -->
+              <div class="streak-main-body">
+                <!-- Dynamic Blowing Flame Container -->
+                <div class="blowing-flame-wrapper" aria-hidden="true">
+                  <!-- Floating Embers drifting in the wind -->
+                  <div class="ember-spark ember-1"></div>
+                  <div class="ember-spark ember-2"></div>
+                  <div class="ember-spark ember-3"></div>
+                  <div class="ember-spark ember-4"></div>
+
+                  <!-- Layered Blowing SVG Flame -->
+                  <svg class="blowing-flame-svg" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="flameGradOuter" x1="50" y1="125" x2="50" y2="10" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#ff1a00"/>
+                        <stop offset="45%" stop-color="#ff5500"/>
+                        <stop offset="85%" stop-color="#ff9900"/>
+                        <stop offset="100%" stop-color="#ffcc00"/>
+                      </linearGradient>
+                      <linearGradient id="flameGradMid" x1="50" y1="120" x2="50" y2="35" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#ff3b00"/>
+                        <stop offset="55%" stop-color="#ff8800"/>
+                        <stop offset="100%" stop-color="#ffea00"/>
+                      </linearGradient>
+                      <linearGradient id="flameGradCore" x1="50" y1="115" x2="50" y2="65" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#ffaa00"/>
+                        <stop offset="60%" stop-color="#fff566"/>
+                        <stop offset="100%" stop-color="#ffffff"/>
+                      </linearGradient>
+                      <filter id="flameBlurGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                      </filter>
+                    </defs>
+
+                    <!-- Outer Wind-Swaying Flame Body -->
+                    <path class="flame-wind-body" filter="url(#flameBlurGlow)" fill="url(#flameGradOuter)"
+                      d="M50 8 C53 28, 75 42, 72 68 C70 85, 88 94, 82 112 C75 128, 25 128, 18 112 C12 94, 30 85, 28 68 C25 42, 47 28, 50 8 Z" />
+
+                    <!-- Left Fluttering Tongue -->
+                    <path class="flame-tongue-left" fill="url(#flameGradOuter)" opacity="0.9"
+                      d="M40 55 C36 70, 18 80, 22 98 C26 112, 38 118, 44 122 C34 108, 30 90, 40 75 C44 68, 42 60, 40 55 Z" />
+
+                    <!-- Right Blowing Tongue -->
+                    <path class="flame-tongue-right" fill="url(#flameGradOuter)" opacity="0.9"
+                      d="M60 50 C64 65, 82 75, 78 96 C74 110, 62 118, 56 122 C66 108, 70 90, 60 72 C56 64, 58 56, 60 50 Z" />
+
+                    <!-- Middle Energetic Licking Flame -->
+                    <path class="flame-mid-tongue" fill="url(#flameGradMid)"
+                      d="M50 32 C54 48, 66 62, 64 82 C62 96, 70 104, 66 114 C60 124, 40 124, 34 114 C30 104, 38 96, 36 82 C34 62, 46 48, 50 32 Z" />
+
+                    <!-- White-Hot Blazing Core -->
+                    <path class="flame-core-tongue" fill="url(#flameGradCore)"
+                      d="M50 62 C52 72, 60 82, 58 94 C56 104, 44 104, 42 94 C40 82, 48 72, 50 62 Z" />
+                  </svg>
+
+                  <div class="flame-heat-base"></div>
+                </div>
+
+                <!-- Spacious Streak Counter & Weekly Visual Habit Track -->
+                <div class="streak-details-pane">
+                  <div class="streak-count-display">
+                    <span class="streak-hero-digit">${analytics.currentStreak}</span>
+                    <div class="streak-hero-meta">
+                      <span class="streak-hero-unit">${analytics.currentStreak === 1 ? 'Day Streak' : 'Days Streak'}</span>
+                      <span class="streak-record-badge">Best: <strong>${analytics.bestStreak} ${analytics.bestStreak === 1 ? 'day' : 'days'}</strong></span>
+                    </div>
+                  </div>
+
+                  <!-- 7-Day Visual Activity Nodes (Spacious, Zero Text Rush) -->
+                  <div class="streak-week-track" aria-label="7-Day Streak History">
+                    ${weekDays.map(day => `
+                      <div class="streak-day-chip ${day.isCompleted ? 'is-completed' : ''} ${day.isToday ? 'is-today' : ''}" title="${day.dateLabel}${day.isToday ? ' (Today)' : ''}">
+                        <span class="streak-day-letter">${day.dayLetter}</span>
+                        <span class="streak-day-bullet" aria-hidden="true"></span>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Full-Width Confident CTA Button -->
+              <button type="button" class="btn-flame-ignite-full" id="streak-practice-cta">
+                <span class="btn-ignite-icon">🔥</span>
+                <span>${analytics.currentStreak > 0 ? 'Extend Today\'s Streak' : 'Start Daily Practice Drill'}</span>
+                <svg class="btn-ignite-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
@@ -413,11 +534,11 @@ const UI = (function () {
           </div>
 
           <div class="stat-block">
-            <div class="stat-label">Current Streak</div>
+            <div class="stat-label">All-Time Best Streak</div>
             <div class="stat-value">
-              ${analytics.currentStreak} ${analytics.currentStreak === 1 ? 'Day' : 'Days'}
+              ${analytics.bestStreak} ${analytics.bestStreak === 1 ? 'Day' : 'Days'}
             </div>
-            <div class="stat-subtext">Best: ${analytics.bestStreak} ${analytics.bestStreak === 1 ? 'day' : 'days'}</div>
+            <div class="stat-subtext">${analytics.totalQuizzes} quizzes completed • Level ${analytics.userLevel ? analytics.userLevel.level : 1}</div>
           </div>
         </section>
 
@@ -487,17 +608,27 @@ const UI = (function () {
     `;
 
     // Event Listeners for Dashboard
-    const welcomeStartBtn = document.getElementById("welcome-start-btn");
-    if (welcomeStartBtn) {
-      welcomeStartBtn.addEventListener("click", () => {
+    const streakPracticeCta = document.getElementById("streak-practice-cta");
+    if (streakPracticeCta) {
+      streakPracticeCta.addEventListener("click", () => {
+        if (typeof SoundEngine !== "undefined") SoundEngine.click();
         showQuizConfigModal("all");
       });
     }
 
-    const welcomeExploreBtn = document.getElementById("welcome-explore-btn");
-    if (welcomeExploreBtn) {
-      welcomeExploreBtn.addEventListener("click", () => {
+    const streakExploreCta = document.getElementById("streak-explore-cta");
+    if (streakExploreCta) {
+      streakExploreCta.addEventListener("click", () => {
+        if (typeof SoundEngine !== "undefined") SoundEngine.click();
         switchTab("explore");
+      });
+    }
+
+    const heroStreakCard = document.getElementById("hero-streak-card");
+    if (heroStreakCard) {
+      heroStreakCard.addEventListener("click", (e) => {
+        if (e.target.closest("button")) return;
+        switchTab("performance");
       });
     }
 
