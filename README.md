@@ -62,6 +62,12 @@ Zero API keys, zero external network calls, zero AI vendor lock-in, and zero bac
 - Launch a targeted "Practice Saved Questions" quiz anytime.
 - Clear bookmarks with confirmation dialog.
 
+### 6. 💎 Modern Glassmorphic Navigation & Streak Tracker
+- **Floating Island Navigation Dock**: Segmented capsule tabs with luminous active pill indicators and ambient glow.
+- **Ambient Header Line**: OkLab violet-indigo-blue gradient highlight with passive scroll-reactive elevation depth.
+- **Interactive Streak Pill Chip**: Dynamic `🔥 Streak` tracker showing daily continuous practice count with one-click jump to performance analytics.
+- **Micro-Interactions**: Brand squircle rotation, glowing active dots, and tactile glass action buttons for theme and sound toggles.
+
 ---
 
 ## 📊 Question Bank Distribution (5,200 Validated Questions)
