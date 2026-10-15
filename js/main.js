@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", async function () {
   UI.renderNavigation();
   UI.renderActiveView();
 
+  // Header Scroll State (Frosted blur & elevation depth)
+  const appHeader = document.getElementById("app-header");
+  if (appHeader) {
+    const handleScroll = () => {
+      if (window.scrollY > 15) {
+        appHeader.classList.add("scrolled");
+      } else {
+        appHeader.classList.remove("scrolled");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+  }
+
   // 3. Brand Link Home Navigation
   const brandLink = document.getElementById("brand-home-link");
   if (brandLink) {
