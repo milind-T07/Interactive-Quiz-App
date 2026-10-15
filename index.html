@@ -23,20 +23,39 @@
 
   <!-- Top Navigation Header -->
   <header class="app-header" id="app-header">
+    <!-- Ambient top glow line -->
+    <div class="header-glow-line" aria-hidden="true"></div>
+
     <div class="header-inner container">
       <!-- Logo & Wordmark -->
       <a href="#" class="brand-link" id="brand-home-link" aria-label="QuizPro Home">
-        <span class="brand-icon">QP</span>
+        <div class="brand-icon-wrapper">
+          <span class="brand-icon">
+            <svg class="brand-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </span>
+        </div>
         <span class="brand-name">Quiz<span class="brand-accent">Pro</span></span>
+        <span class="brand-tag">v2.0</span>
       </a>
 
-      <!-- Desktop Nav Tabs -->
+      <!-- Desktop Nav Tabs (Floating Capsule Dock) -->
       <nav class="nav-bar" id="desktop-nav" aria-label="Main Navigation">
         <!-- Injected dynamically by UI.renderNavigation() -->
       </nav>
 
       <!-- Utility Actions -->
       <div class="header-actions">
+        <!-- Streak / Daily Goal Chip -->
+        <button type="button" class="header-streak-chip" id="header-streak-btn" title="View Streak & Progress" aria-label="Current Streak">
+          <span class="streak-icon">🔥</span>
+          <span class="streak-count" id="header-streak-count">0</span>
+          <span class="streak-label">Streak</span>
+        </button>
+
+        <div class="header-actions-divider" aria-hidden="true"></div>
+
         <!-- Sound FX Toggle -->
         <button type="button" class="action-btn" id="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Toggle Sound FX">
           <!-- Injected via UI -->
